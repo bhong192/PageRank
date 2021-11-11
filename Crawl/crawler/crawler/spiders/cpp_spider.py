@@ -32,5 +32,6 @@ class CppSpider(CrawlSpider):
                 # ignore the other domains in the links list
                 if "cpp.edu" in url and not "mailto:" in url:
                     links.append(url)
+                    size = len(links)
 
-            yield {"url": response.url, "links": links}
+            yield {"url": response.url, "outlinks": size,  "links": links}
