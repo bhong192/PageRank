@@ -1,0 +1,480 @@
+<!--https://research.uci.edu/research-development/funding-sources/index.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>Funding Sources</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../../assets/js/glossary.js" type="text/javascript"></script> 
+  <script src="../../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../../about/contact-us.html">Contact Us</a> <a>|</a> <a href="../../forms/index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../../about/index.html">About the Office</a></li>
+          <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../../facilities-services/index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../index.html">Research Development</a></li>
+          <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="../../sponsored-projects/index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../../index.html"><img alt="UCI Irvine" src="../../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a href="../../sponsored-projects/index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a href="../../era/index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a href="../../centers-institutes/index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../../facilities-services/index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../../about/index.html">About the Office</a></li>
+      <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+      <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+      <li><a class="" href="../../facilities-services/index.html">Facilities &amp; Services</a></li>
+      <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../index.html">Research Development</a>
+       <ul class="mobile-sub-sub">
+        <li><a href="../find-funding.html">Finding Funding Opportunities</a></li>
+        <li><a class="" href="../find-your-rdo/index.html">Find Your RDO</a></li>
+        <li><a class="active selected" href="index.html">Funding Sources</a>
+         <ul class="mobile-sub-sub">
+          <li><a href="bridge-funding.html">Bridge Funding</a></li>
+          <li><a href="equipment-funding.html">Equipment Funding </a></li>
+          <li><a href="https://research.uci.edu/research-development/funding-sources/index.html">Federal, Private, and Internal Funding Sources </a></li>
+          <li><a href="limiteds.html">Limited Submission Grant Opportunities</a></li>
+          <li><a href="young-investigators.html">Young Investigator Funding Opportunities</a></li>
+         </ul></li>
+        <li><a href="https://tsal.uci.edu/">Team Scholarship Acceleration Lab</a></li>
+        <li><a class="" href="../training-grants/index.html">Training Grants</a></li>
+       </ul></li>
+      <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="../../sponsored-projects/index.html">Sponsored Projects</a></li>
+      <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header2">
+      <div class="addthis_toolbox addthis_default_style ">
+       <a class="addthis_button_print"><img alt="Share" border="0" height="11" src="../../assets/images/icon-hdr-print.png" width="11"></a>
+      </div>
+      <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script>
+      <div class="foot"></div>
+      <h1>Federal, Private, and Internal Funding Sources </h1>
+     </div>
+     <article id="content">
+      <p><a class=" topmain" id="top"></a>?<b>Jump to:</b><br> <a href="#internal">› Internal Funding Sources</a><br> <a href="#federal">› Federal Agencies</a><br> <a href="#private">› Private Foundations</a></p> <a id="internal"></a> 
+      <h2>Internal Funding Sources</h2> 
+      <h3><a href="infrastructure/index.html" title="UCI Infrastructure Program">UCI Research Infrastructure Program</a></h3> 
+      <p>Program aims at strengthening the campus’ functional capabilities that enable cutting-edge research and discovery.&nbsp; The overall goal of the UCI Research Infrastructure Program is to support instruments and facilities that are shared among multiple investigators or those that are formally designated as Shared Facilities.</p> 
+      <p>&nbsp;</p> 
+      <h3><a href="seed-funding/index.html" title="Seed Funding Program">UCI Seed Funding: Investing to Develop Center-Scale Multidisciplinary Convergence Research Programs</a></h3> 
+      <p>Supports promising research directions where internal seed level investment can lead to externally funded center-scale research programs. Convergence refers to deep integration of knowledge bases, tools, techniques, and ways of thinking from physical sciences, life sciences, engineering, computing, social sciences and reaching out to humanities, arts, business and law to attack societal and global grand challenges.&nbsp; Accordingly, seed funding proposals are invited from multidisciplinary teams of faculty (for planning, capacity building, and research development activities), which can compete for extramural funding.</p> 
+      <p>&nbsp;</p> 
+      <h3><a href="bridge-funding.html" title="Bridge Funding">UCI Bridge Funding</a></h3> 
+      <p>Program provides one-time support to eligible Principal Investigators (PI) to assist with re-establishing external funding.&nbsp; A primary objective of the Bridge Funding program is to keep experienced research teams together while funding is re-established.</p> 
+      <h3>Institute for Clinical &amp; Translational Science (ICTS): Biomedical and Health Informatics Pilot</h3> 
+      <p>The ICTS Translational Science Pilot Grants support exceptionally innovative and/or unconventional research projects that have the potential to create or overturn fundamental paradigms. The call is an invitation to propose a translational science pilot grant that will leverage biomedical informatics tools and/or technologies.</p> 
+      <h3>Institute for Clinical &amp; Translational Science (ICTS): Pilot Award Funding</h3> 
+      <p>Program encourages early exploration of high-risk translational research ideas focused on emerging areas of basic and applied science with clear relevance to clinical application.</p> 
+      <h3>Institute for Clinical &amp; Translational Science (ICTS): Campus Community Research Award</h3> 
+      <p>The Campus-Community Research Incubator Program (CCRI) is a small grant fund mechanism designed to foster collaborative research-oriented projects between university researchers and community organizations.</p> 
+      <h3>Biological Sciences-School of Medicine Pilot Funding for Faculty Pursuing Collaborative Research</h3> 
+      <p>The purpose of this Pilot Funding Program is to foster cross-disciplinary collaborations that facilitate innovative research projects in novel areas of investigation between researchers of the Ayala School of Biological Sciences and UCI School of Medicine. This mechanism supports early stage research in any area that requires preliminary data necessary to compete for extramural funding.</p> 
+      <h3>The UCI MIND WAM Women’s Initiative: Pilot Funding</h3> 
+      <p>The purpose of the collaboration between the UCI Institute for Memory Impairments and Neurological Disorders (UCI MIND), and the Women’s Alzheimer’s Movement (WAM), is to capitalize on the research expertise within UCI MIND and across the UCI campus and to leverage this expertise to accelerate science to understand the role of sex and gender in Alzheimer’s disease and related disorders.&nbsp; Priority is given to applications for which sex and/or gender is incorporated as an independent variable and for which the probability of future federal research funding is high.</p> 
+      <h3>Academic Senate Council on Research, Computing and Library Resources (CORCL) Funding</h3> 
+      <p>The Faculty Research, Travel and Computing Committee of each School supports Academic Senate members by providing funding for research, research travel, conference travel, and computer hardware or software. Applicants may submit up to 2 proposals, but each proposal must request support from a different focus area (research, travel, or computing).</p> 
+      <h3>Hellman Fellowship Program</h3> 
+      <p>Program supports full-time Assistant Professors who have completed at least two but not more than four full years of service, and who exhibit potential for great distinction in their areas of expertise within the schools of Arts, Biological Sciences, Education, Engineering, Humanities,&nbsp;Information and Computer Sciences, Physical Sciences, Social Sciences, Social Ecology, Law or Business.</p> 
+      <h3>UCI Microbiome Initiative: Pilot Project Funding</h3> 
+      <p>Awards will provide in-kind support to analyze microbiomes from various types of samples. Staff working for the Microbiome Initiative will conduct sample preparation and molecular analysis of identified samples, and can provide advice on the experimental design, sampling protocol, type of molecular analysis, and bioinformatic analysis. UCI students, postdoctoral researchers, research staff, and faculty are eligible to submit a proposal; however, every proposal must identify a UCI faculty member that is overseeing the project.</p> 
+      <h3>UCI Humanities Commons: Collaborative Conference Grants</h3> 
+      <p>Collaborative Conference grants support academic conferences, symposia or colloquia held at UCI. These grants may also support a lecture series or works-in-progress series during a quarter or the academic year.&nbsp; A collaborative project must have at least 2 co-directors, and at least one should be a School of Humanities faculty member or a current School of Humanities lecturer who has demonstrated a commitment to fostering research on campus. Grant funds may be used for honoraria, lodging and travel expenses for invited speakers and for catering and conference supplies.</p> 
+      <h3>UCI Humanities Commons: Publication Support</h3> 
+      <p>Publication support grants are awarded to monographs, edited volumes and articles under contract with a publisher. Grant funds may be used as a subvention to the publisher or for expenses related to preparing the manuscript such as image rights, copy-editing and/or indexing.&nbsp; Academic Senate faculty with an appointment in the UCI School of Humanities are eligible to apply for a publication support grant through the Humanities Commons.&nbsp;</p> 
+      <p>&nbsp;</p> 
+      <p><a href="#top">› Back to top</a></p> <a id="federal"></a> 
+      <h2>Federal Agencies</h2> 
+      <h3><b><a href="http://www.ahrq.gov/fund/" target="_blank">Agency for Healthcare Research and Quality (AHRQ) </a></b></h3> 
+      <p>Supports research to improve the quality, safety, efficiency, and effectiveness of health care for all Americans.</p> 
+      <h3><b><a href="http://www.usaid.gov/work-usaid/get-grant-or-contract/grant-and-contract-process">Agency for International Development (USAID)</a></b></h3> 
+      <p>Supports research that is intended to produce knowledge that will offer solutions to specific development challenges including broad-based economic growth; environment; population, health and nutrition; democracy; and providing humanitarian assistance and aiding post-crisis transitions.</p> 
+      <h3><b><a href="https://www.cdc.gov/funding/" target="_blank">Center for Disease Control (CDC)</a></b></h3> 
+      <p>Provides funding to help promote health and quality of life by preventing and controlling disease, injury, and disability. Grants assist health-related and research organizations that contribute to CDC's mission through health information dissemination, preparedness, prevention, research, and surveillance.</p> 
+      <h3><b><a href="https://www.usda.gov/topics/rural/cooperative-research-and-extension-services" target="_blank">Department of Agriculture (USDA)</a></b></h3> 
+      <p>Supports food and agriculture research, including biotechnology, genomics, pest management, biofuels, and childhood obesity.</p> 
+      <h3><b><a href="http://www.commerce.gov/about-commerce/grants-contracting-trade-opportunities" target="_blank">Department of Commerce</a></b></h3> 
+      <p>Supports projects that foster economic growth and the creation of new American jobs to ensure sustainable economic opportunities.</p> 
+      <h3><b>Department of Defense</b></h3> 
+      <p>Supports basic and applied research related to the mission of each service. In addition to physics, materials, mathematics, computer science, etc., they may fund life science and psychology (e.g., human cognitive and behavioral modeling).</p> 
+      <ul type="disc"> 
+       <li><b><a href="http://www.wpafb.af.mil/Welcome/Fact-Sheets/Display/Article/842050/" target="_blank">Air Force Office of Scientific Research (AFOSR)</a></b></li> 
+       <li><b><a href="http://www.arl.army.mil/www/default.cfm?page=8" target="_blank">Army Research Laboratory (ARL)</a></b></li> 
+       <li><b><a href="http://cdmrp.army.mil/funding/" target="_blank">Congressionally Directed Medical Research Program (CDMRP)</a></b></li> 
+       <li><b><a href="https://www.darpa.mil/work-with-us/opportunities" target="_blank">Defense Advanced Research Projects Agency (DARPA)</a></b></li> 
+       <li><b><a href="http://www.dtra.mil/Research.aspx">Defense Threat Reduction Agency</a></b></li> 
+       <li><b><a href="http://www.acq.osd.mil/rd/" target="_blank">Director, Defense Research and Engineering (DDRE)</a></b></li> 
+       <li><b><a href="http://www.onr.navy.mil/02/" target="_blank">Office of Naval Research (ONR)</a></b></li> 
+      </ul> 
+      <h3><b><a href="http://www.ed.gov/fund/landing.jhtml?src=rt" target="_blank">Department of Education</a></b></h3> 
+      <p>Supports research on education from pre-school through higher education and adult education.</p> 
+      <h3><b><a href="http://science.energy.gov/grants/" title="Department of Energy">Department of Energy</a></b></h3> 
+      <p>Supports basic research related to energy, including advanced computing, biological and environmental research, basic energy sciences, high energy physics, nuclear physics, and more.</p> 
+      <h3><b><a href="http://www.rita.dot.gov/rdt/dot_research_programs.html" target="_blank">Department of Transportation</a></b></h3> 
+      <p>Supports research to bring advanced technologies to the transportation systems and funds university transportation centers.</p> 
+      <h3><b><a href="http://www.eda.gov/funding-opportunities/" title="Economic Development Administration (EDA)">Economic Development Administration (EDA)</a></b></h3> 
+      <p>Supports projects to create jobs and advance global competitiveness.</p> 
+      <h3><b><a href="http://www.epa.gov/ogd/" target="_blank">Environmental Protection Agency (EPA)</a></b></h3> 
+      <p>Supports research that will improve the scientific basis for national environmental decisions.</p> 
+      <h3><b><a href="http://www.huduser.org/portal/oup/grants.html" title="Housing and Urban Development">Housing and Urban Development</a></b></h3> 
+      <p>Supports research on housing, urban issues and policy analysis.</p> 
+      <h3><b><a href="http://www.iarpa.gov/index.php/working-with-iarpa/open-solicitations">Intelligence Advanced Research Projects Agency (IARPA)</a></b></h3> 
+      <p>Invests in high-risk, high-payoff research programs to tackle some of the most difficult challenges of the agencies and disciplines in the Intelligence Community.</p> 
+      <h3><b><a href="http://www.nasa.gov/audience/forresearchers/researchbizops/index.html" target="_blank">National Aeronautics and Space Administration (NASA)</a></b></h3> 
+      <p>Seeks to develop innovative technologies, knowledge, and infrastructures to support decisions for human exploration and to promote international and commercial participation in U.S. exploration efforts.</p> 
+      <h3><b><a href="http://arts.gov/grants">National Endowment for the Arts</a></b></h3> 
+      <p>Supports artistic excellence, creativity, and innovation for the benefit of individuals and communities.</p> 
+      <h3><b><a href="http://www.neh.gov/grants/index.html" target="_blank">National Endowment for the Humanities</a></b></h3> 
+      <p>Provides funding to strengthen teaching and learning in schools and colleges, facilitate research and original scholarship, provide opportunities for lifelong learning, preserve and provide access to cultural and educational resources, and strengthen the institutional base of the humanities.</p> 
+      <h3><b><a href="http://www.nij.gov/funding/" target="_blank">National Institute of Justice</a></b></h3> 
+      <p>Provides grants for research, development and evaluation projects relating to criminal justice and forensic laboratory enhancement. Also funds research fellowships.</p> 
+      <h3><b><a href="http://grants1.nih.gov/grants/guide/index.html" target="_blank">National Institutes of Health (NIH)</a></b></h3> 
+      <p>Supports research that increases our fundamental knowledge about the nature and behavior of living systems and the application of that knowledge to enhance health, lengthen life, and reduce the burdens of illness and disability.</p> 
+      <h3><b><a href="http://www.noaa.gov/index.html" title="National Oceanic and Atmospheric Administration (NOAA)">National Oceanic and Atmospheric Administration (NOAA)</a></b></h3> 
+      <p>Supports research on the structure and behavior of the ocean, atmosphere, and related ecosystems.</p> 
+      <h3><b><a href="http://www.nsf.gov/funding/" target="_blank">National Science Foundation (NSF)</a></b></h3> 
+      <p>Supports fundamental research and education in all the non-medical fields of science and engineering.</p> 
+      <h3><b><a href="http://www.nrc.gov/about-nrc/grants.html" target="_blank">Nuclear Regulatory Commission</a></b></h3> 
+      <p>Supports education and research on nuclear materials safety and other nuclear-related issues.</p> 
+      <h3><b><a href="http://exchanges.state.gov/grants/" target="_blank">State Department - Bureau of Educational and Cultural Affairs</a></b></h3> 
+      <p>Supports academic, cultural and professional exchange and training programs.</p> 
+      <p><a href="#top">› Back to top</a></p> <a id="private"></a> 
+      <h2>Private Foundations</h2> 
+      <h3><b><a href="http://www.sloan.org/" target="_blank">Alfred P. Sloan Foundation</a></b></h3> 
+      <p>Funds research in science and technology, standards of living and economic performance, education and careers in science and technology, and selected national issues.</p> 
+      <h3><b><a href="https://www.cancer.org/research/we-fund-cancer-research.html" target="_blank">American Cancer Society</a></b></h3> 
+      <p>Supports cancer research.</p> 
+      <h3><b><a href="http://www.mellon.org/" target="_blank">Andrew W. Mellon Foundation</a></b></h3> 
+      <p>Offers grants in higher education, scholarly communication, museums and art conservation, performing arts, information technology, and the environment.</p> 
+      <h3><b><a href="http://www.gatesfoundation.org/" title="Bill and Melinda Gates Foundation">Bill and Melinda Gates Foundation</a></b></h3> 
+      <p>Supports research in global development and health, and education in the United States.</p> 
+      <h3><a href="http://www.dreyfus.org/" title="Camille &amp; Henry Dreyfus Foundation">Camille &amp; Henry Dreyfus Foundation</a></h3> 
+      <p>The purpose of the Foundation is to advance the science of chemistry, chemical engineering and related sciences as a means of improving human relations and circumstances throughout the world.</p> 
+      <h3><b><a href="http://www.packard.org/grants/" target="_blank">David and Lucile Packard Foundation</a></b></h3> 
+      <p>Offers grants in conservation and science, population, children, families and communities.</p> 
+      <h3><b><a href="http://www.ellisonfoundation.org/index.jsp" target="_blank">Ellison Medical Foundation</a></b></h3> 
+      <p>Supports research in aging and global infectious diseases.</p> 
+      <h3><b><a href="http://www.fordfound.org/" target="_blank">Ford Foundation</a></b></h3> 
+      <p>Supports programs that strengthen democratic values, reduce poverty and injustice, promote international cooperation, and advance human achievement.</p> 
+      <h3><b><a href="http://www.hhmi.org/" target="_blank">Howard Hughes Medical Institute</a></b></h3> 
+      <p>Supports research and teaching in the biomedical sciences.</p> 
+      <h3><b><a href="http://www.hfsp.org/" target="_blank">Human Frontier Science Program</a></b></h3> 
+      <p>Research grants and fellowships in the Life Sciences.</p> 
+      <h3><b><a href="http://www.jsmf.org/" target="_blank">James S. McDonnell Foundation</a></b></h3> 
+      <p>Supports scientific research in mind/brain/behavior, complex systems, and brain cancer.</p> 
+      <h3><b><a href="http://www.macfound.org/" target="_blank">John D. and Catherine T. MacArthur Foundation</a></b></h3> 
+      <p>Funds research through four programs: global security and sustainability, human and community development, public interest media, and the MacArthur Fellows program.</p> 
+      <h3><b><a href="http://www.marchofdimes.com/professionals/691.asp" target="_blank">March of Dimes Birth Defects Foundation</a></b></h3> 
+      <p>Programs fund research into the prevention and treatment of birth defects and prematurity, including genetics, development, and social, behavioral, and environmental hazards.</p> 
+      <h3><b><a href="http://www.rwjf.org/" target="_blank">Robert Wood Johnson Foundation</a></b></h3> 
+      <p>Supports education, training and research aimed at improving health and health care in the United States.</p> 
+      <h3><b><a href="http://www.rockefellerfoundation.org/">Rockefeller Foundation</a></b></h3> 
+      <p>Funds research in agriculture, arts and culture, health, employment, housing, education, and globalization in eastern and southern Africa, southeast Asia, and North America.</p> 
+      <h3><b><a href="http://www.srf.org/" target="_blank">Smith Richardson Foundation</a></b></h3> 
+      <p>Funds research in international security, foreign policy, and domestic public policy.</p> 
+      <h3><a href="https://www.spencer.org/" title="Spencer Foundation"><b>Spencer Foundation</b></a></h3> 
+      <p>Funds research that investigates ways in which education, broadly conceived, can be improved around the world.</p> 
+      <h3><b><a href="https://www.hewlett.org/grants/" target="_blank">William and Flora Hewlett Foundation</a></b></h3> 
+      <p>Supports programs in education, environment, global development, performing arts, philanthropy, and population.</p> 
+      <h3><a href="http://www.wmkeck.org/" title="W.M. Keck Foundation"><strong>W.M. Keck Foundation</strong></a></h3> 
+      <p>The Foundation focuses on Science and Engineering Research, Medical Research, Undergraduate Education, and Southern California. Each of our grant programs invests in people and programs that are making a difference in the quality of life, now and for the future.</p> 
+      <p><a href="#top">› Back to top</a></p> 
+      <h2><b>&nbsp;</b></h2>
+     </article> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav subnavSmallH1 subnavSmallH1Two">
+     <h2><a class="folder" href="../index.html" target="_top">Research Development</a></h2>
+     <ul id="subnav">
+      <li class=""><a class="" href="../find-your-rdo/index.html" target="_top">Find Your RDO</a></li>
+      <li class=""><a class=" viewMore" href="../find-funding.html" target="_top">Finding Funding Opportunities</a></li>
+      <li class="active"><a class="active" href="index.html" target="_top">Funding Sources</a>
+       <ul class="level2 subnavArrows">
+        <li class=""><a class=" viewMore" href="https://research.uci.edu/research-development/funding-sources/index.html" target="_top">Federal, Private, and Internal Funding Sources </a></li>
+        <li class=""><a class=" viewMore" href="equipment-funding.html" target="_top">Equipment Funding </a></li>
+        <li class=""><a class=" viewMore" href="young-investigators.html" target="_top">Young Investigator Funding Opportunities</a></li>
+        <li class=""><a class=" viewMore" href="limiteds.html" target="_top">Limited Submission Grant Opportunities</a></li>
+        <li class=""><a class=" viewMore" href="bridge-funding.html" target="_top">Bridge Funding</a></li>
+       </ul></li>
+      <li class=""><a class="" href="../training-grants/index.html" target="_top">Training Grants</a></li>
+      <li class=""><a class=" viewMore" href="https://tsal.uci.edu/" target="_top">Team Scholarship Acceleration Lab</a></li>
+     </ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall"> 
+     </ul> <a class="viewmore" href="http://news.research.uci.edu/">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html>

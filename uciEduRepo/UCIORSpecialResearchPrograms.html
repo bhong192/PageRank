@@ -1,0 +1,549 @@
+<!--https://research.uci.edu/centers-institutes/special-research-programs.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>UCI OR | Special Research Programs</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../assets/js/glossary.js" type="text/javascript"></script> 
+  <script src="../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../about/contact-us.html">Contact Us</a> <a>|</a> <a href="../forms/index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../about/index.html">About the Office</a></li>
+          <li><a class="" href="index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="../era/index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../research-development/index.html">Research Development</a></li>
+          <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="../sponsored-projects/index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../index.html"><img alt="UCI Irvine" src="../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a href="../sponsored-projects/index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../research-development/index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a href="../era/index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a class="active" href="index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../facilities-services/index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../about/index.html">About the Office</a></li>
+      <li><a class="" href="index.html">Centers &amp; Institutes</a>
+       <ul class="mobile-sub-sub">
+        <li><a href="All-centers-and-institutes.html">All Centers and Institutes</a></li>
+        <li><a href="campus-centers.html">Campus Centers</a></li>
+        <li><a href="organized-research-units.html">Organized Research Units</a></li>
+        <li><a href="other-centers.html">Other Centers &amp; Institutes</a></li>
+        <li><a href="school-centers.html">School Centers</a></li>
+        <li><a class="active selected" href="special-research-programs.html">Special Research Programs</a></li>
+       </ul></li>
+      <li><a class="" href="../era/index.html">Electronic Research Administration (ERA)</a></li>
+      <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+      <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../research-development/index.html">Research Development</a></li>
+      <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="../sponsored-projects/index.html">Sponsored Projects</a></li>
+      <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header2">
+      <div class="addthis_toolbox addthis_default_style ">
+       <a class="addthis_button_print"><img alt="Share" border="0" height="11" src="../assets/images/icon-hdr-print.png" width="11"></a>
+      </div>
+      <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script>
+      <div class="foot"></div>
+      <h1>Special Research Programs</h1>
+     </div>
+     <ul class="itemListContainer centersList">
+      <li>
+       <div>
+        Special Research Programs (SRPs) exist at UC Irvine to provide a structure for collaborative research activities that do not fit the definition and purpose of an <a href="oru-guidelines.html" title="ORU Guidelines">Organized Research Unit</a>, a <a href="cc-guidelines.html" title="Campus Center Guidelines">Campus Center</a>, or a <a href="sc-guidelines.html" title="School Center Guidelines">School Center</a>. An SRP may, for example, be formed in response to a special funding opportunity, as the campus branch of a University of California research program, or as part of a federal or state governmental initiative. SRPs may be established for three or five years or, in special circumstances, an indefinite period.
+       </div><br><a class="guidelinesLink" href="srp-guidelines.html" title="Special Research Programs (SRPs)">Guidelines</a>
+       <ul class="itemList">
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>Beckman Laser Institute and Medical Clinic</h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>Beckman Laser Institute and Medical Clinic</h4>
+          <p class="website-link"><a href="http://www.bli.uci.edu/">Website</a></p>
+          <div class="center-description">
+            UCI Beckman Laser Institute &amp; Medical Clinic aims to: Discover new optics and photonics technologies for biomedical research. Create innovative, accessible methods and devices that transform healthcare. Educate the next generation of scientists, engineers and physicians. 
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>Thomas E. Milner, Ph.D.</li>
+           <li><b>Contact:</b><br>Hanna Kim | <a href="mailto:hanna.kim@uci.edu">hanna.kim@uci.edu</a> | (949).824-2251</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>California Institute for Telecommunications and Information Technology (Calit2) </h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>California Institute for Telecommunications and Information Technology (Calit2) </h4>
+          <p class="website-link"><a href="http://www.calit2.uci.edu/">Website</a></p>
+          <div class="center-description">
+           The California Institute for Telecommunications and Information Technology - known as Calit2 - is a two-campus multidisciplinary research institute.&nbsp; One of four UC Gray Davis Institutes for Science and Innovation, Calit2 divisions at UCI and UC San Diego leverage academic expertise with industry experience to conduct cutting-edge research in diverse fields. The goal: to develop innovative information technology-based products and services to benefit society and ignite economic development in the region and state.
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>G.P. Li</li>
+           <li><b>Contact:</b><br>Mark Tameta | <a href="mailto:info@calit2.uci.edu">info@calit2.uci.edu</a> | (949) 824-6900</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>Facility for Imaging and Brain Research (FIBRE)</h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>Facility for Imaging and Brain Research (FIBRE)</h4>
+          <p class="website-link"><a href="http://imaging.uci.edu/fibre/">Website</a></p>
+          <div class="center-description">
+           The Facility for Imaging and Brain Research (FIBRE), located on the ground floor of the&nbsp;Social and Behavioral Sciences Gateway,&nbsp;houses a 3T Siemens Prisma scanner, a mock scanner, and data analysis facilities. &nbsp;This research-dedicated MRI scanning facility, operated by Dr. Craig Stark, is designed to suit a wide range of basic and translational research programs by researchers across the UCI campus and beyond. The Prisma scanner&nbsp;is the outcome of a tremendous effort by both Siemens and the National Institutes of Health to develop an MRI machine that would give researchers unprecedented speed, resolution, and detail needed for such ambitious projects as the Human Connectome Project.
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>Craig Stark</li>
+           <li><b>Contact:</b><br>Patricia Silver | <a href="mailto:ppsilver@uci.edu">ppsilver@uci.edu</a> | (949) 824-0488</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>Institute for Clinical and Translational Science</h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>Institute for Clinical and Translational Science</h4>
+          <p class="website-link"><a href="http://www.icts.uci.edu/">Website</a></p>
+          <div class="center-description">
+           UC Irvine Institute for Clinical and Translational Science (ICTS) provides a clinical research home to speed up the often slow process that guides scientific discovery to clinical application.
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>Dan M. Cooper</li>
+           <li><b>Contact:</b><br>ICTS Service Center | <a href="mailto:icts@uci.edu">icts@uci.edu</a> | (949) 824-4287</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>New Swan Shakespeare Center</h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>New Swan Shakespeare Center</h4>
+          <p class="website-link"><a href="https://www.humanities.uci.edu/shakespeare/">Website</a></p>
+          <div class="center-description">
+           Shakespeare has been a part of UCI ever since Clayton Garrison directed A Midsummer Night’s Dream with the campus’s first class of drama students in 1965. Forty-seven years later, the Claire Trevor School of the Arts launched the New Swan Shakespeare Festival, which performs two plays in repertory each summer in an intimate outdoor theater modeled on an Elizabethan stage. UCI has been home to many distinguished Shakespeare scholars, including Robert Montgomery, James Calderwood and Robert Weimann, and for ten years has sponsored the dynamic Group for the Study of Early Cultures. The UCI New Swan Shakespeare Center will build on existing partnerships between Arts and Humanities by developing broad-based, research-driven programming that cultivates the forms of embodied speech, imaginative response and historical reckoning that constitute drama as an art form. Under the leadership of Julia Reinhard Lupton, Professor of English and a Trustee of the Shakespeare Association of America, and Eli Simon, Chancellor’s Professor of Drama and Artistic Director of the New Swan Shakespeare Festival, the Center aims to make UCI the premier institution in California for the integrated production, study and enjoyment of Shakespeare.
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>Julia Lupton</li>
+           <li><b>Co-Director(s):</b><br>Eli Simon</li>
+           <li><b>Contact:</b><br>Angelica Enriquez | <a href="mailto:enriquea@uci.edu">enriquea@uci.edu</a> | (949) 824-1662</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>Thesaurus Linguae Graecae</h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>Thesaurus Linguae Graecae</h4>
+          <p class="website-link"><a href="http://www.tlg.uci.edu/">Website</a></p>
+          <div class="center-description">
+           Founded in 1972 the TLG represents the first effort in the Humanities to produce a large digital corpus of literary texts. Since its inception the project has collected and digitized most texts written in Greek from Homer (8 c. B.C.) to the fall of Byzantium in AD 1453 and beyond. Its goal is to create a comprehensive digital library of Greek literature from antiquity to the present era. TLG research activities combine the traditional methodologies of philological and literary study with the most advanced features of information technology.
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>Maria Pantelia</li>
+           <li><b>Contact:</b><br>Anna Lemikis | <a href="mailto:tlg@uci.edu">tlg@uci.edu</a> | (949) 824-7031</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>UCI-NATURE</h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>UCI-NATURE</h4>
+          <p class="website-link"><a href="">Website</a></p>
+          <div class="center-description">
+           UC Irvine is fortunate to have a number of outstanding facilities for field-based outreach, teaching and research. Within the UCI Office of Research and under the direct responsibility of UCI-NATURE are three UC Natural Reserve System sites (San Joaquin Marsh Reserve located on campus; Burns-Piñon Ridge Reserve located three hours from campus; and Steele/Burnand Anza Borrego Desert Research Center located three hours from campus, and also three hours from Burns-Piñon Ridge Reserve) and the UCI Ecological Preserve (on campus). UCI-NATURE is also responsible for maintaining a partnership with the Crystal Cove Alliance for the shared use of a Research Cottage within Crystal Cove State Park. Finally, UCI-NATURE will play a role in coordinating the management of the Greenhouse, Arboretum and Herbarium (on campus) that are each held within the School of Biological Sciences.
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>Kailen Mooney</li>
+           <li><b>Contact:</b><br>Kailen Mooney | <a href="mailto:mooneyk@uci.edu">mooneyk@uci.edu</a> | (949) 824-7852</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+        <li>
+         <div class="closed" onclick="showAndHideLast( this );">
+          <div class="right">
+            + 
+          </div>
+          <h4>University of California Humanities Research Institute</h4>
+         </div>
+         <div class="open" onclick="$(this).prev().slideToggle(); $(this).slideToggle();">
+          <div class="right">
+            - 
+          </div>
+          <h4>University of California Humanities Research Institute</h4>
+          <p class="website-link"><a href="http://uchri.org/">Website</a></p>
+          <div class="center-description">
+           Based on the UC Irvine campus, UCHRI serves all ten campuses in the UC system, interacting with UC campus humanities centers, other campus research centers, and with individual faculty to promote collaborative, interdisciplinary humanities research and pedagogy throughout the University of California system and within the larger communities they inhabit. Through the administration of its own funding programs and those of the UC Humanities Network, UCHRI supports and showcases fellows, working groups, seminars, conferences, workshops and other research formations, on topics traditional to the humanities in disciplines such as literature, philosophy, classics, languages, and history, as well as the pressing human dimensions that arise in the social and natural sciences, technology, art, medicine, and the professions. Stressing interdisciplinary research, UCHRI bridges gaps between disciplines across the humanities and human sciences and seeks to overcome the intellectual and institutional barriers that can separate the humanities from other fields.
+          </div>
+          <ul class="contacts">
+           <li><b>Director(s):</b><br>David Theo Goldberg</li>
+           <li><b>Contact:</b><br>Ariel Read | <a href="mailto:uchri@uci.edu">uchri@uci.edu</a> | (949) 824-8900</li>
+          </ul>
+          <br style="clear: both;">
+          <br>
+         </div></li>
+       </ul></li>
+     </ul>
+     <script type="text/javascript">
+            
+                var lastShown = null;
+                function showAndHideLast( ele ) {
+
+                    if( lastShown != null ) {
+                        console.log(( ! $(lastShown).next().is(':visible')));
+                        if( ! $(lastShown).next().is(':visible') )
+                            lastShown = null;
+                        $(lastShown).next().slideToggle();
+                        $(lastShown).slideToggle();
+                    }
+                    lastShown = ele;
+                    $(ele).next().slideToggle();
+                    $(ele).slideToggle();
+                }
+            
+        </script> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav subnavSmallH1 subnavSmallH1Two">
+     <h2><a class="folder" href="index.html" target="_top">Centers &amp; Institutes</a></h2>
+     <ul id="subnav">
+      <li class=""><a class=" viewMore" href="All-centers-and-institutes.html" target="_top">All Centers and Institutes</a></li>
+      <li class="active"><a class="active viewMore" href="special-research-programs.html" target="_top">Special Research Programs</a></li>
+      <li class=""><a class=" viewMore" href="organized-research-units.html" target="_top">Organized Research Units</a></li>
+      <li class=""><a class=" viewMore" href="campus-centers.html" target="_top">Campus Centers</a></li>
+      <li class=""><a class=" viewMore" href="other-centers.html" target="_top">Other Centers &amp; Institutes</a></li>
+      <li class=""><a class=" viewMore" href="school-centers.html" target="_top">School Centers</a></li>
+     </ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall"> 
+     </ul> <a class="viewmore" href="http://news.research.uci.edu/">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html>

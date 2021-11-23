@@ -1,0 +1,308 @@
+<!--https://recportal.cpp.edu/-->
+<!doctype html>
+<html lang="en-US"> 
+ <head> 
+  <link rel="icon" href="~/favicon.ico"> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>ASI Portal</title> 
+  <link href="/Content/bootstrap-timepicker.min.css" rel="stylesheet"> 
+  <link href="/Content/bootstrap-datetimepicker.min.css" rel="stylesheet"> 
+  <link href="/Content/bootstrap-treeview.min.css" rel="stylesheet"> 
+  <link href="/Content/bootstrap-multiselect.css" rel="stylesheet"> 
+  <link href="/Content/bootstrap-switch.min.css" rel="stylesheet"> 
+  <link href="/Content/bootstrap.min.css" rel="stylesheet"> 
+  <link href="/Content/Typeahead.css" rel="stylesheet"> 
+  <link href="/Content/Site.css" rel="stylesheet"> 
+  <link href="/Content/InnosoftCSS/InnosoftFIM.css" rel="stylesheet"> 
+  <link href="/Content/InnosoftCardDisplay.css" rel="stylesheet"> 
+  <link href="/Content/font-awesome.css" rel="stylesheet"> 
+  <link href="/Content/popr.css" rel="stylesheet"> 
+  <link href="/Content/bootstrap-slider.min.css" rel="stylesheet"> 
+  <link href="/Content/bootstrap-datepicker/bootstrap-datepicker3.min.css" rel="stylesheet"> 
+  <link href="/Content/InnosoftButtonFilter.css" rel="stylesheet"> 
+  <link href="/Content/InnoSoftPlaceholderLoading.css" rel="stylesheet"> 
+  <script src="/Scripts/modernizr-2.8.3.js"></script> 
+  <script src="/Scripts/jquery-3.5.1.js"></script> 
+  <script src="/Scripts/jquery-ui-1.12.1.js"></script> 
+  <script src="/Scripts/jquery.unobtrusive-ajax.js"></script> 
+  <script src="/Scripts/jquery.validate.js"></script> 
+  <script src="/Scripts/jquery.validate.unobtrusive.js"></script> 
+  <script src="/Scripts/moment.min.js"></script> 
+  <script src="/Scripts/bootstrap-timepicker.js"></script> 
+  <script src="/Scripts/bootstrap-datepicker.js"></script> 
+  <script src="/Scripts/bootstrap-datetimepicker.js"></script> 
+  <script src="/Scripts/bootstrap-multiselect.js"></script> 
+  <script src="/Scripts/bootstrap-treeview.min.js"></script> 
+  <script src="/Scripts/bootstrap-switch.min.js"></script> 
+  <script src="/Scripts/bootstrap-slider.min.js"></script> 
+  <script src="/Scripts/GDPR-Cookie-Consent/jquery.ihavecookies.js"></script> 
+  <script src="/Scripts/bootstrap.js"></script> 
+  <script src="/Scripts/Nav.js"></script> 
+  <script src="/Scripts/respond.js"></script> 
+  <script src="/Scripts/InnosoftMain.js"></script> 
+  <script src="/Scripts/popr.min.js"></script> 
+  <script src="/Scripts/InnosoftCardDisplay.js"></script> 
+  <script src="/Scripts/InnosoftMemberSearch.js"></script> 
+  <script src="/Scripts/InnosoftGeneral.js"></script> 
+  <script src="/Scripts/InnoSoftLogin.js"></script> 
+  <script src="/Scripts/InnoSoftVirtualProgram.js"></script> 
+  <script src="/Scripts/InnoSoftMessages.js"></script> 
+  <script src="/Scripts/InnoSoftSuspension.js"></script> 
+  <script src="/Scripts/jquery.signalR-2.2.1.min.js"></script> 
+  <script src="/Scripts/InnosoftClientWaiver.js"></script> 
+  <script type="text/javascript" src="/Scripts/tinymce/jquery.tinymce.min.js"></script> 
+  <script type="text/javascript" src="/Scripts/tinymce/tinymce.js"></script> 
+  <link href="/Themes/activetheme.css" rel="stylesheet" type="text/css"> 
+  <script type="text/javascript" src="/Scripts/spin.min.js"></script> 
+  <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-50917701-1', 'auto');
+            ga('send', 'pageview');
+
+		</script> 
+ </head> 
+ <body class="bodyHomePage"> <!--SideBar--> 
+  <div class="row-offcanvas row-offcanvas-left" id="sidebar" role="navigation" aria-label="sideBarNav" tabindex="-1"> 
+   <ul class="nav nav-stacked" role="menubar" aria-label="Main Menu"> 
+    <li role="none"> <a tabindex="-1" class="sidebarLink" href="../Product/GetProducts/?productTypeCV=00000000-0000-0000-0000-000000003502" role="menuitem"> <span class="glyphicon glyphicon-list-alt sidebarlinkicon"></span> <span class="sidebarlinktext">Programs</span> </a> </li> 
+    <li role="none"> <a tabindex="-1" class="sidebarLink" href="https://recportal.cpp.edu/MultiVisitPass/GetProducts?category=24c807c0-9acc-4cdd-a375-66f7d2b43d9c" target="_self" role="menuitem"> <span class="glyphicon glyphicon-barcode sidebarlinkicon"></span> <span class="sidebarlinktext">Personal Training / Private Swim Lessons</span> </a> </li> 
+    <li role="none"> <a tabindex="-1" class="sidebarLink" href="https://recportal.cpp.edu/Membership/GetMembershipSummary?membershipProductId=c1bf7e03-1824-49c1-845a-a278e2548e1e" target="_self" role="menuitem"> <span class="glyphicon glyphicon-user sidebarlinkicon"></span> <span class="sidebarlinktext">IM All Access Pass</span> </a> </li> 
+    <li role="none"> <a tabindex="-1" class="sidebarLink" href="../IMLeague" target="_self" role="menuitem"> <span class="glyphicon glyphicon-bullhorn sidebarlinkicon"></span> <span class="sidebarlinktext">Create/Join an IM Team</span> </a> </li> 
+    <li role="none"> <a tabindex="-1" class="sidebarLink" href="https://recportal.cpp.edu/Membership/" target="_self" role="menuitem"> <span class="glyphicon glyphicon-th-list sidebarlinkicon"></span> <span class="sidebarlinktext">Memberships</span> </a> </li> 
+   </ul> 
+   <ul class="nav nav-stacked SocialShareBtn"> 
+    <li> <a onclick="ShowSocial()"> <span class="glyphicon glyphicon-share sidebarlinkColor sidebarlinkicon"></span> <span class="sidebarlinktext sidebarlinkColor">Share</span> </a> </li> 
+   </ul> 
+  </div> <!--/SideBar--> 
+  <script type="text/javascript">
+    $('.fmOptions').on('show.bs.collapse', function () {
+        $(this).siblings('.fmOptions').find('#glyphExpand').removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+	});
+
+	$('.fmOptions').on('hide.bs.collapse', function () {
+        $(this).siblings('.fmOptions').find('#glyphExpand').removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+	});
+</script> 
+  <header class="container-fluid HeaderBar HeaderBarBg"> <a id="skipLink" class="skip-main" href="#mainContent" onkeydown="enterSkipToMain()">Skip to main content</a> 
+   <div id="ecHeader" class="editableCustomContent row" data-id="00000000-0000-0000-0000-000000004189"> 
+    <div class="container"> 
+     <div id="header-text"> 
+      <h2>ASI Portal</h2> 
+     </div> 
+    </div> 
+   </div> 
+  </header> 
+  <div class="TopBar navbar navbar-default navbar-fixed-top TopBarBG" role="banner"> 
+   <div class="navbar-header"> 
+    <div data-toggle="offcanvas" class="SideBarMenuLink SideBarMenuLinkColor" aria-expanded="false" aria-controls="sidebar" aria-label="MainMenu" onkeydown="enterToClick(event)" tabindex="0" role="button"> <span class="hamburger"></span> 
+    </div> <a href="/" class="LogoLink" id="LogoBackground" aria-label="Go to Home"> <span class="sr-only">Go to Home</span> </a> 
+    <div class="inlineBlock hidden-sm hidden-md hidden-lg pull-right"> 
+     <div class="TopBarButtonsContainer"> <a id="lnkSearch" href="#SearchCl" data-toggle="collapse" aria-label="Search" class="SearchButton TopBarButtonColor" aria-expanded="false"> <span class="glyphicon glyphicon-search"></span> </a> <a class="TopBarButtonColor LoginPartialLinks" href="/Account/Register" id="registerLink-mobile">Sign Up</a> <a href="javascript:showLogin('/');" class="TopBarButtonColor LoginPartialLinks" id="loginLink-mobile">Log In</a> 
+     </div> 
+     <div class="collapse" id="SearchCl"> 
+      <form action="/Program/Search" aria-label="Mobile" id="SearchFormXS" method="post" role="search">
+       <input name="__RequestVerificationToken" type="hidden" value="KW5h-uYy6OE7JBj3Tcl8HyQKUJEZ09g_8SQ48-E3y3pu-89tIU7s5QeZjMyTSQyru9zy5-oRJ3Afmrgqsjpoun3hpQS-YORzFOd_04xN4IY1"> 
+       <div class="input-group"> 
+        <input type="text" id="txtSearchCl" name="term" class="form-control" placeholder="Search" onkeyup="SearchKeyXS(event)" aria-label="Search box for portal" accept="false" required autocomplete="off" title="Search Programs"> <span class="input-group-btn"> <button class="btn SearchButtonColor" type="submit" onclick="SubmitSearchFormXS()" title="Search"><span class="glyphicon glyphicon-arrow-right"></span></button> </span> 
+       </div> 
+      </form> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="nav navbar-right hidden-xs"> <a class="TopBarButtonColor LoginPartialLinks" href="/Account/Register" id="registerLink">Sign Up</a> <a href="javascript:showLogin('/');" class="TopBarButtonColor LoginPartialLinks" id="loginLink">Log In</a> 
+   </div> 
+   <form action="/Program/Search" aria-label="Main" id="SearchForm" method="post" role="search">
+    <input name="__RequestVerificationToken" type="hidden" value="WaOMXk96aCqCwy0Jw2nKy-ZzINnae-f-PfAfRSrlKiE1uJ1B613yqqzPCDKfQ046oxQrdO4_kmHktV6WOsaj7ttReDHeOGF9ci05FSPHz_41"> 
+    <div id="Search" class="hidden-xs TopSearch"> 
+     <div class="form-group"> 
+      <div class="input-group"> <label class="sr-only" for="term">Search Programs</label> 
+       <input type="search" id="term" name="term" class="form-control" placeholder="Search Programs" onkeyup="SearchKey(event)" required autocomplete="off"> <span class="input-group-btn"> <button class="btn SearchButtonColor" type="submit" value="Search" onclick="SubmitSearchForm()" alt="Search" title="Search"><span class="glyphicon glyphicon-search" alt="Search"></span></button> </span> 
+      </div> 
+     </div> 
+    </div> 
+   </form> 
+  </div> 
+  <div id="main" role="main"> 
+   <div id="ecHomePage" data-id="00000000-0000-0000-0000-000000004184" class="editableCustomContent"> 
+    <div class="jumbotron front-header"> 
+     <div class="container"> 
+      <div class="slider-content"> 
+       <h1>ASI Portal</h1> 
+       <p>Welcome to the ASI Portal! View programs <a title="View our programs" href="Product/GetProducts/?productTypeCV=00000000-0000-0000-0000-000000003502">here</a>, or make a selection below.&nbsp;</p> 
+       <p></p> 
+       <p></p> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="container body-content bodyColour contentWrapPP" id="mainContent"> 
+    <div id="cookieArea"></div> 
+    <div> 
+     <div class="MenuMain row equal col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6"> <a class="Menu-Item" href="../Product/GetProducts/?productTypeCV=00000000-0000-0000-0000-000000003502"> <span class="Menu-IconImage"> <img class="img-responsive" src="/Content/Images/MenuIcons/128_Registrations_v3.png" alt=""> </span> <span class="Menu-IconName">Programs</span> </a> 
+      </div> 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6"> <a class="Menu-Item" href="https://recportal.cpp.edu/MultiVisitPass/GetProducts?category=24c807c0-9acc-4cdd-a375-66f7d2b43d9c" target="_self"> <span class="Menu-IconImage"> <img class="img-responsive" src="/Content/Images/MenuIcons/128_FusionIM-Manage.png" alt=""> </span> <span class="Menu-IconName">Personal Training / Private Swim Lessons</span> </a> 
+      </div> 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6"> <a class="Menu-Item" href="https://recportal.cpp.edu/Membership/GetMembershipSummary?membershipProductId=c1bf7e03-1824-49c1-845a-a278e2548e1e" target="_self"> <span class="Menu-IconImage"> <img class="img-responsive" src="/Content/Images/MenuIcons/128_FusionIM-Rankings.png" alt=""> </span> <span class="Menu-IconName">IM All Access Pass</span> </a> 
+      </div> 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6"> <a class="Menu-Item" href="../IMLeague" target="_self"> <span class="Menu-IconImage"> <img class="img-responsive" src="/Content/Images/MenuIcons/128_Intramural_v3.png" alt=""> </span> <span class="Menu-IconName">Create/Join an IM Team</span> </a> 
+      </div> 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6"> <a class="Menu-Item" href="https://recportal.cpp.edu/Membership/" target="_self"> <span class="Menu-IconImage"> <img class="img-responsive" src="/Content/Images/MenuIcons/128_Memberships_v3.png" alt=""> </span> <span class="Menu-IconName">Memberships</span> </a> 
+      </div> 
+     </div> 
+     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 CalendarOuter"> 
+      <div class="NewsHeader col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a data-toggle="collapse" href="#calendar" onclick="toggleAriaExpanded(this)" aria-expanded="true"> <h3 style="display: inline;">Calendar</h3> </a> 
+       <div class="pull-right dropdown dropdown-menu-right"> <button type="button" class="btn btn-primary dropdown-toggle" id="widgetButton" data-toggle="dropdown" aria-label="Select Calendar"> <span class="glyphicon glyphicon-cog"></span> </button> 
+        <ul class="dropdown-menu dropdown-menu-right CalendarMain"> 
+         <li> <button class="btn-link" onclick="CalendarChange('00000000-0000-0000-0000-000000000000')">All</button> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div id="calendar" class="CalendarMain col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse in"> 
+       <div class="delayedLoad" data-url="/Calendar/GetCalendarWidgetItems"> 
+       </div> 
+      </div> 
+      <script type="text/javascript">
+    function CalendarChange(value) {
+        $('#widgetButton').prop('disabled', true);
+        $.post("Calendar/CalendarEvents", { calendarId: value })
+		.done(function (data, status) {
+		    $("#calendar").html(data);
+		})
+        .fail(function () {
+            ShowJavascriptError('0')
+        }).
+		always(function () {
+		    $('#widgetButton').prop('disabled', false);
+		})
+    }
+</script> 
+     </div> 
+     <br> 
+    </div> <button class="cd-top btn-link" title="Scroll to Top" aria-label="Scroll to Top"><span class="glyphicon glyphicon-chevron-up" style="align-content:center"></span></button> 
+   </div> 
+   <div id="mJavascriptError" class="modal fade" tabindex="-1" role="dialog"> 
+    <div class="modal-dialog" role="document"> 
+     <div class="modal-content"> 
+      <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">×</button> 
+       <h4 class="modal-title" id="JavascriptErrorTitle">Error</h4> 
+      </div> 
+      <div class="modal-body"> 
+       <p id="JavascriptErrorDescription"></p> 
+      </div> 
+      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <input type="hidden" value="Do you want to leave this site?
+Changes you made may not be saved." id="hdn-navigate-away-message"> 
+   <div id="loading"> 
+    <div id="loadingcontent" style=""> 
+     <p id="loadingspinner" style=""> Loading... </p> 
+    </div> 
+   </div> 
+   <div id="divLoginModal"> 
+   </div> 
+   <div id="divLoginHelpModal"> 
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog"> 
+     <div class="modal-dialog" role="document"> 
+      <div class="modal-content"> 
+       <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> 
+        <h4 class="modal-title">Account Recovery</h4> 
+       </div> 
+       <div class="modal-body"> 
+        <div class="row col-lg-12" id="divHeaderMessage">
+         Enter your account email address below and select a recovery email option.
+        </div> 
+        <div class="form-group col-lg-12" id="divPasswordInput"> <label for="txtForgotEmail" id="lblForgotEmail" class="sr-only">Email Address</label> 
+         <input type="text" id="txtForgotEmail" name="txtForgotEmail" placeholder="Email Address" class="form-control"> 
+        </div> 
+        <div style="text-align: center"> <button type="button" id="btnForgotUsername" class="btn btn-primary" onclick="RequestUsername()">Recover Username</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="button" id="btnForgotPassword" class="btn btn-primary" onclick="RequestPasswordChange()">Reset Password</button> 
+        </div> 
+        <div id="divPasswordMessage" style="display:none"> 
+         <p>Please check your email to finish resetting your password</p> 
+        </div> 
+        <div id="divUsernameMessage" style="display:none"> 
+         <p>Please check your email to view your Username.</p> 
+        </div> 
+        <div id="divErrorMessage" style="display:none"> 
+         <p><strong>Error:</strong> This account cannot be found due to a problem with your email address. Please contact us for assistance.</p> 
+        </div> 
+       </div> 
+       <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal" onclick="resetPasswordModal()">Close</button> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="toastNote"></div> 
+  </div> 
+  <div class="SocialShare" role="complementary" aria-label="social media share links"> <a class="btnSocial" id="homeFacebookIcon" href="http://www.facebook.com/sharer.php?u=https://recportal.cpp.edu/" target="_blank"> <img class="img-responsive" src="/Content/Images/facebook.png" alt="Share on Facebook"> </a> <a class="btnSocial" id="homeTwitterIcon" href="https://twitter.com/share" data-count="none" data-dnt="true" target="_blank"> <img class="img-responsive" src="/Content/Images/twitter.png" alt="Share on Twitter"> </a> <a class="btnSocial" id="homeFusionMailIcon" href="mailto:?Subject=Fusion&amp;Body=https://recportal.cpp.edu/" target="_blank"> <img class="img-responsive" src="/Content/Images/email.png" alt="Share via Email"> </a> 
+  </div> 
+  <br class="clearfix"> 
+  <div id="ecContentFooter" data-id="00000000-0000-0000-0000-000000004193" class="editableCustomContent"> 
+   <div class="ecContentFooter"> 
+    <div class="container"> 
+     <div class="row"> 
+      <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12"> 
+       <h4>Join the fastest growing Recreation Portal Software!</h4> 
+      </div> 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+       <button class="btn btn-invert">EXPLORE FUSION</button>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <footer class="container-fluid FooterBar FooterBarBg"> 
+   <div id="ecFooter" class="editableCustomContent" data-id="00000000-0000-0000-0000-000000004188"> 
+    <div class="SchoolFooter"> 
+     <div class="container"> 
+      <div class="row menus"></div> 
+      <div class="footer-bottom row"> 
+       <div class="col-md-3">
+        <a href="http://asi.cpp.edu/campusrec/"> <img alt="Campus Recreation" src="../Content/Images/footer-logo.png"> </a>
+       </div> 
+       <div class="col-md-7"> 
+        <p>Copyright 2017 Associated Students Incorporated, California State Polytechnic University, Pomona. All Rights Reserved</p> 
+       </div> 
+       <div class="col-md-2 text-right social">
+        <a class="fb" href="https://www.facebook.com/cppcampusrec" target="_blank" rel="noopener noreferrer">Facebook</a> <a class="tw" href="https://twitter.com/CPPCampusRec" target="_blank" rel="noopener noreferrer">Twitter</a> <a class="ig" href="https://instagram.com/cppcampusrec/" target="_blank" rel="noopener noreferrer">Instagram</a>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="FusionFooter container"> 
+     <div class="row"> 
+      <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12"> 
+       <div class="FooterLinkGroup"> 
+        <div class="copyright copyrightTextColor"></div> <a class="FooterLink FooterLinkColor" href="/Home/Contact">Contact Us</a>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <script type="text/javascript">
+		var jsErrorMessages_Refresh = 'Error while loading data! Refresh page and try again!';
+		var jsErrorMessages_JSError = 'Error occured while loading data!';
+		var jsErrorMessages_Error = 'Error';
+		var InnosoftUrls = {
+			PriceAPI: '/api/price',
+			ProductAPI: '/api/product'
+		};
+		var InnosoftConstants = {
+			GuidEmpty: '00000000-0000-0000-0000-000000000000'
+        };
+    </script> 
+  <script src="/Scripts/InnosoftMainPost.js"></script>  
+ </body>
+</html>

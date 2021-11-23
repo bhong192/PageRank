@@ -1,0 +1,389 @@
+<!--http://spaces.lib.uci.edu/appointments/-->
+<!doctype html>
+<html lang="en"> 
+ <head> <!-- iid: 3012 --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet"> 
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="/css870/LibCal_public.min.css" rel="stylesheet"> 
+  <link href="/css870/print.min.css" rel="stylesheet" media="print"> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script>
+        window.jQuery || document.write('<script src="/js870/jquery.min.js">\x3C/script>');
+    </script> 
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+  <script>
+        jQuery.ui || document.write('<script src="/js870/jquery-ui.min.js">\x3C/script>');
+    </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script>
+        (typeof $().modal == 'function') || document.write('<script src="/js870/bootstrap.min.js">\x3C/script>');
+    </script> 
+  <script src="/js870/LibCal_public.min.js"></script> 
+  <script>
+    springSpace.dateFormat = "dddd, MMMM D, YYYY";
+    springSpace.dateShortFormat = "dddd, MMMM D, YYYY";
+    springSpace.timeFormat = "h:mma";
+    springSpace.timezone = 'America/Los_Angeles';
+    springSpace.currency = "USD";
+    springSpace.currencySymbol = "$";
+
+    springSpace.language = 'en'; // en
+    springSpace.locale = 'en-US'; // en-US
+
+    springSpace.phpTimeFormat = 'g:ia';
+
+    springSpace.bootstrapAsset = '/css870/bootstrap.min.css';
+    springSpace.publicCssAsset = '/css870/LibCal_public.min.css';
+    springSpace.adminCssAsset = '/css870/LibCal_admin.min.css';
+</script> 
+  <script>
+         var springLang  = { eq_GoToNextAvailable: "Next Available", eq_js_add_cart_btn: "Add to Cart", eq_js_add_cc_btn: "Add to Cart & Checkout", eq_js_add_eq_btn: "Add Equipment", eq_js_add_start: "All additional items must have a starting time of", eq_js_add_to_cart: "Add Item to Cart", eq_js_booking_summary_title: "Thank you!", eq_js_cart_tt: "Create a shopping cart with these space bookings, and go to equipment booking page to add more items to the cart.", eq_js_close: "Close", eq_js_date: "Change Return Date", eq_js_det_return: "Determining return time", eq_js_from: "From:", eq_js_from_det: "from", eq_js_go_to_date: "Go To Date", eq_js_isRequired: "is required!", eq_js_rem_pending: "Remove Pending Booking", eq_js_spacew_forb_multi: "Forbidden from booking same resource multiple times in a single booking.<br><br>Please only select sequential checkboxes.", eq_js_spacew_forb_single: "Forbidden from booking different resources in a single booking.", eq_js_to: "To:", eq_js_until_det: "until...", eq_start_over: "Make Another Booking", eq_unavail: "Unavailable/Padding", eq_your_book: "Your Booking" };
+    </script> 
+  <title>
+                    Make an Appointment -  -
+                Library Reservations -
+        University of California Irvine
+    </title> 
+  <style type="text/css">
+a, a:hover, a:focus {
+	outline: 0 !important;
+}
+body { 	
+	font-size:14px; 
+} 
+/* BANNER STYLES */#main-nav-banner {   	background-color: #1966A2;}#utility-nav {    	background-color:#002949;    	text-transform:uppercase;   	font-weight:500;    	font-size:12px;    	line-height:1.428457;    }#utility-nav ul {    	list-style-type: none;	padding:0;	margin:0;}#utility-nav ul li {    	float:left;    	color:white;padding:6px 16px 6px 0;    	margin:0;}#utility-nav ul li a {    	color:white;}#utility-nav-left {    	padding-left:14px;float:left;}#utility-nav-right {    	float:right;    	padding-right:24px;}#utility-nav-left ul#utility-nav-left-locations {    	display:none;    	background-color:#ffffff;    	border:1px solid #e7e7e7;    	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);    	position:absolute;    	z-index:1000;    	text-transform: uppercase;    	padding:10px;    	margin:0;}#utility-nav-left ul#utility-nav-left-locations li a {    	color:#000000;}#utility-nav-left ul#utility-nav-left-locations li {    	float:none;}#utility-nav-left-location-toggle {    	cursor: pointer;}#banner {    	float: left;    	max-width: 40%;    	padding: 0 0 0 15px;    	border: none;} #utility-nav ul li a { 	margin:0;	padding:0;} #locations_dropdown_menu a:hover,#locations_dropdown_menu a:focus {    	outline: 1px dotted black;} #utility-nav-left li ul.dropdown-menu {     	border:1px #e7e7e7 solid;}#utility-nav-left li ul.dropdown-menu li {     	font-size: 12px;    	padding: 6px 16px 6px 10px;     	line-height:20px;}#utility-nav-left li.open a {    	color: #000000;}.nav > li > a:hover, .nav > li > a:focus {     	background-color: transparent !important;	text-decoration:none !important;}#locations_dropdown, #locations_dropdown:focus, #locations_dropdown:active, #locations_dropdown:hover {    	background-color: #002949 !important;    	color: white !important;} #navbar-mobile-menu button {    margin: 16px auto 0;    padding: 0;}#utility-main-nav-collapse {    background-color: #1a66a1;    border: medium none;    border-radius: 0;    color: white;}#menu-row-mobile a { 	text-decoration: none;}#menu-row-mobile ul { 	padding:0px; 	margin:0px;}#menu-row-mobile ul li{	list-style-type: none;}#menu-row-mobile li:hover {	cursor:pointer;}#main-nav-mobile {	background-color:#1966A2;}.main-nav-mobile-heading {	color:white;	margin:0px;	padding:0px;	padding-left:32px;	font-size:24px;	width:100%;	text-align: left;}.main-nav-mobile-heading:hover {	color:white;}#main-nav-mobile li {	line-height:72px;}.main-nav-mobile-submenu {	background-color:white;	line-height:40px;}.main-nav-mobile-submenu li {	border-left:white solid 5px;}.main-nav-mobile-submenu li a {	padding:0px;	margin:0px;}.main-nav-mobile-submenu li:hover {	border-left:#fcd02f solid 5px;	color:#0D5186;	background-color: white !important;}.main-nav-mobile-submenu li {	padding-left:32px;}#main-nav-mobile li ul li a {	color:#011A2E;}.mobile-main-nav-angle {	float:right;	padding-right:60px;}.mobile-utility-nav-angle {	float:right;	padding-right:30px;}#utility-nav-mobile {	background-color:#002949;	text-transform: uppercase;}#utility-nav-mobile-locations {	width:100%; 	font-size:16px;}#utility-nav-mobile a {	color:white;}#utility-nav-mobile .btn {	color:white;	text-align: left;	padding:0px;	margin:0px;}#utility-nav-mobile li {	line-height:50px;	padding-left:32px;}#utility-nav-mobile-submenu-locations ul li {	color:white;}/* end for mobile utility and main menu *//* arrow toggles */#mobile-angle-down-find {	display:inline-block;}#mobile-angle-left-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-find {	display:inline-block;}#mobile-angle-down-services {	display:inline-block;}#mobile-angle-left-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-services {	display:inline-block;}#mobile-angle-down-about {	display:inline-block;}#mobile-angle-left-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-about {	display:inline-block;}#mobile-angle-down-help {	display:inline-block;}#mobile-angle-left-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-help {	display:inline-block;}#mobile-angle-down-locations {	display:inline-block;}#mobile-angle-left-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-down-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-left-locations {	display:inline-block;}.center-block {    margin-top: 16px;}#s-lc-public-footer {		background-color:#002949;		color:#cae1f5;margin-left:-15px;margin-right:-15px;}#s-lc-public-footer a, #s-lc-public-footer a:visited {		color:white;}#s-lc-public-footer .s-lc-text-greyout {		color:#f5f5f5;}/* Small Devices, Tablets */@media only screen and (max-width : 768px) {	     #navbar-mobile {          height:60px;          background-color:#1A66A1;          border-bottom:1px solid #ffffff;     }     #navbar-mobile-banner {          height:60px;          border-left:1px white solid;          border-right:1px white solid;     }     #navbar-mobile div {          padding:0px;          margin:0px;     } }/* Extra Small Devices, Phones */ @media only screen and (max-width : 480px) {	#utility-nav {			display:none;	}	#navbar-mobile {		display:none;	}} #cal-form .form-group:nth-child(4) { display:none; } /* hide the accessible and power icons */
+.fa-wheelchair-alt, .fa-plug { display: none; }
+
+/* hide the accessible and power filters */
+#s-lc-accessible_container, #s-lc-powered_container { display: none; }
+
+/* hide the accessible and power info on a space page */
+.s-lc-section-description p:last-child { display: none; } </style> 
+ </head> 
+ <body id="app_landing" class="s-lc-public s-lc-public-page-5"> <a id="s-lc-public-skiplink" class="s-lc-skiplink alert-info" href="#s-lc-public-pt">Skip to Main Content</a> 
+  <div id="s-lc-public-cust-header" role="banner">
+   <!-- BEGIN MOBILE MENUS -->
+   <div class="navbar-header row visible-xs" id="navbar-mobile">
+    <div id="navbar-mobile-menu" class="col-xs-2">
+     <button class="center-block" data-target="#menu-row-mobile" data-toggle="collapse" id="utility-main-nav-collapse" type="button">MENU</button>
+    </div>
+    <div id="navbar-mobile-banner" class="text-center col-xs-8">
+     <a href="https://www.lib.uci.edu"><img alt="UCI Libraries Mobile Site" class="center-block" id="banner-mobile" src="https://www.lib.uci.edu/sites/all/images/uci-lib-banner-libapps.jpg"></a>
+    </div>
+   </div>
+   <div class="row hidden-lg hidden-md collapse" id="menu-row-mobile">
+    <ul id="utility-nav-mobile"> 
+     <li> 
+      <div class="btn collapsed" data-target="#utility-nav-mobile-submenu-locations" data-toggle="collapse" id="utility-nav-mobile-locations">
+       Locations
+      </div> 
+      <div class="collapse" id="utility-nav-mobile-submenu-locations"> 
+       <ul> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+       </ul> 
+      </div> </li> 
+     <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     <li><a href="//www.lib.uci.edu/hours">Hours</a></li> 
+     <li><a href="//www.lib.uci.edu/accessibility">Accessibility</a></li> 
+     <li><a href="//www.lib.uci.edu/accounts">Accounts</a></li> 
+     <li><a href="https://partners.lib.uci.edu">Giving</a></li>
+    </ul>
+   </div><!-- END MOBILE MENUS --><!-- BEGIN INCLUDE THIS: UTILITY BAR AND BANNER -->
+   <div id="utility-nav" class="container hidden-xs"> 
+    <div id="utility-nav-left"> 
+     <ul class="nav navbar-nav" id="utility-nav-left"> 
+      <li class="dropdown"><a id="locations_dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Locations <span class="caret"></span></a> 
+       <ul class="dropdown-menu" id="locations_dropdown_menu"> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+        <li><a href="//www.lib.uci.edu/gateway-study-center">Gateway Study Center</a></li> 
+       </ul> </li> 
+      <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     </ul> 
+    </div> 
+    <div id="utility-nav-right"> 
+     <ul class="nav navbar-nav"> 
+      <li><a href="https://www.lib.uci.edu/hours"><i class="fa fa-clock-o"></i> Hours</a></li> 
+      <li><a href="//www.lib.uci.edu/accessibility"><i class="fa fa-wheelchair"></i> Accessibility</a></li> 
+      <li><a href="https://www.lib.uci.edu/accounts"><i class="fa fa-user"></i> Accounts</a></li> 
+      <li><a href="https://partners.lib.uci.edu"><i class="fa fa-gift"></i> Giving</a></li> 
+     </ul> 
+    </div>
+   </div>
+   <div id="main-nav-banner" class="container hidden-xs"> 
+    <div id="banner"> <map id="banner_map" name="banner_map"> <area title="UCI Home Page" alt="UCI Home Page" coords="0,0,120,78" shape="rect" href="https://www.uci.edu"> <area title="UCI Libraries Home Page" alt="UCI Libraries Home Page" coords="121,0,400,78" shape="rect" href="https://www.lib.uci.edu"> </map> 
+     <img class="logoLink img-responsive" src="//www.lib.uci.edu/sites/all/images/uci-lib-logo_3.jpg" usemap="#banner_map" alt="Libaries home page" id="banner-image"> 
+    </div>
+   </div><!-- END INCLUDE THIS: UTILITY BAR AND BANNER -->
+  </div> 
+  <div class="container"> 
+   <div id="s-lc-public-bc" class="row"> 
+    <div class="col-md-12"> 
+     <nav aria-label="Breadcrumb"> 
+      <ol class="breadcrumb"> 
+       <li> <a href="http://www.lib.uci.edu/"> University of California Irvine </a> </li> 
+       <li class="s-lc-desktop-only"> <a href="https://spaces.lib.uci.edu"> Library Reservations </a> </li> 
+      </ol> 
+     </nav> 
+    </div> 
+   </div> 
+   <noscript> 
+    <div class="alert alert-danger" id="noscript">
+     Your browser has javascript disabled. Without javascript some functions will not work.
+    </div> 
+   </noscript> 
+   <div id="s-lc-public-title" class="row"> 
+    <div class="col-md-12"> 
+     <h1 id="s-lc-public-pt" class="s-lc-app-booking-header"> 
+      <div class="pull-left s-lc-app-booking-title">
+        Make an Appointment - 
+      </div> 
+      <div class="pull-left s-lc-app-location-select"> <select class="form-control selectpicker" name="location" id="location" data-width="170px" title="Select Location"> <option value="/appointments/in-person"> IN-PERSON </option> <option value="/appointments/virtual"> VIRTUAL (Zoom) </option> </select> 
+      </div> </h1> 
+    </div> 
+   </div> 
+   <main> 
+    <div id="s-lc-public-main" class="s-lc-public-main"> 
+     <div id="s-lc-public-page-content" class="row"> 
+      <div id="col1" class="col-md-12 center"> 
+       <p> </p>
+       <p><span style="font-size:16px;">Use "Select Location" to choose either a <strong>VIRTUAL</strong>&nbsp;<strong>(Zoom)</strong> or <strong>IN-PERSON</strong>&nbsp;one-on-on research appointment.&nbsp;</span><span style="font-size:16px;">For immediate help, use our <u><strong><a href="https://v2.libanswers.com/chati.php?hash=eb575e0dfa53b0afcac81a0ec39c6176&amp;referer=https%3A%2F%2Fwww.lib.uci.edu%2Fask-librarian-reference-services&amp;referer_title=Ask%20a%20Librarian%20(Reference%20Services)%20%7C%20UC%20Irvine%20Libraries">24/7 Chat Service</a></strong></u>.</span></p> 
+       <p></p> 
+      </div> 
+     </div> 
+    </div> 
+   </main> 
+   <footer id="s-lc-public-footer" class="s-lc-public-footer row"> 
+    <div id="s-lc-public-footer-brand"> <span title="libcal-us-1">Powered by</span> <a href="https://www.springshare.com">Springshare</a>. 
+    </div> 
+    <div id="s-lc-public-footer-rights">
+      All rights reserved. 
+    </div> 
+    <div id="s-lc-footer-support-link"> <a href="mailto:kferry@uci.edu">Report a tech support issue.</a> 
+    </div> 
+    <div id="s-lc-public-footer-admin-links" role="navigation"> <a id="s-lc-sign-in" href="https://uci.libapps.com/libapps/login.php?site_id=4298&amp;target=">Login to LibApps</a> 
+    </div> 
+    <div class="s-lc-public-footer-actions"> 
+     <div id="s-lc-language"> <select id="s-lc-language-selector" aria-label="Language Selector"> <option value="cy">Cymraeg</option> <option value="en" selected>English</option> <option value="es">español</option> <option value="fr">français</option> <option value="ga">Irish</option> <option value="sl">slovenski jezik</option> <option value="vi">Ti?ng Vi?t</option> <option value="zh">?? Zh?ngwén</option> </select> 
+     </div> 
+    </div> 
+   </footer> 
+   <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-65077063-1', 'auto');  ga('send', 'pageview');</script> 
+  </div> 
+  <script>
+        function onLocationChanged() {
+            var url = jQuery(this).val();
+            window.location = url;
+
+            return false;
+        }
+
+        jQuery(function() {
+            jQuery("#location").on("change", onLocationChanged);
+        });
+    </script>  
+ </body>
+</html><!--https://spaces.lib.uci.edu/appointments-->
+<!doctype html>
+<html lang="en"> 
+ <head> <!-- iid: 3012 --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet"> 
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="/css870/LibCal_public.min.css" rel="stylesheet"> 
+  <link href="/css870/print.min.css" rel="stylesheet" media="print"> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script>
+        window.jQuery || document.write('<script src="/js870/jquery.min.js">\x3C/script>');
+    </script> 
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+  <script>
+        jQuery.ui || document.write('<script src="/js870/jquery-ui.min.js">\x3C/script>');
+    </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script>
+        (typeof $().modal == 'function') || document.write('<script src="/js870/bootstrap.min.js">\x3C/script>');
+    </script> 
+  <script src="/js870/LibCal_public.min.js"></script> 
+  <script>
+    springSpace.dateFormat = "dddd, MMMM D, YYYY";
+    springSpace.dateShortFormat = "dddd, MMMM D, YYYY";
+    springSpace.timeFormat = "h:mma";
+    springSpace.timezone = 'America/Los_Angeles';
+    springSpace.currency = "USD";
+    springSpace.currencySymbol = "$";
+
+    springSpace.language = 'en'; // en
+    springSpace.locale = 'en-US'; // en-US
+
+    springSpace.phpTimeFormat = 'g:ia';
+
+    springSpace.bootstrapAsset = '/css870/bootstrap.min.css';
+    springSpace.publicCssAsset = '/css870/LibCal_public.min.css';
+    springSpace.adminCssAsset = '/css870/LibCal_admin.min.css';
+</script> 
+  <script>
+         var springLang  = { eq_GoToNextAvailable: "Next Available", eq_js_add_cart_btn: "Add to Cart", eq_js_add_cc_btn: "Add to Cart & Checkout", eq_js_add_eq_btn: "Add Equipment", eq_js_add_start: "All additional items must have a starting time of", eq_js_add_to_cart: "Add Item to Cart", eq_js_booking_summary_title: "Thank you!", eq_js_cart_tt: "Create a shopping cart with these space bookings, and go to equipment booking page to add more items to the cart.", eq_js_close: "Close", eq_js_date: "Change Return Date", eq_js_det_return: "Determining return time", eq_js_from: "From:", eq_js_from_det: "from", eq_js_go_to_date: "Go To Date", eq_js_isRequired: "is required!", eq_js_rem_pending: "Remove Pending Booking", eq_js_spacew_forb_multi: "Forbidden from booking same resource multiple times in a single booking.<br><br>Please only select sequential checkboxes.", eq_js_spacew_forb_single: "Forbidden from booking different resources in a single booking.", eq_js_to: "To:", eq_js_until_det: "until...", eq_start_over: "Make Another Booking", eq_unavail: "Unavailable/Padding", eq_your_book: "Your Booking" };
+    </script> 
+  <title>
+                    Make an Appointment -  -
+                Library Reservations -
+        University of California Irvine
+    </title> 
+  <style type="text/css">
+a, a:hover, a:focus {
+	outline: 0 !important;
+}
+body { 	
+	font-size:14px; 
+} 
+/* BANNER STYLES */#main-nav-banner {   	background-color: #1966A2;}#utility-nav {    	background-color:#002949;    	text-transform:uppercase;   	font-weight:500;    	font-size:12px;    	line-height:1.428457;    }#utility-nav ul {    	list-style-type: none;	padding:0;	margin:0;}#utility-nav ul li {    	float:left;    	color:white;padding:6px 16px 6px 0;    	margin:0;}#utility-nav ul li a {    	color:white;}#utility-nav-left {    	padding-left:14px;float:left;}#utility-nav-right {    	float:right;    	padding-right:24px;}#utility-nav-left ul#utility-nav-left-locations {    	display:none;    	background-color:#ffffff;    	border:1px solid #e7e7e7;    	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);    	position:absolute;    	z-index:1000;    	text-transform: uppercase;    	padding:10px;    	margin:0;}#utility-nav-left ul#utility-nav-left-locations li a {    	color:#000000;}#utility-nav-left ul#utility-nav-left-locations li {    	float:none;}#utility-nav-left-location-toggle {    	cursor: pointer;}#banner {    	float: left;    	max-width: 40%;    	padding: 0 0 0 15px;    	border: none;} #utility-nav ul li a { 	margin:0;	padding:0;} #locations_dropdown_menu a:hover,#locations_dropdown_menu a:focus {    	outline: 1px dotted black;} #utility-nav-left li ul.dropdown-menu {     	border:1px #e7e7e7 solid;}#utility-nav-left li ul.dropdown-menu li {     	font-size: 12px;    	padding: 6px 16px 6px 10px;     	line-height:20px;}#utility-nav-left li.open a {    	color: #000000;}.nav > li > a:hover, .nav > li > a:focus {     	background-color: transparent !important;	text-decoration:none !important;}#locations_dropdown, #locations_dropdown:focus, #locations_dropdown:active, #locations_dropdown:hover {    	background-color: #002949 !important;    	color: white !important;} #navbar-mobile-menu button {    margin: 16px auto 0;    padding: 0;}#utility-main-nav-collapse {    background-color: #1a66a1;    border: medium none;    border-radius: 0;    color: white;}#menu-row-mobile a { 	text-decoration: none;}#menu-row-mobile ul { 	padding:0px; 	margin:0px;}#menu-row-mobile ul li{	list-style-type: none;}#menu-row-mobile li:hover {	cursor:pointer;}#main-nav-mobile {	background-color:#1966A2;}.main-nav-mobile-heading {	color:white;	margin:0px;	padding:0px;	padding-left:32px;	font-size:24px;	width:100%;	text-align: left;}.main-nav-mobile-heading:hover {	color:white;}#main-nav-mobile li {	line-height:72px;}.main-nav-mobile-submenu {	background-color:white;	line-height:40px;}.main-nav-mobile-submenu li {	border-left:white solid 5px;}.main-nav-mobile-submenu li a {	padding:0px;	margin:0px;}.main-nav-mobile-submenu li:hover {	border-left:#fcd02f solid 5px;	color:#0D5186;	background-color: white !important;}.main-nav-mobile-submenu li {	padding-left:32px;}#main-nav-mobile li ul li a {	color:#011A2E;}.mobile-main-nav-angle {	float:right;	padding-right:60px;}.mobile-utility-nav-angle {	float:right;	padding-right:30px;}#utility-nav-mobile {	background-color:#002949;	text-transform: uppercase;}#utility-nav-mobile-locations {	width:100%; 	font-size:16px;}#utility-nav-mobile a {	color:white;}#utility-nav-mobile .btn {	color:white;	text-align: left;	padding:0px;	margin:0px;}#utility-nav-mobile li {	line-height:50px;	padding-left:32px;}#utility-nav-mobile-submenu-locations ul li {	color:white;}/* end for mobile utility and main menu *//* arrow toggles */#mobile-angle-down-find {	display:inline-block;}#mobile-angle-left-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-find {	display:inline-block;}#mobile-angle-down-services {	display:inline-block;}#mobile-angle-left-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-services {	display:inline-block;}#mobile-angle-down-about {	display:inline-block;}#mobile-angle-left-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-about {	display:inline-block;}#mobile-angle-down-help {	display:inline-block;}#mobile-angle-left-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-help {	display:inline-block;}#mobile-angle-down-locations {	display:inline-block;}#mobile-angle-left-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-down-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-left-locations {	display:inline-block;}.center-block {    margin-top: 16px;}#s-lc-public-footer {		background-color:#002949;		color:#cae1f5;margin-left:-15px;margin-right:-15px;}#s-lc-public-footer a, #s-lc-public-footer a:visited {		color:white;}#s-lc-public-footer .s-lc-text-greyout {		color:#f5f5f5;}/* Small Devices, Tablets */@media only screen and (max-width : 768px) {	     #navbar-mobile {          height:60px;          background-color:#1A66A1;          border-bottom:1px solid #ffffff;     }     #navbar-mobile-banner {          height:60px;          border-left:1px white solid;          border-right:1px white solid;     }     #navbar-mobile div {          padding:0px;          margin:0px;     } }/* Extra Small Devices, Phones */ @media only screen and (max-width : 480px) {	#utility-nav {			display:none;	}	#navbar-mobile {		display:none;	}} #cal-form .form-group:nth-child(4) { display:none; } /* hide the accessible and power icons */
+.fa-wheelchair-alt, .fa-plug { display: none; }
+
+/* hide the accessible and power filters */
+#s-lc-accessible_container, #s-lc-powered_container { display: none; }
+
+/* hide the accessible and power info on a space page */
+.s-lc-section-description p:last-child { display: none; } </style> 
+ </head> 
+ <body id="app_landing" class="s-lc-public s-lc-public-page-5"> <a id="s-lc-public-skiplink" class="s-lc-skiplink alert-info" href="#s-lc-public-pt">Skip to Main Content</a> 
+  <div id="s-lc-public-cust-header" role="banner">
+   <!-- BEGIN MOBILE MENUS -->
+   <div class="navbar-header row visible-xs" id="navbar-mobile">
+    <div id="navbar-mobile-menu" class="col-xs-2">
+     <button class="center-block" data-target="#menu-row-mobile" data-toggle="collapse" id="utility-main-nav-collapse" type="button">MENU</button>
+    </div>
+    <div id="navbar-mobile-banner" class="text-center col-xs-8">
+     <a href="https://www.lib.uci.edu"><img alt="UCI Libraries Mobile Site" class="center-block" id="banner-mobile" src="https://www.lib.uci.edu/sites/all/images/uci-lib-banner-libapps.jpg"></a>
+    </div>
+   </div>
+   <div class="row hidden-lg hidden-md collapse" id="menu-row-mobile">
+    <ul id="utility-nav-mobile"> 
+     <li> 
+      <div class="btn collapsed" data-target="#utility-nav-mobile-submenu-locations" data-toggle="collapse" id="utility-nav-mobile-locations">
+       Locations
+      </div> 
+      <div class="collapse" id="utility-nav-mobile-submenu-locations"> 
+       <ul> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+       </ul> 
+      </div> </li> 
+     <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     <li><a href="//www.lib.uci.edu/hours">Hours</a></li> 
+     <li><a href="//www.lib.uci.edu/accessibility">Accessibility</a></li> 
+     <li><a href="//www.lib.uci.edu/accounts">Accounts</a></li> 
+     <li><a href="https://partners.lib.uci.edu">Giving</a></li>
+    </ul>
+   </div><!-- END MOBILE MENUS --><!-- BEGIN INCLUDE THIS: UTILITY BAR AND BANNER -->
+   <div id="utility-nav" class="container hidden-xs"> 
+    <div id="utility-nav-left"> 
+     <ul class="nav navbar-nav" id="utility-nav-left"> 
+      <li class="dropdown"><a id="locations_dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Locations <span class="caret"></span></a> 
+       <ul class="dropdown-menu" id="locations_dropdown_menu"> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+        <li><a href="//www.lib.uci.edu/gateway-study-center">Gateway Study Center</a></li> 
+       </ul> </li> 
+      <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     </ul> 
+    </div> 
+    <div id="utility-nav-right"> 
+     <ul class="nav navbar-nav"> 
+      <li><a href="https://www.lib.uci.edu/hours"><i class="fa fa-clock-o"></i> Hours</a></li> 
+      <li><a href="//www.lib.uci.edu/accessibility"><i class="fa fa-wheelchair"></i> Accessibility</a></li> 
+      <li><a href="https://www.lib.uci.edu/accounts"><i class="fa fa-user"></i> Accounts</a></li> 
+      <li><a href="https://partners.lib.uci.edu"><i class="fa fa-gift"></i> Giving</a></li> 
+     </ul> 
+    </div>
+   </div>
+   <div id="main-nav-banner" class="container hidden-xs"> 
+    <div id="banner"> <map id="banner_map" name="banner_map"> <area title="UCI Home Page" alt="UCI Home Page" coords="0,0,120,78" shape="rect" href="https://www.uci.edu"> <area title="UCI Libraries Home Page" alt="UCI Libraries Home Page" coords="121,0,400,78" shape="rect" href="https://www.lib.uci.edu"> </map> 
+     <img class="logoLink img-responsive" src="//www.lib.uci.edu/sites/all/images/uci-lib-logo_3.jpg" usemap="#banner_map" alt="Libaries home page" id="banner-image"> 
+    </div>
+   </div><!-- END INCLUDE THIS: UTILITY BAR AND BANNER -->
+  </div> 
+  <div class="container"> 
+   <div id="s-lc-public-bc" class="row"> 
+    <div class="col-md-12"> 
+     <nav aria-label="Breadcrumb"> 
+      <ol class="breadcrumb"> 
+       <li> <a href="http://www.lib.uci.edu/"> University of California Irvine </a> </li> 
+       <li class="s-lc-desktop-only"> <a href="https://spaces.lib.uci.edu"> Library Reservations </a> </li> 
+      </ol> 
+     </nav> 
+    </div> 
+   </div> 
+   <noscript> 
+    <div class="alert alert-danger" id="noscript">
+     Your browser has javascript disabled. Without javascript some functions will not work.
+    </div> 
+   </noscript> 
+   <div id="s-lc-public-title" class="row"> 
+    <div class="col-md-12"> 
+     <h1 id="s-lc-public-pt" class="s-lc-app-booking-header"> 
+      <div class="pull-left s-lc-app-booking-title">
+        Make an Appointment - 
+      </div> 
+      <div class="pull-left s-lc-app-location-select"> <select class="form-control selectpicker" name="location" id="location" data-width="170px" title="Select Location"> <option value="/appointments/in-person"> IN-PERSON </option> <option value="/appointments/virtual"> VIRTUAL (Zoom) </option> </select> 
+      </div> </h1> 
+    </div> 
+   </div> 
+   <main> 
+    <div id="s-lc-public-main" class="s-lc-public-main"> 
+     <div id="s-lc-public-page-content" class="row"> 
+      <div id="col1" class="col-md-12 center"> 
+       <p> </p>
+       <p><span style="font-size:16px;">Use "Select Location" to choose either a <strong>VIRTUAL</strong>&nbsp;<strong>(Zoom)</strong> or <strong>IN-PERSON</strong>&nbsp;one-on-on research appointment.&nbsp;</span><span style="font-size:16px;">For immediate help, use our <u><strong><a href="https://v2.libanswers.com/chati.php?hash=eb575e0dfa53b0afcac81a0ec39c6176&amp;referer=https%3A%2F%2Fwww.lib.uci.edu%2Fask-librarian-reference-services&amp;referer_title=Ask%20a%20Librarian%20(Reference%20Services)%20%7C%20UC%20Irvine%20Libraries">24/7 Chat Service</a></strong></u>.</span></p> 
+       <p></p> 
+      </div> 
+     </div> 
+    </div> 
+   </main> 
+   <footer id="s-lc-public-footer" class="s-lc-public-footer row"> 
+    <div id="s-lc-public-footer-brand"> <span title="libcal-us-2">Powered by</span> <a href="https://www.springshare.com">Springshare</a>. 
+    </div> 
+    <div id="s-lc-public-footer-rights">
+      All rights reserved. 
+    </div> 
+    <div id="s-lc-footer-support-link"> <a href="mailto:kferry@uci.edu">Report a tech support issue.</a> 
+    </div> 
+    <div id="s-lc-public-footer-admin-links" role="navigation"> <a id="s-lc-sign-in" href="https://uci.libapps.com/libapps/login.php?site_id=4298&amp;target=">Login to LibApps</a> 
+    </div> 
+    <div class="s-lc-public-footer-actions"> 
+     <div id="s-lc-language"> <select id="s-lc-language-selector" aria-label="Language Selector"> <option value="cy">Cymraeg</option> <option value="en" selected>English</option> <option value="es">español</option> <option value="fr">français</option> <option value="ga">Irish</option> <option value="sl">slovenski jezik</option> <option value="vi">Ti?ng Vi?t</option> <option value="zh">?? Zh?ngwén</option> </select> 
+     </div> 
+    </div> 
+   </footer> 
+   <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-65077063-1', 'auto');  ga('send', 'pageview');</script> 
+  </div> 
+  <script>
+        function onLocationChanged() {
+            var url = jQuery(this).val();
+            window.location = url;
+
+            return false;
+        }
+
+        jQuery(function() {
+            jQuery("#location").on("change", onLocationChanged);
+        });
+    </script>  
+ </body>
+</html>

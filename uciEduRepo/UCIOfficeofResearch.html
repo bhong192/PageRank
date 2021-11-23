@@ -1,0 +1,1243 @@
+<!--http://www.research.uci.edu/-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0"> 
+  <title>UCI Office of Research</title> 
+  <link href="https://research.uci.edu/assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <script src="https://research.uci.edu/assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="https://research.uci.edu/assets/js/jquery.rss.js"></script> 
+  <script src="https://research.uci.edu/assets/js/moment.js"></script> 
+  <script type="text/javascript">
+    if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
+    {
+       //This user uses Internet Explorer
+       window.location = "https://research.uci.edu/index-ie.html";
+    }
+    </script> 
+  <script>$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});</script> 
+  <script>
+    jQuery(function($) {
+      $("#rss-feed2").rss("http://www.rssmix.com/u/10519859/rss.xml",
+        
+       {  
+        entryTemplate:'<div class="item"><div><span class="title2">{title}</span><br /><div class="rss-read-more"><a href="{url}">Read More...</a></div><div class="rss-date">{date}</div></div>' , limit: 3
+		
+      })
+    })
+  </script> 
+  <script>
+    jQuery(function($) {
+      $("#rss-feed1").rss("https://news.research.uci.edu/category/vcr/feed", 
+		
+       {  
+        entryTemplate:'<div class="item"><a href="{url}">{teaserImage}</a><div class="title">{title}</div><div class="rss-read-more"><a href="{url}">Read More...</a></div><div class="rss-date">{date}</div></div>' , limit: 1
+		
+		
+      })
+    })
+  </script> <!--[if lt IE 9]>
+        <script src="/https://research.uci.edu/assets/js/lib/html5shiv.js"></script>
+        <![endif]--> 
+  <style type="text/css"> 
+.home {margin:0}
+#header {
+height: 105px; 
+background-color: #0064a4;
+margin: 0 auto 4px;
+}
+
+	#header-home-left img {width: 250px; margin-left:20px; float: left; padding-top: 20px;}
+#header-right {margin-right: 40px; width: auto!important}
+#header-links a {
+color: white;
+font-weight: initial;
+}
+
+	#header-right-bottom {padding: 0
+	}
+	
+	div#homehero {
+		background: url("/assets/images/collage-of-research-hero.jpg") no-repeat;
+		background-size:cover;
+		box-shadow: inset 0 0 0 1000px rgba(120, 120, 120, 0.65);
+		text-align: center;
+		background-position: center;
+        padding:20px;
+	}
+
+	div#homehero h1 {
+		height: 85%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		font-size: 3.3em;
+		margin: 0;
+		padding: 20px;
+	}
+    
+ 
+	
+	  .home-news {
+		  max-width: 1000px; 
+		  background-color:rgba(255, 255, 255, 0.8);
+          position: relative;
+          padding:30px;
+          display:inline-block;
+	}
+	  
+	  
+div.item {
+    vertical-align: top;
+  /*  display: inline-block; */
+    text-align: left;
+    max-width: 100%;
+	margin-bottom: 25px;
+}
+
+#footer-disk div.box div {padding-top:20px}
+#footer-dsk .box {padding:0}
+		
+#rss-feed1 {display: inline-block; width: 40%; vertical-align: top}	
+
+#rss-feed2 {display: inline-block; width: 59%; vertical-align: top;}	
+		
+#rss-feed1 .title {font-size: 24px; font-weight: bold; color:#3f5771 ;}
+#rss-feed2 .title2 {font-weight:bold; color:#3f5771; font-size:1.1em;}
+	
+#rss-feed1 img {
+    width: 380px;
+    height: 253px;
+    height: auto;
+    background-color: grey;
+				}
+
+#rss-feed2 .item {padding-left: 20px;}
+#rss-feed2 img {
+    width: auto;
+    height: 90px;
+    background-color: grey;
+}
+
+
+
+.rss-date {font-size:14px; margin-top:7px};
+	
+input[type="search"] {
+      -webkit-appearance: textfield;
+    }
+
+
+div#re-search {
+    position: absolute; 
+    top:47px; 
+    right:25px;
+    }
+    
+div#re-search input{
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+div#re-search form{
+    padding: 0;
+    margin: 0;
+}
+/* Expandable search box */
+/* Note: don't change 0.8s in transition. */
+/* --------------------- */
+div#re-search input.search-text {
+    color: #222;
+	position:relative;
+	z-index:5;
+	transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+	height: 45px;
+	width: 0;
+	margin: 2px;
+	padding: 5px 0 5px 40px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 30px;
+	border: 1px solid transparent;
+	background: url('https://research.uci.edu/assets/images/mag-glass-white.svg')  no-repeat left 9px center transparent;
+    background-size:24px;
+}
+
+div#re-search input.search-text:focus {
+	z-index:3; 
+	width: 300px;
+	border: 1px solid #666;  
+	background-color: white!important;;
+	outline: none;
+	cursor:auto;
+	padding-right: 10px;
+    background: url(https://research.uci.edu/assets/images/mag-glass-black.svg)   no-repeat left 9px center transparent;
+    background-size:24px;
+}
+
+div#re-search input.search-submit {
+	position: relative;
+	z-index: 4;
+	top:17px;
+	left: 49px;
+	width: 45px;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	border-radius: 30px;
+	cursor: pointer; 
+	background: none;
+}
+
+div#re-search input.search-text::-webkit-search-cancel-button {
+    cursor:pointer;
+}
+
+div#more-news a {font-weight:bold}
+div#more-news {position:absolute; bottom: 25px; right:25px}
+#footer-mob {display:none;}
+#footer-tab {display:none;}
+div#banner p {padding: 20px 20px 0px 20px; font-size: 1.2em;}
+div#banner ul li {font-size: 1.2em; list-style:disc; line-height:150%; margin-left:90px;}    									"
+	
+@media only screen and (min-width: 600px) {
+    .styled-select {display:none}
+}
+
+@media only screen and (max-width: 600px) {
+	#rss-feed1, #rss-feed2 {width: 100%}	
+	
+	#rss-feed2 img {width: 95%; height: auto}	
+	} 	
+    
+@media only screen and (max-width: 800px) {
+#header-links a {font-size:12px} 
+}
+
+@media only screen and (max-width: 500px) {
+#home-content-container h1 {display:none}
+}
+	
+@media only screen and (max-width: 500px) {
+div#banner p {font-size: initial; padding:10px; width: auto}
+div#banner ul li {font-size: initial; padding:10px; width: auto; margin:auto;}
+}
+</style> 
+ </head> 
+ <body> 
+  <div id="home-wrapper"> 
+   <div id="header"> 
+    <div id="header-home-left"> <a href="index.html"> <img alt="UCI Irvine" src="https://research.uci.edu/assets/images/office-of-research-logo-white.svg"> </a> 
+    </div> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links"> 
+      <p> <a href="http://news.research.uci.edu">News &amp; Announcements</a> <a>|</a> <a href="about/contact-us.html">Contact Us</a> <a>|</a> <a href="forms/index.html">Applications &amp; Forms</a> <a>|</a> <a href="policy-library/index.html">Policy Library</a> <a>|</a> <a href="#services">Our Services</a> <a>|</a> <a href="/about/index.html">About</a> </p> 
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="re-search"> 
+       <form action="https://search.uci.edu/" method="get" role="search"> 
+        <input name="site" type="hidden" value="research"> 
+        <input name="client" type="hidden" value="uci_full"> 
+        <input name="proxystylesheet" type="hidden" value="uci_full"> 
+        <input name="numgm" type="hidden" value="10"> 
+        <input name="ie" type="hidden" value="UTF-8"> 
+        <input autocomplete="off" class="search-text" name="q" placeholder="Search..." type="search"> 
+       </form> 
+      </div> 
+     </div> 
+    </div> <!-- #header-search --> 
+   </div> 
+   <div id="main-navigation-mobile"> 
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div> 
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;"> 
+     <ul> 
+      <li> <a class="" href="about/index.html">About the Office</a> </li> 
+      <li> <a class="" href="centers-institutes/index.html">Centers &amp; Institutes</a> </li> 
+      <li> <a class="" href="era/index.html">Electronic Research Administration (ERA)</a> </li> 
+      <li> <a class="" href="facilities-services/index.html">Facilities &amp; Services</a> </li> 
+      <li> <a class="" href="integrity-research/index.html">Integrity in Research</a> </li> 
+      <li> <a class="" href="research-development/index.html">Research Development</a> </li> 
+      <li> <a class="" href="ref/index.html">Research Engagement &amp; Facilitation</a> </li> 
+      <li> <a class="" href="compliance/index.html">Research Protections</a> </li> 
+      <li> <a class="" href="sponsored-projects/index.html">Sponsored Projects</a> </li> 
+      <li> <a class="" href="training-education/index.html">Training &amp; Education</a> </li> 
+     </ul> 
+    </div> 
+   </div> <!-- #header --> 
+   <div id="banner" style="min-height: 80px; border: 3px #1B3D6D solid; margin: 5px 0; overflow: hidden; width:100%">
+    <img src="https://news.research.uci.edu/wp-content/uploads/2020/03/alert.png" align="left" style="width:60px;margin:10px"> 
+    <p>The Office of Research is fully operational; however, we are practicing social distancing and our offices are closed to visitors. Our staff are working remotely and can be contacted <a href="https://research.uci.edu/about/contact-us.html">by e-mail or phone.</a></p> 
+    <ul>
+     <li> For information about Research Continuity planning and updates related to the SARS-CoV-2/COVID-19 (Coronavirus ) please visit <a href="https://news.research.uci.edu/research-continuity/">https://news.research.uci.edu/research-continuity/</a></li>
+    </ul> 
+   </div> 
+   <div class="section 2" id="homehero"> 
+    <div class="home-news"> 
+     <div id="rss-feed1">
+      <span style="position: absolute;bottom: 10px;left: 33px;width: 40%; text-align: left;"> Related: <a href="https://soundcloud.com/theucipodcast/uci-podcast-how-uci-became-a-research-powerhouse">How UCI Became a Research Powerhouse </a><br><span style="font-size:.9em; font-style:Italic">(A UCI Podcast with VCR Pramod Khargonekar)</span></span>
+     </div> 
+     <div id="rss-feed2"></div> 
+     <div id="more-news"> <a href="https://news.research.uci.edu">More News? <u>Click Here</u> </a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="home-content-container" style="text-align: center; padding-bottom:50px"> 
+    <h1> <a id="services"></a>Our Services </h1> 
+    <div class="home-content" id="content-right" style="display: inline-block; float: none; text-align: left"> 
+     <div id="home-box-container"> 
+      <div class="home-box one top left-box"> 
+       <h2> <a href="about/index.html">About</a> </h2> <a href="about/vcr-office/index.html" title="VCR's Office">Office of the Vice Chancellor for Research</a> 
+       <br> <a href="about/research-admin.html" title="Research Administration"> Research Administration</a> 
+       <br> <a href="about/operations.html">Administrative Operations &amp; Research Program Services</a> 
+       <br> <a href="about/stats-facts-figures.html" title="Stats, Facts &amp; Figures">Stats, Facts &amp; Figures</a> 
+       <br> <a alt="Global Staff Directory" href="about/org-charts.html" title="Org Charts">Organizational Charts</a> 
+       <br> <a href="about/contact-us.html" title="Contact Us">All Staff Directory</a> 
+       <br> <a href="policy-library/index.html" title="Contact Us">Policy Library</a> 
+      </div> 
+     </div> 
+     <div class="
+                home-box middle two top
+            "> 
+      <h2> <a href="sponsored-projects/index.html">Sponsored Projects</a> </h2> <a href="sponsored-projects/contracts-grants-admin/index.html" title="C&amp;G Administration">Contracts &amp; Grants Administration</a> 
+      <br> <a href="sponsored-projects/clinical-trials/index.html" title="Clinical Trials">Clinical Trials</a> 
+      <br> <a href="/sponsored-projects/institutional-info.html">Institutional Information</a> 
+      <br> <a href="sponsored-projects/rates-fees/index.html" title="Rates &amp; Fees">Rates &amp; Fees</a> 
+      <br> <a href="sponsored-projects/about/staff-dept-assignment.html" title="Staff by Departmental Assignment">Staff by Departmental Assignment</a> 
+      <br> <a href="sponsored-projects/applications-forms/index.html" title="SPA Applications &amp; Forms">Applications &amp; Forms</a> 
+      <br> <a href="sponsored-projects/closeout/index.html" title="Closeout">Closeout</a> 
+     </div> 
+     <div class="
+                home-box one top right-box
+            "> 
+      <h2> <a href="compliance/index.html">Research Protections</a> </h2> 
+      <p> <a href="compliance/animalcare-use/index.html" title="Animal Care &amp; Use (IACUC)">Animal Care &amp; Use</a> (IACUC) <br> <a href="compliance/human-research-protections/index.html" title="Human Research Protections">Human Research Protections</a> (IRB) <br> <a href="compliance/hscro/index.html" title="Human Stem Cell Research">Human Stem Cell Research </a> (HSCRO) <br> <a href="compliance/biosafety.html" title="Institutional Biosafety ">Institutional Biosafety</a> (IBC) </p> 
+     </div> 
+     <div class="
+                home-box two left-box
+            "> 
+      <h2> <a href="era/index.html">Electronic Research Administration</a> </h2> 
+      <p> <a href="era/barbERA.html" title="KR Tips">Kuali Research Tips &amp; Tricks</a> <br> <a href="era/era-faq.html" title="FAQ">ERA Frequently Asked Questions</a> </p> 
+     </div> 
+     <div class="
+                home-box one middle
+            "> 
+      <h2> <a href="research-development/index.html">Research Development</a> </h2> 
+      <p> <a href="https://tsal.uci.edu" title="Team Scholarship Acceleration Lab">Team Scholarship Acceleration Lab</a> <br> <a href="research-development/find-funding.html" title="Find Funding">Find Funding</a> <br> <a href="research-development/funding-sources/index.html" title="Funding Sources">Funding Sources</a> <br> <a href="https://fundopp.uci.edu/" title="Fundopp">Limited &amp; Internal Funding Opportunities</a> <br> <a href="research-development/find-your-rdo/index.html">Research Development Officers @ UCI</a> <br> <a href="http://www.faculty.uci.edu">Faculty Profile System (FPS)</a> <br> <a href="research-development/training-grants/index.html">Training Grants</a> </p> 
+     </div> 
+     <div class="
+                home-box two right-box
+            "> 
+      <h2> <a href="ref/index.html">Research Engagement &amp; Facilitation</a> </h2> 
+      <p> <a href="ref/conflict-of-interest/index.html" title="Conflict of Interest">Conflict of Interest</a> <br> <a href="ref/export-controls/index.html" title="Export Controls">Export Controls</a> <br> <a href="ref/durc/index.html" title="Dual Use Research Concern"> Dual Use Research of Concern (DURC)</a> <br> <a href="ref/cannabis-research/index.html" title="Cannabis Research"> Cannabis Research</a> </p> 
+     </div> 
+     <div class="
+                home-box one left-box
+            "> 
+      <h2> <a href="centers-institutes/index.html">Centers &amp; Institutes</a> </h2> 
+      <p> <a href="centers-institutes/organized-research-units.html" title="ORUs">Organized Research Units</a> <br> <a href="centers-institutes/special-research-programs.html" title="SRPs">Special Research Programs</a> <br> <a href="centers-institutes/campus-centers.html" title="Campus Centers">Campus Centers</a> <br> <a href="centers-institutes/school-centers.html" title="School Centers">School Centers</a> <br> <a href="centers-institutes/other-centers.html" title="Other Centers">Other Centers &amp; Institutes</a> </p> 
+     </div> 
+     <div class="
+                home-box middle two
+            "> 
+      <h2> <a href="facilities-services/index.html">Facilities &amp; Services</a> </h2> 
+      <p> <a href="facilities-services/ular/index.html" title="University Laboratory Animal Resources (ULAR)">University Laboratory Animal Resources</a> <br> <a href="facilities-services/tmf/index.html" title="Transgenic Mouse Facilitiy">Transgenic Mouse Facility</a> <br> <a href="facilities-services/shared-facilities/index.html" title="Shared Facilities Depot">Shared Facilities Depot</a> </p> 
+     </div> 
+     <div class="
+                home-box one right-box
+            "> 
+      <h2> <a href="integrity-research/index.html">Integrity in Research</a> </h2> <a href="integrity-research/sponsor-requirements-RCR/index.html" title="Sponsor Requirements for RCR Training">Sponsor Requirements for RCR Training</a> 
+      <br> <a href="integrity-research/rcr-training/index.html" title="Training in the Responsible Conduct of Research">Training in RCR</a> 
+      <br> <a href="integrity-research/research-misconduct/index.html" title="Research Misconduct">Research Misconduct</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="cf"></div> <!-- .clearfix --> 
+   <div class="cf"></div> <!-- .clearfix --> 
+   <div class="footer-bottom" style="text-align: center; background: white; padding-top:30px"> 
+    <div id="footer-dsk" style="display: inline-block; max-width: 1000px; text-align: left"> <!--Left Outside Box--> 
+     <div class="box" style="width: 250px;"> 
+      <div> 
+       <img alt="Wordpress" src="https://research.uci.edu/assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="RSS Feed" height="25" src="https://research.uci.edu/assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Visit" src="https://research.uci.edu/assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="directions.html">Directions</a> 
+      </div> 
+     </div> <!--Left Inside Box--> 
+     <div class="box" style="width: 250px;"> 
+      <div> 
+       <img alt="Email" src="https://research.uci.edu/assets/images/icon-email.png" width="30"> <b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Call" src="https://research.uci.edu/assets/images/icon-phone.png" width="30"> <b> Contact Us: </b> <a href="https://research.uci.edu/about/contact-us.html">OR Staff Directory</a> 
+      </div> 
+     </div> <!--Right Inside Box--> 
+     <div class="box" style="width: 250px; margin-top: 0px;"> 
+      <div> 
+       <img alt="Confluence" src="https://research.uci.edu/assets/images/confluence-icon.png" width="30"> <b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Confluence" src="https://research.uci.edu/assets/images/confluence-icon.png" width="30"> <b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a> 
+      </div> 
+     </div> <!--Right Outside Box --> 
+     <div class="box" style="width: 250px; line-height: 140%;"> 
+      <div style="font-weight: bold; font-size: 12px;">
+       University of California, Irvine 
+       <br> Office of Research 
+       <br>160 Aldrich Hall 
+       <br>Irvine, CA 92697 
+      </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"> <img alt="UCI Seal" height="82" src="https://research.uci.edu/assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"> </a> 
+     </div> <!--Bottom Box--> 
+     <div class="box" style="width: 100%;"> <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2019 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix --> 
+    </div> <!-- #footer --> 
+   </div> 
+  </div> <!-- #wrapper -->  
+ </body>
+</html><!--https://research.uci.edu/index.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0"> 
+  <title>UCI Office of Research</title> 
+  <link href="https://research.uci.edu/assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <script src="https://research.uci.edu/assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="https://research.uci.edu/assets/js/jquery.rss.js"></script> 
+  <script src="https://research.uci.edu/assets/js/moment.js"></script> 
+  <script type="text/javascript">
+    if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
+    {
+       //This user uses Internet Explorer
+       window.location = "https://research.uci.edu/index-ie.html";
+    }
+    </script> 
+  <script>$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});</script> 
+  <script>
+    jQuery(function($) {
+      $("#rss-feed2").rss("http://www.rssmix.com/u/10519859/rss.xml",
+        
+       {  
+        entryTemplate:'<div class="item"><div><span class="title2">{title}</span><br /><div class="rss-read-more"><a href="{url}">Read More...</a></div><div class="rss-date">{date}</div></div>' , limit: 3
+		
+      })
+    })
+  </script> 
+  <script>
+    jQuery(function($) {
+      $("#rss-feed1").rss("https://news.research.uci.edu/category/vcr/feed", 
+		
+       {  
+        entryTemplate:'<div class="item"><a href="{url}">{teaserImage}</a><div class="title">{title}</div><div class="rss-read-more"><a href="{url}">Read More...</a></div><div class="rss-date">{date}</div></div>' , limit: 1
+		
+		
+      })
+    })
+  </script> <!--[if lt IE 9]>
+        <script src="/https://research.uci.edu/assets/js/lib/html5shiv.js"></script>
+        <![endif]--> 
+  <style type="text/css"> 
+.home {margin:0}
+#header {
+height: 105px; 
+background-color: #0064a4;
+margin: 0 auto 4px;
+}
+
+	#header-home-left img {width: 250px; margin-left:20px; float: left; padding-top: 20px;}
+#header-right {margin-right: 40px; width: auto!important}
+#header-links a {
+color: white;
+font-weight: initial;
+}
+
+	#header-right-bottom {padding: 0
+	}
+	
+	div#homehero {
+		background: url("/assets/images/collage-of-research-hero.jpg") no-repeat;
+		background-size:cover;
+		box-shadow: inset 0 0 0 1000px rgba(120, 120, 120, 0.65);
+		text-align: center;
+		background-position: center;
+        padding:20px;
+	}
+
+	div#homehero h1 {
+		height: 85%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		font-size: 3.3em;
+		margin: 0;
+		padding: 20px;
+	}
+    
+ 
+	
+	  .home-news {
+		  max-width: 1000px; 
+		  background-color:rgba(255, 255, 255, 0.8);
+          position: relative;
+          padding:30px;
+          display:inline-block;
+	}
+	  
+	  
+div.item {
+    vertical-align: top;
+  /*  display: inline-block; */
+    text-align: left;
+    max-width: 100%;
+	margin-bottom: 25px;
+}
+
+#footer-disk div.box div {padding-top:20px}
+#footer-dsk .box {padding:0}
+		
+#rss-feed1 {display: inline-block; width: 40%; vertical-align: top}	
+
+#rss-feed2 {display: inline-block; width: 59%; vertical-align: top;}	
+		
+#rss-feed1 .title {font-size: 24px; font-weight: bold; color:#3f5771 ;}
+#rss-feed2 .title2 {font-weight:bold; color:#3f5771; font-size:1.1em;}
+	
+#rss-feed1 img {
+    width: 380px;
+    height: 253px;
+    height: auto;
+    background-color: grey;
+				}
+
+#rss-feed2 .item {padding-left: 20px;}
+#rss-feed2 img {
+    width: auto;
+    height: 90px;
+    background-color: grey;
+}
+
+
+
+.rss-date {font-size:14px; margin-top:7px};
+	
+input[type="search"] {
+      -webkit-appearance: textfield;
+    }
+
+
+div#re-search {
+    position: absolute; 
+    top:47px; 
+    right:25px;
+    }
+    
+div#re-search input{
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+div#re-search form{
+    padding: 0;
+    margin: 0;
+}
+/* Expandable search box */
+/* Note: don't change 0.8s in transition. */
+/* --------------------- */
+div#re-search input.search-text {
+    color: #222;
+	position:relative;
+	z-index:5;
+	transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+	height: 45px;
+	width: 0;
+	margin: 2px;
+	padding: 5px 0 5px 40px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 30px;
+	border: 1px solid transparent;
+	background: url('https://research.uci.edu/assets/images/mag-glass-white.svg')  no-repeat left 9px center transparent;
+    background-size:24px;
+}
+
+div#re-search input.search-text:focus {
+	z-index:3; 
+	width: 300px;
+	border: 1px solid #666;  
+	background-color: white!important;;
+	outline: none;
+	cursor:auto;
+	padding-right: 10px;
+    background: url(https://research.uci.edu/assets/images/mag-glass-black.svg)   no-repeat left 9px center transparent;
+    background-size:24px;
+}
+
+div#re-search input.search-submit {
+	position: relative;
+	z-index: 4;
+	top:17px;
+	left: 49px;
+	width: 45px;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	border-radius: 30px;
+	cursor: pointer; 
+	background: none;
+}
+
+div#re-search input.search-text::-webkit-search-cancel-button {
+    cursor:pointer;
+}
+
+div#more-news a {font-weight:bold}
+div#more-news {position:absolute; bottom: 25px; right:25px}
+#footer-mob {display:none;}
+#footer-tab {display:none;}
+div#banner p {padding: 20px 20px 0px 20px; font-size: 1.2em;}
+div#banner ul li {font-size: 1.2em; list-style:disc; line-height:150%; margin-left:90px;}    									"
+	
+@media only screen and (min-width: 600px) {
+    .styled-select {display:none}
+}
+
+@media only screen and (max-width: 600px) {
+	#rss-feed1, #rss-feed2 {width: 100%}	
+	
+	#rss-feed2 img {width: 95%; height: auto}	
+	} 	
+    
+@media only screen and (max-width: 800px) {
+#header-links a {font-size:12px} 
+}
+
+@media only screen and (max-width: 500px) {
+#home-content-container h1 {display:none}
+}
+	
+@media only screen and (max-width: 500px) {
+div#banner p {font-size: initial; padding:10px; width: auto}
+div#banner ul li {font-size: initial; padding:10px; width: auto; margin:auto;}
+}
+</style> 
+ </head> 
+ <body> 
+  <div id="home-wrapper"> 
+   <div id="header"> 
+    <div id="header-home-left"> <a href="index.html"> <img alt="UCI Irvine" src="https://research.uci.edu/assets/images/office-of-research-logo-white.svg"> </a> 
+    </div> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links"> 
+      <p> <a href="http://news.research.uci.edu">News &amp; Announcements</a> <a>|</a> <a href="about/contact-us.html">Contact Us</a> <a>|</a> <a href="forms/index.html">Applications &amp; Forms</a> <a>|</a> <a href="policy-library/index.html">Policy Library</a> <a>|</a> <a href="#services">Our Services</a> <a>|</a> <a href="/about/index.html">About</a> </p> 
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="re-search"> 
+       <form action="https://search.uci.edu/" method="get" role="search"> 
+        <input name="site" type="hidden" value="research"> 
+        <input name="client" type="hidden" value="uci_full"> 
+        <input name="proxystylesheet" type="hidden" value="uci_full"> 
+        <input name="numgm" type="hidden" value="10"> 
+        <input name="ie" type="hidden" value="UTF-8"> 
+        <input autocomplete="off" class="search-text" name="q" placeholder="Search..." type="search"> 
+       </form> 
+      </div> 
+     </div> 
+    </div> <!-- #header-search --> 
+   </div> 
+   <div id="main-navigation-mobile"> 
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div> 
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;"> 
+     <ul> 
+      <li> <a class="" href="about/index.html">About the Office</a> </li> 
+      <li> <a class="" href="centers-institutes/index.html">Centers &amp; Institutes</a> </li> 
+      <li> <a class="" href="era/index.html">Electronic Research Administration (ERA)</a> </li> 
+      <li> <a class="" href="facilities-services/index.html">Facilities &amp; Services</a> </li> 
+      <li> <a class="" href="integrity-research/index.html">Integrity in Research</a> </li> 
+      <li> <a class="" href="research-development/index.html">Research Development</a> </li> 
+      <li> <a class="" href="ref/index.html">Research Engagement &amp; Facilitation</a> </li> 
+      <li> <a class="" href="compliance/index.html">Research Protections</a> </li> 
+      <li> <a class="" href="sponsored-projects/index.html">Sponsored Projects</a> </li> 
+      <li> <a class="" href="training-education/index.html">Training &amp; Education</a> </li> 
+     </ul> 
+    </div> 
+   </div> <!-- #header --> 
+   <div id="banner" style="min-height: 80px; border: 3px #1B3D6D solid; margin: 5px 0; overflow: hidden; width:100%">
+    <img src="https://news.research.uci.edu/wp-content/uploads/2020/03/alert.png" align="left" style="width:60px;margin:10px"> 
+    <p>The Office of Research is fully operational; however, we are practicing social distancing and our offices are closed to visitors. Our staff are working remotely and can be contacted <a href="https://research.uci.edu/about/contact-us.html">by e-mail or phone.</a></p> 
+    <ul>
+     <li> For information about Research Continuity planning and updates related to the SARS-CoV-2/COVID-19 (Coronavirus ) please visit <a href="https://news.research.uci.edu/research-continuity/">https://news.research.uci.edu/research-continuity/</a></li>
+    </ul> 
+   </div> 
+   <div class="section 2" id="homehero"> 
+    <div class="home-news"> 
+     <div id="rss-feed1">
+      <span style="position: absolute;bottom: 10px;left: 33px;width: 40%; text-align: left;"> Related: <a href="https://soundcloud.com/theucipodcast/uci-podcast-how-uci-became-a-research-powerhouse">How UCI Became a Research Powerhouse </a><br><span style="font-size:.9em; font-style:Italic">(A UCI Podcast with VCR Pramod Khargonekar)</span></span>
+     </div> 
+     <div id="rss-feed2"></div> 
+     <div id="more-news"> <a href="https://news.research.uci.edu">More News? <u>Click Here</u> </a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="home-content-container" style="text-align: center; padding-bottom:50px"> 
+    <h1> <a id="services"></a>Our Services </h1> 
+    <div class="home-content" id="content-right" style="display: inline-block; float: none; text-align: left"> 
+     <div id="home-box-container"> 
+      <div class="home-box one top left-box"> 
+       <h2> <a href="about/index.html">About</a> </h2> <a href="about/vcr-office/index.html" title="VCR's Office">Office of the Vice Chancellor for Research</a> 
+       <br> <a href="about/research-admin.html" title="Research Administration"> Research Administration</a> 
+       <br> <a href="about/operations.html">Administrative Operations &amp; Research Program Services</a> 
+       <br> <a href="about/stats-facts-figures.html" title="Stats, Facts &amp; Figures">Stats, Facts &amp; Figures</a> 
+       <br> <a alt="Global Staff Directory" href="about/org-charts.html" title="Org Charts">Organizational Charts</a> 
+       <br> <a href="about/contact-us.html" title="Contact Us">All Staff Directory</a> 
+       <br> <a href="policy-library/index.html" title="Contact Us">Policy Library</a> 
+      </div> 
+     </div> 
+     <div class="
+                home-box middle two top
+            "> 
+      <h2> <a href="sponsored-projects/index.html">Sponsored Projects</a> </h2> <a href="sponsored-projects/contracts-grants-admin/index.html" title="C&amp;G Administration">Contracts &amp; Grants Administration</a> 
+      <br> <a href="sponsored-projects/clinical-trials/index.html" title="Clinical Trials">Clinical Trials</a> 
+      <br> <a href="/sponsored-projects/institutional-info.html">Institutional Information</a> 
+      <br> <a href="sponsored-projects/rates-fees/index.html" title="Rates &amp; Fees">Rates &amp; Fees</a> 
+      <br> <a href="sponsored-projects/about/staff-dept-assignment.html" title="Staff by Departmental Assignment">Staff by Departmental Assignment</a> 
+      <br> <a href="sponsored-projects/applications-forms/index.html" title="SPA Applications &amp; Forms">Applications &amp; Forms</a> 
+      <br> <a href="sponsored-projects/closeout/index.html" title="Closeout">Closeout</a> 
+     </div> 
+     <div class="
+                home-box one top right-box
+            "> 
+      <h2> <a href="compliance/index.html">Research Protections</a> </h2> 
+      <p> <a href="compliance/animalcare-use/index.html" title="Animal Care &amp; Use (IACUC)">Animal Care &amp; Use</a> (IACUC) <br> <a href="compliance/human-research-protections/index.html" title="Human Research Protections">Human Research Protections</a> (IRB) <br> <a href="compliance/hscro/index.html" title="Human Stem Cell Research">Human Stem Cell Research </a> (HSCRO) <br> <a href="compliance/biosafety.html" title="Institutional Biosafety ">Institutional Biosafety</a> (IBC) </p> 
+     </div> 
+     <div class="
+                home-box two left-box
+            "> 
+      <h2> <a href="era/index.html">Electronic Research Administration</a> </h2> 
+      <p> <a href="era/barbERA.html" title="KR Tips">Kuali Research Tips &amp; Tricks</a> <br> <a href="era/era-faq.html" title="FAQ">ERA Frequently Asked Questions</a> </p> 
+     </div> 
+     <div class="
+                home-box one middle
+            "> 
+      <h2> <a href="research-development/index.html">Research Development</a> </h2> 
+      <p> <a href="https://tsal.uci.edu" title="Team Scholarship Acceleration Lab">Team Scholarship Acceleration Lab</a> <br> <a href="research-development/find-funding.html" title="Find Funding">Find Funding</a> <br> <a href="research-development/funding-sources/index.html" title="Funding Sources">Funding Sources</a> <br> <a href="https://fundopp.uci.edu/" title="Fundopp">Limited &amp; Internal Funding Opportunities</a> <br> <a href="research-development/find-your-rdo/index.html">Research Development Officers @ UCI</a> <br> <a href="http://www.faculty.uci.edu">Faculty Profile System (FPS)</a> <br> <a href="research-development/training-grants/index.html">Training Grants</a> </p> 
+     </div> 
+     <div class="
+                home-box two right-box
+            "> 
+      <h2> <a href="ref/index.html">Research Engagement &amp; Facilitation</a> </h2> 
+      <p> <a href="ref/conflict-of-interest/index.html" title="Conflict of Interest">Conflict of Interest</a> <br> <a href="ref/export-controls/index.html" title="Export Controls">Export Controls</a> <br> <a href="ref/durc/index.html" title="Dual Use Research Concern"> Dual Use Research of Concern (DURC)</a> <br> <a href="ref/cannabis-research/index.html" title="Cannabis Research"> Cannabis Research</a> </p> 
+     </div> 
+     <div class="
+                home-box one left-box
+            "> 
+      <h2> <a href="centers-institutes/index.html">Centers &amp; Institutes</a> </h2> 
+      <p> <a href="centers-institutes/organized-research-units.html" title="ORUs">Organized Research Units</a> <br> <a href="centers-institutes/special-research-programs.html" title="SRPs">Special Research Programs</a> <br> <a href="centers-institutes/campus-centers.html" title="Campus Centers">Campus Centers</a> <br> <a href="centers-institutes/school-centers.html" title="School Centers">School Centers</a> <br> <a href="centers-institutes/other-centers.html" title="Other Centers">Other Centers &amp; Institutes</a> </p> 
+     </div> 
+     <div class="
+                home-box middle two
+            "> 
+      <h2> <a href="facilities-services/index.html">Facilities &amp; Services</a> </h2> 
+      <p> <a href="facilities-services/ular/index.html" title="University Laboratory Animal Resources (ULAR)">University Laboratory Animal Resources</a> <br> <a href="facilities-services/tmf/index.html" title="Transgenic Mouse Facilitiy">Transgenic Mouse Facility</a> <br> <a href="facilities-services/shared-facilities/index.html" title="Shared Facilities Depot">Shared Facilities Depot</a> </p> 
+     </div> 
+     <div class="
+                home-box one right-box
+            "> 
+      <h2> <a href="integrity-research/index.html">Integrity in Research</a> </h2> <a href="integrity-research/sponsor-requirements-RCR/index.html" title="Sponsor Requirements for RCR Training">Sponsor Requirements for RCR Training</a> 
+      <br> <a href="integrity-research/rcr-training/index.html" title="Training in the Responsible Conduct of Research">Training in RCR</a> 
+      <br> <a href="integrity-research/research-misconduct/index.html" title="Research Misconduct">Research Misconduct</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="cf"></div> <!-- .clearfix --> 
+   <div class="cf"></div> <!-- .clearfix --> 
+   <div class="footer-bottom" style="text-align: center; background: white; padding-top:30px"> 
+    <div id="footer-dsk" style="display: inline-block; max-width: 1000px; text-align: left"> <!--Left Outside Box--> 
+     <div class="box" style="width: 250px;"> 
+      <div> 
+       <img alt="Wordpress" src="https://research.uci.edu/assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="RSS Feed" height="25" src="https://research.uci.edu/assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Visit" src="https://research.uci.edu/assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="directions.html">Directions</a> 
+      </div> 
+     </div> <!--Left Inside Box--> 
+     <div class="box" style="width: 250px;"> 
+      <div> 
+       <img alt="Email" src="https://research.uci.edu/assets/images/icon-email.png" width="30"> <b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Call" src="https://research.uci.edu/assets/images/icon-phone.png" width="30"> <b> Contact Us: </b> <a href="https://research.uci.edu/about/contact-us.html">OR Staff Directory</a> 
+      </div> 
+     </div> <!--Right Inside Box--> 
+     <div class="box" style="width: 250px; margin-top: 0px;"> 
+      <div> 
+       <img alt="Confluence" src="https://research.uci.edu/assets/images/confluence-icon.png" width="30"> <b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Confluence" src="https://research.uci.edu/assets/images/confluence-icon.png" width="30"> <b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a> 
+      </div> 
+     </div> <!--Right Outside Box --> 
+     <div class="box" style="width: 250px; line-height: 140%;"> 
+      <div style="font-weight: bold; font-size: 12px;">
+       University of California, Irvine 
+       <br> Office of Research 
+       <br>160 Aldrich Hall 
+       <br>Irvine, CA 92697 
+      </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"> <img alt="UCI Seal" height="82" src="https://research.uci.edu/assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"> </a> 
+     </div> <!--Bottom Box--> 
+     <div class="box" style="width: 100%;"> <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2019 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix --> 
+    </div> <!-- #footer --> 
+   </div> 
+  </div> <!-- #wrapper -->  
+ </body>
+</html><!--https://research.uci.edu/#services-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0"> 
+  <title>UCI Office of Research</title> 
+  <link href="https://research.uci.edu/assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <script src="https://research.uci.edu/assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="https://research.uci.edu/assets/js/jquery.rss.js"></script> 
+  <script src="https://research.uci.edu/assets/js/moment.js"></script> 
+  <script type="text/javascript">
+    if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
+    {
+       //This user uses Internet Explorer
+       window.location = "https://research.uci.edu/index-ie.html";
+    }
+    </script> 
+  <script>$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});</script> 
+  <script>
+    jQuery(function($) {
+      $("#rss-feed2").rss("http://www.rssmix.com/u/10519859/rss.xml",
+        
+       {  
+        entryTemplate:'<div class="item"><div><span class="title2">{title}</span><br /><div class="rss-read-more"><a href="{url}">Read More...</a></div><div class="rss-date">{date}</div></div>' , limit: 3
+		
+      })
+    })
+  </script> 
+  <script>
+    jQuery(function($) {
+      $("#rss-feed1").rss("https://news.research.uci.edu/category/vcr/feed", 
+		
+       {  
+        entryTemplate:'<div class="item"><a href="{url}">{teaserImage}</a><div class="title">{title}</div><div class="rss-read-more"><a href="{url}">Read More...</a></div><div class="rss-date">{date}</div></div>' , limit: 1
+		
+		
+      })
+    })
+  </script> <!--[if lt IE 9]>
+        <script src="/https://research.uci.edu/assets/js/lib/html5shiv.js"></script>
+        <![endif]--> 
+  <style type="text/css"> 
+.home {margin:0}
+#header {
+height: 105px; 
+background-color: #0064a4;
+margin: 0 auto 4px;
+}
+
+	#header-home-left img {width: 250px; margin-left:20px; float: left; padding-top: 20px;}
+#header-right {margin-right: 40px; width: auto!important}
+#header-links a {
+color: white;
+font-weight: initial;
+}
+
+	#header-right-bottom {padding: 0
+	}
+	
+	div#homehero {
+		background: url("/assets/images/collage-of-research-hero.jpg") no-repeat;
+		background-size:cover;
+		box-shadow: inset 0 0 0 1000px rgba(120, 120, 120, 0.65);
+		text-align: center;
+		background-position: center;
+        padding:20px;
+	}
+
+	div#homehero h1 {
+		height: 85%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		font-size: 3.3em;
+		margin: 0;
+		padding: 20px;
+	}
+    
+ 
+	
+	  .home-news {
+		  max-width: 1000px; 
+		  background-color:rgba(255, 255, 255, 0.8);
+          position: relative;
+          padding:30px;
+          display:inline-block;
+	}
+	  
+	  
+div.item {
+    vertical-align: top;
+  /*  display: inline-block; */
+    text-align: left;
+    max-width: 100%;
+	margin-bottom: 25px;
+}
+
+#footer-disk div.box div {padding-top:20px}
+#footer-dsk .box {padding:0}
+		
+#rss-feed1 {display: inline-block; width: 40%; vertical-align: top}	
+
+#rss-feed2 {display: inline-block; width: 59%; vertical-align: top;}	
+		
+#rss-feed1 .title {font-size: 24px; font-weight: bold; color:#3f5771 ;}
+#rss-feed2 .title2 {font-weight:bold; color:#3f5771; font-size:1.1em;}
+	
+#rss-feed1 img {
+    width: 380px;
+    height: 253px;
+    height: auto;
+    background-color: grey;
+				}
+
+#rss-feed2 .item {padding-left: 20px;}
+#rss-feed2 img {
+    width: auto;
+    height: 90px;
+    background-color: grey;
+}
+
+
+
+.rss-date {font-size:14px; margin-top:7px};
+	
+input[type="search"] {
+      -webkit-appearance: textfield;
+    }
+
+
+div#re-search {
+    position: absolute; 
+    top:47px; 
+    right:25px;
+    }
+    
+div#re-search input{
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+div#re-search form{
+    padding: 0;
+    margin: 0;
+}
+/* Expandable search box */
+/* Note: don't change 0.8s in transition. */
+/* --------------------- */
+div#re-search input.search-text {
+    color: #222;
+	position:relative;
+	z-index:5;
+	transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+	height: 45px;
+	width: 0;
+	margin: 2px;
+	padding: 5px 0 5px 40px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 30px;
+	border: 1px solid transparent;
+	background: url('https://research.uci.edu/assets/images/mag-glass-white.svg')  no-repeat left 9px center transparent;
+    background-size:24px;
+}
+
+div#re-search input.search-text:focus {
+	z-index:3; 
+	width: 300px;
+	border: 1px solid #666;  
+	background-color: white!important;;
+	outline: none;
+	cursor:auto;
+	padding-right: 10px;
+    background: url(https://research.uci.edu/assets/images/mag-glass-black.svg)   no-repeat left 9px center transparent;
+    background-size:24px;
+}
+
+div#re-search input.search-submit {
+	position: relative;
+	z-index: 4;
+	top:17px;
+	left: 49px;
+	width: 45px;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	border-radius: 30px;
+	cursor: pointer; 
+	background: none;
+}
+
+div#re-search input.search-text::-webkit-search-cancel-button {
+    cursor:pointer;
+}
+
+div#more-news a {font-weight:bold}
+div#more-news {position:absolute; bottom: 25px; right:25px}
+#footer-mob {display:none;}
+#footer-tab {display:none;}
+div#banner p {padding: 20px 20px 0px 20px; font-size: 1.2em;}
+div#banner ul li {font-size: 1.2em; list-style:disc; line-height:150%; margin-left:90px;}    									"
+	
+@media only screen and (min-width: 600px) {
+    .styled-select {display:none}
+}
+
+@media only screen and (max-width: 600px) {
+	#rss-feed1, #rss-feed2 {width: 100%}	
+	
+	#rss-feed2 img {width: 95%; height: auto}	
+	} 	
+    
+@media only screen and (max-width: 800px) {
+#header-links a {font-size:12px} 
+}
+
+@media only screen and (max-width: 500px) {
+#home-content-container h1 {display:none}
+}
+	
+@media only screen and (max-width: 500px) {
+div#banner p {font-size: initial; padding:10px; width: auto}
+div#banner ul li {font-size: initial; padding:10px; width: auto; margin:auto;}
+}
+</style> 
+ </head> 
+ <body> 
+  <div id="home-wrapper"> 
+   <div id="header"> 
+    <div id="header-home-left"> <a href="index.html"> <img alt="UCI Irvine" src="https://research.uci.edu/assets/images/office-of-research-logo-white.svg"> </a> 
+    </div> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links"> 
+      <p> <a href="http://news.research.uci.edu">News &amp; Announcements</a> <a>|</a> <a href="about/contact-us.html">Contact Us</a> <a>|</a> <a href="forms/index.html">Applications &amp; Forms</a> <a>|</a> <a href="policy-library/index.html">Policy Library</a> <a>|</a> <a href="#services">Our Services</a> <a>|</a> <a href="/about/index.html">About</a> </p> 
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="re-search"> 
+       <form action="https://search.uci.edu/" method="get" role="search"> 
+        <input name="site" type="hidden" value="research"> 
+        <input name="client" type="hidden" value="uci_full"> 
+        <input name="proxystylesheet" type="hidden" value="uci_full"> 
+        <input name="numgm" type="hidden" value="10"> 
+        <input name="ie" type="hidden" value="UTF-8"> 
+        <input autocomplete="off" class="search-text" name="q" placeholder="Search..." type="search"> 
+       </form> 
+      </div> 
+     </div> 
+    </div> <!-- #header-search --> 
+   </div> 
+   <div id="main-navigation-mobile"> 
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div> 
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;"> 
+     <ul> 
+      <li> <a class="" href="about/index.html">About the Office</a> </li> 
+      <li> <a class="" href="centers-institutes/index.html">Centers &amp; Institutes</a> </li> 
+      <li> <a class="" href="era/index.html">Electronic Research Administration (ERA)</a> </li> 
+      <li> <a class="" href="facilities-services/index.html">Facilities &amp; Services</a> </li> 
+      <li> <a class="" href="integrity-research/index.html">Integrity in Research</a> </li> 
+      <li> <a class="" href="research-development/index.html">Research Development</a> </li> 
+      <li> <a class="" href="ref/index.html">Research Engagement &amp; Facilitation</a> </li> 
+      <li> <a class="" href="compliance/index.html">Research Protections</a> </li> 
+      <li> <a class="" href="sponsored-projects/index.html">Sponsored Projects</a> </li> 
+      <li> <a class="" href="training-education/index.html">Training &amp; Education</a> </li> 
+     </ul> 
+    </div> 
+   </div> <!-- #header --> 
+   <div id="banner" style="min-height: 80px; border: 3px #1B3D6D solid; margin: 5px 0; overflow: hidden; width:100%">
+    <img src="https://news.research.uci.edu/wp-content/uploads/2020/03/alert.png" align="left" style="width:60px;margin:10px"> 
+    <p>The Office of Research is fully operational; however, we are practicing social distancing and our offices are closed to visitors. Our staff are working remotely and can be contacted <a href="https://research.uci.edu/about/contact-us.html">by e-mail or phone.</a></p> 
+    <ul>
+     <li> For information about Research Continuity planning and updates related to the SARS-CoV-2/COVID-19 (Coronavirus ) please visit <a href="https://news.research.uci.edu/research-continuity/">https://news.research.uci.edu/research-continuity/</a></li>
+    </ul> 
+   </div> 
+   <div class="section 2" id="homehero"> 
+    <div class="home-news"> 
+     <div id="rss-feed1">
+      <span style="position: absolute;bottom: 10px;left: 33px;width: 40%; text-align: left;"> Related: <a href="https://soundcloud.com/theucipodcast/uci-podcast-how-uci-became-a-research-powerhouse">How UCI Became a Research Powerhouse </a><br><span style="font-size:.9em; font-style:Italic">(A UCI Podcast with VCR Pramod Khargonekar)</span></span>
+     </div> 
+     <div id="rss-feed2"></div> 
+     <div id="more-news"> <a href="https://news.research.uci.edu">More News? <u>Click Here</u> </a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="home-content-container" style="text-align: center; padding-bottom:50px"> 
+    <h1> <a id="services"></a>Our Services </h1> 
+    <div class="home-content" id="content-right" style="display: inline-block; float: none; text-align: left"> 
+     <div id="home-box-container"> 
+      <div class="home-box one top left-box"> 
+       <h2> <a href="about/index.html">About</a> </h2> <a href="about/vcr-office/index.html" title="VCR's Office">Office of the Vice Chancellor for Research</a> 
+       <br> <a href="about/research-admin.html" title="Research Administration"> Research Administration</a> 
+       <br> <a href="about/operations.html">Administrative Operations &amp; Research Program Services</a> 
+       <br> <a href="about/stats-facts-figures.html" title="Stats, Facts &amp; Figures">Stats, Facts &amp; Figures</a> 
+       <br> <a alt="Global Staff Directory" href="about/org-charts.html" title="Org Charts">Organizational Charts</a> 
+       <br> <a href="about/contact-us.html" title="Contact Us">All Staff Directory</a> 
+       <br> <a href="policy-library/index.html" title="Contact Us">Policy Library</a> 
+      </div> 
+     </div> 
+     <div class="
+                home-box middle two top
+            "> 
+      <h2> <a href="sponsored-projects/index.html">Sponsored Projects</a> </h2> <a href="sponsored-projects/contracts-grants-admin/index.html" title="C&amp;G Administration">Contracts &amp; Grants Administration</a> 
+      <br> <a href="sponsored-projects/clinical-trials/index.html" title="Clinical Trials">Clinical Trials</a> 
+      <br> <a href="/sponsored-projects/institutional-info.html">Institutional Information</a> 
+      <br> <a href="sponsored-projects/rates-fees/index.html" title="Rates &amp; Fees">Rates &amp; Fees</a> 
+      <br> <a href="sponsored-projects/about/staff-dept-assignment.html" title="Staff by Departmental Assignment">Staff by Departmental Assignment</a> 
+      <br> <a href="sponsored-projects/applications-forms/index.html" title="SPA Applications &amp; Forms">Applications &amp; Forms</a> 
+      <br> <a href="sponsored-projects/closeout/index.html" title="Closeout">Closeout</a> 
+     </div> 
+     <div class="
+                home-box one top right-box
+            "> 
+      <h2> <a href="compliance/index.html">Research Protections</a> </h2> 
+      <p> <a href="compliance/animalcare-use/index.html" title="Animal Care &amp; Use (IACUC)">Animal Care &amp; Use</a> (IACUC) <br> <a href="compliance/human-research-protections/index.html" title="Human Research Protections">Human Research Protections</a> (IRB) <br> <a href="compliance/hscro/index.html" title="Human Stem Cell Research">Human Stem Cell Research </a> (HSCRO) <br> <a href="compliance/biosafety.html" title="Institutional Biosafety ">Institutional Biosafety</a> (IBC) </p> 
+     </div> 
+     <div class="
+                home-box two left-box
+            "> 
+      <h2> <a href="era/index.html">Electronic Research Administration</a> </h2> 
+      <p> <a href="era/barbERA.html" title="KR Tips">Kuali Research Tips &amp; Tricks</a> <br> <a href="era/era-faq.html" title="FAQ">ERA Frequently Asked Questions</a> </p> 
+     </div> 
+     <div class="
+                home-box one middle
+            "> 
+      <h2> <a href="research-development/index.html">Research Development</a> </h2> 
+      <p> <a href="https://tsal.uci.edu" title="Team Scholarship Acceleration Lab">Team Scholarship Acceleration Lab</a> <br> <a href="research-development/find-funding.html" title="Find Funding">Find Funding</a> <br> <a href="research-development/funding-sources/index.html" title="Funding Sources">Funding Sources</a> <br> <a href="https://fundopp.uci.edu/" title="Fundopp">Limited &amp; Internal Funding Opportunities</a> <br> <a href="research-development/find-your-rdo/index.html">Research Development Officers @ UCI</a> <br> <a href="http://www.faculty.uci.edu">Faculty Profile System (FPS)</a> <br> <a href="research-development/training-grants/index.html">Training Grants</a> </p> 
+     </div> 
+     <div class="
+                home-box two right-box
+            "> 
+      <h2> <a href="ref/index.html">Research Engagement &amp; Facilitation</a> </h2> 
+      <p> <a href="ref/conflict-of-interest/index.html" title="Conflict of Interest">Conflict of Interest</a> <br> <a href="ref/export-controls/index.html" title="Export Controls">Export Controls</a> <br> <a href="ref/durc/index.html" title="Dual Use Research Concern"> Dual Use Research of Concern (DURC)</a> <br> <a href="ref/cannabis-research/index.html" title="Cannabis Research"> Cannabis Research</a> </p> 
+     </div> 
+     <div class="
+                home-box one left-box
+            "> 
+      <h2> <a href="centers-institutes/index.html">Centers &amp; Institutes</a> </h2> 
+      <p> <a href="centers-institutes/organized-research-units.html" title="ORUs">Organized Research Units</a> <br> <a href="centers-institutes/special-research-programs.html" title="SRPs">Special Research Programs</a> <br> <a href="centers-institutes/campus-centers.html" title="Campus Centers">Campus Centers</a> <br> <a href="centers-institutes/school-centers.html" title="School Centers">School Centers</a> <br> <a href="centers-institutes/other-centers.html" title="Other Centers">Other Centers &amp; Institutes</a> </p> 
+     </div> 
+     <div class="
+                home-box middle two
+            "> 
+      <h2> <a href="facilities-services/index.html">Facilities &amp; Services</a> </h2> 
+      <p> <a href="facilities-services/ular/index.html" title="University Laboratory Animal Resources (ULAR)">University Laboratory Animal Resources</a> <br> <a href="facilities-services/tmf/index.html" title="Transgenic Mouse Facilitiy">Transgenic Mouse Facility</a> <br> <a href="facilities-services/shared-facilities/index.html" title="Shared Facilities Depot">Shared Facilities Depot</a> </p> 
+     </div> 
+     <div class="
+                home-box one right-box
+            "> 
+      <h2> <a href="integrity-research/index.html">Integrity in Research</a> </h2> <a href="integrity-research/sponsor-requirements-RCR/index.html" title="Sponsor Requirements for RCR Training">Sponsor Requirements for RCR Training</a> 
+      <br> <a href="integrity-research/rcr-training/index.html" title="Training in the Responsible Conduct of Research">Training in RCR</a> 
+      <br> <a href="integrity-research/research-misconduct/index.html" title="Research Misconduct">Research Misconduct</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="cf"></div> <!-- .clearfix --> 
+   <div class="cf"></div> <!-- .clearfix --> 
+   <div class="footer-bottom" style="text-align: center; background: white; padding-top:30px"> 
+    <div id="footer-dsk" style="display: inline-block; max-width: 1000px; text-align: left"> <!--Left Outside Box--> 
+     <div class="box" style="width: 250px;"> 
+      <div> 
+       <img alt="Wordpress" src="https://research.uci.edu/assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="RSS Feed" height="25" src="https://research.uci.edu/assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Visit" src="https://research.uci.edu/assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="directions.html">Directions</a> 
+      </div> 
+     </div> <!--Left Inside Box--> 
+     <div class="box" style="width: 250px;"> 
+      <div> 
+       <img alt="Email" src="https://research.uci.edu/assets/images/icon-email.png" width="30"> <b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Call" src="https://research.uci.edu/assets/images/icon-phone.png" width="30"> <b> Contact Us: </b> <a href="https://research.uci.edu/about/contact-us.html">OR Staff Directory</a> 
+      </div> 
+     </div> <!--Right Inside Box--> 
+     <div class="box" style="width: 250px; margin-top: 0px;"> 
+      <div> 
+       <img alt="Confluence" src="https://research.uci.edu/assets/images/confluence-icon.png" width="30"> <b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a> 
+      </div> 
+      <div style="margin: 20px 0 0 0;"> 
+       <img alt="Confluence" src="https://research.uci.edu/assets/images/confluence-icon.png" width="30"> <b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a> 
+      </div> 
+     </div> <!--Right Outside Box --> 
+     <div class="box" style="width: 250px; line-height: 140%;"> 
+      <div style="font-weight: bold; font-size: 12px;">
+       University of California, Irvine 
+       <br> Office of Research 
+       <br>160 Aldrich Hall 
+       <br>Irvine, CA 92697 
+      </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"> <img alt="UCI Seal" height="82" src="https://research.uci.edu/assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"> </a> 
+     </div> <!--Bottom Box--> 
+     <div class="box" style="width: 100%;"> <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2019 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix --> 
+    </div> <!-- #footer --> 
+   </div> 
+  </div> <!-- #wrapper -->  
+ </body>
+</html>

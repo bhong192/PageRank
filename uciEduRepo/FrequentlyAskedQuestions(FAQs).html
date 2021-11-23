@@ -1,0 +1,471 @@
+<!--https://research.uci.edu/era/era-faq.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>Frequently Asked Questions (FAQs)</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../assets/js/glossary.js" type="text/javascript"></script> 
+  <script src="../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../about/contact-us.html">Contact Us</a> <a>|</a> <a href="../forms/index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../about/index.html">About the Office</a></li>
+          <li><a class="" href="../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../research-development/index.html">Research Development</a></li>
+          <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="../sponsored-projects/index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../index.html"><img alt="UCI Irvine" src="../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a href="../sponsored-projects/index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../research-development/index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a class="active" href="index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a href="../centers-institutes/index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../facilities-services/index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../about/index.html">About the Office</a></li>
+      <li><a class="" href="../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+      <li><a class="" href="index.html">Electronic Research Administration (ERA)</a>
+       <ul class="mobile-sub-sub">
+        <li><a class="active selected" href="era-faq.html">Frequently Asked Questions (FAQs)</a></li>
+        <li><a href="kr_protocols_faqs.html">KR Protocols FAQs</a></li>
+        <li><a href="barbERA.html">KR Tips from barbERA</a></li>
+        <li><a class="" href="kuali-research/index.html">Kuali Research (KR)</a>
+         <ul class="mobile-sub-sub">
+          <li><a class="" href="kuali-research/kr-pd/index.html">KR Proposal Development</a></li>
+          <li><a href="kuali-research/kr_award.html">Welcome to the Kuali Research (KR) Info Site</a></li>
+         </ul></li>
+        <li><a href="mailto:era@research.uci.edu">Need Help? Contact ERA</a></li>
+        <li><a href="support.html">User Support</a></li>
+       </ul></li>
+      <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+      <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../research-development/index.html">Research Development</a></li>
+      <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="../sponsored-projects/index.html">Sponsored Projects</a></li>
+      <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header2">
+      <div class="addthis_toolbox addthis_default_style ">
+       <a class="addthis_button_print"><img alt="Share" border="0" height="11" src="../assets/images/icon-hdr-print.png" width="11"></a>
+      </div>
+      <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script>
+      <div class="foot"></div>
+      <h1>Frequently Asked Questions (FAQs)</h1>
+     </div>
+     <article id="content-right-left">
+      <h2><a href="era-faq.html#FAQKR"><b>Kuali Research</b></a></h2> 
+      <ul> 
+       <li><a href="era-faq.html#CantAccessKR">I can’t access KR – what should I do?</a></li> 
+       <li><a href="era-faq.html#PIDidNotReceiveEmail">What should I do if my PI didn’t receive the email notification directing them to approve their KR proposal document?</a></li> 
+       <li><a href="era-faq.html#KROldKCLinks">My bookmarked KC links don't work - what should I do?</a></li> 
+       <li><a href="era-faq.html#KRValidationError">I am getting a validation error when I try to approve a KR proposal. How do I push the proposal forward?</a></li> 
+       <li><a href="era-faq.html#UpdateProposalForSubmission">I am trying to pull up my KC Proposal that I created last week, before the upgrade, so that I can copy and update it for submission.</a></li> 
+       <li><a href="era-faq.html#RouteCanceled">I need to route my proposal but it is showing up as Canceled.</a></li> 
+       <li><a href="era-faq.html#FAQSubaward">I am having trouble adding the Subaward budget attachments. I can't pull up any Organization ID or name.</a></li> 
+       <li><a href="era-faq.html#PessimisticLock">I’m getting an error message that says that my proposal is LOCKED and I can’t edit the proposal.</a></li> 
+       <li><a href="era-faq.html#SpecialCharWarning">I’m getting a message that my file contains special characters &lt; &gt; in the file name.</a></li> 
+       <li><a href="era-faq.html#NonUCIPersonnel">I'm trying to add a co-PI in the Personnel search but he works for UCLA. I selected non-employee but nothing came up.</a></li> 
+       <li><a href="era-faq.html#ModularBudgetError">I'm getting an error about Modular Budget, it says Please sync the Module Budget. How do I clear this error?</a></li> 
+       <li><a href="era-faq.html#DetailedDocumentSearch">How do I search for all Enroute Development Proposals by Initiator?</a></li> 
+       <li><a href="era-faq.html#FAQOldPropsinKR">I want to access an old proposal that I created in KC. How do I do this?</a></li> 
+       <li><a href="era-faq.html#FAQCopyNotes">When copying a proposal (Copy to New Document) and selecting the checkbox option to Include Attachments, do Notes in the Attachment Section also copy over?</a></li> 
+       <li><a href="era-faq.html#FAQResubmission">Resubmission is no longer a Proposal Type. Is this intentional?</a></li> 
+       <li><a href="era-faq.html#FAQAggregatorSubmitWorkflow">Can an Aggregator submit a proposal to workflow?</a></li> 
+       <li><a href="era-faq.html#FAQAdminContactSubmitWorkflow">Can someone with KSAMS Admin Contact role for my lead unit submit a proposal (for that lead unit) to workflow?</a></li> 
+       <li><a href="era-faq.html#FAQPINotifyRecall">Does the PI get notified when the Initiator recalls the proposal?</a></li> 
+       <li><a href="era-faq.html#FAQT32Personnel">For a T32 Training Grant Application, do all the faculty mentors that are listed in the application package (or Cayuse) need to be listed in the Personnel Section of the KR Proposal document?</a></li> 
+       <li><a href="#FAQPropDevNote">How do I make a note in my proposal?</a></li> 
+      </ul> 
+      <h2><b><a href="era-faq.html#HeaderFAQ">Other</a>&nbsp;<br></b></h2> 
+      <ul> 
+       <li><a href="era-faq.html#SponsorCodeNIH">Which sponsor code should I use for my NIH application?</a></li> 
+       <li><a href="era-faq.html#HowCanIRequestASponsorCode">How can I request a new sponsor code?</a></li> 
+       <li><a href="era-faq.html#PIRegisterGgov">Does the PI need to register for an account in Grants.gov?</a></li> 
+       <li><a href="era-faq.html#PIRegisterDUNS">Does the PI need to register for their own DUNS number?</a></li> 
+       <li><a href="era-faq.html#CayuseCantFindPI">I can’t find my PI in Cayuse. What should I do?</a></li> 
+      </ul> 
+      <p><b><span>*****************************************************************</span></b></p> 
+      <h2><a id="FAQKR"></a>?Kuali Research</h2> 
+      <p><b><a id="CantAccessKR"></a>?I can’t access KR– what should I do?</b></p> 
+      <p>Contact your Department Security Administrator (DSA) so that they can assign the appropriate access role(s) to your KSAMS account.&nbsp; Don’t know who your DSA is? Check the DSA Lookup in KSAMS:&nbsp;<a href="https://systems.oit.uci.edu/kfs/ksams/lookupDSA.htm">https://systems.oit.uci.edu/kfs/ksams/lookupDSA.htm</a><a href="https://systems.oit.uci.edu/kfs/ksams/lookupDSA.htm"></a></p> 
+      <p><b><a id="PIDidNotReceiveEmail"></a>?What should I do if my PI didn’t receive the email notification directing them to approve their KR proposal document?</b></p> 
+      <p>You can generate a direct short URL link to the proposal, which you can email to them. Refer to the KR Proposal Development User Guide &gt; Additional Info &gt;&nbsp;<a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators#AdditionalInfoNewLinkFeature">Link Feature</a>&nbsp;for instructions. Alternatively, you can direct your PI to their <a href="Images/ZotPortalActionList.jpg">KR Action List</a> from ZotPortal &gt; Research tab &gt; Research Tools &amp; Support portlet.</p> 
+      <p><a id="KROldKCLinks"></a>?<strong>My bookmarked KC links don't work - what should I do?</strong></p> 
+      <p>Following the upgrade to Kuali Research (KR), the old Kuali Coeus (KC) was decommissioned. Therefore, links leading back to KC pages are no longer valid. You can access KR through Zot!Portal and rebookmark KR links from there.</p> 
+      <p><strong><a id="KRValidationError"></a></strong>?<strong>I am getting a <a href="Images/validationerror.jpg">validation error</a> when I try to approve a KR proposal. How do I push the proposal forward?</strong></p> 
+      <p>Proposals converted from KC to KR are subject to the new data validation checks and errors included in the upgrade, including the completion of the new questions in the Questionnaire Section and fields in the Supplemental Information Section.</p> 
+      <p>If you are an <strong>Approver</strong> (PI, Chair, Dean, MSO, Initial Unit Review) you will need to Return the Proposal Document to the Initiator for them to make the corrections, or you will need to contact the Initiator to Recall the Proposal Document so that they can make the corrections. Please refer to the <a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators">Proposal Development User Guide for Initiators and Faculty</a> to review how to perform these actions:</p> 
+      <ul> 
+       <li><strong>Return Proposal Document</strong> (<a href="https://www.research.uci.edu/sponsored-projects/era/kuali-research/kr-upgrade/index2.html#AdditionalInfoReviewerApprover">Additional Info Section &gt; Reviewer/Approver Actions</a>)</li> 
+       <li><strong>Recall Proposal Document</strong> -&nbsp;(<a href="https://www.research.uci.edu/sponsored-projects/era/kuali-research/kr-upgrade/index2.html#AdditionalInfoSummarySubmit">Additional Info Section &gt; Summary/Submit Actions</a>)</li> 
+      </ul> 
+      <p>If you are the <strong>Initiator</strong>, you will be presented with a Data Validation error window upon attempting to Submit for Review; please <a href="Images/ValidationFixIt.jpg">follow the "Fix It" links</a> to the proposal sections requiring attention.&nbsp;</p> 
+      <p><strong><a id="UpdateProposalForSubmission"></a>?I am trying to pull up my KC Proposal that I created last week, before the upgrade, so that I can copy and update it for submission.</strong></p> 
+      <p>From the ZotPortal &gt; Research tab &gt; Research Tools &amp; Support portlet, click on <a href="Images/ZotPortalActionList.jpg">KR Action List</a>&nbsp;get into the KR system. If you are not able to locate your document from your Action List, click on the&nbsp;<a href="Images/DocSearch.jpg">Doc Search</a> and try searching for the document by entering the Doc number (e.g. 22755133) in the Document ID field; click search.</p> 
+      <p>When the document is retrieved, click on the Document ID to open the proposal file to make edits before submitting back to workflow. Note that&nbsp;proposals converted from KC to KR are subject to the new data validation checks and errors included in the upgrade, including the completion of the new questions in the Questionnaire Section and fields in the Supplemental Information Section.</p> 
+      <p>If your document&nbsp;shows a <a href="Images/CanceledStatus.jpg" target="_blank">Status of Canceled</a>, you will need to <a href="Images/CopyCanceledProposal.jpg" target="_blank">Copy it to a new document</a> in order to edit and submit to workflow.</p> 
+      <p><strong><a id="RouteCanceled"></a>?I need to route my proposal but it is showing up as Canceled.</strong></p> 
+      <p>If your&nbsp;document&nbsp;is Canceled, you will need to Copy it to a new document in order to edit and submit to workflow. To do this, open your proposal document, then click the <a href="Images/CopyCanceledProposal.jpg">Copy button in the Proposal Toolbar</a>. A <a href="Images/Copyproposal.jpg">new window</a> will appear, where you will need to select the Lead Unit for your new proposal. You also have the option to include the Budget and the Questionnaire. Click the blue Copy button.&nbsp;</p> 
+      <p>Note that&nbsp;proposals converted from KC to KR are subject to the new data validation checks and errors included in the upgrade, including the completion of the new questions in the Questionnaire Section and fields in the Supplemental Information Section.</p> 
+      <p><strong><a id="FAQSubaward"></a>?I am having trouble adding the Subaward budget attachments. I can't pull up any Organization ID or name.</strong></p> 
+      <p>KR no longer requires the subaward name or budget file to be included in the Budget section.&nbsp;Please refer to the&nbsp;<a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators">Proposal Development User Guide for Initiators and Faculty</a>&nbsp;to review specific instructions for proposals with subawards&nbsp;(<a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators#AdditionalInfoSubawards">Additional Info &gt; Proposals with Subawards</a>)</p> 
+      <p><strong><a id="PessimisticLock"></a>?I’m getting an error message that says that my proposal is LOCKED and I can’t edit the proposal.</strong></p> 
+      <p>The KR system utilizes Locking to prevent multiple people from editing a document simultaneously and causing data integrity problems. When a user has a document open they “own” the Lock on that document which prevents any other user from opening it in edit mode. If a user leaves their document without using the Close button at the bottom of the screen it will leave their lock in place preventing other users from modifying the document. Locks are cleared after 24 hours, but in the meantime this can prevent users from making needed changes. When a user tries to open a document with a Lock in place they will receive an error message indicating the document is locked.</p> 
+      <p>When you see the error message below, you should check with the user to see if they are still in the document; they will need to use the Close button at the bottom of the screen to exit the document.</p> 
+      <p><img alt="" height="42" src="Images/PessimisticLock.png" width="500"></p> 
+      <p>If you are not able to get in contact with that user, a KR system administrator can delete the lock which was accidentally left in place. Please contact the ERA Team&nbsp;&lt;<img alt="" height="8" src="https://www.research.uci.edu/compliance/animalcare-use/images/icon-email.png" width="12">&nbsp;<a href="mailto:era@research.uci.edu">era@research.uci.edu</a>&gt; for assistance.</p> 
+      <p><strong><a id="SpecialCharWarning"></a>?I’m getting a message that my file contains special characters &lt; &gt; in the file name. </strong></p> 
+      <p>In a PD record, if a user uploads an attachment with special characters in the filename, the system will generate the following warning.</p> 
+      <p><img alt="" height="177" src="Images/SpecialCharWarning.jpg" width="550"></p> 
+      <p>This is a built-in Kuali System-to-System validation that unfortunately cannot be suppressed at this time. The warning will NOT prevent the proposal from submission for review or any action in the KR system, so you can dismiss the warning message by clicking on the “x” in the upper right corner.</p> 
+      <p><strong><a id="NonUCIPersonnel"></a>?I'm trying to add a co-PI in the Personnel search but he works for UCLA. I selected non-employee but nothing came up.&nbsp;</strong></p> 
+      <p>We can only enter UCI employees into KR. You can add this person on the actual application package to Grants.gov or Cayuse, but not in KR.&nbsp;We don’t store any non-UCI employees in our data systems.</p> 
+      <p><strong><a id="ModularBudgetError"></a>?I'm getting an error about Modular Budget, it says Please sync the Module Budget. How do I clear this error?</strong></p> 
+      <p>You will need to create a new budget version: Only a Summary Budget is only required. <strong>Do not complete a Detailed Budget. Do not select Modular Budget option.&nbsp;</strong>For NIH proposals, you will be presented with the option to select a Modular Budget; do not select Modular Budget, even if you are assembling a Modular Budget in Grants.gov or Cayuse. For your Budget Version that contains the Modular Budget, mark it as Incomplete and Remove it from Submission, then create another Budget Version and select that one as Complete and the version to Include with Submission.&nbsp;Please refer to the&nbsp;<a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators">Proposal Development User Guide for Initiators and Faculty</a>&nbsp;and review the <a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators#CreatingProposalBudget">Budget </a>&nbsp;section for more information.</p> 
+      <p><strong><a id="DetailedDocumentSearch"></a>?How do I search for all Enroute Development Proposals by Initiator?</strong></p> 
+      <p>From Zot!Portal, under Research Tools &amp; Support, click on KR Document Search. When you are in the Document Search screen, click on the <a href="Images/DetailedDocSearch.jpg">Detailed Search button</a>. The <a href="Images/DetailedDocSearch2.jpg">detailed search screen</a> gives you more options for search criteria. If you only want to see Proposals, use the Document Type field to narrow down by 'ProposalDevelopmentDocument' (it has to be entered exactly like that. Alternatively you can use the magnifying glass lookup to do a wildcard search for *proposal*development* and select ProposalDevelopmentDocument.) Enter the Initiator's UCINetID in the Initiator field and select ENROUTE for Document Status. Click Search.</p> 
+      <p><strong><a id="FAQOldPropsinKR"></a>?I want to access an old proposal that I created in KC. How do I do this?</strong></p> 
+      <p>Proposals that were created prior to the upgrade in the Kuali Coeus (KC) 5.2.1 system are available and accessible in the new KR. If you have the Doc ID # or Proposal #, you can use the Document Search or Proposal Search in KR to look up the record.</p> 
+      <p><strong><a id="FAQCopyNotes"></a>?When copying a proposal (Copy to New Document) and selecting the checkbox option to Include Attachments, do Notes in the Attachment Section also copy over? </strong></p> 
+      <p>No. Notes will not copy over. Only the File Attachments that are uploaded will copy to the new document.</p> 
+      <p><strong><a id="FAQResubmission"></a>?Resubmission is no longer a Proposal Type. Is this intentional? </strong></p> 
+      <p>Yes. Resubmission is no longer an option in the Proposal Type dropdown. In the actual application, the sponsor may request that a Resubmission proposal be distinguished as such, but we are no longer collecting this information in KR Proposal.</p> 
+      <p><strong><a id="FAQAggregatorSubmitWorkflow"></a>?Can an Aggregator submit a proposal to workflow? </strong></p> 
+      <p>Yes. An Aggregator is able to view and edit all sections of the proposal and submit a proposal to workflow. This permission applies to this proposal document only.</p> 
+      <p><strong><a id="FAQAdminContactSubmitWorkflow"></a>?Can someone with KSAMS Admin Contact role for my lead unit submit a proposal (for that lead unit) to workflow?</strong></p> 
+      <p>Yes. An individual with KSAMS Admin Contact role is able to view and edit all sections of the proposal and submit a proposal to workflow. This access applies to all proposals created for that lead unit.</p> 
+      <p><strong><a id="FAQPINotifyRecall"></a>?Does the PI get notified when the Initiator recalls the proposal? </strong></p> 
+      <p>Yes, the PI will receive an auto generated FYI notification, although the Recall action is not specified in the email. However, the Recall action is recorded in the Route Log. Please note that if any approvals have already been completed, they will need to be obtained again.</p> 
+      <p><strong><a id="FAQT32Personnel"></a>?For a T32 Training Grant Application, do all the faculty mentors that are listed in the application package (or Cayuse) need to be listed in the Personnel Section of the KR Proposal document? </strong></p> 
+      <p>No, faculty mentors do not need to be listed in the Personnel Section for COI purposes. COI Annual Disclosure and Training completion is not needed for all faculty mentors as long as they are not involved in research. However, the PI of the project who is ultimately responsible for the grant does need to be listed and complete Annual Disclosure and Training.&nbsp;</p> 
+      <p><a id="FAQPropDevNote"></a>?<strong>How do I make a note in my proposal?</strong></p> 
+      <p>There are two locations in the Proposal Development Document where you can make notes: in the Attachments section and in the Route Log.</p> 
+      <p>Please refer to the&nbsp;<a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators">Proposal Development User Guide for Initiators and Faculty</a>&nbsp;to review how to perform these actions:</p> 
+      <ul> 
+       <li><b>Add a Note in the Attachments Section</b>&nbsp;(<a href="https://research.uci.edu/sponsored-projects/era/kuali-research/kr-upgrade/index2.html#CreatingProposalAttachments">Attachments &gt; Notes</a>) -&nbsp;Please be aware that notes CANNOT be deleted.</li> 
+       <li><strong>Add an Action Message in the Route Log</strong> (<a href="http://https://www.research.uci.edu/sponsored-projects/era/kuali-research/kr-upgrade/index2.html#AdditionalInfoSummarySubmit">Summary/Submit Actions &gt; Log Action Message</a>)&nbsp;Please be aware that Action Messages CANNOT be deleted.</li> 
+      </ul> 
+      <p style="text-align: center;"><a href="era-faq.html#BacktoTop">Back to top</a></p> 
+      <h2><b><a id="HeaderFAQ"></a>?FAQs</b></h2> 
+      <p><b><a id="SponsorCodeNIH"></a>?Which sponsor code should I use for my NIH application?</b></p> 
+      <p>Most federal agencies have a “Miscellaneous” code associated with them. Because we can’t be certain which center within the agency the resulting award will be from, we recommend selecting the associated “Miscellaneous” code when submitting to federal agencies. For example, for an NIH application, use code 003401 NIH/MISCELLANEOUS AGENCIES &amp; DEPARTMENTS. When the proposal is funded, your Contract &amp; Grant Officer will change the code when creating the award synopsis.</p> 
+      <p>Some frequently used sponsor codes can be found in the KR Proposal Development User Guide &gt; Basics &gt; <a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators#FrequentlyUsedSponsorCodes">Proposal Details</a>.&nbsp;</p> 
+      <p><strong><a id="HowCanIRequestASponsorCode"></a>?How can I request a new sponsor code?</strong></p> 
+      <p>Please contact the ERA Team &lt;<img alt="" height="8" src="https://www.research.uci.edu/compliance/animalcare-use/images/icon-email.png" width="12">&nbsp;<a href="mailto:era@research.uci.edu">era@research.uci.edu</a>&gt; for assistance. Once the ERA Team verifies that a sponsor code does not exist for a new sponsor, we will begin the process to obtain a new sponsor code from UCOP.&nbsp;</p> 
+      <p><b><a id="PIRegisterGgov"></a>?Does the PI need to register for an account in Grants.gov?</b></p> 
+      <p>No. Applications are submitted through the University, and the institution already has an account with Grants.gov</p> 
+      <p><b><a id="PIRegisterDUNS"></a>?Does the PI need to register for their own DUNS number?</b></p> 
+      <p>No. Applications are submitted through the University, and the institution already has its own DUNS number.</p> 
+      <p><b><a id="CayuseCantFindPI"></a>?I can’t find my PI in Cayuse. What should I do?</b></p> 
+      <p>Please contact the ERA Team &lt;<img alt="" height="8" src="https://www.research.uci.edu/compliance/animalcare-use/images/icon-email.png" width="12">&nbsp;<a href="mailto:era@research.uci.edu">era@research.uci.edu</a>&gt; so that a PI profile and user account can be created.</p> 
+      <p style="text-align: center;"><a href="era-faq.html#BacktoTop">Back to top</a></p> 
+      <hr noshade style="width: 100%; border-width: 1px; border-style: solid; border-color: #CCCCCC; color: #ffffff;" width="100%"> 
+      <h1 style="text-align: center;">Still have questions?</h1> 
+      <div class="back2top" style="text-align: center;">
+       Please contact the ERA Team &lt;
+       <img alt="" height="8" src="https://www.research.uci.edu/compliance/animalcare-use/images/icon-email.png" width="12">&nbsp;<a href="mailto:era@research.uci.edu">era@research.uci.edu</a>&gt; for assistance.
+      </div>
+     </article>
+     <div id="content-right-right">
+      <h2><strong>Still have questions?</strong></h2> 
+      <p>Please contact the ERA Team <a href="mailto:era@research.uci.edu">era@research.uci.edu</a>&nbsp;for assistance.</p> 
+      <h2><strong>Access KR Training Guides</strong></h2> 
+      <div class="grd-btn" id="light-blue-btn" style="text-align: left;">
+       <a href="/era/kuali-research/KR-COI-UG-Faculty"><span style="color: #fffff; font-family: helvetica; font-size: 15;"><span id="Top">KR COI User Guide (Faculty)</span></span></a>
+      </div> 
+      <div class="grd-btn" style="text-align: left;"></div> 
+      <div class="grd-btn" id="light-blue-btn" style="text-align: left;">
+       <a href="/era/kuali-research/KR-PD-system-user-guide-for-Initiators"><span style="color: #fffff; font-family: helvetica; font-size: 15;"><span id="Top">KR Proposal Development User Guide (Initiators)</span> </span></a>
+      </div> 
+      <div class="grd-btn" style="text-align: left;"></div> 
+      <div class="grd-btn" id="purple-btn" style="text-align: left;">
+       <a href="/era/kuali-research/System-User-Guide-for-Officers"><span style="color: #fffff; font-family: helvetica; font-size: 15;"><span id="Top">KR System Guides (Officers)</span> </span></a>
+      </div>
+     </div> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav subnavSmallH1 subnavSmallH1Two">
+     <h2><a class="folder" href="index.html" target="_top">Electronic Research Administration (ERA)</a></h2>
+     <ul id="subnav">
+      <li class=""><a class=" viewMore" href="kr_protocols_faqs.html" target="_top">KR Protocols FAQs</a></li>
+      <li class=""><a class="" href="kuali-research/index.html" target="_top">Kuali Research (KR)</a></li>
+      <li class=""><a class=" viewMore" href="barbERA.html" target="_top">KR Tips from barbERA</a></li>
+      <li class="active"><a class="active viewMore" href="era-faq.html" target="_top">Frequently Asked Questions (FAQs)</a></li>
+      <li class=""><a class=" viewMore" href="support.html" target="_top">User Support</a></li>
+      <li class=""><a class=" viewMore" href="mailto:era@research.uci.edu" target="_top">Need Help? Contact ERA</a></li>
+     </ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall ElectronicResearchAdministration"></ul> <a class="viewmore" href="http://news.research.uci.edu/category/era">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html>

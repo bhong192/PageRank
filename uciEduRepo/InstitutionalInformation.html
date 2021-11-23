@@ -1,0 +1,519 @@
+<!--https://research.uci.edu/sponsored-projects/institutional-info.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>Institutional Information</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../assets/js/glossary.js" type="text/javascript"></script> 
+  <script src="../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../about/contact-us.html">Contact Us</a> <a>|</a> <a href="../forms/index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../about/index.html">About the Office</a></li>
+          <li><a class="" href="../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="../era/index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../research-development/index.html">Research Development</a></li>
+          <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../index.html"><img alt="UCI Irvine" src="../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a class="active" href="index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../research-development/index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a href="../era/index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a href="../centers-institutes/index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../facilities-services/index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../about/index.html">About the Office</a></li>
+      <li><a class="" href="../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+      <li><a class="" href="../era/index.html">Electronic Research Administration (ERA)</a></li>
+      <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+      <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../research-development/index.html">Research Development</a></li>
+      <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="index.html">Sponsored Projects</a>
+       <ul class="mobile-sub-sub">
+        <li><a class="" href="about/index.html">About</a>
+         <ul class="mobile-sub-sub">
+          <li><a href="about/staff-dept-assignment.html">Sponsored Projects Departmental Assignment</a></li>
+          <li><a href="about/spa-staff-list.html">Sponsored Projects Staff Listing</a></li>
+         </ul></li>
+        <li><a class="" href="applications-forms/index.html">Applications &amp; Forms</a></li>
+        <li><a class="" href="clinical-trials/index.html">Clinical Trials</a>
+         <ul class="mobile-sub-sub">
+          <li><a href="clinical-trials/clinical-trial-budgets.html">Clinical Trial Budget Considerations</a></li>
+          <li><a href="clinical-trials/cda.html">Confidential Disclosure Agreements</a></li>
+          <li><a href="clinical-trials/launching-conducting.html">Launching and Conducting the Trial</a></li>
+          <li><a href="clinical-trials/master-agreements.html">Master Agreements</a></li>
+          <li><a href="clinical-trials/clinical-trial-agreements.html">Negotiation of Clinical Trial Agreements</a></li>
+          <li><a href="clinical-trials/starting-point.html">The Starting Point</a></li>
+         </ul></li>
+        <li><a class="" href="closeout/index.html">Closeout</a>
+         <ul class="mobile-sub-sub">
+          <li><a href="closeout/closing-an-award.html">Closing An Award</a></li>
+          <li><a href="closeout/closeout-reports.html">Standard Reports Required for Closeout</a></li>
+          <li><a href="closeout/timeliness.html">Timeliness Is Important</a></li>
+         </ul></li>
+        <li><a class="" href="contracts-grants-admin/index.html">Contracts &amp; Grants Administration</a>
+         <ul class="mobile-sub-sub">
+          <li><a class="" href="contracts-grants-admin/getting-started/index.html">Getting Started</a>
+           <ul class="mobile-sub-sub">
+            <li><a class="active selected" href="institutional-info.html">Institutional Information</a></li>
+            <li><a href="contracts-grants-admin/getting-started/responsibility-matrix.html">Responsibility Matrix</a></li>
+           </ul></li>
+          <li><a class="" href="gift-vs-grant/index.html">Gift vs. Grant</a></li>
+          <li><a class="" href="contracts-grants-admin/post-award-admin/index.html">Post-award Administration</a></li>
+          <li><a class="" href="contracts-grants-admin/pre-award-admin/index.html">Pre-Award Administration</a></li>
+          <li><a class="" href="contracts-grants-admin/proposal-prep/index.html">Proposal Preparation</a>
+           <ul class="mobile-sub-sub">
+            <li><a class="" href="contracts-grants-admin/proposal-prep/state/index.html">State of California Guidance</a></li>
+           </ul></li>
+          <li><a class="" href="contracts-grants-admin/subawards/index.html">Subawards</a>
+           <ul class="mobile-sub-sub">
+            <li><a href="contracts-grants-admin/subawards/sub-forms.html">Forms &amp; References</a></li>
+            <li><a href="contracts-grants-admin/subawards/sub-setup.html">Subaward Initiation and Setup</a></li>
+            <li><a href="contracts-grants-admin/subawards/sub-management.html">Subaward Management</a></li>
+            <li><a href="contracts-grants-admin/subawards/proposal-preparation.html">Subawards During Proposal Preparation</a></li>
+           </ul></li>
+         </ul></li>
+        <li><a class="" href="gift-vs-grant/index.html">Gift vs. Grant</a></li>
+        <li><a class="active selected" href="institutional-info.html">Institutional Information</a></li>
+        <li><a href="policies.html">Policies &amp; Procedures</a></li>
+        <li><a class="" href="rates-fees/index.html">Rates &amp; Fees</a>
+         <ul class="mobile-sub-sub">
+          <li><a href="/compliance/human-research-protections/irb-partners-and-affiliates/clinical-research-finance-assessment	.html">Clinical Research Finance Assessment (CRFA)</a></li>
+          <li><a href="rates-fees/fringe-benefits.html">Employee Fringe Benefits</a></li>
+          <li><a href="rates-fees/fa-cost-rates.html">Facilities and Administrative (F&amp;A) Cost Rates</a></li>
+          <li><a href="rates-fees/grad-fees-tuition-remission.html">Graduate Student Fees and Tuition Remission</a></li>
+          <li><a href="http://www.icts.uci.edu/">Institute for Clinical Translational ScienceServices and Resources</a></li>
+          <li><a href="/compliance/human-research-protections/researchers/irb-fees.html">IRB Fees for Clinical Trials with For-Profit Sponsors</a></li>
+          <li><a href="https://grants.nih.gov/grants/policy/salcap_summary.htm">NIH/SAMHSA/AHRQ Salary Rate Caps by Federal Fiscal Year</a></li>
+         </ul></li>
+        <li><a class="" href="education/index.html">Training &amp; Education</a></li>
+       </ul></li>
+      <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header1">
+      <h1>Institutional Information</h1>
+      <div class="addthis_toolbox addthis_default_style ">
+       <a class="addthis_button_print"><img alt="Share" border="0" height="11" src="../assets/images/icon-hdr-print.png" width="11"></a>
+      </div>
+      <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script>
+      <div class="foot"></div>
+     </div>
+     <article id="content">
+      <table align="left" border="1" style="border: 1px solid #000000;"> 
+       <tbody> 
+        <tr> 
+         <td> <p><strong>Applicant Organization</strong></p> <p><strong>Corporate/Legal Name</strong></p> </td> 
+         <td>The Regents of the University of California</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Address and Phone</strong></td> 
+         <td>Office of Research<br>160 Aldrich Hall<br>Irvine, CA 92697-7600<br><br>Telephone:&nbsp; (949) 824-7295<br>Fax:&nbsp; (949) 824-2094</td> 
+        </tr> 
+        <tr> 
+         <td><strong>I.R.S. Employer Identification Number (EIN)</strong><br>This is a multipurpose tax identification number assigned to all entities which employ people, pay pensions, or open business bank accounts. This number is usually requested from Federal sponsors on their application cover page or their Representation and Certification pages.</td> 
+         <td>95-2226406<br><br>For Public Health/NIH proposals only:&nbsp; 195-2226406-A1</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Dun &amp; Bradstreet (DUNS) Number</strong><br>Data Universal Numbering System, this is the number assigned by Dun and Bradstreet, which provides the University's credit rating to inquirers.</td> 
+         <td>04-670-5849</td> 
+        </tr> 
+        <tr> 
+         <td> <p><strong><strong>Unique Entity Identifier (UEI)</strong><br></strong>A unique number that is required in order to do business with the federal government.</p> </td> 
+         <td>MJC5FCYQTPE6</td> 
+        </tr> 
+        <tr> 
+         <td><strong>System for Awards Management (SAM) </strong>(formerly Central Contractor Registration (CCR))</td> 
+         <td>Expiration date: January 5, 2022</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Contractor Establishment Code (CEC)</strong></td> 
+         <td>12161045F</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Congressional district</strong><br>Providing a district allows the government to see how federal dollars impact districts.</td> 
+         <td>45 - UCI Main Campus<br>46 - UCI Medical Center<br>47 - Long Beach VA Medical Center</td> 
+        </tr> 
+        <tr> 
+         <td><strong>CAGE Number</strong>: Commercial and Government Entity Code<br>This number identifies companies doing or wishing to do business with the federal government. This number is assigned by the Defense Logistics Information Service.</td> 
+         <td>0VWL0</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Federal Interagency Committee on Education (FICE) Number</strong><br>This identifier indicates that we are an educational institution and is requested by some of the federal agencies on their application cover page or their Representation &amp; Certification page.</td> 
+         <td>001314-4</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Minority Serving Institution Designations</strong></td> 
+         <td> <p>Asian American, Native American, and Pacific Islander Serving Institution (AANAPISI); and</p> <p>Hispanic-Serving Institution (HSI)</p> </td> 
+        </tr> 
+        <tr> 
+         <td><strong>Office of Postsecondary Education (OPE)</strong><br>Number used to identify UCI in dealings with the U.S. Department of Education, Office of Postsecondary Education.</td> 
+         <td>00131400</td> 
+        </tr> 
+        <tr> 
+         <td><strong>National Taxonomy of Exempt Entities (NTEE)</strong><br>This is a classification system categorizing the activities and purposes of nonprofit organizations. &nbsp;&nbsp;&nbsp;</td> 
+         <td>B43 – Higher Education, University or Technological</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Nonprofit Program Classification (NPC)</strong><br>This system categorizes the programs of nonprofit organizations.</td> 
+         <td>B03.04 – Postsecondary Education</td> 
+        </tr> 
+        <tr> 
+         <td><strong>North American Industry Classification Number (NAICS)</strong><br>This number is assigned to any entity (industry, educational, etc.) to classify the type of industry it is.</td> 
+         <td>611310</td> 
+        </tr> 
+        <tr> 
+         <td><strong>National Institutes of Health Institutional Profile Number</strong><br>This code is assigned by the National Institutes of Health (NIH) to identify our institution – the code is to be identified on the NIH application page.</td> 
+         <td>577504</td> 
+        </tr> 
+        <tr> 
+         <td><strong>NSF Institutional Code</strong><br>This code is assigned by the National Science Foundation (NSF) to identify our institution – the code is to be identified on the NSF application page.</td> 
+         <td>0013144000</td> 
+        </tr> 
+        <tr> 
+         <td><strong>IRB Federalwide Assurance (FWA) Number</strong><br>This code identifies that the University has an IRB in place that meets federal standards and that we are approved to conduct research involving human subjects.</td> 
+         <td>00004071, approved January 31, 2003</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Animal Welfare Assurance Information</strong><br>This information confirms that the University is approved to use animals in our research and that we have facilities that meet federal standards for the care of animals.</td> 
+         <td> <p>PHS Assurance D16-00259 (A3416-01)<br>valid <a href="../compliance/animalcare-use/attachments/AppA3416-01 - Fully Signed.pdf" title="PHS Assurances document">2/3/20 - 2/28/24</a></p> <p>USDA Registration <a href="../compliance/animalcare-use/attachments/USDA Registration Certificate.pdf" title="USDA Registration Certificate">#93-R-0434</a></p> <p>AAALAC #000238<br><a href="../compliance/animalcare-use/attachments/AAALAC2018 - Short Version.pdf" title="AAALAC Acceditation Document">Curent Accreditation 2018 - 2021</a><br>Full Accreditation since 1971</p> </td> 
+        </tr> 
+        <tr> 
+         <td><strong>Financial Officer</strong><br>The University’s Financial Officer to whom checks should be mailed.</td> 
+         <td>Beata Najman, Director, Extramural Funds Accounting<br>120 Theory, Suite 200<br>University of California, Irvine<br>Irvine, CA 92697-1050<br>(949) 824-0265<br>Checks Payable to:<br>The Regents of the University of California</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Wire Transfer: Non-federal Awards</strong><br>The deposit-only account info to wire any non-federal funds to the University.</td> 
+         <td>Please contact the appropriate Contract and Grant Officer for this information.</td> 
+        </tr> 
+        <tr> 
+         <td><a href="docs/fa-cost-agreement.pdf" title="fa-cost-agreement"><strong>&nbsp;</strong></a><a href="docs/fa-cost-agreement.pdf" title="fa-cost-agreement"><strong>Facilities and Administration (F&amp;A) Cost Agreement</strong></a>&nbsp; <a id="F&amp;A Cost Agreement" name="F&amp;A Cost Agreement"></a><br>As a recipient of Federal funds, the University is required to negotiate a facilities and administrative (F&amp;A) cost rate agreement to establish F&amp;A cost rates for use with UCI's extramural awards.</td> 
+         <td>Date of Agreement:&nbsp; May 29, 2019<br>Base for Indirect Costs:&nbsp; Modified Total Direct Costs (MTDC)<br>Period of Agreement:&nbsp; July 1, 2016 - June 30, 2021<br>Type of Agreement: Predetermined<br>Cognizant Agency Contact Information:<br>Department of Health and Human Services (DHHS)<br>Helen Fung (415) 437-7820</td> 
+        </tr> 
+        <tr> 
+         <td> <p><strong>Cognizant Audit Agency</strong></p> </td> 
+         <td> <p>Department of Health and Human Services<br>Office of Inspector General<br>Office of Audit, Suite 3-650<br>90 7th Street<br>San Francisco, CA 94103<br>415-437-8360</p> </td> 
+        </tr> 
+        <tr> 
+         <td><strong>Cost Accounting Standards</strong><br>Federal government regulations require recipients of federal awards to file a formal disclosure to the federal government of cost accounting practices.<br><br><a href="http://apps.adcom.uci.edu/cms/ResourceAC/public/Accounting/ContractsGrants/UCI_CAS_DS2rev2.pdf" title="Cost Accounting Standards Board Disclosure Statement (Form DS-2)">Cost Accounting Standards Disclosure Statement (Form DS-2)</a></td> 
+         <td>Name and address of the Cognizant agency where disclosure statement is filed:<br><br>Department of Health and Human Services (DHHS)<br>Director, Division of Cost Allocation<br>700 Wisconsin Avenue, Suite 2300<br>Bethesda, MD 20875<br><br>Date filed: April 19, 2012</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Type of Organization - Corporate Status</strong></td> 
+         <td>Public non-profit educational institution incorporated under the laws of California</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Federal Tax Status</strong></td> 
+         <td> <p>Tax exempt under Section 501c (3) of the Internal Revenue Code; <a href="docs/federal-tax-exempt-ltr-b.pdf" title="federal-tax-exempt-ltr-b">letter dated September 8, 1982</a></p> <p>IRS Form <a href="https://www.accounting.uci.edu/docs/tax-form-W-9.pdf" title="UCI IRS FORM W-9">W-9</a></p> </td> 
+        </tr> 
+        <tr> 
+         <td><strong>State Tax Exemption:&nbsp; California</strong></td> 
+         <td>Code IRS 1954 501(c)(3) 1982, <a href="docs/state-tax-exemption-letter.pdf" title="state-tax-exemption-letter">State Tax Exemption Letter</a></td> 
+        </tr> 
+        <tr> 
+         <td><strong>State of Incorporation/Date</strong></td> 
+         <td>California - State Legislative Act of 1866</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Misconduct in Science Assurance (PHS Form 6349)<br></strong></td> 
+         <td>Last filed April 15, 2019</td> 
+        </tr> 
+        <tr> 
+         <td><strong>Participant Identification Code (PIC)</strong><br>Assigned by the European Commission, this number indicates that the University has registered its standard legal and financial information.</td> 
+         <td> <p>UCI's PIC:&nbsp; 999467340</p> <p>UCI's LEAR:&nbsp; Michael Kusiak<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;510-987-0659</p> </td> 
+        </tr> 
+       </tbody> 
+      </table>
+     </article> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav">
+     <h2><a class="folder" href="index.html" target="_top">Sponsored Projects</a></h2>
+     <ul id="subnav">
+      <li class=""><a class="" href="about/index.html" target="_top">About</a></li>
+      <li class=""><a class="" href="contracts-grants-admin/index.html" target="_top">Contracts &amp; Grants Administration</a></li>
+      <li class=""><a class="" href="clinical-trials/index.html" target="_top">Clinical Trials</a></li>
+      <li class=""><a class="" href="rates-fees/index.html" target="_top">Rates &amp; Fees</a></li>
+      <li class=""><a class="" href="applications-forms/index.html" target="_top">Applications &amp; Forms</a></li>
+      <li class=""><a class=" viewMore" href="policies.html" target="_top">Policies &amp; Procedures</a></li>
+      <li class="active"><a class="active viewMore" href="institutional-info.html" target="_top">Institutional Information</a></li>
+      <li class=""><a class="" href="closeout/index.html" target="_top">Closeout</a></li>
+      <li class=""><a class="" href="education/index.html" target="_top">Training &amp; Education</a></li>
+      <li class=" last"><a class=" last" href="gift-vs-grant/index.html" target="_top">Gift vs. Grant</a></li>
+     </ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall"> 
+     </ul> <a class="viewmore" href="http://news.research.uci.edu/">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html>

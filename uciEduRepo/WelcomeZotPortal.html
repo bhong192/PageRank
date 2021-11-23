@@ -1,0 +1,933 @@
+<!--https://portal.uci.edu/-->
+<!DOCTYPE html SYSTEM "EMPTY">
+<html xmlns:upelemtitle="http://xml.apache.org/xalan/java/org.apereo.portal.security.xslt.XalanLayoutElementTitleHelper" xmlns:dlm="http://www.uportal.org/layout/dlm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="en-US" class="respondr">
+ <head>
+  <title>Welcome | ZotPortal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="uPortal by Apereo: The academic open source portal built for higher education by higher education">
+  <meta name="keywords" content="portal, uPortal, academic, higher education, open source, enterprise, Apereo, JA-SIG, JASIG, Jasig">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
+  <link href="/ResourceServingWebapp/rs/normalize/2.1.2/normalize-2.1.2.min.css" rel="stylesheet" type="text/css">
+  <link href="/ResourceServingWebapp/rs/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="/ResourceServingWebapp/rs/bootstrap-plugins/accessibility/1.0.2/css/bootstrap-accessibility.min.css" rel="stylesheet" type="text/css">
+  <link href="/ResourceServingWebapp/rs/jqueryui/1.10.3/theme/smoothness/jquery-ui-1.10.3-smoothness.min.css" rel="stylesheet" type="text/css">
+  <script src="/ResourceServingWebapp/rs/modernizr/2.6.2/modernizr-2.6.2.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/jquery/1.12.4/jquery-1.12.4.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/jquery-migrate/jquery-migrate-1.4.1.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/jqueryui/1.10.3/jquery-ui-1.10.3.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/bootstrap-plugins/accessibility/1.0.2/js/bootstrap-accessibility.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/fluid/1.5.0/js/fluid-custom.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/underscore/1.8.3/underscore.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/backbone/1.3.3/backbone-1.3.3.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/jquery-plugins/noty/2.2.0/jquery.noty.packaged.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/datatables/1.9.4/media/js/jquery.dataTables.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/jquery-plugins/rating/1.0/bootstrap-rating-input.min.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/datatables/1.9.4/plugins/integration/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"> </script>
+  <script src="/ResourceServingWebapp/rs/datatables/1.9.4/extras/column-filter-widgets/js/ColumnFilterWidgets.js" type="text/javascript"> </script>
+  <script src="/uPortal/webjars/jstree/dist/jstree.min.js" type="text/javascript"> </script>
+  <script src="/uPortal/webjars/core-js-bundle/minified.js" type="text/javascript"> </script>
+  <script src="/uPortal/webjars/regenerator-runtime/runtime.js" type="text/javascript"> </script>
+  <script src="/uPortal/webjars/whatwg-fetch/dist/fetch.umd.js" type="text/javascript"> </script>
+  <script src="/uPortal/webjars/webcomponents__webcomponentsjs/webcomponents-bundle.js" type="text/javascript"> </script>
+  <script src="/uPortal/rs/conflict-resolution/js/resolve-conflicts.min.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-util.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-portlet-registry.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-entity-registry.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-portlet-browser.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-layout-draggable-manager.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-layout-gallery.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-fragment-permissions-manager.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-layout-selector.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-skin-selector.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-tab-manager.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-layout-persistence.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-url-provider.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-layout-preferences.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-autocomplete.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-showHideToggle.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/entity-selector.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-parameter-editor.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/flyout-nav.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-translator.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-ga.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-rating-option.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-favorite.js" type="text/javascript"> </script>
+  <script src="/uPortal/media/skins/common/javascript/uportal/up-config-lightbox.js" type="text/javascript"> </script>
+  <link rel="shortcut icon" href="/uPortal/favicon.ico" type="image/x-icon">
+  <script type="text/javascript">
+    var up = up || {};
+    up.jQuery = jQuery.noConflict(true);
+    up.fluid = fluid;
+    fluid = null;
+    fluid_1_5 = null;
+    up._ = _.noConflict();
+    up._.templateSettings = {
+      interpolate : /{{=(.+?)}}/g,
+      evaluate    : /{{(.+?)}}/g,
+      escape: /{{-([\s\S]+?)}}/g
+    };
+    up.Backbone = Backbone.noConflict();
+
+    // fix console.log in IE8,9.  Though we don't commit to supporting these IE versions, this minor fix allows
+    // these browsers to work better.
+    if (!window.console) window.console = {};
+    if (!window.console.log) window.console.log = function() {};
+    if (!window.console.trace) window.console.trace = function() {};
+
+    (function($) {
+      $(function() {
+        var navMenuToggle = function() {
+          var menu = $(".portal-nav .menu"), menuToggle = $("#up-sticky-nav .menu-toggle");
+          // Toggle the nav visibility when the button is clicked.
+          menuToggle.click(function() {
+            // Open and animate the offcanvas
+            $('.row-offcanvas').toggleClass('active');
+            // show the nav
+            // menu.toggleClass("show");
+            // scroll top
+            $('html, body').animate({
+                scrollTop: 0
+            });
+            // animate the hamburger to an arrow
+            $('.hamburger').toggleClass("is-active");
+            return false;
+          });
+        }
+
+        navMenuToggle();
+      });
+
+      $(document).ready(function() {
+          if (up.lightboxConfig) {
+            up.lightboxConfig.init();
+          }
+
+          // Unhide the portlet's options menu if there are option items to display.
+          $('div.portlet-options-menu').has('li').removeClass('hidden');
+
+          // If portlet chrome is configured to not show (shows on hover) and the portlet is not movable, the portlet chrome
+          // is hidden.  However if there are option items to display, allow the portlet chrome to show on hover.
+          $('div.hover-toolbar').filter('.hidden').has('li').removeClass('hidden');
+
+          // Attach behavior to the Move Portlet options menu
+          $('.portlet-options-menu .up-portlet-control.move').click(function() {
+             // If Move Portlet, unhide the grab handle and change the menu text
+             if ($(this).text() === $(this).attr('data-move-text')) {
+                $(this).parents('.up-portlet-titlebar').find('.grab-handle').removeClass('hidden');
+                $(this).text($(this).attr('data-cancel-move-text'));
+             } else {
+                // Else cancel the move by hiding the grab handle and reverting the text
+                $(this).parents('.up-portlet-titlebar').find('.grab-handle').addClass('hidden');
+                $(this).text($(this).attr('data-move-text'));
+             }
+          })
+      });
+
+    })(up.jQuery);
+  </script> 
+  <link rel="stylesheet" type="text/css" href="/uPortal/media/skins/respondr/uci.css"> 
+ </head>
+ <body class="up dashboard portal fl-theme-mist up-guest">
+  <a class="portal-header-skip-nav btn" href="#portalPageBody">Skip to page content</a>
+  <div class="row-offcanvas up-use-tabs-sm">
+   <div id="up-notification"></div>
+   <div id="wrapper">
+    <div id="region-page-top" class="container-fluid">
+     <div class="row">
+      <div class="col-sm-12">
+       <section id="portlet_u30l1n3" class="up-portlet-wrapper dynamic-respondr-skin" aria-selected="false"> <!-- Generate a CONFIG URL where appropriate --> 
+       </section>
+      </div>
+     </div>
+    </div>
+    <header class="portal-header" role="banner">
+     <div id="up-sticky-nav" class="container-fluid">
+      <div class="portal-global row">
+       <a href="javascript:void(0);" tabindex="0" class="menu-toggle pull-left" aria-label="Menu" role="button" title="Menu" data-toggle="offcanvas" aria-expanded="false" aria-haspopup="true" aria-controls="sidebar">
+        <div class="hamburger hamburger-arrow">
+         <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+         </div>
+        </div></a>
+       <div id="region-eyebrow" class="portal-user">
+        <section id="portlet_u31l1n19" class="up-portlet-wrapper uci-link" aria-selected="false"> <a href="http://www.uci.edu" style="padding-left: 2em;" class="up-portlet-control hide-content btn btn-link btn-xs">UCI</a>
+        </section>
+        <section id="portlet_u31l1n18" class="up-portlet-wrapper help-launcher" aria-selected="false"> <a id="portalHelpLink" class="up-portlet-control hide-content portal-logout btn btn-link btn-xs" title="Help" href="/uPortal/viewXmlFile.jsp?cmsUri=public/Help/infoPagePortalHelp.xml">Help</a>
+        </section>
+        <section id="portlet_u31l1n8" class="up-portlet-wrapper login-launcher" aria-selected="false"> 
+         <div id="webLoginContainer" class="fl-widget portal-login"> 
+          <div class="fl-widget-inner"> 
+           <div class="fl-widget-content"> 
+            <div id="portalCASLogin" class="fl-widget-content"> <a id="portalCASLoginLink" class="btn" title="Sign In via UCI SSO" href="https://portal.uci.edu/Shibboleth.sso/Login?target=https://portal.uci.edu/uPortal/Login">Login</a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </section>
+       </div>
+      </div>
+     </div>
+     <div class="container-fluid portal-header-main">
+      <div class="row">
+       <div id="region-header-left" class="col-sm-6 col-md-8 text-left">
+        <section id="portlet_u30l1n9" class="up-portlet-wrapper portal-logo" aria-selected="false"> 
+         <h1 class="portal-logo"><a href="/uPortal"><img alt="ZotPortal Logo" src="https://apps.adcom.uci.edu/cms/images/zotportal-logo2.png" title="ZotPortal Logo"> </a></h1> 
+        </section>
+       </div>
+       <div id="region-header-right" class="col-sm-6 col-md-4 text-right">
+        <section id="portlet_u42l1n17" class="up-portlet-wrapper search-launcher" aria-selected="false">
+         <div id="webSearchContainer" class="fl-widget"> 
+          <div class="fl-widget-inner"> 
+           <div class="fl-widget-content"> <!--
+				| Redirect search to UCI Google Search (GSA).
+			--> 
+            <form class="form-inline form-search" role="form" method="get" action="https://search.uci.edu"> 
+             <div class="input-group"> 
+              <input class="searchInput input-large search-query form-control" value="" name="q" type="text" placeholder="Enter search terms"> <span class="input-group-btn"> <button type="submit" name="submit" class="btn btn-default" value="Search"><i class="fa fa-search"></i></button> </span> 
+             </div> 
+             <div class="input-group btn-xs" style="vertical-align: middle;"> 
+              <input checked="true" name="collection" type="radio" value="portal" title="Search ZotPortal Only">Portal  &nbsp; 
+              <input name="collection" title="Search all UCI" type="radio" value="uci_full">UCI 
+             </div> 
+            </form> 
+           </div> 
+          </div> 
+         </div> 
+        </section>
+       </div>
+      </div>
+     </div>
+     <nav class="portal-nav">
+      <div id="sidebar" class="sidebar-offcanvas container-fluid">
+       <div id="portalNavigation" class="fl-widget" aria-selected="false">
+        <div id="portalNavigationTabGroup" class="fl-widget-inner header">
+         <ul id="portalNavigationTabGroupsList" class="menu fl-tabs list-group list-group-horizontal">
+          <li class="active portal-navigation-tabgroup fl-tabs-active list-group-item portal-navigation"><a href="/uPortal/f/welcome/normal/render.uP" title="Home" class="portal-tabGroup-link portal-navigation-link"><span id="activeTabGroup" class="portal-tabGroup-label portal-navigation-label">Home</span></a></li>
+          <li class=" portal-navigation-tabgroup fl-tabs-active list-group-item portal-navigation"><a href="/uPortal/f/guest-campus-life/normal/render.uP" title="Student" class="portal-tabGroup-link portal-navigation-link"><span id="" class="portal-tabGroup-label portal-navigation-label">Student</span></a></li>
+          <li class=" portal-navigation-tabgroup fl-tabs-active list-group-item portal-navigation"><a href="/uPortal/f/guest-work-life/normal/render.uP" title="Faculty &amp; Staff" class="portal-tabGroup-link portal-navigation-link"><span id="" class="portal-tabGroup-label portal-navigation-label">Faculty &amp; Staff</span></a></li>
+         </ul>
+        </div>
+        <div id="portalNavigationInner" class="fl-widget-inner header">
+         <ul id="portalNavigationList" class="menu fl-tabs flc-reorderer-column list-group list-group-horizontal">
+          <li id="portalNavigation_u21l1s7" class="portal-navigation single active fl-tabs-active locked     useflyout list-group-item"><a id="tabLink_u21l1s7" href="/uPortal/f/welcome/normal/render.uP" title="Welcome" class="portal-navigation-link  "><span title="" class="portal-navigation-label ">Welcome</span><i class="fa fa-chevron-right visible-xs"></i></a><a id="portalSubnavigationToggle_u21l1s7" href="javascript:void(0);" class="dropdown-toggle portal-navigation-dropdown" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="portal-subnavigation_u21l1s7" tabindex="0"><span class="caret"></span><span class="sr-only">Toggle Menu</span></a>
+           <ul class="dropdown-menu portal-subnav-list" id="portal-subnavigation_u21l1s7" role="menu">
+            <li id="uPfname_webproxy-about-portal_u21l1n130" class="portal-subnav first" role="menuitem"><a title="Introduction to ZotPortal" href="/uPortal/f/welcome/p/webproxy-about-portal.u21l1n130/max/render.uP?pCp" class="portal-subnav-link"><span class="portal-subnav-label">About ZotPortal</span></a></li>
+            <li id="uPfname_webproxy-campus-map_u21l1n185" class="portal-subnav " role="menuitem"><a title="An interactive and searchable UCI campus map" href="/uPortal/f/welcome/p/webproxy-campus-map.u21l1n185/max/render.uP?pCp" class="portal-subnav-link"><span class="portal-subnav-label">Campus Map</span></a></li>
+            <li id="uPfname_announcements_u21l1n186" class="portal-subnav " role="menuitem"><a title="Announcements for students, staff, and faculty" href="/uPortal/f/welcome/p/announcements.u21l1n186/max/render.uP?pCp" class="portal-subnav-link"><span class="portal-subnav-label">Announcements</span></a></li>
+            <li id="uPfname_rss-zotwire_u21l1n197" class="portal-subnav " role="menuitem"><a title="The latest updates from UCI News" href="/uPortal/f/welcome/p/rss-zotwire.u21l1n197/max/render.uP?pCp" class="portal-subnav-link"><span class="portal-subnav-label">UCI News</span></a></li>
+            <li id="uPfname_webproxy-emergencyContacts_u21l1n256" class="portal-subnav last" role="menuitem"><a title="Emergency Contacts" href="/uPortal/f/welcome/p/webproxy-emergencyContacts.u21l1n256/max/render.uP?pCp" class="portal-subnav-link"><span class="portal-subnav-label">Emergency Contacts</span></a></li>
+           </ul></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </header>
+    <div id="portalPageBody" class="portal-content" role="main">
+     <div class="container-fluid">
+      <div class="row">
+       <div class="col-md-12">
+        <div class="row">
+         <div id="portalPageBodyMessage" class="col-md-12"></div>
+        </div>
+        <div id="portalPageBodyColumns" class="row">
+         <div id="column_u21l1s8" class="portal-page-column column-1 col-md-4     ">
+          <div id="inner-column_u21l1s8" class="portal-page-column-inner ">
+           <section id="portlet_u21l1n130" class="up-portlet-wrapper webproxy-about-portal locked     ">
+            <div class="modal fade" id="ratePortletModalu21l1n130" tabindex="-1" role="dialog" aria-labelledby="RatingModal" aria-hidden="true" data-title="Rate About ZotPortal New" data-close.button.label="Close" data-save.button.label="Save &amp; Close" data-geturl="/uPortal/p/portletmarketplace.ctf2/normal/getRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=webproxy-about-portal" data-saveurl="/uPortal/p/portletmarketplace.ctf2/normal/saveRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=webproxy-about-portal" data-get.rating.unsucessful="Sorry, your previous rating of the portlet could not be retrieved" data-rating.save.successful="Your rating is much appreciated" data-rating.save.unsuccessful="Your rating did not save.  Please try again!" data-rating.instructions.unrated="You have not yet rated About ZotPortal New. Share a rating if you wish." data-rating.instructions.rated="You have already rated About ZotPortal New. You may update your rating if you wish."></div>
+            <script type="text/javascript">
+            (function($) {
+                $( document ).ready(function() {
+                    $('#ratePortletModalu21l1n130').createRatingModal();
+                    $('#ratePortletModalu21l1n130').find('input').rating();
+                });
+            })(up.jQuery);
+        </script>
+            <div class="up-portlet-wrapper-inner">
+             <div id="toolbar_u21l1n130" class="fl-widget-titlebar up-portlet-titlebar up-standard-chrome round-top">
+              <h2 class="portlet-title round-top"><a id="u21l1n130" title="About ZotPortal" href="/uPortal/f/welcome/p/webproxy-about-portal.u21l1n130/max/render.uP?pCp"> About ZotPortal </a></h2>
+              <div class="portlet-controls">
+               <div class="locked-icon">
+                <i class="fa fa-lock" aria-hidden="true"></i><span class="sr-only">This portlet may not be moved</span>
+               </div>
+               <div class="grab-handle hidden">
+                <i class="fa fa-arrows"></i>
+               </div>
+               <div class="portlet-options-menu btn-group hidden">
+                <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" title="Options" href="javascript:void(0);">Options<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="right: 0; left: auto;">
+                 <li class="up-portlet-options-item maximize"><a title="Enter maximized mode for this portlet" href="/uPortal/f/welcome/p/webproxy-about-portal.u21l1n130/max/render.uP?pCp" class="up-portlet-control focus">Maximize</a></li>
+                 <li class="up-portlet-options-item minimize"><a href="/uPortal/f/welcome/normal/render.uP?pCt=webproxy-about-portal.u21l1n130&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content">Collapse</a></li>
+                 <li class="up-portlet-options-item directUrl"><a title="Direct URL" class="up-portlet-control directUrl" data-toggle="modal" data-target="#direct-url-modal" data-direct-url="https://portal.uci.edu/uPortal/p/webproxy-about-portal">Direct URL</a></li>
+                </ul>
+               </div>
+              </div>
+             </div>
+             <div id="portletContent_u21l1n130" class="fl-widget-content fl-fix up-portlet-content-wrapper round-bottom">
+              <div class="up-portlet-content-wrapper-inner"> 
+               <h4>ZotPortal is available to applicants, students, faculty, and staff.</h4> 
+               <h4>Your personalized one-stop-shop for UCI web resources.</h4> 
+               <p>ZotPortal brings together several campus tools and services into one simple-to-use place. With your UCInetID, you can customize your view to your needs.</p> 
+               <p>ZotPortal can provide you with:</p> 
+               <ul> 
+                <li>Targeted news and announcements, relevant to you</li> 
+                <li><em>My Courses</em>, which shows your schedule, grades, finals and books for each quarter</li> 
+                <li>Personalized Financial Aid and MyEEE information</li> 
+                <li>Employee tools and links</li> 
+                <li>Various different fun and useful news feeds</li> 
+               </ul> 
+               <h4>What does 'Zot' even mean?</h4> 
+               <br>'Zot' is the Anteater victory cheer! It's also the sound that Peter the Anteater makes when he snaps out his tongue to catch his food. 
+              </div>
+             </div>
+            </div>
+           </section>
+           <section id="portlet_u21l1n185" class="up-portlet-wrapper webproxy-campus-map locked     ">
+            <div class="modal fade" id="ratePortletModalu21l1n185" tabindex="-1" role="dialog" aria-labelledby="RatingModal" aria-hidden="true" data-title="Rate Campus Map" data-close.button.label="Close" data-save.button.label="Save &amp; Close" data-geturl="/uPortal/p/portletmarketplace.ctf2/normal/getRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=webproxy-campus-map" data-saveurl="/uPortal/p/portletmarketplace.ctf2/normal/saveRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=webproxy-campus-map" data-get.rating.unsucessful="Sorry, your previous rating of the portlet could not be retrieved" data-rating.save.successful="Your rating is much appreciated" data-rating.save.unsuccessful="Your rating did not save.  Please try again!" data-rating.instructions.unrated="You have not yet rated Campus Map. Share a rating if you wish." data-rating.instructions.rated="You have already rated Campus Map. You may update your rating if you wish."></div>
+            <script type="text/javascript">
+            (function($) {
+                $( document ).ready(function() {
+                    $('#ratePortletModalu21l1n185').createRatingModal();
+                    $('#ratePortletModalu21l1n185').find('input').rating();
+                });
+            })(up.jQuery);
+        </script>
+            <div class="up-portlet-wrapper-inner">
+             <div id="toolbar_u21l1n185" class="fl-widget-titlebar up-portlet-titlebar up-standard-chrome round-top">
+              <h2 class="portlet-title round-top"><a id="u21l1n185" title="Campus Map" href="/uPortal/f/welcome/p/webproxy-campus-map.u21l1n185/max/render.uP?pCp"> Campus Map </a></h2>
+              <div class="portlet-controls">
+               <div class="locked-icon">
+                <i class="fa fa-lock" aria-hidden="true"></i><span class="sr-only">This portlet may not be moved</span>
+               </div>
+               <div class="grab-handle hidden">
+                <i class="fa fa-arrows"></i>
+               </div>
+               <div class="portlet-options-menu btn-group hidden">
+                <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" title="Options" href="javascript:void(0);">Options<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="right: 0; left: auto;">
+                 <li class="up-portlet-options-item maximize"><a title="Enter maximized mode for this portlet" href="/uPortal/f/welcome/p/webproxy-campus-map.u21l1n185/max/render.uP?pCp" class="up-portlet-control focus">Maximize</a></li>
+                 <li class="up-portlet-options-item minimize"><a href="/uPortal/f/welcome/normal/render.uP?pCt=webproxy-campus-map.u21l1n185&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content">Collapse</a></li>
+                 <li class="up-portlet-options-item directUrl"><a title="Direct URL" class="up-portlet-control directUrl" data-toggle="modal" data-target="#direct-url-modal" data-direct-url="https://portal.uci.edu/uPortal/p/webproxy-campus-map">Direct URL</a></li>
+                </ul>
+               </div>
+              </div>
+             </div>
+             <div id="portletContent_u21l1n185" class="fl-widget-content fl-fix up-portlet-content-wrapper round-bottom">
+              <div class="up-portlet-content-wrapper-inner">   <a href="http://map.uci.edu/map/?id=463#!ct/11888,12033,12035,12034" target="_blank" border="0"><img src="https://apps.adcom.uci.edu/cms/student/static/images/map_preload.jpg" width="450" height="450" alt="Campus Map"></a>  
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+         </div>
+         <div id="column_u21l1s23" class="portal-page-column column-2 col-md-4     ">
+          <div id="inner-column_u21l1s23" class="portal-page-column-inner ">
+           <section id="portlet_u21l1n186" class="up-portlet-wrapper announcements locked     ">
+            <div class="modal fade" id="ratePortletModalu21l1n186" tabindex="-1" role="dialog" aria-labelledby="RatingModal" aria-hidden="true" data-title="Rate Announcements" data-close.button.label="Close" data-save.button.label="Save &amp; Close" data-geturl="/uPortal/p/portletmarketplace.ctf2/normal/getRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=announcements" data-saveurl="/uPortal/p/portletmarketplace.ctf2/normal/saveRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=announcements" data-get.rating.unsucessful="Sorry, your previous rating of the portlet could not be retrieved" data-rating.save.successful="Your rating is much appreciated" data-rating.save.unsuccessful="Your rating did not save.  Please try again!" data-rating.instructions.unrated="You have not yet rated Announcements. Share a rating if you wish." data-rating.instructions.rated="You have already rated Announcements. You may update your rating if you wish."></div>
+            <script type="text/javascript">
+            (function($) {
+                $( document ).ready(function() {
+                    $('#ratePortletModalu21l1n186').createRatingModal();
+                    $('#ratePortletModalu21l1n186').find('input').rating();
+                });
+            })(up.jQuery);
+        </script>
+            <div class="up-portlet-wrapper-inner">
+             <div id="toolbar_u21l1n186" class="fl-widget-titlebar up-portlet-titlebar up-standard-chrome round-top">
+              <h2 class="portlet-title round-top"><a id="u21l1n186" title="Announcements" href="/uPortal/f/welcome/p/announcements.u21l1n186/max/render.uP?pCp"> Announcements </a></h2>
+              <div class="portlet-controls">
+               <div class="locked-icon">
+                <i class="fa fa-lock" aria-hidden="true"></i><span class="sr-only">This portlet may not be moved</span>
+               </div>
+               <div class="grab-handle hidden">
+                <i class="fa fa-arrows"></i>
+               </div>
+               <div class="portlet-options-menu btn-group hidden">
+                <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" title="Options" href="javascript:void(0);">Options<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="right: 0; left: auto;">
+                 <li class="up-portlet-options-item maximize"><a title="Enter maximized mode for this portlet" href="/uPortal/f/welcome/p/announcements.u21l1n186/max/render.uP?pCp" class="up-portlet-control focus">Maximize</a></li>
+                 <li class="up-portlet-options-item minimize"><a href="/uPortal/f/welcome/normal/render.uP?pCt=announcements.u21l1n186&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content">Collapse</a></li>
+                 <li class="up-portlet-options-item directUrl"><a title="Direct URL" class="up-portlet-control directUrl" data-toggle="modal" data-target="#direct-url-modal" data-direct-url="https://portal.uci.edu/uPortal/p/announcements">Direct URL</a></li>
+                </ul>
+               </div>
+              </div>
+             </div>
+             <div id="portletContent_u21l1n186" class="fl-widget-content fl-fix up-portlet-content-wrapper round-bottom">
+              <div class="up-portlet-content-wrapper-inner"> 
+               <link href="/Announcements/css/announcements.css" rel="stylesheet" type="text/css"> 
+               <style>
+    /* Support for scrolling div display */
+    #Pluto_94_u21l1n186_10_container .announcements-scrolling {
+        overflow: auto;
+        height: 500px;
+    }
+</style> 
+               <div id="Pluto_94_u21l1n186_10_container" class="container-fluid announcements-container"> 
+                <div class="row announcements-portlet-toolbar"> 
+                 <div class="col-md-12 no-col-padding"> 
+                  <div class="nav-links">
+                    | <a href="/uPortal/f/welcome/normal/render.uP?pCt=announcements.u21l1n186&amp;pP_action=displayHistory"><i class="fa fa-archive" aria-hidden="true"></i> Archives</a> 
+                  </div> 
+                 </div> 
+                </div> 
+                <div class="row"> 
+                 <div class="col-md-12"> 
+                 </div> 
+                </div> 
+                <div class="row announcements-summary-row"> 
+                 <div class="col-lg-12"> 
+                  <div> 
+                   <div class="ann-display-item-summary"> 
+                    <div class="row"> 
+                     <div class="col-xs-12"> 
+                      <div class="ann-item-header"> 
+                       <div class="ann-item-topic"> <i class="fa fa-list-alt"></i> UCI Police Department 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="row"> 
+                     <div class="col-md-12"> 
+                      <h1><a title="Display the full announcement" class="announcement-link" href="/uPortal/f/welcome/normal/render.uP?pCt=announcements.u21l1n186&amp;pP_announcementId=2393&amp;pP_action=displayFullAnnouncement">2021 Toy Drive</a></h1> 
+                      <p>Thru 12/20, UCIPD is accepting donations of new, unwrapped and packaged toys and teddy bears suitable for infants or children up to age 14. Gifts will help comfort children receiving care at UCI Health and other Orange County children's organizations.</p> 
+                     </div> 
+                    </div> 
+                   </div> 
+                   <div class="ann-display-item-summary"> 
+                    <div class="row"> 
+                     <div class="col-xs-12"> 
+                      <div class="ann-item-header"> 
+                       <div class="ann-item-topic"> <i class="fa fa-list-alt"></i> Claire Trevor School of the Arts 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="row"> 
+                     <div class="col-md-12"> 
+                      <h1><a title="Display the full announcement" class="announcement-link" href="/uPortal/f/welcome/normal/render.uP?pCt=announcements.u21l1n186&amp;pP_announcementId=2386&amp;pP_action=displayFullAnnouncement">New Slate 2021</a></h1> 
+                      <p>Back on stage! An exciting showcase of original choreography by M.F.A. candidates in Dance. This concert is the first full weekend of the year and features a collection of dances that uniquely reflects the enormous talent of UCI choreographers and dancers</p> 
+                      <p>See also: <a href="https://www.arts.uci.edu/event/new-slate-2021">https://www.arts.uci.edu/event/new-slate-2021</a></p> 
+                     </div> 
+                    </div> 
+                   </div> 
+                   <div class="ann-display-item-summary"> 
+                    <div class="row"> 
+                     <div class="col-xs-12"> 
+                      <div class="ann-item-header"> 
+                       <div class="ann-item-topic"> <i class="fa fa-list-alt"></i> Claire Trevor School of the Arts 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="row"> 
+                     <div class="col-md-12"> 
+                      <h1><a title="Display the full announcement" class="announcement-link" href="/uPortal/f/welcome/normal/render.uP?pCt=announcements.u21l1n186&amp;pP_announcementId=2387&amp;pP_action=displayFullAnnouncement">UCI Symphony Orchestra - Fall 2021</a></h1> 
+                      <p>Join us for the annual Thanksgiving concert with an exploration of sound. Program to be announced closer to the event date. Join Maestro Stephen Tucker for a Pre-Concert Conversation before the performance at 7 p.m.</p> 
+                      <p>See also: <a href="https://www.arts.uci.edu/event/uci-symphony-orchestra-fall-2021">https://www.arts.uci.edu/event/uci-symphony-orchestra-fall-2021</a></p> 
+                     </div> 
+                    </div> 
+                   </div> 
+                   <div class="ann-display-item-summary"> 
+                    <div class="row"> 
+                     <div class="col-xs-12"> 
+                      <div class="ann-item-header"> 
+                       <div class="ann-item-topic"> <i class="fa fa-list-alt"></i> UCI Police Department 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="row"> 
+                     <div class="col-md-12"> 
+                      <h1><a title="Display the full announcement" class="announcement-link" href="/uPortal/f/welcome/normal/render.uP?pCt=announcements.u21l1n186&amp;pP_announcementId=2373&amp;pP_action=displayFullAnnouncement">2021 Annual Clery Act Notice</a></h1> 
+                      <p>The 2021 UCI &amp; UCI Health Medical Center Clery Act Annual Security Report &amp; Annual Fire Safety Report are available at: https://police.uci.edu/clery/annual-reports/uci_security_report.pdf &amp; https://ehs.uci.edu/fire-safety/_pdfs/UCI_HEOA_Report.pdf</p> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+                <div class="row announcement-list-nav"> 
+                 <div class="col-md-12"> 
+                 </div> 
+                </div> 
+               </div> 
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+         </div>
+         <div id="column_u21l1s180" class="portal-page-column column-3 col-md-4     ">
+          <div id="inner-column_u21l1s180" class="portal-page-column-inner ">
+           <section id="portlet_u21l1n197" class="up-portlet-wrapper rss-zotwire locked     ">
+            <div class="modal fade" id="ratePortletModalu21l1n197" tabindex="-1" role="dialog" aria-labelledby="RatingModal" aria-hidden="true" data-title="Rate UCI News" data-close.button.label="Close" data-save.button.label="Save &amp; Close" data-geturl="/uPortal/p/portletmarketplace.ctf2/normal/getRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=rss-zotwire" data-saveurl="/uPortal/p/portletmarketplace.ctf2/normal/saveRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=rss-zotwire" data-get.rating.unsucessful="Sorry, your previous rating of the portlet could not be retrieved" data-rating.save.successful="Your rating is much appreciated" data-rating.save.unsuccessful="Your rating did not save.  Please try again!" data-rating.instructions.unrated="You have not yet rated UCI News. Share a rating if you wish." data-rating.instructions.rated="You have already rated UCI News. You may update your rating if you wish."></div>
+            <script type="text/javascript">
+            (function($) {
+                $( document ).ready(function() {
+                    $('#ratePortletModalu21l1n197').createRatingModal();
+                    $('#ratePortletModalu21l1n197').find('input').rating();
+                });
+            })(up.jQuery);
+        </script>
+            <div class="up-portlet-wrapper-inner">
+             <div id="toolbar_u21l1n197" class="fl-widget-titlebar up-portlet-titlebar up-standard-chrome round-top">
+              <h2 class="portlet-title round-top"><a id="u21l1n197" title="UCI News" href="/uPortal/f/welcome/p/rss-zotwire.u21l1n197/max/render.uP?pCp"> UCI News </a></h2>
+              <div class="portlet-controls">
+               <div class="locked-icon">
+                <i class="fa fa-lock" aria-hidden="true"></i><span class="sr-only">This portlet may not be moved</span>
+               </div>
+               <div class="grab-handle hidden">
+                <i class="fa fa-arrows"></i>
+               </div>
+               <div class="portlet-options-menu btn-group hidden">
+                <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" title="Options" href="javascript:void(0);">Options<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="right: 0; left: auto;">
+                 <li class="up-portlet-options-item maximize"><a title="Enter maximized mode for this portlet" href="/uPortal/f/welcome/p/rss-zotwire.u21l1n197/max/render.uP?pCp" class="up-portlet-control focus">Maximize</a></li>
+                 <li class="up-portlet-options-item minimize"><a href="/uPortal/f/welcome/normal/render.uP?pCt=rss-zotwire.u21l1n197&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content">Collapse</a></li>
+                 <li class="up-portlet-options-item directUrl"><a title="Direct URL" class="up-portlet-control directUrl" data-toggle="modal" data-target="#direct-url-modal" data-direct-url="https://portal.uci.edu/uPortal/p/rss-zotwire">Direct URL</a></li>
+                </ul>
+               </div>
+              </div>
+             </div>
+             <div id="portletContent_u21l1n197" class="fl-widget-content fl-fix up-portlet-content-wrapper round-bottom">
+              <div class="up-portlet-content-wrapper-inner"> 
+               <link href="/NewsReaderPortlet/css/newsreader.css" rel="stylesheet" type="text/css"> 
+               <style>
+    #Pluto_89_u21l1n197_10_ .loading {
+        width:100%;
+        min-height: 20px;
+        background: #ffffff url('/NewsReaderPortlet/images/loading.gif') no-repeat center;
+        background-size: contain;
+        font-size: smaller;
+        text-align: center;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+</style> 
+               <div id="Pluto_89_u21l1n197_10_" class="container-fluid newsreader-container"> 
+                <div class="row"> 
+                 <div class="news-reader-feed-list newsreader-content view-news col-md-12"> 
+                  <ul class="news-feeds-container"></ul> 
+                 </div> 
+                </div> 
+               </div> 
+               <script type="text/template" id="Pluto_89_u21l1n197_10_feed-list-template">
+
+    {{#each this}}
+    
+        
+        
+            <!-- option value="{{id}}">{{name}}</option -->
+        
+        
+    
+    {{/each}}
+</script> 
+               <script type="text/template" id="Pluto_89_u21l1n197_10_feed-detail-template">
+                <ul class="news-stories feed">
+                {{{news_stories entries}}}
+                </ul>
+        </script> 
+               <script type="text/template" id="Pluto_89_u21l1n197_10_news-story-template">
+            {{#each this}}
+                <li>
+                    <a href="{{link}}" title="{{description}}" >{{{title}}}</a>
+                </li>
+            {{/each}}
+        </script> 
+               <script src="/ResourceServingWebapp/rs/jquery/1.11.0/jquery-1.11.0.min.js" type="text/javascript"> </script>
+               <script src="/ResourceServingWebapp/rs/jquery-migrate/jquery-migrate-1.2.1.min.js" type="text/javascript"> </script>
+               <script src="/ResourceServingWebapp/rs/jqueryui/1.10.3/jquery-ui-1.10.3.min.js" type="text/javascript"> </script>
+               <script src="/NewsReaderPortlet/rs/handlebars/3.0.3/handlebars-v3.0.3.js" type="text/javascript"> </script>
+               <script src="/ResourceServingWebapp/rs/fluid/1.5.0/js/fluid-custom.min.js" type="text/javascript"> </script>
+               <script src="/NewsReaderPortlet/scripts/q2lLa1zPLHBQzdxR923iEw.aggr.min.js" type="text/javascript"> </script> 
+               <script type="text/javascript">var Pluto_89_u21l1n197_10_=Pluto_89_u21l1n197_10_||{};Pluto_89_u21l1n197_10_.jQuery=jQuery.noConflict(true);Pluto_89_u21l1n197_10_.Handlebars=Handlebars;Handlebars.noConflict();fluid=null;fluid_1_5=null;if(!upnews.initialized){upnews.init(Pluto_89_u21l1n197_10_.jQuery,Pluto_89_u21l1n197_10_.Handlebars);}Pluto_89_u21l1n197_10_.upnews=upnews;upnews=null;</script> 
+               <script type="text/javascript">Pluto_89_u21l1n197_10_.jQuery(function(){var d,f,b,a;d=Pluto_89_u21l1n197_10_.jQuery;f=Pluto_89_u21l1n197_10_.Handlebars;a=Pluto_89_u21l1n197_10_.upnews;var c=f.compile(d("#Pluto_89_u21l1n197_10_news-story-template").html());f.registerHelper("news_stories",function(g){return c(g);});var e=function(){d(".news-stories li a").tooltip({showURL:false});};b=d.extend(a.NewsView,{newsService:new a.newsService("/uPortal/f/welcome/p/rss-zotwire.u21l1n197/normal/resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc"),onSuccessfulSetup:function(){if(false){d("#Pluto_89_u21l1n197_10_ option").removeAttr("selected");d("#Pluto_89_u21l1n197_10_ option[value="+b.newsService.getActiveFeed()+"]").attr("selected","selected");d("#Pluto_89_u21l1n197_10_ select").change(function(){var h=d(this).val();d(b.feedListView).trigger("feedSelected",h);d("#Pluto_89_u21l1n197_10_ .news-stories-container").hide();d("#Pluto_89_u21l1n197_10_feed"+h).show();});}else{var g=d("#Pluto_89_u21l1n197_10_ .news-stories-container").index(d("#Pluto_89_u21l1n197_10_feed"+b.newsService.getActiveFeed()));d("#Pluto_89_u21l1n197_10_ .view-news").tabs({activate:function(h,i){var j=i.newPanel[0].id.split("feed")[1];d(b.feedListView).trigger("feedSelected",j);},active:g});}},feedDetailView:d.extend(a.NewsFeedDetailView,{template:f.compile(d("#Pluto_89_u21l1n197_10_feed-detail-template").html()),postRender:e,loader:function(j){var g=this;var h=d.Deferred();var i=d("<div class='loading'></div>");g.$el.append(i);b.newsService.getFeed(j,g.page).done(function(k){i.remove();if(!k){d(".news-stories",g.$el).append(b.newsService.getErrorMessage());h.resolve({page:g.page,success:false});}else{if(k.entries.length>0){d(".news-stories",g.$el).append(c(k.entries));h.resolve({page:g.page,success:true});e();}else{if(g.page===0){d(".news-stories",g.$el).append("No stories for this feed");h.resolve({page:g.page,success:false});}else{e();}}}});return h.promise();}}),feedListView:d.extend(a.NewsFeedListView,{$el:d("#Pluto_89_u21l1n197_10_ .news-feeds-container"),template:f.compile(d("#Pluto_89_u21l1n197_10_feed-list-template").html())}),namespace:"Pluto_89_u21l1n197_10_"});d(document).ready(function(){d(b.feedListView).bind("feedSelected",function(g,h){if(b.newsService.getActiveFeed()!==h){b.getFeed(h);}});b.setup("");});});</script> 
+              </div>
+             </div>
+            </div>
+           </section>
+           <section id="portlet_u21l1n256" class="up-portlet-wrapper webproxy-emergencyContacts locked     ">
+            <div class="modal fade" id="ratePortletModalu21l1n256" tabindex="-1" role="dialog" aria-labelledby="RatingModal" aria-hidden="true" data-title="Rate Emergency Contacts" data-close.button.label="Close" data-save.button.label="Save &amp; Close" data-geturl="/uPortal/p/portletmarketplace.ctf2/normal/getRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=webproxy-emergencyContacts" data-saveurl="/uPortal/p/portletmarketplace.ctf2/normal/saveRating.resource.uP?_csrf=5aa3b4e2-8a3b-4202-adf0-32ef347a23dc&amp;pP_portletFName=webproxy-emergencyContacts" data-get.rating.unsucessful="Sorry, your previous rating of the portlet could not be retrieved" data-rating.save.successful="Your rating is much appreciated" data-rating.save.unsuccessful="Your rating did not save.  Please try again!" data-rating.instructions.unrated="You have not yet rated Emergency Contacts. Share a rating if you wish." data-rating.instructions.rated="You have already rated Emergency Contacts. You may update your rating if you wish."></div>
+            <script type="text/javascript">
+            (function($) {
+                $( document ).ready(function() {
+                    $('#ratePortletModalu21l1n256').createRatingModal();
+                    $('#ratePortletModalu21l1n256').find('input').rating();
+                });
+            })(up.jQuery);
+        </script>
+            <div class="up-portlet-wrapper-inner">
+             <div id="toolbar_u21l1n256" class="fl-widget-titlebar up-portlet-titlebar up-standard-chrome round-top">
+              <h2 class="portlet-title round-top"><a id="u21l1n256" title="Emergency Contacts" href="/uPortal/f/welcome/p/webproxy-emergencyContacts.u21l1n256/max/render.uP?pCp"> Emergency Contacts </a></h2>
+              <div class="portlet-controls">
+               <div class="locked-icon">
+                <i class="fa fa-lock" aria-hidden="true"></i><span class="sr-only">This portlet may not be moved</span>
+               </div>
+               <div class="grab-handle hidden">
+                <i class="fa fa-arrows"></i>
+               </div>
+               <div class="portlet-options-menu btn-group hidden">
+                <a class="btn btn-link dropdown-toggle" data-toggle="dropdown" title="Options" href="javascript:void(0);">Options<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="right: 0; left: auto;">
+                 <li class="up-portlet-options-item maximize"><a title="Enter maximized mode for this portlet" href="/uPortal/f/welcome/p/webproxy-emergencyContacts.u21l1n256/max/render.uP?pCp" class="up-portlet-control focus">Maximize</a></li>
+                 <li class="up-portlet-options-item minimize"><a href="/uPortal/f/welcome/normal/render.uP?pCt=webproxy-emergencyContacts.u21l1n256&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content">Collapse</a></li>
+                 <li class="up-portlet-options-item directUrl"><a title="Direct URL" class="up-portlet-control directUrl" data-toggle="modal" data-target="#direct-url-modal" data-direct-url="https://portal.uci.edu/uPortal/p/webproxy-emergencyContacts">Direct URL</a></li>
+                </ul>
+               </div>
+              </div>
+             </div>
+             <div id="portletContent_u21l1n256" class="fl-widget-content fl-fix up-portlet-content-wrapper round-bottom">
+              <div class="up-portlet-content-wrapper-inner"> 
+               <div align="left" class="static-tree-menu"> 
+                <div> <!--
+<hr style="height: 5px; width: 680px; color: #ffffff; border: 1px solid #CCCCCC;" size="5" width="680" />
+--> 
+                 <style><!--
+table.emergency-contacts tr:nth-child(odd) { background-color:rgba(0,0,0,0.075); }
+--></style> 
+                 <table border="0" class="emergency-contacts" summary="Contacts"> 
+                  <tbody> 
+                   <tr> 
+                    <td><strong>UCI Campus Police Phone Numbers</strong></td> 
+                    <td></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Emergency Phone</span></td> 
+                    <td><strong>&nbsp;911</strong><span class="uportal-channel-text">&nbsp;</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Dispatch Center</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-5223</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Lost and Found</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-1885</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Major Utility/Electrical Failure</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-5444</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><strong>Medical Center - Police Phone Numbers</strong></td> 
+                    <td><span class="uportal-channel-text">&nbsp;</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Police Emergency</span></td> 
+                    <td><span class="uportal-channel-text">(714) 456-5222 </span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Fire and Medical Emergency</span></td> 
+                    <td><span class="uportal-channel-text">(714) 456-6123</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Security</span></td> 
+                    <td><span class="uportal-channel-text">(714) 456-6501</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><strong>Additional Important Phone Numbers</strong></td> 
+                    <td><span class="uportal-channel-text">&nbsp;</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">UCI Disaster Information Line</span></td> 
+                    <td><span class="uportal-channel-text">(866) IRV-NEWS (activated only after a disaster)</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Campus Assault Resources &amp; Education</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-7273</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Employee Assistance Program (EAP)</span></td> 
+                    <td><span class="uportal-channel-text">(844) 824-3273</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Environmental Health and Safety</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-6200</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Poison Control Center</span></td> 
+                    <td><span class="uportal-channel-text">(800) 222-1222</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Risk Management</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-6510</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Safety Escorts</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-7233 (SAFE)</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Student Health Center</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-5304</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Workers' Compensation</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-9152</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><strong>Workplace Violence Prevention</strong></td> 
+                    <td><span class="uportal-channel-text">&nbsp;</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Police Department (24 hours)</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-5223</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Employee Assistance Program (EAP)</span></td> 
+                    <td><span class="uportal-channel-text">(800) 433-2320</span></td> 
+                   </tr> 
+                   <tr> 
+                    <td><span class="uportal-channel-text">Counseling Center (for students)</span></td> 
+                    <td><span class="uportal-channel-text">(949) 824-6457</span></td> 
+                   </tr> 
+                  </tbody> 
+                 </table> 
+                </div> 
+               </div> 
+              </div>
+             </div>
+            </div>
+           </section>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <footer id="region-footer-first">
+     <section id="portlet_u42l1n510" class="up-portlet-wrapper sitemap" aria-selected="false"> 
+      <div class="container-fluid" id="sitemap-holder"> <!--
+     | Tab layout:
+     | Tab1          Tab2          Tab3          Tab4
+     |   -portlet1     -portlet5     -portlet7     -portlet8
+     |   -portlet2     -portlet6                   -portlet9
+     |   -portlet3                                 -portlet10
+     |   -portlet4
+     |
+     | Tab5 ....
+     +--> <a name="sitemap"></a> 
+      </div> 
+      <template id="sitemap-tab-row-template"> 
+       <div class="row"></div> 
+      </template> 
+      <template id="sitemap-tab-template"> 
+       <div class="up-sitemap-tab-header col-md-3"> 
+        <h4> <a href=""></a> </h4> 
+        <ul></ul> 
+       </div> 
+      </template> 
+      <template id="sitemap-tab-portlet-template"> 
+       <li><a href=""><span class="title"></span></a></li> 
+      </template> 
+      <script src="/ResourceServingWebapp/rs/lodash/4.17.4/lodash.min.js"></script> 
+      <script language="javascript" type="text/javascript">
+(function() { // Prevent adding to the global namespace
+
+    // If a path check fails, it'll throw an error.
+    function sitemapJsonCheck(jsonObj, pathChecks, errMsg) {
+        return !_.every(pathChecks, function(pathCheck) {
+            if(!_.has(jsonObj, pathCheck)) {
+                console.log(errMsg + pathCheck);
+                return false;
+            }
+            return true;
+        });
+    }
+
+    fetch('/uPortal/api/v4-3/dlm/layout.json', {credentials: 'same-origin'})
+        // check for HTTP 2XX Okay response
+        .then(function (response) {
+            if (response.status >= 200 && response.status < 300) {
+                return response;
+            } else {
+                var error = new Error(response.statusText);
+                error.response = response;
+                throw error;
+            }
+        })
+        // extract json from response
+        .then(function (response) {
+            return response.json();
+        })
+        // Generate sitemap
+        .then(function (response) {
+            if (sitemapJsonCheck(response, ['layout.navigation.tabs'], "Missing required object path ")) {
+                throw new Error("Missing 'layout.navigation.tabs' in the layout.");
+            }
+
+            // Begin tab row
+            var tabRowTemplate = document.getElementById('sitemap-tab-row-template');
+            var tabRow = document.importNode(tabRowTemplate.content, true).querySelector('div');
+            _.forEach(response.layout.navigation.tabs, function (tab, tabIndex) {
+                if (!sitemapJsonCheck(tab, ['name','externalId','content'], "Missing required object path [layout.navigation.tabs] > ")) {
+                    // Setup tab link
+                    var tabTemplate = document.getElementById('sitemap-tab-template');
+                    var tabHeader = document.importNode(tabTemplate.content, true).querySelector('div');
+                    // Add content to tab header template
+                    var tabHeaderLink = tabHeader.querySelector('a');
+                    tabHeaderLink.textContent = _.unescape(tab.name);
+                    tabHeaderLink.href = '/uPortal/f/' + tab.externalId + '/normal/render.uP';
+                    var portletList = tabHeader.querySelector('ul');
+
+                    _.forEach(tab.content, function (parentContent, parentContentIndex) {
+                        if (sitemapJsonCheck(parentContent, ['content'], "Missing required object path [layout.navigation.tabs] > content > ")) {
+                            return;
+                        }
+
+                        _.forEach(parentContent.content, function (portlet, portletIndex) {
+                            if (sitemapJsonCheck(portlet, ['name', 'fname', 'ID'], "Missing required object path [layout.navigation.tabs] > content > content > ")) {
+                                return;
+                            }
+
+                            // Setup portlet link
+                            var portletTemplate = document.getElementById('sitemap-tab-portlet-template');
+                            var portletListItem = document.importNode(portletTemplate.content, true).querySelector('li');
+                            // Add content to portlet template
+                            var portletTitle = portletListItem.querySelector('span');
+                            portletTitle.textContent = _.unescape(portlet.name);
+                            var portletLink = portletListItem.querySelector('a');
+                            portletLink.href = '/uPortal/f/' + tab.externalId + '/p/' + portlet.fname + '.' + portlet.ID + '/max/render.uP';
+                            // Add portlet to tab list
+                            portletList.appendChild(portletListItem);
+                        });
+                    });
+
+                    tabRow.appendChild(tabHeader);
+                }
+
+                if(tabIndex === (response.layout.navigation.tabs.length - 1)) {
+                    // Add final tab row to page
+                    document.getElementById('sitemap-holder').appendChild(tabRow);
+                } else if (tabIndex % 4 === 3) { // Four per row
+                    // Add tab row to page, and initialize a new tab row
+                    document.getElementById('sitemap-holder').appendChild(tabRow);
+                    tabRow = document.importNode(tabRowTemplate.content, true).querySelector('div');
+                }
+            });
+        })
+        // Let user know and log error to browser console
+        .catch(function(error) {
+            var errTemplate = document.getElementById('sitemap-tab-row-template');
+            var errDiv = document.importNode(errTemplate.content, true).querySelector('div');
+            errDiv.textContent = 'Unable to load sitemap.';
+            document.getElementById('sitemap-holder').appendChild(errDiv);
+            console.log('Unable to load sitemap.', error);
+        });
+
+})();
+</script> 
+     </section>
+    </footer>
+    <footer id="region-footer-second" role="contentinfo">
+     <section id="portlet_u42l1n610" class="up-portlet-wrapper legal-footer" aria-selected="false"> 
+      <div class="container-fluid legal-footer"> 
+       <div class="portal-power"> 
+        <ul class="col-md-3"> 
+         <li>• <a id="sitemap-revealer"> Sitemap</a></li> 
+         <li>• <a href="http://uci.edu/privacy/" target="_blank"> Privacy Policy</a></li> 
+         <li>• <a href="http://communications.uci.edu/for-journalists/" target="_blank"> Media Inquiries</a></li> 
+         <li>• <a href="/uPortal/p/reset-my-layout"> Reset Layout</a></li> 
+         <li>• <a href="/uPortal/viewXmlFile.jsp?cmsUri=public/Help/infoPagePortalHelp.xml"> Help</a></li> 
+        </ul> 
+        <ul class="col-md-6"> 
+        </ul> 
+        <ul class="col-md-3"> 
+         <li><a href="http://www.uci.edu/">University of California, Irvine</a> </li> 
+         <li> Irvine, CA 92697 </li> 
+         <li> 949-824-5011</li> 
+        </ul> 
+       </div> 
+      </div> 
+      <script type="text/javascript">
+              up.jQuery(document).ready(function() {
+              // sitemap
+                up.jQuery("#sitemap-revealer").click(function() {
+                  up.jQuery("#region-footer-first").toggle();
+                });
+              });
+            
+            <!-- begin UCI code -->
+    		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    		})(window,document,'script','//www.google-analytics.com/analytics.js','olga');
+	    		olga('create', 'UA-62728208-5', 'auto');
+	    		olga('send', 'pageview');
+    		<!-- end UCI code -->
+  		</script> 
+     </section>
+    </footer>
+    <div id="config-lightbox" class="modal fade">
+     <div class="modal-dialog">
+      <div class="modal-content">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Configuration</h4>
+       </div>
+       <div class="modal-body">
+        <div class="loading"></div>
+        <div class="modal-body-content"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="direct-url-modal" class="modal fade">
+     <div class="modal-dialog">
+      <div class="modal-content">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Direct URL</h4>
+       </div>
+       <div class="modal-body">
+        <form>
+         <div class="form-group">
+          <input type="text" class="form-control" id="direct-url-display">
+         </div>
+        </form>
+       </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+      </div>
+     </div>
+    </div>
+    <script type="text/javascript">
+            up.jQuery(function() {
+                var $ = up.jQuery;
+                $('#direct-url-modal').on('show.bs.modal', function (event) {
+                    var widget = $(event.relatedTarget); // Widget that triggered the modal
+                    var dUrl = widget.data('direct-url'); // Extract info from data-* attributes
+                    $('#direct-url-display').val(dUrl);
+                });
+            });
+        </script>
+   </div>
+   <div id="portalDropWarning" class="drop-warning" style="display:none;">
+    <p>This portlet cannot be moved here. The portlet underneath is locked.</p>
+   </div>
+   <script type="text/javascript">
+
+        up.jQuery(document).ready(function() {
+
+            if(window.location.search.indexOf('redirectToDefault=true') > 0) {
+              up.jQuery('#up-notification').noty({text: 'It looks like the page you were attempting to go to does not exist so we redirected you here.', type: 'information'});
+            }
+
+            
+        });
+    </script>
+   <script type="text/javascript">
+                up.analytics = up.analytics || {};
+                up.analytics.host = 'portal.uci.edu';
+                up.analytics.portletData = {"2_u42l1n510_10":{"fname":"sitemap","executionTimeNano":396272},"22_u42l1n610_10":{"fname":"legal-footer","executionTimeNano":204275},"169_u31l1n18_10":{"fname":"help-launcher","executionTimeNano":837805},"24_u30l1n9_10":{"fname":"portal-logo","executionTimeNano":249180},"41_u30l1n3_10":{"fname":"dynamic-respondr-skin","executionTimeNano":397280},"89_u21l1n197_10":{"fname":"rss-zotwire","executionTimeNano":25952912},"94_u21l1n186_10":{"fname":"announcements","executionTimeNano":27183603},"131_u21l1n256_10":{"fname":"webproxy-emergencyContacts","executionTimeNano":19213205},"65_u21l1n185_10":{"fname":"webproxy-campus-map","executionTimeNano":22313801},"163_u31l1n19_10":{"fname":"uci-link","executionTimeNano":293226},"21_u31l1n8_10":{"fname":"login-launcher","executionTimeNano":495973},"36_u42l1n17_10":{"fname":"search-launcher","executionTimeNano":1228418},"112_u21l1n130_10":{"fname":"webproxy-about-portal","executionTimeNano":24012087}};
+                up.analytics.pageData = {"urlState":"NORMAL","executionTimeNano":55611791,"tab":{"id":1,"fragmentName":"guest-lo","tabName":"Welcome","displayString":"Welcome (guest-lo)"}};
+            </script>
+  </div>
+ </body>
+</html>

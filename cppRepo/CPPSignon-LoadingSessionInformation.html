@@ -1,0 +1,357 @@
+<!--https://my.cpp.edu-->
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="utf-8"> 
+  <title>CPP Signon - Loading Session Information</title> 
+  <link rel="stylesheet" type="text/css" href="/css/mycpp.css"> 
+  <script>
+        <!--
+"use strict";
+function readLocalStorage(key) {
+    var success;
+    try {
+        var value = localStorage.getItem(key);
+        if (value != null) {
+            document.form1["shib_idp_ls_value." + key].value = value;
+        }
+        success = "true";
+    } catch (e) {
+        success = "false";
+        document.form1["shib_idp_ls_exception." + key].value = e;
+    }
+    document.form1["shib_idp_ls_success." + key].value = success;
+}
+
+function isLocalStorageSupported() {
+    try {
+        localStorage.setItem("shib_idp_ls_test", "shib_idp_ls_test");
+        localStorage.removeItem("shib_idp_ls_test");
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+        // -->
+        </script> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="Online services provided by Cal Poly Pomona"> 
+ </head> 
+ <body onload="doLoad()"> 
+  <header class="fixed-top" title="Cal Poly Pomona"> 
+   <nav id="cpp-logobar"> <a class="sr-only" href="#main" id="skip-to-nav">Skip To Main Content</a> <a href="https://www.cpp.edu/index.shtml" id="cpp-header-logo-link"> <img alt="Cal Poly Pomona with Octagon" id="cpp-logo-octo" src="/images/cpp-octo-web.svg"> <span class="sr-only">Cal Poly Pomona</span> </a> 
+   </nav> 
+  </header> 
+  <main class="container flex-grow" id="main"> 
+   <section class="text-images"> 
+    <header> 
+     <h1 class="cpp-h1">CPP Signon - Loading Session Information</h1> 
+    </header> 
+    <div> 
+     <p> Loading login session information from the browser... </p> 
+    </div> 
+    <noscript> 
+     <div> 
+      <p> Since your browser does not support JavaScript, you must press the Continue button once to proceed. </p> 
+     </div> 
+    </noscript> 
+    <form name="form1" action="/idp/profile/cas/login?execution=e1s1" method="post"> 
+     <input type="hidden" name="csrf_token" value="_0d6b29c3de61f81bff6856772b13ad762de16569"> 
+     <input name="shib_idp_ls_exception.shib_idp_session_ss" type="hidden"> 
+     <input name="shib_idp_ls_success.shib_idp_session_ss" type="hidden" value="false"> 
+     <input name="shib_idp_ls_value.shib_idp_session_ss" type="hidden"> 
+     <input name="shib_idp_ls_exception.shib_idp_persistent_ss" type="hidden"> 
+     <input name="shib_idp_ls_success.shib_idp_persistent_ss" type="hidden" value="false"> 
+     <input name="shib_idp_ls_value.shib_idp_persistent_ss" type="hidden"> 
+     <input name="shib_idp_ls_supported" type="hidden"> 
+     <input name="_eventId_proceed" type="hidden"> 
+     <noscript> 
+      <input type="submit" value="Continue"> 
+     </noscript> 
+    </form> 
+    <script>
+<!--
+function doLoad() {
+    var localStorageSupported = isLocalStorageSupported();
+    document.form1["shib_idp_ls_supported"].value = localStorageSupported;
+    if (localStorageSupported) {
+        readLocalStorage("shib_idp_session_ss");
+        readLocalStorage("shib_idp_persistent_ss");
+    }
+    document.form1.submit();
+}
+// -->
+</script> 
+   </section> 
+  </main> 
+  <footer class="container-fluid" id="main-footer"> 
+   <div class="row"> 
+    <div class="address text-left"> 
+     <img alt="cal poly pomona" class="footer-logo" src="/images/cpp-white.png"> 
+     <p>3801 West Temple Avenue,Pomona, CA 91768</p> 
+     <div class="copyright"> 
+      <p class="copyright-text">© <script>// <![CDATA[
+document.write(new Date().getFullYear());
+// ]]></script> California State Polytechnic University, Pomona</p> 
+      <p class="copyright-text">All Rights Reserved</p> 
+     </div> 
+    </div> 
+    <div class="footer-links"> <a href="https://www.cpp.edu/aboutcpp/index.shtml" title="Cpp About">About Cal Poly Pomona</a> <a aria-label="Cpp Feedback" href="https://www.cpp.edu/website-feedback.php" title="Cpp Feedback">Feedback</a> <a aria-label="Cpp Privacy" href="https://www.cpp.edu/privacy.shtml" title="footer - Privacy">Privacy</a> <a href="https://www.cpp.edu/accessibility.shtml">Accessibility</a> <a href="https://www.cpp.edu/file-viewers.shtml">Document Readers</a> 
+    </div> 
+   </div> 
+   <div class="row" id="csu-footer"> <a href="https://www2.calstate.edu" title="California state university"> <img alt="california state university" src="/images/csu-wordmark-horizontal.png"> </a> 
+   </div> 
+  </footer> 
+  <script>
+	document.addEventListener("DOMContentLoaded", function(){
+		includeHTML();
+
+	});
+
+	function returnButton(event) {
+		event.preventDefault();
+		document.getElementsByClassName("service-tab")[0].focus();
+	}
+	
+	function serviceTab(event) {
+	  event.preventDefault();
+	  var id = this.getAttribute("href");
+	  var boxid = id.replace('#', '');
+	  document.getElementById("box-students").classList.remove("active");
+	  document.getElementById("box-faculty").classList.remove("active");
+	  document.getElementById("box-staff").classList.remove("active");
+	  document.getElementById("box-alumni").classList.remove("active");
+	  document.getElementById("box-all").classList.remove("active");
+	  document.getElementById("sb").classList.remove("active");
+	  document.getElementById("fb").classList.remove("active");
+	  document.getElementById("stb").classList.remove("active");
+	  document.getElementById("ab").classList.remove("active");
+	  document.getElementById("all").classList.remove("active");
+	  this.classList.add("active");
+	  document.getElementById(boxid).classList.add("active");
+	  document.getElementById(boxid).getElementsByTagName("h2")[0].focus();
+
+    }
+
+	function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /* Loop through a collection of all HTML elements: */
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+		elmnt = z[i];
+		/*search for elements with a certain atrribute:*/
+		file = elmnt.getAttribute("w3-include-html");
+		if (file) {
+		  /* Make an HTTP request using the attribute value as the file name: */
+		  xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+			if (this.readyState == 4) {
+			  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			  /* Remove the attribute, and call this function once more: */
+			  elmnt.removeAttribute("w3-include-html");
+			  includeHTML();
+			}
+		  } 
+		  xhttp.onload = function () {
+			/* Exit the function: */
+			document.getElementsByClassName("return-button")[0].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[1].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[2].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[3].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[4].addEventListener("click", returnButton);
+			document.getElementById("sb").addEventListener("click", serviceTab);
+			document.getElementById("fb").addEventListener("click", serviceTab);
+			document.getElementById("stb").addEventListener("click", serviceTab);
+			document.getElementById("ab").addEventListener("click", serviceTab);
+			document.getElementById("all").addEventListener("click", serviceTab);
+		  }
+		  xhttp.open("GET", file, true);
+		  xhttp.send();
+		  return;
+		}
+	  }
+	}
+
+	</script>  
+ </body>
+</html><!--https://my.cpp.edu/-->
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="utf-8"> 
+  <title>CPP Signon - Loading Session Information</title> 
+  <link rel="stylesheet" type="text/css" href="/css/mycpp.css"> 
+  <script>
+        <!--
+"use strict";
+function readLocalStorage(key) {
+    var success;
+    try {
+        var value = localStorage.getItem(key);
+        if (value != null) {
+            document.form1["shib_idp_ls_value." + key].value = value;
+        }
+        success = "true";
+    } catch (e) {
+        success = "false";
+        document.form1["shib_idp_ls_exception." + key].value = e;
+    }
+    document.form1["shib_idp_ls_success." + key].value = success;
+}
+
+function isLocalStorageSupported() {
+    try {
+        localStorage.setItem("shib_idp_ls_test", "shib_idp_ls_test");
+        localStorage.removeItem("shib_idp_ls_test");
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+        // -->
+        </script> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="Online services provided by Cal Poly Pomona"> 
+ </head> 
+ <body onload="doLoad()"> 
+  <header class="fixed-top" title="Cal Poly Pomona"> 
+   <nav id="cpp-logobar"> <a class="sr-only" href="#main" id="skip-to-nav">Skip To Main Content</a> <a href="https://www.cpp.edu/index.shtml" id="cpp-header-logo-link"> <img alt="Cal Poly Pomona with Octagon" id="cpp-logo-octo" src="/images/cpp-octo-web.svg"> <span class="sr-only">Cal Poly Pomona</span> </a> 
+   </nav> 
+  </header> 
+  <main class="container flex-grow" id="main"> 
+   <section class="text-images"> 
+    <header> 
+     <h1 class="cpp-h1">CPP Signon - Loading Session Information</h1> 
+    </header> 
+    <div> 
+     <p> Loading login session information from the browser... </p> 
+    </div> 
+    <noscript> 
+     <div> 
+      <p> Since your browser does not support JavaScript, you must press the Continue button once to proceed. </p> 
+     </div> 
+    </noscript> 
+    <form name="form1" action="/idp/profile/cas/login?execution=e1s1" method="post"> 
+     <input type="hidden" name="csrf_token" value="_0f01ee8e7c2708e1396421f14b35de4659b22089"> 
+     <input name="shib_idp_ls_exception.shib_idp_session_ss" type="hidden"> 
+     <input name="shib_idp_ls_success.shib_idp_session_ss" type="hidden" value="false"> 
+     <input name="shib_idp_ls_value.shib_idp_session_ss" type="hidden"> 
+     <input name="shib_idp_ls_exception.shib_idp_persistent_ss" type="hidden"> 
+     <input name="shib_idp_ls_success.shib_idp_persistent_ss" type="hidden" value="false"> 
+     <input name="shib_idp_ls_value.shib_idp_persistent_ss" type="hidden"> 
+     <input name="shib_idp_ls_supported" type="hidden"> 
+     <input name="_eventId_proceed" type="hidden"> 
+     <noscript> 
+      <input type="submit" value="Continue"> 
+     </noscript> 
+    </form> 
+    <script>
+<!--
+function doLoad() {
+    var localStorageSupported = isLocalStorageSupported();
+    document.form1["shib_idp_ls_supported"].value = localStorageSupported;
+    if (localStorageSupported) {
+        readLocalStorage("shib_idp_session_ss");
+        readLocalStorage("shib_idp_persistent_ss");
+    }
+    document.form1.submit();
+}
+// -->
+</script> 
+   </section> 
+  </main> 
+  <footer class="container-fluid" id="main-footer"> 
+   <div class="row"> 
+    <div class="address text-left"> 
+     <img alt="cal poly pomona" class="footer-logo" src="/images/cpp-white.png"> 
+     <p>3801 West Temple Avenue,Pomona, CA 91768</p> 
+     <div class="copyright"> 
+      <p class="copyright-text">© <script>// <![CDATA[
+document.write(new Date().getFullYear());
+// ]]></script> California State Polytechnic University, Pomona</p> 
+      <p class="copyright-text">All Rights Reserved</p> 
+     </div> 
+    </div> 
+    <div class="footer-links"> <a href="https://www.cpp.edu/aboutcpp/index.shtml" title="Cpp About">About Cal Poly Pomona</a> <a aria-label="Cpp Feedback" href="https://www.cpp.edu/website-feedback.php" title="Cpp Feedback">Feedback</a> <a aria-label="Cpp Privacy" href="https://www.cpp.edu/privacy.shtml" title="footer - Privacy">Privacy</a> <a href="https://www.cpp.edu/accessibility.shtml">Accessibility</a> <a href="https://www.cpp.edu/file-viewers.shtml">Document Readers</a> 
+    </div> 
+   </div> 
+   <div class="row" id="csu-footer"> <a href="https://www2.calstate.edu" title="California state university"> <img alt="california state university" src="/images/csu-wordmark-horizontal.png"> </a> 
+   </div> 
+  </footer> 
+  <script>
+	document.addEventListener("DOMContentLoaded", function(){
+		includeHTML();
+
+	});
+
+	function returnButton(event) {
+		event.preventDefault();
+		document.getElementsByClassName("service-tab")[0].focus();
+	}
+	
+	function serviceTab(event) {
+	  event.preventDefault();
+	  var id = this.getAttribute("href");
+	  var boxid = id.replace('#', '');
+	  document.getElementById("box-students").classList.remove("active");
+	  document.getElementById("box-faculty").classList.remove("active");
+	  document.getElementById("box-staff").classList.remove("active");
+	  document.getElementById("box-alumni").classList.remove("active");
+	  document.getElementById("box-all").classList.remove("active");
+	  document.getElementById("sb").classList.remove("active");
+	  document.getElementById("fb").classList.remove("active");
+	  document.getElementById("stb").classList.remove("active");
+	  document.getElementById("ab").classList.remove("active");
+	  document.getElementById("all").classList.remove("active");
+	  this.classList.add("active");
+	  document.getElementById(boxid).classList.add("active");
+	  document.getElementById(boxid).getElementsByTagName("h2")[0].focus();
+
+    }
+
+	function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /* Loop through a collection of all HTML elements: */
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+		elmnt = z[i];
+		/*search for elements with a certain atrribute:*/
+		file = elmnt.getAttribute("w3-include-html");
+		if (file) {
+		  /* Make an HTTP request using the attribute value as the file name: */
+		  xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+			if (this.readyState == 4) {
+			  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			  /* Remove the attribute, and call this function once more: */
+			  elmnt.removeAttribute("w3-include-html");
+			  includeHTML();
+			}
+		  } 
+		  xhttp.onload = function () {
+			/* Exit the function: */
+			document.getElementsByClassName("return-button")[0].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[1].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[2].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[3].addEventListener("click", returnButton);
+			document.getElementsByClassName("return-button")[4].addEventListener("click", returnButton);
+			document.getElementById("sb").addEventListener("click", serviceTab);
+			document.getElementById("fb").addEventListener("click", serviceTab);
+			document.getElementById("stb").addEventListener("click", serviceTab);
+			document.getElementById("ab").addEventListener("click", serviceTab);
+			document.getElementById("all").addEventListener("click", serviceTab);
+		  }
+		  xhttp.open("GET", file, true);
+		  xhttp.send();
+		  return;
+		}
+	  }
+	}
+
+	</script>  
+ </body>
+</html>

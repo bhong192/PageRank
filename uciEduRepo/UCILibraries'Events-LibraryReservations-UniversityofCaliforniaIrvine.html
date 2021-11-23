@@ -1,0 +1,2933 @@
+<!--https://news.lib.uci.edu/library-events-->
+<!doctype html>
+<html lang="en"> 
+ <head> <!-- iid: 3012 --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet"> 
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="/css870/LibCal_public.min.css" rel="stylesheet"> 
+  <link href="/css870/print.min.css" rel="stylesheet" media="print"> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script>
+        window.jQuery || document.write('<script src="/js870/jquery.min.js">\x3C/script>');
+    </script> 
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+  <script>
+        jQuery.ui || document.write('<script src="/js870/jquery-ui.min.js">\x3C/script>');
+    </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script>
+        (typeof $().modal == 'function') || document.write('<script src="/js870/bootstrap.min.js">\x3C/script>');
+    </script> 
+  <script src="/js870/LibCal_public.min.js"></script> 
+  <script>
+    springSpace.dateFormat = "dddd, MMMM D, YYYY";
+    springSpace.dateShortFormat = "dddd, MMMM D, YYYY";
+    springSpace.timeFormat = "h:mma";
+    springSpace.timezone = 'America/Los_Angeles';
+    springSpace.currency = "USD";
+    springSpace.currencySymbol = "$";
+
+    springSpace.language = 'en'; // en
+    springSpace.locale = 'en-US'; // en-US
+
+    springSpace.phpTimeFormat = 'g:ia';
+
+    springSpace.bootstrapAsset = '/css870/bootstrap.min.css';
+    springSpace.publicCssAsset = '/css870/LibCal_public.min.css';
+    springSpace.adminCssAsset = '/css870/LibCal_admin.min.css';
+</script> 
+  <script>
+         var springLang  = { eq_GoToNextAvailable: "Next Available", eq_js_add_cart_btn: "Add to Cart", eq_js_add_cc_btn: "Add to Cart & Checkout", eq_js_add_eq_btn: "Add Equipment", eq_js_add_start: "All additional items must have a starting time of", eq_js_add_to_cart: "Add Item to Cart", eq_js_booking_summary_title: "Thank you!", eq_js_cart_tt: "Create a shopping cart with these space bookings, and go to equipment booking page to add more items to the cart.", eq_js_close: "Close", eq_js_date: "Change Return Date", eq_js_det_return: "Determining return time", eq_js_from: "From:", eq_js_from_det: "from", eq_js_go_to_date: "Go To Date", eq_js_isRequired: "is required!", eq_js_rem_pending: "Remove Pending Booking", eq_js_spacew_forb_multi: "Forbidden from booking same resource multiple times in a single booking.<br><br>Please only select sequential checkboxes.", eq_js_spacew_forb_single: "Forbidden from booking different resources in a single booking.", eq_js_to: "To:", eq_js_until_det: "until...", eq_start_over: "Make Another Booking", eq_unavail: "Unavailable/Padding", eq_your_book: "Your Booking" };
+    </script> 
+  <meta name="robots" content="noindex, nofollow, noarchive"> 
+  <title>
+                    UCI Libraries' Events -
+                Library Reservations -
+        University of California Irvine
+    </title> 
+  <link rel="alternate" type="application/rss+xml" title="Latest Events" href="/rss.php?iid=3012&amp;m=month&amp;cid=12385"> 
+  <link rel="stylesheet" href="/css870/datepicker.min.css"> 
+  <style>
+        .bs-placeholder {
+        color: #333 !important;
+    }
+
+    .s-lc-c-erh {
+        margin-top: 6px;
+    }
+
+    .s-lc-c-timezone-horiz {
+        float: left;
+        padding-bottom: 6px;
+    }
+
+    .s-lc-c-list-cont-horiz {
+        clear: both;
+    }
+
+    #cal-form .bootstrap-select {
+        width: 100%;
+    }
+
+    #cal-form .bootstrap-select .btn {
+        font-size: 12px;
+    }
+
+        /* This CSS controls: */
+/* Public and Admin System Calendar */
+/* Public Full and Mini Calendar Widget */
+
+/*Embeddable mini-calendar - from Widgets/API section */
+
+#mini-calendar { border: 3px solid #066A9E; padding: 2px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.cal-mini {width: 100%; font-family: Arial, Verdana, sans-serif; }
+.cal-mini td { border-right: 1px solid #f2f2f2; }
+.cal-mini-day-head, .cal-mini-title-row td {border: 0px!important;  background-color: #f2f2f2;}
+.cal-mini-title {text-align: center; color: #362E2C; font: bold 14px Arial, Verdana, sans-serif;}
+.cal-mini-day-head { color: #7F7F7F; text-align: center; font-size: 12px; font-weight: bold; }
+.cal-mini-arrow { text-align: center!important; font-size: 16px;}
+.cal-mini-day-num, .cal-mini-day-pad { text-align: center;  color: #362E2C; margin:1px;}
+.cal-mini-hasevent a { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #FF972F;  border: 1px solid #fff; display: block; color: #fff; text-decoration: none; }
+.cal-mini-hasevent a:hover { background-color: #fff; color: #FF972F; text-decoration: none; border: 1px solid #FF972F; }
+#calevent-mini-list-h { padding: 3px 0px 3px 5px; color: #362E2C; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #066A9E; background-color: #f2f2f2; font: bold 12px Arial, Verdana, sans-serif; }
+.calevent-mini { list-style-type: none; padding: 0px; margin:0px; overflow: auto; }
+.calevent-mini-time { padding: 0px; margin: 0px; color: #4A4A4A; font-size: 11px;}
+.calevent-mini li a{ font-weight: bold; }
+.calevent-mini li{ padding: 0px 5px; margin: 0px; border-bottom: 1px solid #f2f2f2; }
+.calevent-mini li:hover{ background-color: #f2f2f2; }    </style> 
+  <style type="text/css">
+a, a:hover, a:focus {
+	outline: 0 !important;
+}
+body { 	
+	font-size:14px; 
+} 
+/* BANNER STYLES */#main-nav-banner {   	background-color: #1966A2;}#utility-nav {    	background-color:#002949;    	text-transform:uppercase;   	font-weight:500;    	font-size:12px;    	line-height:1.428457;    }#utility-nav ul {    	list-style-type: none;	padding:0;	margin:0;}#utility-nav ul li {    	float:left;    	color:white;padding:6px 16px 6px 0;    	margin:0;}#utility-nav ul li a {    	color:white;}#utility-nav-left {    	padding-left:14px;float:left;}#utility-nav-right {    	float:right;    	padding-right:24px;}#utility-nav-left ul#utility-nav-left-locations {    	display:none;    	background-color:#ffffff;    	border:1px solid #e7e7e7;    	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);    	position:absolute;    	z-index:1000;    	text-transform: uppercase;    	padding:10px;    	margin:0;}#utility-nav-left ul#utility-nav-left-locations li a {    	color:#000000;}#utility-nav-left ul#utility-nav-left-locations li {    	float:none;}#utility-nav-left-location-toggle {    	cursor: pointer;}#banner {    	float: left;    	max-width: 40%;    	padding: 0 0 0 15px;    	border: none;} #utility-nav ul li a { 	margin:0;	padding:0;} #locations_dropdown_menu a:hover,#locations_dropdown_menu a:focus {    	outline: 1px dotted black;} #utility-nav-left li ul.dropdown-menu {     	border:1px #e7e7e7 solid;}#utility-nav-left li ul.dropdown-menu li {     	font-size: 12px;    	padding: 6px 16px 6px 10px;     	line-height:20px;}#utility-nav-left li.open a {    	color: #000000;}.nav > li > a:hover, .nav > li > a:focus {     	background-color: transparent !important;	text-decoration:none !important;}#locations_dropdown, #locations_dropdown:focus, #locations_dropdown:active, #locations_dropdown:hover {    	background-color: #002949 !important;    	color: white !important;} #navbar-mobile-menu button {    margin: 16px auto 0;    padding: 0;}#utility-main-nav-collapse {    background-color: #1a66a1;    border: medium none;    border-radius: 0;    color: white;}#menu-row-mobile a { 	text-decoration: none;}#menu-row-mobile ul { 	padding:0px; 	margin:0px;}#menu-row-mobile ul li{	list-style-type: none;}#menu-row-mobile li:hover {	cursor:pointer;}#main-nav-mobile {	background-color:#1966A2;}.main-nav-mobile-heading {	color:white;	margin:0px;	padding:0px;	padding-left:32px;	font-size:24px;	width:100%;	text-align: left;}.main-nav-mobile-heading:hover {	color:white;}#main-nav-mobile li {	line-height:72px;}.main-nav-mobile-submenu {	background-color:white;	line-height:40px;}.main-nav-mobile-submenu li {	border-left:white solid 5px;}.main-nav-mobile-submenu li a {	padding:0px;	margin:0px;}.main-nav-mobile-submenu li:hover {	border-left:#fcd02f solid 5px;	color:#0D5186;	background-color: white !important;}.main-nav-mobile-submenu li {	padding-left:32px;}#main-nav-mobile li ul li a {	color:#011A2E;}.mobile-main-nav-angle {	float:right;	padding-right:60px;}.mobile-utility-nav-angle {	float:right;	padding-right:30px;}#utility-nav-mobile {	background-color:#002949;	text-transform: uppercase;}#utility-nav-mobile-locations {	width:100%; 	font-size:16px;}#utility-nav-mobile a {	color:white;}#utility-nav-mobile .btn {	color:white;	text-align: left;	padding:0px;	margin:0px;}#utility-nav-mobile li {	line-height:50px;	padding-left:32px;}#utility-nav-mobile-submenu-locations ul li {	color:white;}/* end for mobile utility and main menu *//* arrow toggles */#mobile-angle-down-find {	display:inline-block;}#mobile-angle-left-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-find {	display:inline-block;}#mobile-angle-down-services {	display:inline-block;}#mobile-angle-left-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-services {	display:inline-block;}#mobile-angle-down-about {	display:inline-block;}#mobile-angle-left-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-about {	display:inline-block;}#mobile-angle-down-help {	display:inline-block;}#mobile-angle-left-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-help {	display:inline-block;}#mobile-angle-down-locations {	display:inline-block;}#mobile-angle-left-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-down-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-left-locations {	display:inline-block;}.center-block {    margin-top: 16px;}#s-lc-public-footer {		background-color:#002949;		color:#cae1f5;margin-left:-15px;margin-right:-15px;}#s-lc-public-footer a, #s-lc-public-footer a:visited {		color:white;}#s-lc-public-footer .s-lc-text-greyout {		color:#f5f5f5;}/* Small Devices, Tablets */@media only screen and (max-width : 768px) {	     #navbar-mobile {          height:60px;          background-color:#1A66A1;          border-bottom:1px solid #ffffff;     }     #navbar-mobile-banner {          height:60px;          border-left:1px white solid;          border-right:1px white solid;     }     #navbar-mobile div {          padding:0px;          margin:0px;     } }/* Extra Small Devices, Phones */ @media only screen and (max-width : 480px) {	#utility-nav {			display:none;	}	#navbar-mobile {		display:none;	}} #cal-form .form-group:nth-child(4) { display:none; } /* hide the accessible and power icons */
+.fa-wheelchair-alt, .fa-plug { display: none; }
+
+/* hide the accessible and power filters */
+#s-lc-accessible_container, #s-lc-powered_container { display: none; }
+
+/* hide the accessible and power info on a space page */
+.s-lc-section-description p:last-child { display: none; } </style> 
+ </head> 
+ <body id="calendar_12385" class="s-lc-public s-lc-public-page-5"> <a id="s-lc-public-skiplink" class="s-lc-skiplink alert-info" href="#s-lc-public-main">Skip to Main Content</a> 
+  <div id="s-lc-public-cust-header" role="banner">
+   <!-- BEGIN MOBILE MENUS -->
+   <div class="navbar-header row visible-xs" id="navbar-mobile">
+    <div id="navbar-mobile-menu" class="col-xs-2">
+     <button class="center-block" data-target="#menu-row-mobile" data-toggle="collapse" id="utility-main-nav-collapse" type="button">MENU</button>
+    </div>
+    <div id="navbar-mobile-banner" class="text-center col-xs-8">
+     <a href="https://www.lib.uci.edu"><img alt="UCI Libraries Mobile Site" class="center-block" id="banner-mobile" src="https://www.lib.uci.edu/sites/all/images/uci-lib-banner-libapps.jpg"></a>
+    </div>
+   </div>
+   <div class="row hidden-lg hidden-md collapse" id="menu-row-mobile">
+    <ul id="utility-nav-mobile"> 
+     <li> 
+      <div class="btn collapsed" data-target="#utility-nav-mobile-submenu-locations" data-toggle="collapse" id="utility-nav-mobile-locations">
+       Locations
+      </div> 
+      <div class="collapse" id="utility-nav-mobile-submenu-locations"> 
+       <ul> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+       </ul> 
+      </div> </li> 
+     <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     <li><a href="//www.lib.uci.edu/hours">Hours</a></li> 
+     <li><a href="//www.lib.uci.edu/accessibility">Accessibility</a></li> 
+     <li><a href="//www.lib.uci.edu/accounts">Accounts</a></li> 
+     <li><a href="https://partners.lib.uci.edu">Giving</a></li>
+    </ul>
+   </div><!-- END MOBILE MENUS --><!-- BEGIN INCLUDE THIS: UTILITY BAR AND BANNER -->
+   <div id="utility-nav" class="container hidden-xs"> 
+    <div id="utility-nav-left"> 
+     <ul class="nav navbar-nav" id="utility-nav-left"> 
+      <li class="dropdown"><a id="locations_dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Locations <span class="caret"></span></a> 
+       <ul class="dropdown-menu" id="locations_dropdown_menu"> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+        <li><a href="//www.lib.uci.edu/gateway-study-center">Gateway Study Center</a></li> 
+       </ul> </li> 
+      <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     </ul> 
+    </div> 
+    <div id="utility-nav-right"> 
+     <ul class="nav navbar-nav"> 
+      <li><a href="https://www.lib.uci.edu/hours"><i class="fa fa-clock-o"></i> Hours</a></li> 
+      <li><a href="//www.lib.uci.edu/accessibility"><i class="fa fa-wheelchair"></i> Accessibility</a></li> 
+      <li><a href="https://www.lib.uci.edu/accounts"><i class="fa fa-user"></i> Accounts</a></li> 
+      <li><a href="https://partners.lib.uci.edu"><i class="fa fa-gift"></i> Giving</a></li> 
+     </ul> 
+    </div>
+   </div>
+   <div id="main-nav-banner" class="container hidden-xs"> 
+    <div id="banner"> <map id="banner_map" name="banner_map"> <area title="UCI Home Page" alt="UCI Home Page" coords="0,0,120,78" shape="rect" href="https://www.uci.edu"> <area title="UCI Libraries Home Page" alt="UCI Libraries Home Page" coords="121,0,400,78" shape="rect" href="https://www.lib.uci.edu"> </map> 
+     <img class="logoLink img-responsive" src="//www.lib.uci.edu/sites/all/images/uci-lib-logo_3.jpg" usemap="#banner_map" alt="Libaries home page" id="banner-image"> 
+    </div>
+   </div><!-- END INCLUDE THIS: UTILITY BAR AND BANNER -->
+  </div> 
+  <div class="container"> 
+   <div id="s-lc-public-bc" class="row"> 
+    <div class="col-md-12"> 
+     <nav aria-label="Breadcrumb"> 
+      <ol class="breadcrumb"> 
+       <li> <a href="http://www.lib.uci.edu/"> University of California Irvine </a> </li> 
+       <li class="s-lc-desktop-only"> <a href="https://spaces.lib.uci.edu"> Library Reservations </a> </li> 
+       <li class="active s-lc-desktop-only"> UCI Libraries' Events </li> 
+      </ol> 
+     </nav> 
+    </div> 
+   </div> 
+   <noscript> 
+    <div class="alert alert-danger" id="noscript">
+     Your browser has javascript disabled. Without javascript some functions will not work.
+    </div> 
+   </noscript> 
+   <div id="s-lc-public-title" class="row"> 
+    <div class="col-md-12"> 
+     <h1 id="s-lc-public-pt">UCI Libraries' Events</h1> 
+    </div> 
+   </div> 
+   <div id="s-lc-public-pd" class="row">
+    <div class="col-md-12">
+     By making a reservation and/or attending an event at the UCI Libraries, I hereby grant the UCI Libraries and anyone authorized by the UCI Libraries the unrestricted right to copyright, reproduce, publish and otherwise use my picture, video, audio or power point presentation on the date of the event. I understand that the Libraries seek only to use these items for non-commercial purposes including, but not limited to advertising and promoting the event and the UCI Libraries. This includes displays on the UCI Libraries' website. I hereby waive any causes of action I may have on account of the use of my photograph, video, audio or my presentation made at the Libraries. I acknowledge that I have NOT received any financial compensation and that no such compensation is required for the UCI Libraries to use these items in the above mentioned manner. I represent that I have read the foregoing and fully and completely understand the contents hereof. Any concerns can be addressed to the registration staff at the time of event or in an email to partners@uci.edu, we will do our best to accommodate. <a href="https://partners.lib.uci.edu/uci-libraries-special-events-mail" target="_blank">Join the UCI Libraries Special Events Mailing List</a>
+    </div>
+   </div> 
+   <main> 
+    <div id="s-lc-public-main" class="s-lc-public-main"> 
+     <section> 
+      <div id="s-lc-public-page-content" class="row"> 
+       <div id="col1" class="col-md-12 center"> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-mobile-only margin-bottom-med" data-toggle="collapse" data-target="#cal-form"> <i class="fa fa-search fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Filter by</span> </button> 
+        <form id="cal-form" class="form-inline margin-bottom-med collapse in" role="search"> <span class="sr-only">Filter results by...</span> 
+         <div class="form-group" id="s-lc-c-sc"> <label for="s-lc-c-search" class="sr-only">Search</label> 
+          <input type="text" class="form-control input-sm" name="q" id="s-lc-c-search" value="" aria-required="false" placeholder="Search for event..." aria-label="Search for event..." role="searchbox"> 
+         </div> 
+         <div class="form-group"> 
+          <input class="form-control input-sm s-lc-datepicker-readonly" type="text" name="date" id="s-lc-filter-date" readonly placeholder="Date"> 
+         </div> 
+         <div class="form-group"> <span class="sr-only"><label for="cal-dd">Calendar</label></span> <select name="cal[]" id="cal-dd" class="selectpicker" multiple title="Calendar" aria-required="true" data-size="15" data-selected-text-format="static"> <option value="12385" selected data-cal_id="12385">UCI Libraries' Events</option> </select> 
+         </div> 
+         <div class="form-group" id="s-lc-c-catf"> <span class="sr-only"><label for="cat-dd">Category</label></span> <select name="ct[]" id="cat-dd" aria-required="false" class="selectpicker" multiple title="Category" data-size="15" data-selected-text-format="static"> </select> 
+         </div> 
+         <div class="form-group" id="s-lc-c-audiencef"> <span class="sr-only"><label for="audience-dd">Audience</label></span> <select name="audience[]" id="audience-dd" aria-required="false" class="selectpicker" multiple title="Audience" data-size="15" data-selected-text-format="static"> <option value="3487" data-cal_id="3487" data-bgcolor="#395CD1" data-content="<span class='label' style='background-color:#395CD1'>&nbsp;</span> Alumni</span>"> Alumni </option> <option value="3402" data-cal_id="3402" data-bgcolor="#D13957" data-content="<span class='label' style='background-color:#D13957'>&nbsp;</span> Faculty</span>"> Faculty </option> <option value="3403" data-cal_id="3403" data-bgcolor="#EBC42A" data-content="<span class='label' style='background-color:#EBC42A'>&nbsp;</span> General Public</span>"> General Public </option> <option value="3401" data-cal_id="3401" data-bgcolor="#B339D1" data-content="<span class='label' style='background-color:#B339D1'>&nbsp;</span> Graduate Students</span>"> Graduate Students </option> <option value="3488" data-cal_id="3488" data-bgcolor="#ED0E0E" data-content="<span class='label' style='background-color:#ED0E0E'>&nbsp;</span> Staff</span>"> Staff </option> <option value="3400" data-cal_id="3400" data-bgcolor="#3AD1B3" data-content="<span class='label' style='background-color:#3AD1B3'>&nbsp;</span> Undergraduate Students</span>"> Undergraduate Students </option> <option value="4782" data-cal_id="4782" data-bgcolor="#39D1D1" data-content="<span class='label' style='background-color:#39D1D1'>&nbsp;</span> VIP</span>"> VIP </option> </select> 
+         </div> 
+         <div class="form-group" id="s-lc-c-camf"> 
+         </div> 
+         <div class="form-group" id="s-lc-c-online-filter"> <label class="sr-only" for="include-events-dd"> Include Events </label> <select name="include-events" id="include-events-dd" aria-required="false" class="selectpicker"> <option value="0"> Onsite And Online </option> <option value="1"> Online Only </option> <option value="2"> Onsite Only </option> </select> 
+         </div> <button type="button" class="btn btn-info btn-sm" id="s-lc-c-sbtn">Search</button> <a href="#" id="s-lc-c-clear-filters" class="s-lc-filters-clear"> Clear All </a> 
+        </form> 
+        <div id="s-lc-c-filters-used" class="alert alert-success margin-bottom-med" display="style: none;"></div> 
+        <div id="s-lc-c-tz-modes" class="pad-bottom-med"> 
+         <div class="s-lc-timezone-container s-lc-c-timezone-horiz s-lc-c-timezone">
+           Time Zone: Pacific Time - US &amp; Canada (<a href="#" class="s-lc-c-timezone-change">change</a>) 
+         </div> 
+         <div id="s-lc-c-view-modes" class="s-lc-c-view-modes">
+           Change View: 
+          <div class="btn-group"> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-card"> <i class="fa fa-th fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Card View</span> </button> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-list"> <i class="fa fa-align-justify fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Day/List View</span> </button> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-monthly"> <i class="fa fa-calendar fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Monthly View</span> </button> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-weekly"> <i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Weekly View</span> </button> 
+          </div> 
+         </div> 
+        </div> 
+        <div id="s-lc-c-list-results" role="region" aria-live="polite"> 
+         <h2 class="sr-only" tabindex="0">Search Results</h2> 
+         <div id="s-lc-c-list-cont" class="s-lc-c-list-cont-horiz"></div> 
+        </div> 
+       </div> 
+      </div> 
+     </section> 
+    </div> 
+   </main> 
+   <footer id="s-lc-public-footer" class="s-lc-public-footer row"> 
+    <div id="s-lc-public-footer-brand"> <span title="libcal-us-1">Powered by</span> <a href="https://www.springshare.com">Springshare</a>. 
+    </div> 
+    <div id="s-lc-public-footer-rights">
+      All rights reserved. 
+    </div> 
+    <div id="s-lc-footer-support-link"> <a href="mailto:kferry@uci.edu">Report a tech support issue.</a> 
+    </div> 
+    <div id="s-lc-public-footer-admin-links" role="navigation"> <a id="s-lc-sign-in" href="https://uci.libapps.com/libapps/login.php?site_id=4298&amp;target=">Login to LibApps</a> 
+    </div> 
+    <div class="s-lc-public-footer-actions"> 
+     <div id="s-lc-language"> <select id="s-lc-language-selector" aria-label="Language Selector"> <option value="cy">Cymraeg</option> <option value="en" selected>English</option> <option value="es">español</option> <option value="fr">français</option> <option value="ga">Irish</option> <option value="sl">slovenski jezik</option> <option value="vi">Ti?ng Vi?t</option> <option value="zh">?? Zh?ngwén</option> </select> 
+     </div> 
+    </div> 
+   </footer> 
+   <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-65077063-1', 'auto');  ga('send', 'pageview');</script> 
+  </div> 
+  <script src="/js870/datepicker.min.js"></script> 
+  <script src="/js870/direct/pagination.min.js"></script> 
+  <script src="/js870/direct/public/events/calendar.min.js"></script> 
+  <script>
+        function addEventDataTextTranslations(eventData) {
+            eventData.textMore = 'More';
+            eventData.textViewMoreInfo = 'View\u0020More\u0020Information';
+            eventData.textShowMoreDates = 'Show\u0020more\u0020dates';
+            eventData.textFeaturedImage = 'Event\u0020featured\u0020image';
+            eventData.textGoToEvent = 'Go\u0020to\u0020event\u0020page';
+
+            eventData.textDate = 'Date';
+            eventData.textTime = 'Time';
+            eventData.textLocation = 'Location';
+            eventData.textCategories = 'Categories';
+            eventData.textAudience = 'Audience';
+            eventData.textFrom = 'From';
+            eventData.textTo = 'To';
+            eventData.textEventCost = 'Event\u0020Cost';
+            eventData.textOnlineEvent = 'Online';
+            eventData.textRegister = 'Register';
+        }
+    </script> 
+  <script>
+        var activeSearch = false;
+        var activeView = "g";
+        var activePage = 1;
+        var activeDate = moment("2021\u002D11\u002D22", springSpace.phpDateFormat).locale('en');
+        var haveChosenSpecificDate = 0;
+        var resultsPerPageViewMap = {
+            "g": 48,
+            "d": 20,
+        };
+        var momentWeekFormat = 'week';
+
+                var activeDateMinimumValue = moment("2021\u002D11\u002D22").locale('en');
+        
+        var datePickerTemplates = {
+            leftArrow: '<span class="sr-only">Previous</span>&laquo;',
+            rightArrow: '<span class="sr-only">Next</span>&raquo;'
+        };
+
+        var template = "<div class=\"media s-lc-c-evt\">\n    <div class=\"media-body\">\n        <h2 class=\"media-heading s-lc-c-evt-title\">\n            <a href=\"{{url}}\">{{title}}<\/a>\n\n            {{#online_event}}\n                <span class=\"label label-info s-lc-eventcard-online-pill\">\n                    {{textOnlineEvent}}\n                <\/span>\n            {{\/online_event}}\n        <\/h2>\n        <div class=\"s-lc-c-evt-des\">{{{shortdesc}}}\n            {{#shortdesc_was_truncated}}\n            &nbsp;<a href=\"{{url}}\" aria-label=\"{{textViewMoreInfo}}\">{{textMore}}<\/a><br>\n            {{\/shortdesc_was_truncated}}\n        <\/div>\n        <dl class=\"dl-horizontal\">\n            {{^multi_day_event}}\n                <dt>{{textDate}}:<\/dt>\n                <dd>{{date}}\n                    {{#future_dates.0}}\n                        <i class=\"fa fa-calendar pad-left-med\" aria-hidden=\"true\"><\/i>\n                        <a href=\"#\" onclick=\"jQuery('#future_{{id}}').toggle(); return false;\">{{textShowMoreDates}}<\/a>\n                        <p id=\"future_{{id}}\" style=\"display:none\">\n                            {{#future_dates}}\n                            <a href=\"\/event\/{{event_id}}\">{{start}}<\/a><br>\n                            {{\/future_dates}}\n                        <\/p>\n                    {{\/future_dates.0}}\n                <\/dd>\n\n                <dt>{{textTime}}:<\/dt>\n                <dd>{{start}}{{#end}} - {{end}}{{\/end}}<\/dd>\n            {{\/multi_day_event}}\n\n            {{#multi_day_event}}\n                <dt>{{textFrom}}:<\/dt>\n                <dd>\n                    {{^all_day_event}}{{start}},{{\/all_day_event}}\n                    {{date}}\n                <\/dd>\n                <dt>{{textTo}}:<\/dt>\n                <dd>\n                    {{^all_day_event}}{{end}},{{\/all_day_event}}\n                    {{multi_day_end_date}}\n                <\/dd>\n            {{\/multi_day_event}}\n\n            {{#location}}\n                <dt>{{textLocation}}:<\/dt>\n                <dd>\n                    {{#locations}}{{name}}{{#map}} (<a href=\"{{map}}\" target=\"_blank\" title=\"Open map for {{name}}\">Map <i class=\"fa fa-external-link\" aria-hidden=\"true\"><\/i><\/a>){{\/map}}{{^last}}, {{\/last}}{{\/locations}}{{#campus}}, {{campus}}{{\/campus}}\n                <\/dd>\n            {{\/location}}\n\n            {{^location}}\n                {{#campus}}\n                    <dt>{{textLocation}}:<\/dt>\n                    <dd>{{campus}}<\/dd>\n                {{\/campus}}\n            {{\/location}}\n\n            {{#registration_cost}}\n                <dt>{{textEventCost}}:<\/dt>\n                <dd>{{registration_cost}}<\/dd>\n            {{\/registration_cost}}\n\n            {{#audiences.0}}\n            <dt>{{textAudience}}:<\/dt>\n            <dd>{{#audiences}}\n                <span class=\"s-lc-event-category-color\" style=\"background-color:{{color}}\">&nbsp;<\/span>\n                <span class=\"s-lc-event-category-link\">\n                    <a href=\"{{calendar_url}}&t=d&cal%5B%5D={{calendar_id}}&audience%5B%5D={{id}}\">{{name}}<\/a>\n                <\/span> &nbsp;\n                {{\/audiences}}\n            <\/dd>\n            {{\/audiences.0}}\n\n            {{#categories_arr.0}}\n            <dt>{{textCategories}}:<\/dt>\n            <dd>{{#categories_arr}}\n                <span class=\"s-lc-event-category-color\" style=\"background-color:{{color}}\">&nbsp;<\/span>\n                <span class=\"s-lc-event-category-link\">\n                    <a href=\"{{calendar_url}}&t=d&d=0000-00-00&cal%5B%5D={{calendar_id}}&ct%5B%5D={{cat_id}}\">{{name}}<\/a>\n                <\/span> &nbsp;\n                {{\/categories_arr}}\n            <\/dd>\n            {{\/categories_arr.0}}\n\n            <dt><\/dt>\n            <dd>\n                {{#seats}}\n                <dt><\/dt>\n                <dd><a href=\"{{url}}\" class=\"btn btn-success btn-sm margin-top-med\">{{textRegister}}! {{#seatsleft}} - {{seatsleft_text}}{{\/seatsleft}}<\/a><\/dd>\n                {{\/seats}}\n\n                {{#registration_msg}}\n                <dt><\/dt>\n                <dd><a href=\"{{url}}\" class=\"btn {{class}} btn-sm margin-top-med\">{{{msg}}}<\/a><\/dd>\n                {{\/registration_msg}}\n            <\/dd>\n        <\/dl>\n    <\/div>\n    {{#featured_image}}\n    <div class=\"media-right\"><a href=\"{{url}}\"> <img class=\"media-object img-thumbnail s-lc-c-evt-fi\" src=\"{{featured_image}}\" alt=\"{{title}}\"> <\/a><\/div>\n    {{\/featured_image}}\n<\/div>\n";
+        var cardViewTemplate = "<div class=\"s-lc-eventcard\">\n    <div class=\"s-lc-eventcard-content\">\n        <div class=\"s-lc-eventcard-heading\">\n            <div class=\"s-lc-eventcard-heading-content\">\n                <div class=\"s-lc-evt-date\">\n                    <div class=\"s-lc-evt-date-m\">{{monthshort}}<\/div>\n                    <div class=\"s-lc-evt-date-d\">{{day}}<\/div>\n                <\/div>\n\n                <div class=\"s-lc-eventcard-heading-text-group\">\n                    <div class=\"s-lc-eventcard-heading-text s-lc-hide-long-text\">\n                        {{^multi_day_event}}\n                            {{dayshort}}, {{start}}{{#end}} - {{end}}{{\/end}}\n                        {{\/multi_day_event}}\n\n                        {{#multi_day_event}}\n                            {{monthshort}} {{day}} -\n                            {{#multi_day_end}}\n                                {{monthshort}} {{day}}\n                            {{\/multi_day_end}}\n                        {{\/multi_day_event}}\n\n                        {{#online_event}}\n                            <span class=\"label label-info s-lc-eventcard-online-pill\">\n                                {{textOnlineEvent}}\n                            <\/span>\n                        {{\/online_event}}\n                    <\/div>\n                    <div class=\"s-lc-eventcard-heading-text s-lc-hide-long-text\">{{campusAndLocation}}<\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n\n        <div class=\"s-lc-eventcard-event-color-bar\" style=\"background-color: {{color}}\">\n        <\/div>\n\n        <div class=\"s-lc-eventcard-body\">\n            {{#seatsleft}}\n                <div class=\"s-lc-ribbon s-lc-ribbon-top-right\">\n                    <span>\n                        {{seatsleft_text}}\n                    <\/span>\n                <\/div>\n            {{\/seatsleft}}\n\n            <h2 class=\"s-lc-eventcard-title\">\n                <a title=\"{{title}}\" href=\"{{url}}\">\n                    {{title}}\n                <\/a>\n            <\/h2>\n\n            {{#shortdesc}}\n            <div class=\"s-lc-eventcard-description\">\n                {{{shortdesc}}}\n                {{#shortdesc_was_truncated}}\n                &nbsp;<a href=\"{{url}}\" aria-label=\"{{textViewMoreInfo}}\">{{textMore}}<\/a><br>\n                {{\/shortdesc_was_truncated}}\n            <\/div>\n            {{\/shortdesc}}\n\n            {{#registration_cost}}\n                <br>\n                <div class=\"s-lc-eventcard-registration-cost\">\n                    {{textEventCost}}: {{registration_cost}}\n                <\/div>\n            {{\/registration_cost}}\n        <\/div>\n\n        <div class=\"s-lc-eventcard-tags\">\n            <ul>\n                {{#categoriesToShowInFull}}\n                    <li class=\"s-lc-eventcard-tag\">\n                        <span class=\"s-lc-event-category-color\" style=\"background-color:{{color}}\">&nbsp;<\/span>\n                        <span class=\"s-lc-event-category-link\" data-toggle=\"tooltip\" title=\"{{name}}\">\n                            <a href=\"{{calendar_url}}&t=g&cal%5B%5D={{calendar_id}}{{#isCategory}}&ct={{id}}{{\/isCategory}}{{#isAudience}}&audience={{id}}{{\/isAudience}}\">\n                                {{name}}\n                            <\/a>\n                        <\/span>\n                    <\/li>\n                {{\/categoriesToShowInFull}}\n\n                {{#categoriesTooltip}}\n                    <li class=\"s-lc-eventcard-tag-more\">\n                        <a href=\"#\" data-toggle=\"tooltip\" title=\"{{categoriesTooltip}}\" aria-label=\"{{categoriesTooltip}}\">&hellip;<\/a>\n                    <\/li>\n                {{\/categoriesTooltip}}\n            <\/ul>\n        <\/div>\n    <\/div>\n<\/div>\n";
+        var cardViewDefaultImage = 'https\u003A\/\/lcimages.s3.amazonaws.com\/event\u002Ddefault.png';
+
+        var categoriesMappedByCalendar = {  };
+        var categoryNameToColorMap = {};
+        var categoryNameToIdListsMap = {};
+
+                categoriesMappedByCalendar[12385] = [];
+        
+                var tempCategoryName = "Book\u0020Discussion";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50902,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023B3C8EF";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50902);
+                var tempCategoryName = "Conference";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 51879,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023A2ADC7";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(51879);
+                var tempCategoryName = "Diversity\u0020and\u0020Inclusion";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50903,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023E31635";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50903);
+                var tempCategoryName = "Donor\u0020Event";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50904,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002307733B";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50904);
+                var tempCategoryName = "DSS\u0020Event";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 52035,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023DEDEDE";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(52035);
+                var tempCategoryName = "Exhibitions";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50905,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023F5F50A";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50905);
+                var tempCategoryName = "Festival\/Fair";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50906,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023371AF0";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50906);
+                var tempCategoryName = "Fundraisers";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50907,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002368F07A";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50907);
+                var tempCategoryName = "Lecture\/Presentations";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50908,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023E08C0D";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50908);
+                var tempCategoryName = "Meetings";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50909,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023940627";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50909);
+                var tempCategoryName = "Orientation";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50910,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002315BCE6";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50910);
+                var tempCategoryName = "Reception";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50911,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023E21FF0";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50911);
+                var tempCategoryName = "Speakers";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50912,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023F0C9B2";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50912);
+                var tempCategoryName = "Special\u0020Events";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50913,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023EB4D6D";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50913);
+                var tempCategoryName = "Stress\u0020Relief";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50914,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023B2F0DC";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50914);
+                var tempCategoryName = "Tour";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50915,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002365676B";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50915);
+                var tempCategoryName = "Workshops";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50916,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023CEB2F0";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50916);
+        
+        var calendarNameMap = {};
+                    calendarNameMap[12385] = "UCI\u0020Libraries\u0027\u0020Events";
+        
+        var audienceNameMap = {};
+                    audienceNameMap[3487] = "Alumni";
+                    audienceNameMap[3402] = "Faculty";
+                    audienceNameMap[3403] = "General\u0020Public";
+                    audienceNameMap[3401] = "Graduate\u0020Students";
+                    audienceNameMap[3488] = "Staff";
+                    audienceNameMap[3400] = "Undergraduate\u0020Students";
+                    audienceNameMap[4782] = "VIP";
+        
+        var categoryNameMap = {};
+                    categoryNameMap[50902] = "Book\u0020Discussion";
+                    categoryNameMap[51879] = "Conference";
+                    categoryNameMap[50903] = "Diversity\u0020and\u0020Inclusion";
+                    categoryNameMap[50904] = "Donor\u0020Event";
+                    categoryNameMap[52035] = "DSS\u0020Event";
+                    categoryNameMap[50905] = "Exhibitions";
+                    categoryNameMap[50906] = "Festival\/Fair";
+                    categoryNameMap[50907] = "Fundraisers";
+                    categoryNameMap[50908] = "Lecture\/Presentations";
+                    categoryNameMap[50909] = "Meetings";
+                    categoryNameMap[50910] = "Orientation";
+                    categoryNameMap[50911] = "Reception";
+                    categoryNameMap[50912] = "Speakers";
+                    categoryNameMap[50913] = "Special\u0020Events";
+                    categoryNameMap[50914] = "Stress\u0020Relief";
+                    categoryNameMap[50915] = "Tour";
+                    categoryNameMap[50916] = "Workshops";
+        
+        var campusNameMap = {};
+        
+        var selectPickerCountSelectText = '{0} selected';
+        var selectPickerHeaderText = {
+            calendar:   'Filter\u0020by Calendar:',
+            audience:   'Filter\u0020by Audience:',
+            category:   'Filter\u0020by Category:',
+            campus:     'Filter\u0020by Campus:',
+            include: 'Include\u0020Events:',
+        };
+
+        var defaultIncludeEvents = 0;
+        var includeEventsLabel = 'Include\u0020Events';
+
+        var springyPage = {
+            iid: 3012,
+            isFullCalendarView: 0,
+            calendarStartDay: 0,
+            lang: {
+                category: 'Category',
+                campus: 'Campus',
+                location: 'Location',
+                presenter: 'Presenter',
+                audiences: 'Audiences',
+                categories: 'Categories',
+                seats: 'Seats',
+                shortDesc: 'Description',
+                allDay: 'All\u0020Day',
+                time: 'Time',
+            }
+        };
+
+        function addCalendarCategoriesToDict(categoryDictionary, calendarCategories) {
+            for (var i = 0; i < calendarCategories.length; i++) {
+                var calendarCategory = calendarCategories[i];
+                categoryDictionary[calendarCategory.name] = true;
+            }
+        }
+
+        function getDictionaryOfCategories(calendarIds) {
+            var categoryDictionary = {};
+
+                        if (0 in categoriesMappedByCalendar) {
+                addCalendarCategoriesToDict(categoryDictionary, categoriesMappedByCalendar[0]);
+            }
+
+                        for (var i = 0; i < calendarIds.length; i++) {
+                var calendarId = calendarIds[i];
+
+                if (calendarId == -1) {
+                                        break;
+                }
+
+
+                addCalendarCategoriesToDict(categoryDictionary, categoriesMappedByCalendar[calendarId]);
+            }
+
+            return categoryDictionary;
+        }
+
+        function getSortedKeys(categoryDictionary) {
+            var sortedKeys = [];
+            for(var key in categoryDictionary) {
+                sortedKeys.push(key);
+            }
+            sortedKeys.sort(compareStringIgnoreCase);
+
+            return sortedKeys;
+        }
+
+        function updateCategoryFilters(calendarIds, selectedValues) {
+            var categoryDictionary = getDictionaryOfCategories(calendarIds);
+
+            var sortedKeys = getSortedKeys(categoryDictionary);
+
+            var element = jQuery("#cat-dd");
+            element.empty();
+
+            for (var i = 0; i < sortedKeys.length; i++) {
+                var categoryName = sortedKeys[i];
+                var categoryColor = categoryNameToColorMap[categoryName];
+                var selected = selectedValues.indexOf(categoryName) >= 0;
+
+                var option = new Option(categoryName, categoryName, selected, selected);
+                option.setAttribute('data-bgcolor', categoryColor);
+                option.setAttribute('data-content', '<span class="label" style="background-color:' + categoryColor + '">&nbsp;</span> ' + categoryName + '</span>');
+                element.append(option);
+            }
+
+            element.selectpicker('refresh');
+        }
+
+        function runFiltersDueToOptionChange(event, clickedIndex, newValue, oldValue) {
+            activePage = 1;
+
+            return runFilters();
+        }
+
+                var calendarFilterInProgress = false;
+
+        function ensureValidCalendarSelection(element, clickedIndex) {
+            if (clickedIndex == 0) {
+                // if the show all option is selected - make it the only option selected
+                element.selectpicker('deselectAll').val(-1).selectpicker("refresh");
+            } else {
+                // ensure the select all option is not selected if we pick a different option
+                element.find("[value=-1]").prop("selected", false);
+                element.selectpicker("refresh");
+            }
+        }
+
+        function runCalendarSelectionValidation(event, clickedIndex, newValue, oldValue) {
+            var element = jQuery(this);
+            ensureValidCalendarSelection(element, clickedIndex);
+        }
+
+        function runFiltersDueToCalendarChange(event, clickedIndex, newValue, oldValue) {
+            if (calendarFilterInProgress) {
+                return false;
+            }
+
+            calendarFilterInProgress = true;
+
+            var element = jQuery(this);
+            ensureValidCalendarSelection(element, clickedIndex);
+
+            calendarFilterInProgress = false;
+
+            // if no options are selected - reset the select picker back to the original value
+            var calendarIds = element.val();
+            if (calendarIds.length == 0) {
+                element.val(12385).selectpicker("refresh");
+                calendarIds = [12385];
+            }
+
+            // toggle the categories display to only show those valid for these calendars
+            updateCategoryFilters(calendarIds, jQuery("#cat-dd").val());
+
+            activePage = 1;
+
+            return runFilters();
+        }
+
+        function getSelectedCategoryIds() {
+            var selectedCategoryIds = [];
+
+            var categoryNames = jQuery("#cat-dd").val();
+            if (categoryNames == undefined) {
+                return selectedCategoryIds;
+            }
+
+            for (var i = 0; i < categoryNames.length; i++) {
+                var categoryName = categoryNames[i];
+                var categoryIds = categoryNameToIdListsMap[categoryName];
+                Array.prototype.push.apply(selectedCategoryIds, categoryIds);
+            }
+
+            return selectedCategoryIds;
+        }
+
+        function createDatePicker() {
+                        var minViewMode = (activeView == "m") ? 1 : 0;
+
+                        var displayDateFormat = (activeView == "m") ? "MMMM YYYY" : springSpace.dateFormat;
+
+            var element = jQuery("#s-lc-filter-date");
+            element.off('changeDate');
+            element.datepicker("destroy");
+
+            element.datepicker({
+                language: "en",
+                format: {
+                    toDisplay: function (date, format, language) {
+                        return moment.utc(date).locale("en").format(displayDateFormat);
+                    },
+                    toValue: function (date, format, language) {
+                        return new Date(date);
+                    }
+                },
+                minViewMode: minViewMode,
+                weekStart: springyPage.calendarStartDay,
+                autoclose: true,
+                startDate: "2021\u002D11\u002D22",                todayHighlight: 0,
+                defaultViewDate: {"year": 2021, "month": 10, "day": 22},
+                templates: datePickerTemplates
+            });
+
+            if (haveChosenSpecificDate) {
+                element.datepicker("setDate", activeDate.toDate());
+            }
+
+            datePickerAccessibilityFix(element);
+
+            element.on("changeDate", function () {
+                haveChosenSpecificDate = true;
+                activeDate = moment(jQuery(this).datepicker("getDate"));
+
+                                if (activeDate.isBefore(activeDateMinimumValue)) {
+                    activeDate = activeDateMinimumValue;
+                }
+                
+                                                return false;
+                            });
+        }
+
+        function setActiveViewMode(viewMode) {
+            activeView = viewMode;
+            activePage = 1;
+
+            createDatePicker();
+
+            return runFilters();
+        }
+
+        function setActiveViewModeToSearch() {
+            var searchString = jQuery("#s-lc-c-search").val();
+            if (searchString.length < 2) {
+                errorAlert("Search\u0020string\u0020must\u0020be\u0020at\u0020least\u00202\u0020characters.");
+                return false;
+            }
+
+            activeSearch = true;
+            activePage = 1;
+
+            // keep people on their current view mode, with the exception of the monthly/weekly
+            //  view modes as they do not yet support searches
+            if ((activeView === 'm') || (activeView === 'w')) {
+                activeView = 'd';
+                createDatePicker();
+            }
+        }
+
+        function getDateToPassToPhp() {
+            if (!haveChosenSpecificDate) {
+                return "0000-00-00";
+            }
+
+            if (activeView == "m") {
+                return activeDate.format("YYYY-MM");
+            }
+
+            return activeDate.format("YYYY-MM-DD");
+        }
+
+        function getListOfNames(idNameMap, ids) {
+            var names = [];
+
+            for (var i=0; i < ids.length; i++) {
+                var id = ids[i];
+                var name = idNameMap[id];
+                if (name === undefined) {
+                    continue;
+                }
+
+                names.push(name);
+            }
+
+            return names.join(", ");
+        }
+
+        function gatherFilterOptionsInUse() {
+            var categoryIds = getSelectedCategoryIds();
+            var campusIds = jQuery("#cam-dd").val();
+            var audienceIds = jQuery("#audience-dd").val();
+            var calendarIds = jQuery("#cal-dd").val();
+            var search = jQuery("#s-lc-c-search").val();
+
+            var filterOptions = [];
+
+            if (search.length > 0) {
+                filterOptions.push(["Keywords", escapeHtml(search)]);
+            }
+
+            if (haveChosenSpecificDate) {
+                                var displayDateFormat = (activeView == "m") ? "MMMM YYYY" : springSpace.dateFormat;
+                filterOptions.push(["Date", activeDate.locale("en").format(displayDateFormat)]);
+            }
+
+            if (calendarIds.length > 0) {
+                filterOptions.push(["Calendar", getListOfNames(calendarNameMap, calendarIds)]);
+            }
+
+            if ((audienceIds != undefined) && (audienceIds.length > 0)) {
+                filterOptions.push(["Audience", getListOfNames(audienceNameMap, audienceIds)]);
+            }
+
+            if (categoryIds.length > 0) {
+                filterOptions.push(["Category", getListOfNames(categoryNameMap, categoryIds)]);
+            }
+
+            if ((campusIds != undefined) && (campusIds.length > 0)) {
+                filterOptions.push(["Campus", getListOfNames(campusNameMap, campusIds)]);
+            }
+
+            filterOptions.push([includeEventsLabel, jQuery('#include-events-dd option:selected').text()]);
+
+            return filterOptions;
+        }
+
+        function showFiltersUsedOnScreen() {
+            var filterOptions = gatherFilterOptionsInUse();
+            var html = "Filters\u0020applied\u003A\u0020";
+
+            for (var i=0; i < filterOptions.length; i++) {
+                var filterOption = filterOptions[i];
+                var name = filterOption[0];
+                var value = filterOption[1];
+
+                if (value.length === 0) {
+                    continue;
+                }
+
+                html += "<strong>" + name + "</strong>: <em>" + value + "</em>";
+
+                if (i < (filterOptions.length - 1)) {
+                    html += ";&nbsp;&nbsp;&nbsp;";
+                }
+            }
+
+            jQuery("#s-lc-c-filters-used").html(html).show();
+        }
+
+        function getCurrentQueryString() {
+            var queryStringIndex = window.location.href.indexOf('?');
+
+            if (queryStringIndex < 0) {
+                return '';
+            }
+
+            return window.location.href.substr(queryStringIndex);
+        }
+
+        function runFilters() {
+            jQuery(".s-lc-nav-tab").removeClass("active");
+
+            var newQueryString = determineQueryString();
+            if (newQueryString !== getCurrentQueryString()) {
+                                history.pushState(null, document.title, newQueryString);
+            }
+
+                        showFiltersUsedOnScreen();
+            
+            var searchString = jQuery("#s-lc-c-search").val();
+            if (searchString.length > 0) {
+                if (!activeSearch) {
+                    setActiveViewModeToSearch();
+                }
+            } else {
+                activeSearch = false;
+            }
+
+            if (activeView == 'm') {
+                jQuery('.s-lc-nav-monthly').addClass('active');
+                if (springyPage.isFullCalendarView) {
+                    return runFullCalendarMonthlyOrWeekly(true);
+                }
+
+                return runMonthlyOrWeekly(true);
+            }
+
+            if (activeView === 'w') {
+                jQuery('.s-lc-nav-weekly').addClass('active');
+                if (springyPage.isFullCalendarView) {
+                    return runFullCalendarMonthlyOrWeekly(false);
+                }
+
+                return runMonthlyOrWeekly(false);
+            }
+
+            if (activeView == "g") {
+                jQuery(".s-lc-nav-card").addClass("active");
+            } else {
+                jQuery(".s-lc-nav-list").addClass("active");
+            }
+
+            if (activeSearch) {
+                return runSearch();
+            }
+
+            if (activeView == "g") {
+                return runCardView();
+            }
+
+            return runDaily();
+        }
+
+        function beginBusyWait() {
+            workingAlert();
+
+                        jQuery("#s-lc-c-sbtn, .s-lc-filters-clear").prop("disabled", true);
+                    }
+
+        function endBusyWait() {
+            stopAlert();
+
+                        jQuery("#s-lc-c-sbtn, .s-lc-filters-clear").prop("disabled", false);
+                    }
+
+        function formatResultsHeader(subTitle, header) {
+                        return false;
+        }
+
+        function runMonthlyOrWeekly(isMonthly) {
+            var cals = jQuery('#cal-dd').val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery('#cam-dd').val();
+            var audience = jQuery('#audience-dd').val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var date = activeDate.format(springSpace.phpDateFormat);
+
+            var cal_cont = jQuery('#s-lc-c-list-cont');
+
+            beginBusyWait();
+
+            var headerSubTitle = calendarUtils.getDateHeading(activeDate, isMonthly, momentWeekFormat);
+
+            jQuery.ajax({
+                url: "/ajax/calendar/monthly?c=" + cals + '&date=' + date + '&monthly=' + isMonthly + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'html',
+                                                cache: true,
+                            })
+            .always(endBusyWait)
+            .done(function (html) {
+                formatResultsHeader(headerSubTitle);
+                cal_cont.html(html);
+
+                                                                var screenWidth = jQuery(window).width();
+                if (screenWidth > springSpace.smallScreenSize) {
+                    jQuery('[data-toggle="popover"]').popover();
+                }
+
+                formatLabels();
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function runDaily() {
+            var cals = jQuery("#cal-dd").val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery("#cam-dd").val();
+            var audience = jQuery("#audience-dd").val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var perPage = resultsPerPageViewMap[activeView];
+
+            beginBusyWait();
+
+            if (haveChosenSpecificDate) {
+                var day = activeDate.locale("en").format("LL");
+            } else {
+                var day = "Upcoming\u0020Events";
+            }
+
+            jQuery.ajax({
+                url: "/ajax/calendar/list?c=" + cals + "&date=" + getDateToPassToPhp() + "&perpage=" + perPage + "&page=" + activePage + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'json',
+                                                cache: true,
+                            })
+            .always(endBusyWait)
+            .done(function(data) {
+                formatResultsHeader(day);
+                var output = formatResultsInListViewStyle(data);
+
+                jQuery("#s-lc-c-list-cont").html(output);
+                jQuery('#s-lc-c-list-results h2').focus();
+                paginate(data.total_results, data.perpage);
+                formatLabels();
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function runCardView() {
+            var cals = jQuery("#cal-dd").val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery("#cam-dd").val();
+            var audience = jQuery("#audience-dd").val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var perPage = resultsPerPageViewMap[activeView];
+
+            beginBusyWait();
+
+            if (haveChosenSpecificDate) {
+                var day = activeDate.locale("en").format("LL");
+            } else {
+                var day = "Upcoming\u0020Events";
+            }
+
+            jQuery.ajax({
+                url: "/ajax/calendar/list?c=" + cals + "&date=" + getDateToPassToPhp() + "&perpage=" + perPage + "&page=" + activePage + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'json',
+                                                cache: true,
+                            })
+            .always(endBusyWait)
+            .done(function(data) {
+                formatResultsHeader(day);
+                var output = formatResultsInCardViewStyle(data);
+
+                jQuery("#s-lc-c-list-cont").html(output);
+                jQuery('#s-lc-c-list-results h2').focus();
+                paginate(data.total_results, data.perpage);
+                formatLabels();
+                accessibleIcons();
+                jQuery(".s-lc-eventcard-tag-more").on("click", doNothing);
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function doNothing() {
+                        return false;
+        }
+
+        function runSearch() {
+            var q = jQuery("#s-lc-c-search").val();
+            if (q.length < 2) {
+                errorAlert("Search\u0020string\u0020must\u0020be\u0020at\u0020least\u00202\u0020characters.");
+                return false;
+            }
+
+            beginBusyWait();
+
+            var cals = jQuery("#cal-dd").val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery("#cam-dd").val();
+            var audience = jQuery("#audience-dd").val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var perPage = resultsPerPageViewMap[activeView];
+            var t = q.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+            jQuery.ajax({
+                url: "/process_search.php?site_id=4298&cals=" + cals + "&perpage=" + perPage + "&page=" + activePage + "&q=" + encodeURIComponent(q) + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'json',
+            })
+            .always(endBusyWait)
+            .done(function(data) {
+                formatResultsHeader(t, 'Search\u0020Results');
+
+                if (activeView === "g") {
+                    var output = formatResultsInCardViewStyle(data);
+                } else {
+                    var output = formatResultsInListViewStyle(data);
+                }
+
+                jQuery("#s-lc-c-list-cont").html(output);
+                jQuery('#s-lc-c-list-results h2').focus();
+                paginate(data.total_results, data.perpage);
+                formatLabels();
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function formatResultsInListViewStyle(data) {
+            if (data.error) {
+                return "<p>" + eventData.error + "</p>";
+            }
+
+            var results = data.results.length;
+            if (results < 1) {
+                return "<div class=\"alert alert-info s-lc-c-s-nores\">No\u0020events\u0020are\u0020scheduled.</div>";
+            }
+
+            var output = "";
+            for (var i = 0; i < results; i++) {
+                var eventData = data.results[i];
+                addEventDataTextTranslations(eventData);
+                output += Mustache.render(template, eventData);
+            }
+            output += "<div id=\"pag\"></div>";
+            return output;
+        }
+
+        function formatResultsInCardViewStyle(data) {
+            if (data.error) {
+                return "<p>" + data.error + "</p>";
+            }
+
+            var resultCount = data.results.length;
+            if (resultCount < 1) {
+                return "<div class=\"alert alert-info s-lc-c-s-nores\">No\u0020events\u0020are\u0020scheduled.</div>";
+            }
+
+            var output = '<div class="s-lc-eventcard-outer-container"><div class="s-lc-eventcard-inner-container">';
+            for (var i = 0; i < resultCount; i++) {
+                var eventData = data.results[i];
+                decorateEventDataWithCategoryDisplayInfo(eventData);
+                addEventDataTextTranslations(eventData);
+                eventData.campusAndLocation = getCampusAndLocationData(eventData);
+
+                // if the event does not have a featured image then use the default card view image
+                if (eventData.featured_image.length === 0) {
+                    eventData.featured_image = cardViewDefaultImage;
+                }
+
+                output += Mustache.render(cardViewTemplate, eventData);
+            }
+            output += "</div></div>";
+            output += "<div id=\"pag\"></div>";
+            return output;
+        }
+
+        function paginate(totalResults, perPage) {
+            var paginationElement = formatPaginationElement(activePage, perPage, totalResults);
+            if (paginationElement === null) {
+                return;
+            }
+
+            jQuery('#pag').append(paginationElement);
+
+            jQuery('#pag li a').on('click', function () {
+                activePage = jQuery(this).data('page');
+
+                return runFilters();
+            });
+        }
+
+        function decorateEventDataWithCategoryDisplayInfo(eventData) {
+            var audienceCount = eventData.audiences.length;
+            var categoryCount = eventData.categories_arr.length;
+
+            var audiencesToShowInFull = 0;
+            var categoriesToShowInFull = 1;
+
+            if ((audienceCount > 0) && categoryCount > 0) {
+                audiencesToShowInFull = 1;
+                categoriesToShowInFull = 1;
+            } else if (audienceCount > 0) {
+                audiencesToShowInFull = Math.min(2, audienceCount);
+            } else {
+                categoriesToShowInFull = Math.min(2, categoryCount);
+            }
+
+            var toShowInFull = [];
+            var toShowAsTooltip = [];
+
+            for (var i=0; i < audienceCount; i++) {
+                var audienceData = eventData.audiences[i];
+
+                if (i < audiencesToShowInFull) {
+                    toShowInFull.push({
+                        isAudience: true,
+                        id: audienceData.id,
+                        name: audienceData.name,
+                        color: audienceData.color,
+                    });
+                } else {
+                    toShowAsTooltip.push(audienceData.name);
+                }
+            }
+
+            for (var i=0; i < categoryCount; i++) {
+                var categoryData = eventData.categories_arr[i];
+
+                if (i < categoriesToShowInFull) {
+                    toShowInFull.push({
+                        isCategory: true,
+                        id: categoryData.cat_id,
+                        name: categoryData.name,
+                        color: categoryData.color,
+                    });
+                } else {
+                    toShowAsTooltip.push(categoryData.name);
+                }
+            }
+
+            eventData.categoriesToShowInFull = toShowInFull;
+            eventData.categoriesTooltip = toShowAsTooltip.join(", ");
+        }
+
+        function getCampusAndLocationData(eventData) {
+                        var maxLocationsToShow = 2;
+            var campusString = eventData.campus;
+            var campusCount = campusString.length > 0 ? 1 : 0;
+            var locationString = eventData.location;
+            var locationCount = eventData.locationCount;
+
+            if ((locationCount + campusCount) > maxLocationsToShow) {
+                return "Multiple\u0020Locations";
+            }
+
+            var locations = [];
+            if (campusCount > 0) {
+                locations.push(campusString);
+            }
+
+            if (locationCount > 0) {
+                locations.push(locationString);
+            }
+
+            return locations.join(", ");
+        }
+
+        function setupAudienceLabel() {
+            var audienceHtml = "";
+            jQuery("#audience-dd :selected").each(function (i, selected) {
+                var value = jQuery(selected).val();
+                audienceHtml += '<span class="label" style="background-color:' + jQuery(selected).data("bgcolor") + '">';
+                audienceHtml += jQuery(selected).text();
+                audienceHtml += '&nbsp;<a href="#" onclick="removeAudience(\'' + value + '\');"><i class="fa fa-times fa-lg" style="color:#fff" aria-hidden="true"></i></a></span>&nbsp;';
+            });
+
+            if (audienceHtml != "") {
+                audienceHtml = '<span class="s-lc-c-e-audience-lab">Audience:</span> ' + audienceHtml;
+            }
+
+            jQuery("#s-lc-c-e-audience").html(audienceHtml);
+        }
+
+        function formatLabels() {
+                    }
+
+        function removeFilter(id, value) {
+            var element = jQuery(id);
+
+            var list = element.val();
+            var index = list.indexOf(value);
+            if (index > -1) {
+                list.splice(index, 1);
+            }
+
+            element.val(list);
+            element.selectpicker("refresh");
+
+            runFilters();
+
+            return false;
+        }
+
+        function removeAudience(value) {
+            return removeFilter("#audience-dd", value);
+        }
+
+        function removeCat(value) {
+            return removeFilter("#cat-dd", value);
+        }
+
+        function removeCam(value) {
+            return removeFilter("#cam-dd", value);
+        }
+
+        function determineQueryString() {
+            var categoryIds = getSelectedCategoryIds();
+            var campusIds = jQuery("#cam-dd").val();
+            var audienceIds = jQuery("#audience-dd").val();
+            var calendarId = jQuery("#cal-dd").find(":selected").data("cal_id");
+            var calendarIds = jQuery("#cal-dd").val();
+            var qs = "";
+
+            if (activeSearch) {
+                var q = encodeURIComponent(jQuery("#s-lc-c-search").val());
+                var caqs = "";
+                if (calendarId != null) {
+                    caqs = "&cid=" + calendarId;
+                }
+                qs = "?t=" + activeView + "&q=" + q + caqs;
+            } else {
+                qs = "?cid=" + calendarId + "&t=" + activeView + "&d=" + getDateToPassToPhp();
+            }
+
+            if (calendarIds.length) {
+                qs = qs + "&cal=" + calendarIds;
+            }
+
+            if ((audienceIds != undefined) && (audienceIds.length)) {
+                qs = qs + "&audience=" + audienceIds;
+            }
+
+            if (categoryIds.length) {
+                qs = qs + "&ct=" + categoryIds;
+            }
+
+            if ((campusIds != undefined) && (campusIds.length)) {
+                qs = qs + "&cm=" + campusIds;
+            }
+
+                                    if (activePage > 1) {
+                qs = qs + "&page=" + activePage;
+            }
+
+            var includeEvents = jQuery('#include-events-dd').val();
+            if (includeEvents !== undefined) {
+                qs += '&inc=' + includeEvents;
+            }
+
+            return qs;
+        }
+
+        function listenForFilterChanges() {
+                        jQuery("#cal-dd").on("changed.bs.select", runCalendarSelectionValidation);
+                    }
+
+        function stopListeningForFilterChanges() {
+            jQuery("#audience-dd, #cat-dd, #cam-dd, #include-events-dd, #cal-dd").off("changed.bs.select");
+        }
+
+        function clearFilters() {
+            stopListeningForFilterChanges();
+
+            jQuery("#cal-dd").selectpicker("deselectAll").val(12385).selectpicker("refresh");
+            jQuery("#cam-dd, #audience-dd").selectpicker("deselectAll").selectpicker("refresh");
+            jQuery("#cat-dd").selectpicker("deselectAll").selectpicker("refresh");
+            jQuery('#include-events-dd').val(defaultIncludeEvents).selectpicker('refresh');
+
+            activeSearch = false;
+            jQuery("#s-lc-c-search").val("");
+
+            activeDate = moment("2021\u002D11\u002D22", springSpace.phpDateFormat);
+            haveChosenSpecificDate = false;
+            jQuery("#s-lc-filter-date").val("");
+            createDatePicker();
+
+            listenForFilterChanges();
+
+            jQuery(".s-lc-nav-tab").removeClass("active");
+            activePage = 1;
+
+            return runFilters();
+        }
+
+        jQuery(function () {
+            jQuery("#cal-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.calendar,
+                style: "btn-default btn-sm"
+
+            });
+
+            jQuery("#audience-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.audience,
+                style: "btn-default btn-sm"
+            });
+
+            jQuery("#cat-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.category,
+                style: "btn-default btn-sm"
+            });
+
+            jQuery("#cam-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.campus,
+                style: "btn-default btn-sm"
+            });
+
+            jQuery('#include-events-dd').selectpicker({
+                header: selectPickerHeaderText.include,
+                style: 'btn-default btn-sm'
+            });
+
+            jQuery(".s-lc-nav-list").on("click", function (e) {
+                return setActiveViewMode("d");
+            });
+
+            jQuery(".s-lc-nav-monthly").on("click", function (e) {
+                return setActiveViewMode("m");
+            });
+
+            jQuery('.s-lc-nav-weekly').on('click', function () {
+                return setActiveViewMode('w');
+            });
+
+            jQuery(".s-lc-nav-card").on("click", function (e) {
+                return setActiveViewMode("g");
+            });
+
+            jQuery("#s-lc-c-sbtn").click(function () {
+                
+                return runFilters();
+            });
+
+            jQuery("#s-lc-c-search").keyup(function (e) {
+                if (e.keyCode == 13) {
+                    setActiveViewModeToSearch();
+
+                    return runFilters();
+                }
+
+                return true;
+            });
+
+            jQuery(".s-lc-filters-clear").click(clearFilters);
+
+            jQuery("#cal-form").on("submit", function (e) {
+                e.preventDefault();
+            });
+
+            jQuery('.s-lc-c-timezone-change').on('click', springyPublic.showTimezoneModal);
+
+            updateCategoryFilters(
+                [12385,],
+                []
+            );
+
+            var cals = jQuery("#cal-dd").val();
+            if (cals == null) {
+            } else {
+                jQuery("#s-lc-c-catf .bootstrap-select").prop("title", "");
+            }
+
+            listenForFilterChanges();
+
+            accessibleIcons();
+
+                        activeView = "g";
+            activeSearch = false;
+            createDatePicker();
+            runFilters();
+
+            // reload the page with previous query string when user click on Back
+            window.addEventListener('popstate', function() {
+                location.reload();
+            });
+        });
+    </script>  
+ </body>
+</html><!--http://news.lib.uci.edu/library-events-->
+<!doctype html>
+<html lang="en"> 
+ <head> <!-- iid: 3012 --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet"> 
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="/css870/LibCal_public.min.css" rel="stylesheet"> 
+  <link href="/css870/print.min.css" rel="stylesheet" media="print"> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script>
+        window.jQuery || document.write('<script src="/js870/jquery.min.js">\x3C/script>');
+    </script> 
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+  <script>
+        jQuery.ui || document.write('<script src="/js870/jquery-ui.min.js">\x3C/script>');
+    </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script>
+        (typeof $().modal == 'function') || document.write('<script src="/js870/bootstrap.min.js">\x3C/script>');
+    </script> 
+  <script src="/js870/LibCal_public.min.js"></script> 
+  <script>
+    springSpace.dateFormat = "dddd, MMMM D, YYYY";
+    springSpace.dateShortFormat = "dddd, MMMM D, YYYY";
+    springSpace.timeFormat = "h:mma";
+    springSpace.timezone = 'America/Los_Angeles';
+    springSpace.currency = "USD";
+    springSpace.currencySymbol = "$";
+
+    springSpace.language = 'en'; // en
+    springSpace.locale = 'en-US'; // en-US
+
+    springSpace.phpTimeFormat = 'g:ia';
+
+    springSpace.bootstrapAsset = '/css870/bootstrap.min.css';
+    springSpace.publicCssAsset = '/css870/LibCal_public.min.css';
+    springSpace.adminCssAsset = '/css870/LibCal_admin.min.css';
+</script> 
+  <script>
+         var springLang  = { eq_GoToNextAvailable: "Next Available", eq_js_add_cart_btn: "Add to Cart", eq_js_add_cc_btn: "Add to Cart & Checkout", eq_js_add_eq_btn: "Add Equipment", eq_js_add_start: "All additional items must have a starting time of", eq_js_add_to_cart: "Add Item to Cart", eq_js_booking_summary_title: "Thank you!", eq_js_cart_tt: "Create a shopping cart with these space bookings, and go to equipment booking page to add more items to the cart.", eq_js_close: "Close", eq_js_date: "Change Return Date", eq_js_det_return: "Determining return time", eq_js_from: "From:", eq_js_from_det: "from", eq_js_go_to_date: "Go To Date", eq_js_isRequired: "is required!", eq_js_rem_pending: "Remove Pending Booking", eq_js_spacew_forb_multi: "Forbidden from booking same resource multiple times in a single booking.<br><br>Please only select sequential checkboxes.", eq_js_spacew_forb_single: "Forbidden from booking different resources in a single booking.", eq_js_to: "To:", eq_js_until_det: "until...", eq_start_over: "Make Another Booking", eq_unavail: "Unavailable/Padding", eq_your_book: "Your Booking" };
+    </script> 
+  <meta name="robots" content="noindex, nofollow, noarchive"> 
+  <title>
+                    UCI Libraries' Events -
+                Library Reservations -
+        University of California Irvine
+    </title> 
+  <link rel="alternate" type="application/rss+xml" title="Latest Events" href="/rss.php?iid=3012&amp;m=month&amp;cid=12385"> 
+  <link rel="stylesheet" href="/css870/datepicker.min.css"> 
+  <style>
+        .bs-placeholder {
+        color: #333 !important;
+    }
+
+    .s-lc-c-erh {
+        margin-top: 6px;
+    }
+
+    .s-lc-c-timezone-horiz {
+        float: left;
+        padding-bottom: 6px;
+    }
+
+    .s-lc-c-list-cont-horiz {
+        clear: both;
+    }
+
+    #cal-form .bootstrap-select {
+        width: 100%;
+    }
+
+    #cal-form .bootstrap-select .btn {
+        font-size: 12px;
+    }
+
+        /* This CSS controls: */
+/* Public and Admin System Calendar */
+/* Public Full and Mini Calendar Widget */
+
+/*Embeddable mini-calendar - from Widgets/API section */
+
+#mini-calendar { border: 3px solid #066A9E; padding: 2px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.cal-mini {width: 100%; font-family: Arial, Verdana, sans-serif; }
+.cal-mini td { border-right: 1px solid #f2f2f2; }
+.cal-mini-day-head, .cal-mini-title-row td {border: 0px!important;  background-color: #f2f2f2;}
+.cal-mini-title {text-align: center; color: #362E2C; font: bold 14px Arial, Verdana, sans-serif;}
+.cal-mini-day-head { color: #7F7F7F; text-align: center; font-size: 12px; font-weight: bold; }
+.cal-mini-arrow { text-align: center!important; font-size: 16px;}
+.cal-mini-day-num, .cal-mini-day-pad { text-align: center;  color: #362E2C; margin:1px;}
+.cal-mini-hasevent a { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #FF972F;  border: 1px solid #fff; display: block; color: #fff; text-decoration: none; }
+.cal-mini-hasevent a:hover { background-color: #fff; color: #FF972F; text-decoration: none; border: 1px solid #FF972F; }
+#calevent-mini-list-h { padding: 3px 0px 3px 5px; color: #362E2C; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #066A9E; background-color: #f2f2f2; font: bold 12px Arial, Verdana, sans-serif; }
+.calevent-mini { list-style-type: none; padding: 0px; margin:0px; overflow: auto; }
+.calevent-mini-time { padding: 0px; margin: 0px; color: #4A4A4A; font-size: 11px;}
+.calevent-mini li a{ font-weight: bold; }
+.calevent-mini li{ padding: 0px 5px; margin: 0px; border-bottom: 1px solid #f2f2f2; }
+.calevent-mini li:hover{ background-color: #f2f2f2; }    </style> 
+  <style type="text/css">
+a, a:hover, a:focus {
+	outline: 0 !important;
+}
+body { 	
+	font-size:14px; 
+} 
+/* BANNER STYLES */#main-nav-banner {   	background-color: #1966A2;}#utility-nav {    	background-color:#002949;    	text-transform:uppercase;   	font-weight:500;    	font-size:12px;    	line-height:1.428457;    }#utility-nav ul {    	list-style-type: none;	padding:0;	margin:0;}#utility-nav ul li {    	float:left;    	color:white;padding:6px 16px 6px 0;    	margin:0;}#utility-nav ul li a {    	color:white;}#utility-nav-left {    	padding-left:14px;float:left;}#utility-nav-right {    	float:right;    	padding-right:24px;}#utility-nav-left ul#utility-nav-left-locations {    	display:none;    	background-color:#ffffff;    	border:1px solid #e7e7e7;    	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);    	position:absolute;    	z-index:1000;    	text-transform: uppercase;    	padding:10px;    	margin:0;}#utility-nav-left ul#utility-nav-left-locations li a {    	color:#000000;}#utility-nav-left ul#utility-nav-left-locations li {    	float:none;}#utility-nav-left-location-toggle {    	cursor: pointer;}#banner {    	float: left;    	max-width: 40%;    	padding: 0 0 0 15px;    	border: none;} #utility-nav ul li a { 	margin:0;	padding:0;} #locations_dropdown_menu a:hover,#locations_dropdown_menu a:focus {    	outline: 1px dotted black;} #utility-nav-left li ul.dropdown-menu {     	border:1px #e7e7e7 solid;}#utility-nav-left li ul.dropdown-menu li {     	font-size: 12px;    	padding: 6px 16px 6px 10px;     	line-height:20px;}#utility-nav-left li.open a {    	color: #000000;}.nav > li > a:hover, .nav > li > a:focus {     	background-color: transparent !important;	text-decoration:none !important;}#locations_dropdown, #locations_dropdown:focus, #locations_dropdown:active, #locations_dropdown:hover {    	background-color: #002949 !important;    	color: white !important;} #navbar-mobile-menu button {    margin: 16px auto 0;    padding: 0;}#utility-main-nav-collapse {    background-color: #1a66a1;    border: medium none;    border-radius: 0;    color: white;}#menu-row-mobile a { 	text-decoration: none;}#menu-row-mobile ul { 	padding:0px; 	margin:0px;}#menu-row-mobile ul li{	list-style-type: none;}#menu-row-mobile li:hover {	cursor:pointer;}#main-nav-mobile {	background-color:#1966A2;}.main-nav-mobile-heading {	color:white;	margin:0px;	padding:0px;	padding-left:32px;	font-size:24px;	width:100%;	text-align: left;}.main-nav-mobile-heading:hover {	color:white;}#main-nav-mobile li {	line-height:72px;}.main-nav-mobile-submenu {	background-color:white;	line-height:40px;}.main-nav-mobile-submenu li {	border-left:white solid 5px;}.main-nav-mobile-submenu li a {	padding:0px;	margin:0px;}.main-nav-mobile-submenu li:hover {	border-left:#fcd02f solid 5px;	color:#0D5186;	background-color: white !important;}.main-nav-mobile-submenu li {	padding-left:32px;}#main-nav-mobile li ul li a {	color:#011A2E;}.mobile-main-nav-angle {	float:right;	padding-right:60px;}.mobile-utility-nav-angle {	float:right;	padding-right:30px;}#utility-nav-mobile {	background-color:#002949;	text-transform: uppercase;}#utility-nav-mobile-locations {	width:100%; 	font-size:16px;}#utility-nav-mobile a {	color:white;}#utility-nav-mobile .btn {	color:white;	text-align: left;	padding:0px;	margin:0px;}#utility-nav-mobile li {	line-height:50px;	padding-left:32px;}#utility-nav-mobile-submenu-locations ul li {	color:white;}/* end for mobile utility and main menu *//* arrow toggles */#mobile-angle-down-find {	display:inline-block;}#mobile-angle-left-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-find {	display:inline-block;}#mobile-angle-down-services {	display:inline-block;}#mobile-angle-left-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-services {	display:inline-block;}#mobile-angle-down-about {	display:inline-block;}#mobile-angle-left-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-about {	display:inline-block;}#mobile-angle-down-help {	display:inline-block;}#mobile-angle-left-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-help {	display:inline-block;}#mobile-angle-down-locations {	display:inline-block;}#mobile-angle-left-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-down-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-left-locations {	display:inline-block;}.center-block {    margin-top: 16px;}#s-lc-public-footer {		background-color:#002949;		color:#cae1f5;margin-left:-15px;margin-right:-15px;}#s-lc-public-footer a, #s-lc-public-footer a:visited {		color:white;}#s-lc-public-footer .s-lc-text-greyout {		color:#f5f5f5;}/* Small Devices, Tablets */@media only screen and (max-width : 768px) {	     #navbar-mobile {          height:60px;          background-color:#1A66A1;          border-bottom:1px solid #ffffff;     }     #navbar-mobile-banner {          height:60px;          border-left:1px white solid;          border-right:1px white solid;     }     #navbar-mobile div {          padding:0px;          margin:0px;     } }/* Extra Small Devices, Phones */ @media only screen and (max-width : 480px) {	#utility-nav {			display:none;	}	#navbar-mobile {		display:none;	}} #cal-form .form-group:nth-child(4) { display:none; } /* hide the accessible and power icons */
+.fa-wheelchair-alt, .fa-plug { display: none; }
+
+/* hide the accessible and power filters */
+#s-lc-accessible_container, #s-lc-powered_container { display: none; }
+
+/* hide the accessible and power info on a space page */
+.s-lc-section-description p:last-child { display: none; } </style> 
+ </head> 
+ <body id="calendar_12385" class="s-lc-public s-lc-public-page-5"> <a id="s-lc-public-skiplink" class="s-lc-skiplink alert-info" href="#s-lc-public-main">Skip to Main Content</a> 
+  <div id="s-lc-public-cust-header" role="banner">
+   <!-- BEGIN MOBILE MENUS -->
+   <div class="navbar-header row visible-xs" id="navbar-mobile">
+    <div id="navbar-mobile-menu" class="col-xs-2">
+     <button class="center-block" data-target="#menu-row-mobile" data-toggle="collapse" id="utility-main-nav-collapse" type="button">MENU</button>
+    </div>
+    <div id="navbar-mobile-banner" class="text-center col-xs-8">
+     <a href="https://www.lib.uci.edu"><img alt="UCI Libraries Mobile Site" class="center-block" id="banner-mobile" src="https://www.lib.uci.edu/sites/all/images/uci-lib-banner-libapps.jpg"></a>
+    </div>
+   </div>
+   <div class="row hidden-lg hidden-md collapse" id="menu-row-mobile">
+    <ul id="utility-nav-mobile"> 
+     <li> 
+      <div class="btn collapsed" data-target="#utility-nav-mobile-submenu-locations" data-toggle="collapse" id="utility-nav-mobile-locations">
+       Locations
+      </div> 
+      <div class="collapse" id="utility-nav-mobile-submenu-locations"> 
+       <ul> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+       </ul> 
+      </div> </li> 
+     <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     <li><a href="//www.lib.uci.edu/hours">Hours</a></li> 
+     <li><a href="//www.lib.uci.edu/accessibility">Accessibility</a></li> 
+     <li><a href="//www.lib.uci.edu/accounts">Accounts</a></li> 
+     <li><a href="https://partners.lib.uci.edu">Giving</a></li>
+    </ul>
+   </div><!-- END MOBILE MENUS --><!-- BEGIN INCLUDE THIS: UTILITY BAR AND BANNER -->
+   <div id="utility-nav" class="container hidden-xs"> 
+    <div id="utility-nav-left"> 
+     <ul class="nav navbar-nav" id="utility-nav-left"> 
+      <li class="dropdown"><a id="locations_dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Locations <span class="caret"></span></a> 
+       <ul class="dropdown-menu" id="locations_dropdown_menu"> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+        <li><a href="//www.lib.uci.edu/gateway-study-center">Gateway Study Center</a></li> 
+       </ul> </li> 
+      <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     </ul> 
+    </div> 
+    <div id="utility-nav-right"> 
+     <ul class="nav navbar-nav"> 
+      <li><a href="https://www.lib.uci.edu/hours"><i class="fa fa-clock-o"></i> Hours</a></li> 
+      <li><a href="//www.lib.uci.edu/accessibility"><i class="fa fa-wheelchair"></i> Accessibility</a></li> 
+      <li><a href="https://www.lib.uci.edu/accounts"><i class="fa fa-user"></i> Accounts</a></li> 
+      <li><a href="https://partners.lib.uci.edu"><i class="fa fa-gift"></i> Giving</a></li> 
+     </ul> 
+    </div>
+   </div>
+   <div id="main-nav-banner" class="container hidden-xs"> 
+    <div id="banner"> <map id="banner_map" name="banner_map"> <area title="UCI Home Page" alt="UCI Home Page" coords="0,0,120,78" shape="rect" href="https://www.uci.edu"> <area title="UCI Libraries Home Page" alt="UCI Libraries Home Page" coords="121,0,400,78" shape="rect" href="https://www.lib.uci.edu"> </map> 
+     <img class="logoLink img-responsive" src="//www.lib.uci.edu/sites/all/images/uci-lib-logo_3.jpg" usemap="#banner_map" alt="Libaries home page" id="banner-image"> 
+    </div>
+   </div><!-- END INCLUDE THIS: UTILITY BAR AND BANNER -->
+  </div> 
+  <div class="container"> 
+   <div id="s-lc-public-bc" class="row"> 
+    <div class="col-md-12"> 
+     <nav aria-label="Breadcrumb"> 
+      <ol class="breadcrumb"> 
+       <li> <a href="http://www.lib.uci.edu/"> University of California Irvine </a> </li> 
+       <li class="s-lc-desktop-only"> <a href="https://spaces.lib.uci.edu"> Library Reservations </a> </li> 
+       <li class="active s-lc-desktop-only"> UCI Libraries' Events </li> 
+      </ol> 
+     </nav> 
+    </div> 
+   </div> 
+   <noscript> 
+    <div class="alert alert-danger" id="noscript">
+     Your browser has javascript disabled. Without javascript some functions will not work.
+    </div> 
+   </noscript> 
+   <div id="s-lc-public-title" class="row"> 
+    <div class="col-md-12"> 
+     <h1 id="s-lc-public-pt">UCI Libraries' Events</h1> 
+    </div> 
+   </div> 
+   <div id="s-lc-public-pd" class="row">
+    <div class="col-md-12">
+     By making a reservation and/or attending an event at the UCI Libraries, I hereby grant the UCI Libraries and anyone authorized by the UCI Libraries the unrestricted right to copyright, reproduce, publish and otherwise use my picture, video, audio or power point presentation on the date of the event. I understand that the Libraries seek only to use these items for non-commercial purposes including, but not limited to advertising and promoting the event and the UCI Libraries. This includes displays on the UCI Libraries' website. I hereby waive any causes of action I may have on account of the use of my photograph, video, audio or my presentation made at the Libraries. I acknowledge that I have NOT received any financial compensation and that no such compensation is required for the UCI Libraries to use these items in the above mentioned manner. I represent that I have read the foregoing and fully and completely understand the contents hereof. Any concerns can be addressed to the registration staff at the time of event or in an email to partners@uci.edu, we will do our best to accommodate. <a href="https://partners.lib.uci.edu/uci-libraries-special-events-mail" target="_blank">Join the UCI Libraries Special Events Mailing List</a>
+    </div>
+   </div> 
+   <main> 
+    <div id="s-lc-public-main" class="s-lc-public-main"> 
+     <section> 
+      <div id="s-lc-public-page-content" class="row"> 
+       <div id="col1" class="col-md-12 center"> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-mobile-only margin-bottom-med" data-toggle="collapse" data-target="#cal-form"> <i class="fa fa-search fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Filter by</span> </button> 
+        <form id="cal-form" class="form-inline margin-bottom-med collapse in" role="search"> <span class="sr-only">Filter results by...</span> 
+         <div class="form-group" id="s-lc-c-sc"> <label for="s-lc-c-search" class="sr-only">Search</label> 
+          <input type="text" class="form-control input-sm" name="q" id="s-lc-c-search" value="" aria-required="false" placeholder="Search for event..." aria-label="Search for event..." role="searchbox"> 
+         </div> 
+         <div class="form-group"> 
+          <input class="form-control input-sm s-lc-datepicker-readonly" type="text" name="date" id="s-lc-filter-date" readonly placeholder="Date"> 
+         </div> 
+         <div class="form-group"> <span class="sr-only"><label for="cal-dd">Calendar</label></span> <select name="cal[]" id="cal-dd" class="selectpicker" multiple title="Calendar" aria-required="true" data-size="15" data-selected-text-format="static"> <option value="12385" selected data-cal_id="12385">UCI Libraries' Events</option> </select> 
+         </div> 
+         <div class="form-group" id="s-lc-c-catf"> <span class="sr-only"><label for="cat-dd">Category</label></span> <select name="ct[]" id="cat-dd" aria-required="false" class="selectpicker" multiple title="Category" data-size="15" data-selected-text-format="static"> </select> 
+         </div> 
+         <div class="form-group" id="s-lc-c-audiencef"> <span class="sr-only"><label for="audience-dd">Audience</label></span> <select name="audience[]" id="audience-dd" aria-required="false" class="selectpicker" multiple title="Audience" data-size="15" data-selected-text-format="static"> <option value="3487" data-cal_id="3487" data-bgcolor="#395CD1" data-content="<span class='label' style='background-color:#395CD1'>&nbsp;</span> Alumni</span>"> Alumni </option> <option value="3402" data-cal_id="3402" data-bgcolor="#D13957" data-content="<span class='label' style='background-color:#D13957'>&nbsp;</span> Faculty</span>"> Faculty </option> <option value="3403" data-cal_id="3403" data-bgcolor="#EBC42A" data-content="<span class='label' style='background-color:#EBC42A'>&nbsp;</span> General Public</span>"> General Public </option> <option value="3401" data-cal_id="3401" data-bgcolor="#B339D1" data-content="<span class='label' style='background-color:#B339D1'>&nbsp;</span> Graduate Students</span>"> Graduate Students </option> <option value="3488" data-cal_id="3488" data-bgcolor="#ED0E0E" data-content="<span class='label' style='background-color:#ED0E0E'>&nbsp;</span> Staff</span>"> Staff </option> <option value="3400" data-cal_id="3400" data-bgcolor="#3AD1B3" data-content="<span class='label' style='background-color:#3AD1B3'>&nbsp;</span> Undergraduate Students</span>"> Undergraduate Students </option> <option value="4782" data-cal_id="4782" data-bgcolor="#39D1D1" data-content="<span class='label' style='background-color:#39D1D1'>&nbsp;</span> VIP</span>"> VIP </option> </select> 
+         </div> 
+         <div class="form-group" id="s-lc-c-camf"> 
+         </div> 
+         <div class="form-group" id="s-lc-c-online-filter"> <label class="sr-only" for="include-events-dd"> Include Events </label> <select name="include-events" id="include-events-dd" aria-required="false" class="selectpicker"> <option value="0"> Onsite And Online </option> <option value="1"> Online Only </option> <option value="2"> Onsite Only </option> </select> 
+         </div> <button type="button" class="btn btn-info btn-sm" id="s-lc-c-sbtn">Search</button> <a href="#" id="s-lc-c-clear-filters" class="s-lc-filters-clear"> Clear All </a> 
+        </form> 
+        <div id="s-lc-c-filters-used" class="alert alert-success margin-bottom-med" display="style: none;"></div> 
+        <div id="s-lc-c-tz-modes" class="pad-bottom-med"> 
+         <div class="s-lc-timezone-container s-lc-c-timezone-horiz s-lc-c-timezone">
+           Time Zone: Pacific Time - US &amp; Canada (<a href="#" class="s-lc-c-timezone-change">change</a>) 
+         </div> 
+         <div id="s-lc-c-view-modes" class="s-lc-c-view-modes">
+           Change View: 
+          <div class="btn-group"> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-card"> <i class="fa fa-th fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Card View</span> </button> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-list"> <i class="fa fa-align-justify fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Day/List View</span> </button> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-monthly"> <i class="fa fa-calendar fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Monthly View</span> </button> <button class="btn btn-default btn-small s-lc-nav-tab s-lc-nav-weekly"> <i class="fa fa-calendar-o fa-lg" aria-hidden="true"></i> <span class="sr-only icon-label">Weekly View</span> </button> 
+          </div> 
+         </div> 
+        </div> 
+        <div id="s-lc-c-list-results" role="region" aria-live="polite"> 
+         <h2 class="sr-only" tabindex="0">Search Results</h2> 
+         <div id="s-lc-c-list-cont" class="s-lc-c-list-cont-horiz"></div> 
+        </div> 
+       </div> 
+      </div> 
+     </section> 
+    </div> 
+   </main> 
+   <footer id="s-lc-public-footer" class="s-lc-public-footer row"> 
+    <div id="s-lc-public-footer-brand"> <span title="libcal-us-2">Powered by</span> <a href="https://www.springshare.com">Springshare</a>. 
+    </div> 
+    <div id="s-lc-public-footer-rights">
+      All rights reserved. 
+    </div> 
+    <div id="s-lc-footer-support-link"> <a href="mailto:kferry@uci.edu">Report a tech support issue.</a> 
+    </div> 
+    <div id="s-lc-public-footer-admin-links" role="navigation"> <a id="s-lc-sign-in" href="https://uci.libapps.com/libapps/login.php?site_id=4298&amp;target=">Login to LibApps</a> 
+    </div> 
+    <div class="s-lc-public-footer-actions"> 
+     <div id="s-lc-language"> <select id="s-lc-language-selector" aria-label="Language Selector"> <option value="cy">Cymraeg</option> <option value="en" selected>English</option> <option value="es">español</option> <option value="fr">français</option> <option value="ga">Irish</option> <option value="sl">slovenski jezik</option> <option value="vi">Ti?ng Vi?t</option> <option value="zh">?? Zh?ngwén</option> </select> 
+     </div> 
+    </div> 
+   </footer> 
+   <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-65077063-1', 'auto');  ga('send', 'pageview');</script> 
+  </div> 
+  <script src="/js870/datepicker.min.js"></script> 
+  <script src="/js870/direct/pagination.min.js"></script> 
+  <script src="/js870/direct/public/events/calendar.min.js"></script> 
+  <script>
+        function addEventDataTextTranslations(eventData) {
+            eventData.textMore = 'More';
+            eventData.textViewMoreInfo = 'View\u0020More\u0020Information';
+            eventData.textShowMoreDates = 'Show\u0020more\u0020dates';
+            eventData.textFeaturedImage = 'Event\u0020featured\u0020image';
+            eventData.textGoToEvent = 'Go\u0020to\u0020event\u0020page';
+
+            eventData.textDate = 'Date';
+            eventData.textTime = 'Time';
+            eventData.textLocation = 'Location';
+            eventData.textCategories = 'Categories';
+            eventData.textAudience = 'Audience';
+            eventData.textFrom = 'From';
+            eventData.textTo = 'To';
+            eventData.textEventCost = 'Event\u0020Cost';
+            eventData.textOnlineEvent = 'Online';
+            eventData.textRegister = 'Register';
+        }
+    </script> 
+  <script>
+        var activeSearch = false;
+        var activeView = "g";
+        var activePage = 1;
+        var activeDate = moment("2021\u002D11\u002D22", springSpace.phpDateFormat).locale('en');
+        var haveChosenSpecificDate = 0;
+        var resultsPerPageViewMap = {
+            "g": 48,
+            "d": 20,
+        };
+        var momentWeekFormat = 'week';
+
+                var activeDateMinimumValue = moment("2021\u002D11\u002D22").locale('en');
+        
+        var datePickerTemplates = {
+            leftArrow: '<span class="sr-only">Previous</span>&laquo;',
+            rightArrow: '<span class="sr-only">Next</span>&raquo;'
+        };
+
+        var template = "<div class=\"media s-lc-c-evt\">\n    <div class=\"media-body\">\n        <h2 class=\"media-heading s-lc-c-evt-title\">\n            <a href=\"{{url}}\">{{title}}<\/a>\n\n            {{#online_event}}\n                <span class=\"label label-info s-lc-eventcard-online-pill\">\n                    {{textOnlineEvent}}\n                <\/span>\n            {{\/online_event}}\n        <\/h2>\n        <div class=\"s-lc-c-evt-des\">{{{shortdesc}}}\n            {{#shortdesc_was_truncated}}\n            &nbsp;<a href=\"{{url}}\" aria-label=\"{{textViewMoreInfo}}\">{{textMore}}<\/a><br>\n            {{\/shortdesc_was_truncated}}\n        <\/div>\n        <dl class=\"dl-horizontal\">\n            {{^multi_day_event}}\n                <dt>{{textDate}}:<\/dt>\n                <dd>{{date}}\n                    {{#future_dates.0}}\n                        <i class=\"fa fa-calendar pad-left-med\" aria-hidden=\"true\"><\/i>\n                        <a href=\"#\" onclick=\"jQuery('#future_{{id}}').toggle(); return false;\">{{textShowMoreDates}}<\/a>\n                        <p id=\"future_{{id}}\" style=\"display:none\">\n                            {{#future_dates}}\n                            <a href=\"\/event\/{{event_id}}\">{{start}}<\/a><br>\n                            {{\/future_dates}}\n                        <\/p>\n                    {{\/future_dates.0}}\n                <\/dd>\n\n                <dt>{{textTime}}:<\/dt>\n                <dd>{{start}}{{#end}} - {{end}}{{\/end}}<\/dd>\n            {{\/multi_day_event}}\n\n            {{#multi_day_event}}\n                <dt>{{textFrom}}:<\/dt>\n                <dd>\n                    {{^all_day_event}}{{start}},{{\/all_day_event}}\n                    {{date}}\n                <\/dd>\n                <dt>{{textTo}}:<\/dt>\n                <dd>\n                    {{^all_day_event}}{{end}},{{\/all_day_event}}\n                    {{multi_day_end_date}}\n                <\/dd>\n            {{\/multi_day_event}}\n\n            {{#location}}\n                <dt>{{textLocation}}:<\/dt>\n                <dd>\n                    {{#locations}}{{name}}{{#map}} (<a href=\"{{map}}\" target=\"_blank\" title=\"Open map for {{name}}\">Map <i class=\"fa fa-external-link\" aria-hidden=\"true\"><\/i><\/a>){{\/map}}{{^last}}, {{\/last}}{{\/locations}}{{#campus}}, {{campus}}{{\/campus}}\n                <\/dd>\n            {{\/location}}\n\n            {{^location}}\n                {{#campus}}\n                    <dt>{{textLocation}}:<\/dt>\n                    <dd>{{campus}}<\/dd>\n                {{\/campus}}\n            {{\/location}}\n\n            {{#registration_cost}}\n                <dt>{{textEventCost}}:<\/dt>\n                <dd>{{registration_cost}}<\/dd>\n            {{\/registration_cost}}\n\n            {{#audiences.0}}\n            <dt>{{textAudience}}:<\/dt>\n            <dd>{{#audiences}}\n                <span class=\"s-lc-event-category-color\" style=\"background-color:{{color}}\">&nbsp;<\/span>\n                <span class=\"s-lc-event-category-link\">\n                    <a href=\"{{calendar_url}}&t=d&cal%5B%5D={{calendar_id}}&audience%5B%5D={{id}}\">{{name}}<\/a>\n                <\/span> &nbsp;\n                {{\/audiences}}\n            <\/dd>\n            {{\/audiences.0}}\n\n            {{#categories_arr.0}}\n            <dt>{{textCategories}}:<\/dt>\n            <dd>{{#categories_arr}}\n                <span class=\"s-lc-event-category-color\" style=\"background-color:{{color}}\">&nbsp;<\/span>\n                <span class=\"s-lc-event-category-link\">\n                    <a href=\"{{calendar_url}}&t=d&d=0000-00-00&cal%5B%5D={{calendar_id}}&ct%5B%5D={{cat_id}}\">{{name}}<\/a>\n                <\/span> &nbsp;\n                {{\/categories_arr}}\n            <\/dd>\n            {{\/categories_arr.0}}\n\n            <dt><\/dt>\n            <dd>\n                {{#seats}}\n                <dt><\/dt>\n                <dd><a href=\"{{url}}\" class=\"btn btn-success btn-sm margin-top-med\">{{textRegister}}! {{#seatsleft}} - {{seatsleft_text}}{{\/seatsleft}}<\/a><\/dd>\n                {{\/seats}}\n\n                {{#registration_msg}}\n                <dt><\/dt>\n                <dd><a href=\"{{url}}\" class=\"btn {{class}} btn-sm margin-top-med\">{{{msg}}}<\/a><\/dd>\n                {{\/registration_msg}}\n            <\/dd>\n        <\/dl>\n    <\/div>\n    {{#featured_image}}\n    <div class=\"media-right\"><a href=\"{{url}}\"> <img class=\"media-object img-thumbnail s-lc-c-evt-fi\" src=\"{{featured_image}}\" alt=\"{{title}}\"> <\/a><\/div>\n    {{\/featured_image}}\n<\/div>\n";
+        var cardViewTemplate = "<div class=\"s-lc-eventcard\">\n    <div class=\"s-lc-eventcard-content\">\n        <div class=\"s-lc-eventcard-heading\">\n            <div class=\"s-lc-eventcard-heading-content\">\n                <div class=\"s-lc-evt-date\">\n                    <div class=\"s-lc-evt-date-m\">{{monthshort}}<\/div>\n                    <div class=\"s-lc-evt-date-d\">{{day}}<\/div>\n                <\/div>\n\n                <div class=\"s-lc-eventcard-heading-text-group\">\n                    <div class=\"s-lc-eventcard-heading-text s-lc-hide-long-text\">\n                        {{^multi_day_event}}\n                            {{dayshort}}, {{start}}{{#end}} - {{end}}{{\/end}}\n                        {{\/multi_day_event}}\n\n                        {{#multi_day_event}}\n                            {{monthshort}} {{day}} -\n                            {{#multi_day_end}}\n                                {{monthshort}} {{day}}\n                            {{\/multi_day_end}}\n                        {{\/multi_day_event}}\n\n                        {{#online_event}}\n                            <span class=\"label label-info s-lc-eventcard-online-pill\">\n                                {{textOnlineEvent}}\n                            <\/span>\n                        {{\/online_event}}\n                    <\/div>\n                    <div class=\"s-lc-eventcard-heading-text s-lc-hide-long-text\">{{campusAndLocation}}<\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n\n        <div class=\"s-lc-eventcard-event-color-bar\" style=\"background-color: {{color}}\">\n        <\/div>\n\n        <div class=\"s-lc-eventcard-body\">\n            {{#seatsleft}}\n                <div class=\"s-lc-ribbon s-lc-ribbon-top-right\">\n                    <span>\n                        {{seatsleft_text}}\n                    <\/span>\n                <\/div>\n            {{\/seatsleft}}\n\n            <h2 class=\"s-lc-eventcard-title\">\n                <a title=\"{{title}}\" href=\"{{url}}\">\n                    {{title}}\n                <\/a>\n            <\/h2>\n\n            {{#shortdesc}}\n            <div class=\"s-lc-eventcard-description\">\n                {{{shortdesc}}}\n                {{#shortdesc_was_truncated}}\n                &nbsp;<a href=\"{{url}}\" aria-label=\"{{textViewMoreInfo}}\">{{textMore}}<\/a><br>\n                {{\/shortdesc_was_truncated}}\n            <\/div>\n            {{\/shortdesc}}\n\n            {{#registration_cost}}\n                <br>\n                <div class=\"s-lc-eventcard-registration-cost\">\n                    {{textEventCost}}: {{registration_cost}}\n                <\/div>\n            {{\/registration_cost}}\n        <\/div>\n\n        <div class=\"s-lc-eventcard-tags\">\n            <ul>\n                {{#categoriesToShowInFull}}\n                    <li class=\"s-lc-eventcard-tag\">\n                        <span class=\"s-lc-event-category-color\" style=\"background-color:{{color}}\">&nbsp;<\/span>\n                        <span class=\"s-lc-event-category-link\" data-toggle=\"tooltip\" title=\"{{name}}\">\n                            <a href=\"{{calendar_url}}&t=g&cal%5B%5D={{calendar_id}}{{#isCategory}}&ct={{id}}{{\/isCategory}}{{#isAudience}}&audience={{id}}{{\/isAudience}}\">\n                                {{name}}\n                            <\/a>\n                        <\/span>\n                    <\/li>\n                {{\/categoriesToShowInFull}}\n\n                {{#categoriesTooltip}}\n                    <li class=\"s-lc-eventcard-tag-more\">\n                        <a href=\"#\" data-toggle=\"tooltip\" title=\"{{categoriesTooltip}}\" aria-label=\"{{categoriesTooltip}}\">&hellip;<\/a>\n                    <\/li>\n                {{\/categoriesTooltip}}\n            <\/ul>\n        <\/div>\n    <\/div>\n<\/div>\n";
+        var cardViewDefaultImage = 'https\u003A\/\/lcimages.s3.amazonaws.com\/event\u002Ddefault.png';
+
+        var categoriesMappedByCalendar = {  };
+        var categoryNameToColorMap = {};
+        var categoryNameToIdListsMap = {};
+
+                categoriesMappedByCalendar[12385] = [];
+        
+                var tempCategoryName = "Book\u0020Discussion";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50902,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023B3C8EF";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50902);
+                var tempCategoryName = "Conference";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 51879,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023A2ADC7";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(51879);
+                var tempCategoryName = "Diversity\u0020and\u0020Inclusion";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50903,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023E31635";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50903);
+                var tempCategoryName = "Donor\u0020Event";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50904,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002307733B";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50904);
+                var tempCategoryName = "DSS\u0020Event";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 52035,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023DEDEDE";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(52035);
+                var tempCategoryName = "Exhibitions";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50905,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023F5F50A";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50905);
+                var tempCategoryName = "Festival\/Fair";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50906,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023371AF0";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50906);
+                var tempCategoryName = "Fundraisers";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50907,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002368F07A";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50907);
+                var tempCategoryName = "Lecture\/Presentations";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50908,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023E08C0D";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50908);
+                var tempCategoryName = "Meetings";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50909,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023940627";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50909);
+                var tempCategoryName = "Orientation";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50910,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002315BCE6";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50910);
+                var tempCategoryName = "Reception";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50911,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023E21FF0";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50911);
+                var tempCategoryName = "Speakers";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50912,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023F0C9B2";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50912);
+                var tempCategoryName = "Special\u0020Events";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50913,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023EB4D6D";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50913);
+                var tempCategoryName = "Stress\u0020Relief";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50914,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023B2F0DC";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50914);
+                var tempCategoryName = "Tour";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50915,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u002365676B";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50915);
+                var tempCategoryName = "Workshops";
+
+        if (!(12385 in categoriesMappedByCalendar)) { categoriesMappedByCalendar[12385] = []; }
+        categoriesMappedByCalendar[12385].push({
+            id: 50916,
+            name: tempCategoryName,
+        });
+
+        categoryNameToColorMap[tempCategoryName] = "\u0023CEB2F0";
+
+        if (!(tempCategoryName in categoryNameToIdListsMap)) { categoryNameToIdListsMap[tempCategoryName] = []; }
+        categoryNameToIdListsMap[tempCategoryName].push(50916);
+        
+        var calendarNameMap = {};
+                    calendarNameMap[12385] = "UCI\u0020Libraries\u0027\u0020Events";
+        
+        var audienceNameMap = {};
+                    audienceNameMap[3487] = "Alumni";
+                    audienceNameMap[3402] = "Faculty";
+                    audienceNameMap[3403] = "General\u0020Public";
+                    audienceNameMap[3401] = "Graduate\u0020Students";
+                    audienceNameMap[3488] = "Staff";
+                    audienceNameMap[3400] = "Undergraduate\u0020Students";
+                    audienceNameMap[4782] = "VIP";
+        
+        var categoryNameMap = {};
+                    categoryNameMap[50902] = "Book\u0020Discussion";
+                    categoryNameMap[51879] = "Conference";
+                    categoryNameMap[50903] = "Diversity\u0020and\u0020Inclusion";
+                    categoryNameMap[50904] = "Donor\u0020Event";
+                    categoryNameMap[52035] = "DSS\u0020Event";
+                    categoryNameMap[50905] = "Exhibitions";
+                    categoryNameMap[50906] = "Festival\/Fair";
+                    categoryNameMap[50907] = "Fundraisers";
+                    categoryNameMap[50908] = "Lecture\/Presentations";
+                    categoryNameMap[50909] = "Meetings";
+                    categoryNameMap[50910] = "Orientation";
+                    categoryNameMap[50911] = "Reception";
+                    categoryNameMap[50912] = "Speakers";
+                    categoryNameMap[50913] = "Special\u0020Events";
+                    categoryNameMap[50914] = "Stress\u0020Relief";
+                    categoryNameMap[50915] = "Tour";
+                    categoryNameMap[50916] = "Workshops";
+        
+        var campusNameMap = {};
+        
+        var selectPickerCountSelectText = '{0} selected';
+        var selectPickerHeaderText = {
+            calendar:   'Filter\u0020by Calendar:',
+            audience:   'Filter\u0020by Audience:',
+            category:   'Filter\u0020by Category:',
+            campus:     'Filter\u0020by Campus:',
+            include: 'Include\u0020Events:',
+        };
+
+        var defaultIncludeEvents = 0;
+        var includeEventsLabel = 'Include\u0020Events';
+
+        var springyPage = {
+            iid: 3012,
+            isFullCalendarView: 0,
+            calendarStartDay: 0,
+            lang: {
+                category: 'Category',
+                campus: 'Campus',
+                location: 'Location',
+                presenter: 'Presenter',
+                audiences: 'Audiences',
+                categories: 'Categories',
+                seats: 'Seats',
+                shortDesc: 'Description',
+                allDay: 'All\u0020Day',
+                time: 'Time',
+            }
+        };
+
+        function addCalendarCategoriesToDict(categoryDictionary, calendarCategories) {
+            for (var i = 0; i < calendarCategories.length; i++) {
+                var calendarCategory = calendarCategories[i];
+                categoryDictionary[calendarCategory.name] = true;
+            }
+        }
+
+        function getDictionaryOfCategories(calendarIds) {
+            var categoryDictionary = {};
+
+                        if (0 in categoriesMappedByCalendar) {
+                addCalendarCategoriesToDict(categoryDictionary, categoriesMappedByCalendar[0]);
+            }
+
+                        for (var i = 0; i < calendarIds.length; i++) {
+                var calendarId = calendarIds[i];
+
+                if (calendarId == -1) {
+                                        break;
+                }
+
+
+                addCalendarCategoriesToDict(categoryDictionary, categoriesMappedByCalendar[calendarId]);
+            }
+
+            return categoryDictionary;
+        }
+
+        function getSortedKeys(categoryDictionary) {
+            var sortedKeys = [];
+            for(var key in categoryDictionary) {
+                sortedKeys.push(key);
+            }
+            sortedKeys.sort(compareStringIgnoreCase);
+
+            return sortedKeys;
+        }
+
+        function updateCategoryFilters(calendarIds, selectedValues) {
+            var categoryDictionary = getDictionaryOfCategories(calendarIds);
+
+            var sortedKeys = getSortedKeys(categoryDictionary);
+
+            var element = jQuery("#cat-dd");
+            element.empty();
+
+            for (var i = 0; i < sortedKeys.length; i++) {
+                var categoryName = sortedKeys[i];
+                var categoryColor = categoryNameToColorMap[categoryName];
+                var selected = selectedValues.indexOf(categoryName) >= 0;
+
+                var option = new Option(categoryName, categoryName, selected, selected);
+                option.setAttribute('data-bgcolor', categoryColor);
+                option.setAttribute('data-content', '<span class="label" style="background-color:' + categoryColor + '">&nbsp;</span> ' + categoryName + '</span>');
+                element.append(option);
+            }
+
+            element.selectpicker('refresh');
+        }
+
+        function runFiltersDueToOptionChange(event, clickedIndex, newValue, oldValue) {
+            activePage = 1;
+
+            return runFilters();
+        }
+
+                var calendarFilterInProgress = false;
+
+        function ensureValidCalendarSelection(element, clickedIndex) {
+            if (clickedIndex == 0) {
+                // if the show all option is selected - make it the only option selected
+                element.selectpicker('deselectAll').val(-1).selectpicker("refresh");
+            } else {
+                // ensure the select all option is not selected if we pick a different option
+                element.find("[value=-1]").prop("selected", false);
+                element.selectpicker("refresh");
+            }
+        }
+
+        function runCalendarSelectionValidation(event, clickedIndex, newValue, oldValue) {
+            var element = jQuery(this);
+            ensureValidCalendarSelection(element, clickedIndex);
+        }
+
+        function runFiltersDueToCalendarChange(event, clickedIndex, newValue, oldValue) {
+            if (calendarFilterInProgress) {
+                return false;
+            }
+
+            calendarFilterInProgress = true;
+
+            var element = jQuery(this);
+            ensureValidCalendarSelection(element, clickedIndex);
+
+            calendarFilterInProgress = false;
+
+            // if no options are selected - reset the select picker back to the original value
+            var calendarIds = element.val();
+            if (calendarIds.length == 0) {
+                element.val(12385).selectpicker("refresh");
+                calendarIds = [12385];
+            }
+
+            // toggle the categories display to only show those valid for these calendars
+            updateCategoryFilters(calendarIds, jQuery("#cat-dd").val());
+
+            activePage = 1;
+
+            return runFilters();
+        }
+
+        function getSelectedCategoryIds() {
+            var selectedCategoryIds = [];
+
+            var categoryNames = jQuery("#cat-dd").val();
+            if (categoryNames == undefined) {
+                return selectedCategoryIds;
+            }
+
+            for (var i = 0; i < categoryNames.length; i++) {
+                var categoryName = categoryNames[i];
+                var categoryIds = categoryNameToIdListsMap[categoryName];
+                Array.prototype.push.apply(selectedCategoryIds, categoryIds);
+            }
+
+            return selectedCategoryIds;
+        }
+
+        function createDatePicker() {
+                        var minViewMode = (activeView == "m") ? 1 : 0;
+
+                        var displayDateFormat = (activeView == "m") ? "MMMM YYYY" : springSpace.dateFormat;
+
+            var element = jQuery("#s-lc-filter-date");
+            element.off('changeDate');
+            element.datepicker("destroy");
+
+            element.datepicker({
+                language: "en",
+                format: {
+                    toDisplay: function (date, format, language) {
+                        return moment.utc(date).locale("en").format(displayDateFormat);
+                    },
+                    toValue: function (date, format, language) {
+                        return new Date(date);
+                    }
+                },
+                minViewMode: minViewMode,
+                weekStart: springyPage.calendarStartDay,
+                autoclose: true,
+                startDate: "2021\u002D11\u002D22",                todayHighlight: 0,
+                defaultViewDate: {"year": 2021, "month": 10, "day": 22},
+                templates: datePickerTemplates
+            });
+
+            if (haveChosenSpecificDate) {
+                element.datepicker("setDate", activeDate.toDate());
+            }
+
+            datePickerAccessibilityFix(element);
+
+            element.on("changeDate", function () {
+                haveChosenSpecificDate = true;
+                activeDate = moment(jQuery(this).datepicker("getDate"));
+
+                                if (activeDate.isBefore(activeDateMinimumValue)) {
+                    activeDate = activeDateMinimumValue;
+                }
+                
+                                                return false;
+                            });
+        }
+
+        function setActiveViewMode(viewMode) {
+            activeView = viewMode;
+            activePage = 1;
+
+            createDatePicker();
+
+            return runFilters();
+        }
+
+        function setActiveViewModeToSearch() {
+            var searchString = jQuery("#s-lc-c-search").val();
+            if (searchString.length < 2) {
+                errorAlert("Search\u0020string\u0020must\u0020be\u0020at\u0020least\u00202\u0020characters.");
+                return false;
+            }
+
+            activeSearch = true;
+            activePage = 1;
+
+            // keep people on their current view mode, with the exception of the monthly/weekly
+            //  view modes as they do not yet support searches
+            if ((activeView === 'm') || (activeView === 'w')) {
+                activeView = 'd';
+                createDatePicker();
+            }
+        }
+
+        function getDateToPassToPhp() {
+            if (!haveChosenSpecificDate) {
+                return "0000-00-00";
+            }
+
+            if (activeView == "m") {
+                return activeDate.format("YYYY-MM");
+            }
+
+            return activeDate.format("YYYY-MM-DD");
+        }
+
+        function getListOfNames(idNameMap, ids) {
+            var names = [];
+
+            for (var i=0; i < ids.length; i++) {
+                var id = ids[i];
+                var name = idNameMap[id];
+                if (name === undefined) {
+                    continue;
+                }
+
+                names.push(name);
+            }
+
+            return names.join(", ");
+        }
+
+        function gatherFilterOptionsInUse() {
+            var categoryIds = getSelectedCategoryIds();
+            var campusIds = jQuery("#cam-dd").val();
+            var audienceIds = jQuery("#audience-dd").val();
+            var calendarIds = jQuery("#cal-dd").val();
+            var search = jQuery("#s-lc-c-search").val();
+
+            var filterOptions = [];
+
+            if (search.length > 0) {
+                filterOptions.push(["Keywords", escapeHtml(search)]);
+            }
+
+            if (haveChosenSpecificDate) {
+                                var displayDateFormat = (activeView == "m") ? "MMMM YYYY" : springSpace.dateFormat;
+                filterOptions.push(["Date", activeDate.locale("en").format(displayDateFormat)]);
+            }
+
+            if (calendarIds.length > 0) {
+                filterOptions.push(["Calendar", getListOfNames(calendarNameMap, calendarIds)]);
+            }
+
+            if ((audienceIds != undefined) && (audienceIds.length > 0)) {
+                filterOptions.push(["Audience", getListOfNames(audienceNameMap, audienceIds)]);
+            }
+
+            if (categoryIds.length > 0) {
+                filterOptions.push(["Category", getListOfNames(categoryNameMap, categoryIds)]);
+            }
+
+            if ((campusIds != undefined) && (campusIds.length > 0)) {
+                filterOptions.push(["Campus", getListOfNames(campusNameMap, campusIds)]);
+            }
+
+            filterOptions.push([includeEventsLabel, jQuery('#include-events-dd option:selected').text()]);
+
+            return filterOptions;
+        }
+
+        function showFiltersUsedOnScreen() {
+            var filterOptions = gatherFilterOptionsInUse();
+            var html = "Filters\u0020applied\u003A\u0020";
+
+            for (var i=0; i < filterOptions.length; i++) {
+                var filterOption = filterOptions[i];
+                var name = filterOption[0];
+                var value = filterOption[1];
+
+                if (value.length === 0) {
+                    continue;
+                }
+
+                html += "<strong>" + name + "</strong>: <em>" + value + "</em>";
+
+                if (i < (filterOptions.length - 1)) {
+                    html += ";&nbsp;&nbsp;&nbsp;";
+                }
+            }
+
+            jQuery("#s-lc-c-filters-used").html(html).show();
+        }
+
+        function getCurrentQueryString() {
+            var queryStringIndex = window.location.href.indexOf('?');
+
+            if (queryStringIndex < 0) {
+                return '';
+            }
+
+            return window.location.href.substr(queryStringIndex);
+        }
+
+        function runFilters() {
+            jQuery(".s-lc-nav-tab").removeClass("active");
+
+            var newQueryString = determineQueryString();
+            if (newQueryString !== getCurrentQueryString()) {
+                                history.pushState(null, document.title, newQueryString);
+            }
+
+                        showFiltersUsedOnScreen();
+            
+            var searchString = jQuery("#s-lc-c-search").val();
+            if (searchString.length > 0) {
+                if (!activeSearch) {
+                    setActiveViewModeToSearch();
+                }
+            } else {
+                activeSearch = false;
+            }
+
+            if (activeView == 'm') {
+                jQuery('.s-lc-nav-monthly').addClass('active');
+                if (springyPage.isFullCalendarView) {
+                    return runFullCalendarMonthlyOrWeekly(true);
+                }
+
+                return runMonthlyOrWeekly(true);
+            }
+
+            if (activeView === 'w') {
+                jQuery('.s-lc-nav-weekly').addClass('active');
+                if (springyPage.isFullCalendarView) {
+                    return runFullCalendarMonthlyOrWeekly(false);
+                }
+
+                return runMonthlyOrWeekly(false);
+            }
+
+            if (activeView == "g") {
+                jQuery(".s-lc-nav-card").addClass("active");
+            } else {
+                jQuery(".s-lc-nav-list").addClass("active");
+            }
+
+            if (activeSearch) {
+                return runSearch();
+            }
+
+            if (activeView == "g") {
+                return runCardView();
+            }
+
+            return runDaily();
+        }
+
+        function beginBusyWait() {
+            workingAlert();
+
+                        jQuery("#s-lc-c-sbtn, .s-lc-filters-clear").prop("disabled", true);
+                    }
+
+        function endBusyWait() {
+            stopAlert();
+
+                        jQuery("#s-lc-c-sbtn, .s-lc-filters-clear").prop("disabled", false);
+                    }
+
+        function formatResultsHeader(subTitle, header) {
+                        return false;
+        }
+
+        function runMonthlyOrWeekly(isMonthly) {
+            var cals = jQuery('#cal-dd').val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery('#cam-dd').val();
+            var audience = jQuery('#audience-dd').val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var date = activeDate.format(springSpace.phpDateFormat);
+
+            var cal_cont = jQuery('#s-lc-c-list-cont');
+
+            beginBusyWait();
+
+            var headerSubTitle = calendarUtils.getDateHeading(activeDate, isMonthly, momentWeekFormat);
+
+            jQuery.ajax({
+                url: "/ajax/calendar/monthly?c=" + cals + '&date=' + date + '&monthly=' + isMonthly + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'html',
+                                                cache: true,
+                            })
+            .always(endBusyWait)
+            .done(function (html) {
+                formatResultsHeader(headerSubTitle);
+                cal_cont.html(html);
+
+                                                                var screenWidth = jQuery(window).width();
+                if (screenWidth > springSpace.smallScreenSize) {
+                    jQuery('[data-toggle="popover"]').popover();
+                }
+
+                formatLabels();
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function runDaily() {
+            var cals = jQuery("#cal-dd").val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery("#cam-dd").val();
+            var audience = jQuery("#audience-dd").val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var perPage = resultsPerPageViewMap[activeView];
+
+            beginBusyWait();
+
+            if (haveChosenSpecificDate) {
+                var day = activeDate.locale("en").format("LL");
+            } else {
+                var day = "Upcoming\u0020Events";
+            }
+
+            jQuery.ajax({
+                url: "/ajax/calendar/list?c=" + cals + "&date=" + getDateToPassToPhp() + "&perpage=" + perPage + "&page=" + activePage + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'json',
+                                                cache: true,
+                            })
+            .always(endBusyWait)
+            .done(function(data) {
+                formatResultsHeader(day);
+                var output = formatResultsInListViewStyle(data);
+
+                jQuery("#s-lc-c-list-cont").html(output);
+                jQuery('#s-lc-c-list-results h2').focus();
+                paginate(data.total_results, data.perpage);
+                formatLabels();
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function runCardView() {
+            var cals = jQuery("#cal-dd").val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery("#cam-dd").val();
+            var audience = jQuery("#audience-dd").val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var perPage = resultsPerPageViewMap[activeView];
+
+            beginBusyWait();
+
+            if (haveChosenSpecificDate) {
+                var day = activeDate.locale("en").format("LL");
+            } else {
+                var day = "Upcoming\u0020Events";
+            }
+
+            jQuery.ajax({
+                url: "/ajax/calendar/list?c=" + cals + "&date=" + getDateToPassToPhp() + "&perpage=" + perPage + "&page=" + activePage + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'json',
+                                                cache: true,
+                            })
+            .always(endBusyWait)
+            .done(function(data) {
+                formatResultsHeader(day);
+                var output = formatResultsInCardViewStyle(data);
+
+                jQuery("#s-lc-c-list-cont").html(output);
+                jQuery('#s-lc-c-list-results h2').focus();
+                paginate(data.total_results, data.perpage);
+                formatLabels();
+                accessibleIcons();
+                jQuery(".s-lc-eventcard-tag-more").on("click", doNothing);
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function doNothing() {
+                        return false;
+        }
+
+        function runSearch() {
+            var q = jQuery("#s-lc-c-search").val();
+            if (q.length < 2) {
+                errorAlert("Search\u0020string\u0020must\u0020be\u0020at\u0020least\u00202\u0020characters.");
+                return false;
+            }
+
+            beginBusyWait();
+
+            var cals = jQuery("#cal-dd").val();
+            var cats = getSelectedCategoryIds();
+            var camp = jQuery("#cam-dd").val();
+            var audience = jQuery("#audience-dd").val();
+            var includeEvents = jQuery('#include-events-dd').val();
+            var perPage = resultsPerPageViewMap[activeView];
+            var t = q.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+            jQuery.ajax({
+                url: "/process_search.php?site_id=4298&cals=" + cals + "&perpage=" + perPage + "&page=" + activePage + "&q=" + encodeURIComponent(q) + "&audience=" + audience + "&cats=" + cats + "&camps=" + camp + '&inc=' + includeEvents,
+                dataType: 'json',
+            })
+            .always(endBusyWait)
+            .done(function(data) {
+                formatResultsHeader(t, 'Search\u0020Results');
+
+                if (activeView === "g") {
+                    var output = formatResultsInCardViewStyle(data);
+                } else {
+                    var output = formatResultsInListViewStyle(data);
+                }
+
+                jQuery("#s-lc-c-list-cont").html(output);
+                jQuery('#s-lc-c-list-results h2').focus();
+                paginate(data.total_results, data.perpage);
+                formatLabels();
+            })
+            .fail(ajaxErrorHandler);
+        }
+
+        function formatResultsInListViewStyle(data) {
+            if (data.error) {
+                return "<p>" + eventData.error + "</p>";
+            }
+
+            var results = data.results.length;
+            if (results < 1) {
+                return "<div class=\"alert alert-info s-lc-c-s-nores\">No\u0020events\u0020are\u0020scheduled.</div>";
+            }
+
+            var output = "";
+            for (var i = 0; i < results; i++) {
+                var eventData = data.results[i];
+                addEventDataTextTranslations(eventData);
+                output += Mustache.render(template, eventData);
+            }
+            output += "<div id=\"pag\"></div>";
+            return output;
+        }
+
+        function formatResultsInCardViewStyle(data) {
+            if (data.error) {
+                return "<p>" + data.error + "</p>";
+            }
+
+            var resultCount = data.results.length;
+            if (resultCount < 1) {
+                return "<div class=\"alert alert-info s-lc-c-s-nores\">No\u0020events\u0020are\u0020scheduled.</div>";
+            }
+
+            var output = '<div class="s-lc-eventcard-outer-container"><div class="s-lc-eventcard-inner-container">';
+            for (var i = 0; i < resultCount; i++) {
+                var eventData = data.results[i];
+                decorateEventDataWithCategoryDisplayInfo(eventData);
+                addEventDataTextTranslations(eventData);
+                eventData.campusAndLocation = getCampusAndLocationData(eventData);
+
+                // if the event does not have a featured image then use the default card view image
+                if (eventData.featured_image.length === 0) {
+                    eventData.featured_image = cardViewDefaultImage;
+                }
+
+                output += Mustache.render(cardViewTemplate, eventData);
+            }
+            output += "</div></div>";
+            output += "<div id=\"pag\"></div>";
+            return output;
+        }
+
+        function paginate(totalResults, perPage) {
+            var paginationElement = formatPaginationElement(activePage, perPage, totalResults);
+            if (paginationElement === null) {
+                return;
+            }
+
+            jQuery('#pag').append(paginationElement);
+
+            jQuery('#pag li a').on('click', function () {
+                activePage = jQuery(this).data('page');
+
+                return runFilters();
+            });
+        }
+
+        function decorateEventDataWithCategoryDisplayInfo(eventData) {
+            var audienceCount = eventData.audiences.length;
+            var categoryCount = eventData.categories_arr.length;
+
+            var audiencesToShowInFull = 0;
+            var categoriesToShowInFull = 1;
+
+            if ((audienceCount > 0) && categoryCount > 0) {
+                audiencesToShowInFull = 1;
+                categoriesToShowInFull = 1;
+            } else if (audienceCount > 0) {
+                audiencesToShowInFull = Math.min(2, audienceCount);
+            } else {
+                categoriesToShowInFull = Math.min(2, categoryCount);
+            }
+
+            var toShowInFull = [];
+            var toShowAsTooltip = [];
+
+            for (var i=0; i < audienceCount; i++) {
+                var audienceData = eventData.audiences[i];
+
+                if (i < audiencesToShowInFull) {
+                    toShowInFull.push({
+                        isAudience: true,
+                        id: audienceData.id,
+                        name: audienceData.name,
+                        color: audienceData.color,
+                    });
+                } else {
+                    toShowAsTooltip.push(audienceData.name);
+                }
+            }
+
+            for (var i=0; i < categoryCount; i++) {
+                var categoryData = eventData.categories_arr[i];
+
+                if (i < categoriesToShowInFull) {
+                    toShowInFull.push({
+                        isCategory: true,
+                        id: categoryData.cat_id,
+                        name: categoryData.name,
+                        color: categoryData.color,
+                    });
+                } else {
+                    toShowAsTooltip.push(categoryData.name);
+                }
+            }
+
+            eventData.categoriesToShowInFull = toShowInFull;
+            eventData.categoriesTooltip = toShowAsTooltip.join(", ");
+        }
+
+        function getCampusAndLocationData(eventData) {
+                        var maxLocationsToShow = 2;
+            var campusString = eventData.campus;
+            var campusCount = campusString.length > 0 ? 1 : 0;
+            var locationString = eventData.location;
+            var locationCount = eventData.locationCount;
+
+            if ((locationCount + campusCount) > maxLocationsToShow) {
+                return "Multiple\u0020Locations";
+            }
+
+            var locations = [];
+            if (campusCount > 0) {
+                locations.push(campusString);
+            }
+
+            if (locationCount > 0) {
+                locations.push(locationString);
+            }
+
+            return locations.join(", ");
+        }
+
+        function setupAudienceLabel() {
+            var audienceHtml = "";
+            jQuery("#audience-dd :selected").each(function (i, selected) {
+                var value = jQuery(selected).val();
+                audienceHtml += '<span class="label" style="background-color:' + jQuery(selected).data("bgcolor") + '">';
+                audienceHtml += jQuery(selected).text();
+                audienceHtml += '&nbsp;<a href="#" onclick="removeAudience(\'' + value + '\');"><i class="fa fa-times fa-lg" style="color:#fff" aria-hidden="true"></i></a></span>&nbsp;';
+            });
+
+            if (audienceHtml != "") {
+                audienceHtml = '<span class="s-lc-c-e-audience-lab">Audience:</span> ' + audienceHtml;
+            }
+
+            jQuery("#s-lc-c-e-audience").html(audienceHtml);
+        }
+
+        function formatLabels() {
+                    }
+
+        function removeFilter(id, value) {
+            var element = jQuery(id);
+
+            var list = element.val();
+            var index = list.indexOf(value);
+            if (index > -1) {
+                list.splice(index, 1);
+            }
+
+            element.val(list);
+            element.selectpicker("refresh");
+
+            runFilters();
+
+            return false;
+        }
+
+        function removeAudience(value) {
+            return removeFilter("#audience-dd", value);
+        }
+
+        function removeCat(value) {
+            return removeFilter("#cat-dd", value);
+        }
+
+        function removeCam(value) {
+            return removeFilter("#cam-dd", value);
+        }
+
+        function determineQueryString() {
+            var categoryIds = getSelectedCategoryIds();
+            var campusIds = jQuery("#cam-dd").val();
+            var audienceIds = jQuery("#audience-dd").val();
+            var calendarId = jQuery("#cal-dd").find(":selected").data("cal_id");
+            var calendarIds = jQuery("#cal-dd").val();
+            var qs = "";
+
+            if (activeSearch) {
+                var q = encodeURIComponent(jQuery("#s-lc-c-search").val());
+                var caqs = "";
+                if (calendarId != null) {
+                    caqs = "&cid=" + calendarId;
+                }
+                qs = "?t=" + activeView + "&q=" + q + caqs;
+            } else {
+                qs = "?cid=" + calendarId + "&t=" + activeView + "&d=" + getDateToPassToPhp();
+            }
+
+            if (calendarIds.length) {
+                qs = qs + "&cal=" + calendarIds;
+            }
+
+            if ((audienceIds != undefined) && (audienceIds.length)) {
+                qs = qs + "&audience=" + audienceIds;
+            }
+
+            if (categoryIds.length) {
+                qs = qs + "&ct=" + categoryIds;
+            }
+
+            if ((campusIds != undefined) && (campusIds.length)) {
+                qs = qs + "&cm=" + campusIds;
+            }
+
+                                    if (activePage > 1) {
+                qs = qs + "&page=" + activePage;
+            }
+
+            var includeEvents = jQuery('#include-events-dd').val();
+            if (includeEvents !== undefined) {
+                qs += '&inc=' + includeEvents;
+            }
+
+            return qs;
+        }
+
+        function listenForFilterChanges() {
+                        jQuery("#cal-dd").on("changed.bs.select", runCalendarSelectionValidation);
+                    }
+
+        function stopListeningForFilterChanges() {
+            jQuery("#audience-dd, #cat-dd, #cam-dd, #include-events-dd, #cal-dd").off("changed.bs.select");
+        }
+
+        function clearFilters() {
+            stopListeningForFilterChanges();
+
+            jQuery("#cal-dd").selectpicker("deselectAll").val(12385).selectpicker("refresh");
+            jQuery("#cam-dd, #audience-dd").selectpicker("deselectAll").selectpicker("refresh");
+            jQuery("#cat-dd").selectpicker("deselectAll").selectpicker("refresh");
+            jQuery('#include-events-dd').val(defaultIncludeEvents).selectpicker('refresh');
+
+            activeSearch = false;
+            jQuery("#s-lc-c-search").val("");
+
+            activeDate = moment("2021\u002D11\u002D22", springSpace.phpDateFormat);
+            haveChosenSpecificDate = false;
+            jQuery("#s-lc-filter-date").val("");
+            createDatePicker();
+
+            listenForFilterChanges();
+
+            jQuery(".s-lc-nav-tab").removeClass("active");
+            activePage = 1;
+
+            return runFilters();
+        }
+
+        jQuery(function () {
+            jQuery("#cal-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.calendar,
+                style: "btn-default btn-sm"
+
+            });
+
+            jQuery("#audience-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.audience,
+                style: "btn-default btn-sm"
+            });
+
+            jQuery("#cat-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.category,
+                style: "btn-default btn-sm"
+            });
+
+            jQuery("#cam-dd").selectpicker({
+                countSelectedText: selectPickerCountSelectText,
+                header: selectPickerHeaderText.campus,
+                style: "btn-default btn-sm"
+            });
+
+            jQuery('#include-events-dd').selectpicker({
+                header: selectPickerHeaderText.include,
+                style: 'btn-default btn-sm'
+            });
+
+            jQuery(".s-lc-nav-list").on("click", function (e) {
+                return setActiveViewMode("d");
+            });
+
+            jQuery(".s-lc-nav-monthly").on("click", function (e) {
+                return setActiveViewMode("m");
+            });
+
+            jQuery('.s-lc-nav-weekly').on('click', function () {
+                return setActiveViewMode('w');
+            });
+
+            jQuery(".s-lc-nav-card").on("click", function (e) {
+                return setActiveViewMode("g");
+            });
+
+            jQuery("#s-lc-c-sbtn").click(function () {
+                
+                return runFilters();
+            });
+
+            jQuery("#s-lc-c-search").keyup(function (e) {
+                if (e.keyCode == 13) {
+                    setActiveViewModeToSearch();
+
+                    return runFilters();
+                }
+
+                return true;
+            });
+
+            jQuery(".s-lc-filters-clear").click(clearFilters);
+
+            jQuery("#cal-form").on("submit", function (e) {
+                e.preventDefault();
+            });
+
+            jQuery('.s-lc-c-timezone-change').on('click', springyPublic.showTimezoneModal);
+
+            updateCategoryFilters(
+                [12385,],
+                []
+            );
+
+            var cals = jQuery("#cal-dd").val();
+            if (cals == null) {
+            } else {
+                jQuery("#s-lc-c-catf .bootstrap-select").prop("title", "");
+            }
+
+            listenForFilterChanges();
+
+            accessibleIcons();
+
+                        activeView = "g";
+            activeSearch = false;
+            createDatePicker();
+            runFilters();
+
+            // reload the page with previous query string when user click on Back
+            window.addEventListener('popstate', function() {
+                location.reload();
+            });
+        });
+    </script>  
+ </body>
+</html>

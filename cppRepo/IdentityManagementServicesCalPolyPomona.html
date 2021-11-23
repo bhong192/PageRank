@@ -1,0 +1,380 @@
+<!--https://apps.cpp.edu/idm/login.aspx?ReturnUrl=%2fidm%2fuser_account.aspx-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="full-height fontawesome-i2svg-active fontawesome-i2svg-complete"> 
+ <head id="ctl00_Head1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="CSS/print.css" media="print" type="text/css" rel="stylesheet">
+  <link href="CSS/app_forms.css" rel="stylesheet" type="text/css">
+  <link href="CSS/app_tabs.css" rel="stylesheet" type="text/css">
+  <link href="CSS/user_idm.css" rel="stylesheet" type="text/css">
+  <title>
+	Identity Management Services | Cal Poly Pomona
+</title>
+  <link href="../css/print.css" media="print" type="text/css" rel="stylesheet">
+  <link href="../css/app_forms.css" rel="Stylesheet" type="text/css"> 
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> <!--[if lt IE 7]>
+	<style media="screen" type="text/css">
+	#container {
+		height:100%;
+	}
+	</style>
+	<![endif]--> <!--[if IE 6]>
+<style type="text/css">
+#constituentnav li {padding-left: 7px;}
+#constituentnav ul {padding-left: 7px;}
+#search input#q {background: #FFFFFF;}
+</style>
+<![endif]--> <!--[if IE 7]>
+<style type="text/css">
+#search input#q {background: url(/img/searchbg_light.gif) no-repeat;}
+</style>
+<![endif]--> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"> 
+  <style>
+
+       .ajax__calendar_container { z-index : 1000 ; }
+.error{
+    color: red !important;
+}
+label.error{
+
+}
+.macman.error {
+    border: 1px solid #c24949;
+
+
+}
+
+label.error{
+    float: none !important;
+    color:red;
+    width: 20% !important;
+
+}
+.GridViewClass td,th
+{
+    padding-left :5px;
+}
+.paddingClass
+
+{
+
+padding-left:10px;
+
+padding-right:10px
+
+}
+
+.parentTable table td {
+    padding: 0px;
+}
+
+.gridHistory th, th
+{
+    padding-right:      0em;
+    padding-left: 0em;
+}
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+    footer p {
+        line-height: 1.8em !important;
+    }
+    main h3{
+        margin-top: 20px;
+    }
+    main .row{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    p {
+        line-height: 1.5em !important;
+    }
+    p, label {
+        font-size: 15px;
+    }
+    input {
+        padding: 3px;
+    }
+    .tablealtstyle {
+        background-color: #F4F4F4;
+        border-color: #ece9d8;
+        border-style: solid;
+        border-width: 1px;
+        padding: .2rem !important;
+    }
+    .tablerowstyle {
+        padding: .2rem !important;
+    }
+    .gridViewMargin th {
+        background-color: #D1EBF4;
+    }
+    .noBorder {
+        border-right-color: transparent !important;
+    }
+    fieldset ol {
+        list-style-type: none;
+    }
+	@media 
+	only screen and (max-width: 596px),
+	(min-device-width: 596px) and (max-device-width: 596px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			position: relative;
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+        .btn { text-decoration:none; border:1px solid #000; }
+
+/*        .hideinmobile {
+            display: none;
+        }
+    */
+                    .ClearToFields {
+        margin-left: 5em !important;
+    }
+
+
+       /* Style your enabled Buttons 
+        input[type=submit] {
+            background: #788999;
+            color: white;
+            font-family: Arial;
+            font-size: 14px;
+            cursor: hand;
+        } */
+        /* Style your disabled Buttons */
+
+       input[type=submit]:disabled {
+           background: white !important;
+           border: 0;
+           color: #666 !important;
+           cursor: pointer;
+       }
+
+
+
+
+
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- 
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	*/
+	/* iPads (portrait and landscape) ----------- 
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+	*/
+    /*
+    @media only screen and (min-device-width: 596px) {
+        .hideindesktop{
+            display: none;
+        }
+
+    } */
+     
+	</style> 
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" rel="stylesheet"> 
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" type="text/javascript"></script> 
+  <link href="https://www.cpp.edu/common/2018/assets/css/cpp-base-styles.css" rel="stylesheet">
+  <link href="https://www.cpp.edu/common/2018/assets/css/cpp-extended-styles.css" rel="stylesheet">
+  <link href="css/application.css" rel="stylesheet">
+  <script src="Scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="Scripts/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+  <script src="Scripts/jquery.validate.js" type="text/javascript"></script>
+ </head>    
+ <body class="full-height"> 
+  <header class="" title="Cal Poly Pomona Search"> 
+   <nav class="navbar navbar-expand transparent cpp-logobar-min" id="cpp-logobar"> 
+    <div class="navbar-nav mr-auto">
+     <a class="logo align-middle" href="https://www.cpp.edu/index.shtml" id="cpp-header-logo-link"> <img alt="Cal Poly Pomona" id="cpp-logo-octo" src="https://www.cpp.edu/common/2018/assets/img/cpp-octo-web.svg"> <!--	<img alt="Cal Poly Pomona" id="cpp-logo-octo" src="/common/2018/assets/img/calpoly-3-color-adjusted.png" />--> </a> <a class="sr-only" href="#main" id="skip-to-nav">Skip To Main Content</a>
+    </div> 
+    <section id="portlet_u22l1n8" class="up-portlet-wrapper logout-launcher"> 
+    </section> 
+   </nav> 
+  </header> 
+  <main class="container-fluid flex-grow"> 
+   <div id="main"> 
+    <div class="row"> 
+     <div class="accordionNav secondary-page-menu" style="border-bottom: 3px solid E4B540; border-top: 3px solid #e4b540"> 
+     </div> 
+     <div class="col-md-12" style="padding-left: 0; padding-right: 0; margin-bottom: -15px"> 
+      <h1> <span class="goldletter">Log in to </span>Identity Management Services </h1> 
+     </div> 
+     <div class="col-md-12" style="padding-left: 0; padding-right: 0"> 
+      <div id="contents"> 
+       <div id="contents_folder"> 
+        <form name="aspnetForm" method="post" action="./login.aspx?ReturnUrl=%2fidm%2fuser_account.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" style="padding-bottom:0px;"> 
+         <div> 
+          <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""> 
+          <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""> 
+          <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="A5z2vtugaXlLW+pL87PpCJEVonnOLs7+IwCPWK0WZHnDmlAkPRESpJnSoYCRH5x94j6JAc/f+JJQi0FE20FXo3GmKoj2sHqzUYtrrtVX03pNP2hfTXtRYP2QgbZ54Fn8adasK39pTZ96GAwgPjQ3ZjNtYWl2WU4Iod9oOQkqAFRFTx4xt5xdLfSPlwDZKLNxK1gcNw=="> 
+         </div> 
+         <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script> 
+         <script src="/idm/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZB9djykTLCJLEXwvvaZrDGEZZOQ5vqbCipRcc0dmRi8VRe0AEw2&amp;t=637453780754849868" type="text/javascript"></script> 
+         <script src="/idm/WebResource.axd?d=x2nkrMJGXkMELz33nwnakI8qEn9L3niQ-m6Cre6bjbtB0dwnhUlsgern9VBWALGAaHegA9EWqU2_YpQ8Rc8AXR6BI3E1&amp;t=637453780754849868" type="text/javascript"></script> 
+         <script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script> 
+         <div> 
+          <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="932F6B22"> 
+          <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="L+u0ULe3n3Zx6ZutLdZQGX2tp38fo1cMg5/lxOzRT6MixYvgbdEG356QRWw6FVDNFAz0/k0tSuNwJQEqAuwfGpeYnsZkG37hQDNncV8TDg/XQ/RVunLry/VDMh8WkM0dPJT0aG9FNd8HEl0XNLktjrc+Dz8="> 
+         </div> 
+         <p class="AppMessage" style="width:78%;"><em>*</em> indicates a required field.</p> 
+         <div id="ctl00_ContentPlaceHolder1_Login"> 
+          <div class="AspNet-Login" id="ctl00_ContentPlaceHolder1_Login1"> 
+           <div id="ctl00_ContentPlaceHolder1_Login1_ValidationSummary1" class="app_valid_quest" style="display:none;"> 
+           </div> 
+           <fieldset style="width:80%;"> <legend>Log In</legend> 
+            <ol> 
+             <li> <label for="ctl00_ContentPlaceHolder1_Login1_UserName" id="ctl00_ContentPlaceHolder1_Login1_UserNameLabel">BroncoName<em>*</em></label> <input name="ctl00$ContentPlaceHolder1$Login1$UserName" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_Login1_UserName" tabindex="1"> <span id="ctl00_ContentPlaceHolder1_Login1_UserNameRequired" title="BroncoName is required." class="InvalidIndicator" style="color:White;visibility:hidden;">*</span> (<a href="https://cpp.service-now.com/ehelp?id=kb_article&amp;sys_id=c40f854e6fe8e600e020f35d5d3ee4d4" target="_blank" tabindex="4">What is my BroncoName?</a>)</li> 
+             <li> <label for="ctl00_ContentPlaceHolder1_Login1_Password" id="ctl00_ContentPlaceHolder1_Login1_PasswordLabel">BroncoPassword<em>*</em></label> <input name="ctl00$ContentPlaceHolder1$Login1$Password" type="password" maxlength="127" id="ctl00_ContentPlaceHolder1_Login1_Password" tabindex="2" autocomplete="off"> <span id="ctl00_ContentPlaceHolder1_Login1_PasswordRequired" title="BroncoPassword is required." class="InvalidIndicator" style="color:White;visibility:hidden;">*</span> <a href="user_forgot_password.aspx" tabindex="4">(Forgot My Password)</a></li> 
+             <li> <input type="submit" name="ctl00$ContentPlaceHolder1$Login1$LoginButton" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$Login1$LoginButton&quot;, &quot;&quot;, true, &quot;Login1&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_Login1_LoginButton" tabindex="3" class="InputButton ClearToFields"> </li> 
+            </ol> 
+           </fieldset> 
+          </div> 
+         </div> 
+         <ul class="AppToolbar" style="width:80%;"> 
+          <li><a class="home" href="default.aspx" tabindex="4">Return to Identity Management Services.</a></li> 
+         </ul> 
+         <div style="clear:both;"> <!-- float fix -->
+         </div> 
+         <script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_ContentPlaceHolder1_Login1_ValidationSummary1"));
+var Page_Validators =  new Array(document.getElementById("ctl00_ContentPlaceHolder1_Login1_UserNameRequired"), document.getElementById("ctl00_ContentPlaceHolder1_Login1_PasswordRequired"));
+//]]>
+</script> 
+         <script type="text/javascript">
+//<![CDATA[
+var ctl00_ContentPlaceHolder1_Login1_ValidationSummary1 = document.all ? document.all["ctl00_ContentPlaceHolder1_Login1_ValidationSummary1"] : document.getElementById("ctl00_ContentPlaceHolder1_Login1_ValidationSummary1");
+ctl00_ContentPlaceHolder1_Login1_ValidationSummary1.headertext = "The following errors were found. Please address and re-submit.";
+ctl00_ContentPlaceHolder1_Login1_ValidationSummary1.validationGroup = "Login1";
+var ctl00_ContentPlaceHolder1_Login1_UserNameRequired = document.all ? document.all["ctl00_ContentPlaceHolder1_Login1_UserNameRequired"] : document.getElementById("ctl00_ContentPlaceHolder1_Login1_UserNameRequired");
+ctl00_ContentPlaceHolder1_Login1_UserNameRequired.controltovalidate = "ctl00_ContentPlaceHolder1_Login1_UserName";
+ctl00_ContentPlaceHolder1_Login1_UserNameRequired.errormessage = "BroncoName is required.";
+ctl00_ContentPlaceHolder1_Login1_UserNameRequired.validationGroup = "Login1";
+ctl00_ContentPlaceHolder1_Login1_UserNameRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContentPlaceHolder1_Login1_UserNameRequired.initialvalue = "";
+var ctl00_ContentPlaceHolder1_Login1_PasswordRequired = document.all ? document.all["ctl00_ContentPlaceHolder1_Login1_PasswordRequired"] : document.getElementById("ctl00_ContentPlaceHolder1_Login1_PasswordRequired");
+ctl00_ContentPlaceHolder1_Login1_PasswordRequired.controltovalidate = "ctl00_ContentPlaceHolder1_Login1_Password";
+ctl00_ContentPlaceHolder1_Login1_PasswordRequired.errormessage = "BroncoPassword is required.";
+ctl00_ContentPlaceHolder1_Login1_PasswordRequired.validationGroup = "Login1";
+ctl00_ContentPlaceHolder1_Login1_PasswordRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContentPlaceHolder1_Login1_PasswordRequired.initialvalue = "";
+//]]>
+</script> 
+         <script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script> 
+        </form> 
+       </div> 
+      </div> 
+     </div>  
+     <footer class="container-fluid" id="main-footer"> 
+      <div class="row"> 
+       <div class="col-lg col-md col-sm-6 address text-left">
+        <img alt="cal poly pomona" class="footer-logo" src="https://www.cpp.edu/common/2018/assets/img/cpp-white.png"> 
+        <p>3801 West Temple Avenue,Pomona, CA 91768</p> 
+        <div class="copyright"> 
+         <p class="copyright-text">© <span id="ctl00_lbYear">2021</span> California State Polytechnic University, Pomona<span class="sid"><span id="ctl00_lbServerName">[01]</span></span></p> 
+         <p class="copyright-text">All Rights Reserved</p> 
+        </div> 
+       </div> 
+       <div class="col-lg col-md-7 col-sm-6 footer-links">
+        <a href="/~aboutcpp/index.shtml" title="Cpp About">About Cal Poly Pomona</a> <a aria-label="Cpp Feedback" href="http://www.cpp.edu/website-feedback.php" title="Cpp Feedback">Feedback</a> <a aria-label="Cpp Privacy" href="http://www.cpp.edu/privacy.shtml" title="footer - Privacy">Privacy</a> <a href="http://www.cpp.edu/accessibility.shtml">Accessibility</a> <a href="https://www.cpp.edu/file-viewers.shtml">Document Readers</a>
+       </div> 
+      </div> 
+      <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-4659236-2', 'auto');
+    ga('send', 'pageview');
+
+</script> 
+      <script src="https://www.cpp.edu/common/resources/js/cpp_basicm.js" type="text/javascript">// <![CDATA[
+
+    // ]]></script> 
+     </footer>  
+    </div>
+   </div>
+  </main>
+ </body>
+</html>

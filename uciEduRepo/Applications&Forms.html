@@ -1,0 +1,1352 @@
+<!--https://research.uci.edu/forms/index.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>Applications &amp; Forms</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../assets/js/lib/SpryURLUtils.js" type="text/javascript"></script> 
+  <script type="text/javascript">
+var params = Spry.Utils.getLocationParamsAsObject();
+</script> 
+  <script src="../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../about/contact-us.html">Contact Us</a> <a>|</a> <a href="index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../about/index.html">About the Office</a></li>
+          <li><a class="" href="../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="../era/index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../research-development/index.html">Research Development</a></li>
+          <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="../sponsored-projects/index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../index.html"><img alt="UCI Irvine" src="../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a href="../sponsored-projects/index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../research-development/index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a href="../era/index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a href="../centers-institutes/index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../facilities-services/index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../about/index.html">About the Office</a></li>
+      <li><a class="" href="../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+      <li><a class="" href="../era/index.html">Electronic Research Administration (ERA)</a></li>
+      <li><a class="" href="../facilities-services/index.html">Facilities &amp; Services</a></li>
+      <li><a class="" href="../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../research-development/index.html">Research Development</a></li>
+      <li><a class="" href="../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="../sponsored-projects/index.html">Sponsored Projects</a></li>
+      <li><a class="" href="../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header1"> 
+      <h1>Applications &amp; Forms</h1> 
+      <div class="addthis_toolbox addthis_default_style "> <a class="addthis_button_email"> <img alt="Share" border="0" height="10" src="../assets/images/icon-hdr-email.png" width="13"> </a> <a class="addthis_button_print"> <img alt="Share" border="0" height="11" src="../assets/images/icon-hdr-print.png" width="11"> </a> 
+      </div> 
+      <script src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script> 
+      <div class="foot"></div> 
+     </div> 
+     <article id="content"> 
+      <br> 
+      <div class="Accordion" id="Accordion1"> 
+       <h2>Animal Care and Use</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Applications 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="https://research.uci.edu/compliance/animalcare-use/submissions/iacuc-submissions-annual-review.html" target="_blank" title="Annual Review in RMS"> Annual Review in RMS </a> </li> 
+          <li class=""> <a href="https://research.uci.edu/compliance/animalcare-use/submissions/iacuc-submissions-modifications.html" target="_blank" title="Modifying an Approved AUP in RMS"> Modifying an Approved AUP in RMS </a> </li> 
+          <li class=""> <a href="https://www.research.uci.edu/compliance/animalcare-use/submissions/iacuc-submissions-new-app-3-year.html" target="_blank" title="New Application or 3-Year Renewals in RMS "> New Application or 3-Year Renewals in RMS </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Other Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/iacuc/custom-antibody-agreement.docx" target="_top" title="custom-antibody-agreement.docx"> Custom Antibody Production Contract </a> </li> 
+          <li class=""> <a href="docs/iacuc/determine-need-IACUC-review.docx" target="_top" title="determine-need-IACUC-review.docx"> Determination of Need for IACUC Review </a> </li> 
+          <li class=""> <a href="docs/iacuc/volunteer-registration.docx" target="_top" title="volunteer-registration.docx"> Volunteer Registration Form </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Signs, Flyers and Other Printable Media 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/iacuc/animal-research-security-guidance-poster.pdf" target="_top" title="animal-research-security-guidance-poster.pdf"> Animal Research Security Guidance </a> </li> 
+          <li class=""> <a href="docs/iacuc/trespass-sign.pdf" target="_top" title="trespass-sign.pdf"> No Trespassing/Authorized Personnel Only </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>Conflict of Interest</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Addenda 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/coi/PHS-Addendum-Form-820.doc" target="_top" title="PHS-Addendum-Form-820.doc"> Form 820: PHS Addendum </a> </li> 
+          <li class=""> <a href="docs/coi/coi-1-addendum.doc" target="_top" title="coi-1-addendum.doc"> Form COI-1: Addendum </a> </li> 
+          <li class=""> <a href="docs/coi/coi-2-gift-addendum.doc" target="_top" title="coi-2-gift-addendum.doc"> Form COI-2: Gift Addendum </a> </li> 
+          <li class=""> <a href="docs/coi/coi-3-non-uci-investigators.doc" target="_top" title="coi-3-non-uci-investigators.doc"> Form COI-3: Non-UCI Investigator Addendum </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Appendices 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/coi/PHS-Travel-Update-Form-815.doc" target="_top" title="PHS-Travel-Update-Form-815.doc"> Form 815: PHS Travel Update </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Applications 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/coi/PHS-Annual-Form-810.docx" target="_top" title="PHS-Annual-Form-810.docx"> Annual Form 810 </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Disclosure Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/coi/state-700U.pdf" target="_top" title="state-700U.pdf"> Form 700U: Statement of Economic Interests for Use with Non-Governmental Sponsors </a> </li> 
+          <li class=""> <a href="docs/coi/PHS-Disclosure-Form-800.doc" target="_top" title="PHS-Disclosure-Form-800.doc"> Form 800: PHS Disclosure </a> </li> 
+          <li class=""> <a href="docs/coi/PHS-Disclosure-Subrecipient-Form-800SR.doc" target="_top" title="PHS-Disclosure-Subrecipient-Form-800SR.doc"> Form 800SR: PHS Subrecipient/Non-UCI Investigator Disclosure </a> </li> 
+          <li class=""> <a href="docs/coi/900-nsf-disclosure-form.doc" target="_top" title="900-nsf-disclosure-form.doc"> Form 900: NSF Disclosure </a> </li> 
+          <li class=""> <a href="docs/coi/900SR-nsf- disclosure-form.docx" target="_top" title="900SR-nsf- disclosure-form.docx"> Form 900SR: NSF Subrecipient/Non-UCI Investigator Disclosure </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>Dual Use Research of Concern (DURC)</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/durc/DURC Training Nov 16.pdf" target="_top" title="DURC Training Nov 16.pdf"> DURC Training and Certification </a> </li> 
+          <li class=""> <a href="docs/durc/FormIRE-1.docx" target="_top" title="FormIRE-1.docx"> IRE-1: DURC Identification and Assessment </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Guidelines 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/durc/DURC Training Nov 16.pdf" target="_top" title="DURC Training Nov 16.pdf"> DURC Training and Certification </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Training Materials 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/durc/DURC Training Nov 16.pdf" target="_top" title="DURC Training Nov 16.pdf"> DURC Training and Certification </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>Electronic Research Administration</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="/sponsored-projects/era/kuali-research/kr-upgrade/index.html" target="_blank" title="era-kr-redirect"> Kuali Research Training Guides </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Training Materials 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/era/cayuse-424-quick-start-quide-for-initiators.pdf" target="_top" title="cayuse-424-quick-start-quide-for-initiators.pdf"> Cayuse 424 - Quick Start Guide for Initiators </a> </li> 
+          <li class=""> <a href="docs/era/cayuse-424-quick start-quide-for-pis.pdf" target="_top" title="cayuse-424-quick start-quide-for-pis.pdf"> Cayuse 424 - Quick Start Guide for PIs </a> </li> 
+          <li class=""> <a href="docs/era/cayuse-424-quick-start-quide-subawards.pdf" target="_top" title="cayuse-424-quick-start-quide-subawards.pdf"> How to Include an Outgoing Subaward on your Proposal </a> </li> 
+          <li class=""> <a href="/sponsored-projects/era/kuali-research/kr-upgrade/index.html" target="_blank" title="era-kr-redirect"> Kuali Research Training Guides </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>Export Controls</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Checklists 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/export-control/shipping-checklist.docx" target="_top" title="shipping-checklist.docx"> Shipping Checklist </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/export-control/I-129.doc" target="_top" title="I-129.doc"> I-129 Deemed Export Questionnaire </a> </li> 
+          <li class=""> <a href="docs/export-control/pro-forma-invoice.docx" target="_top" title="pro-forma-invoice.docx"> Pro Forma Invoice </a> </li> 
+          <li class=""> <a href="docs/export-control/shipping-request.docx" target="_top" title="shipping-request.docx"> Request for Export Control Review of International Shipments </a> </li> 
+          <li class=""> <a href="docs/export-control/tmp-license-exception.doc" target="_top" title="tmp-license-exception.doc"> TMP License Exception </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Guidance Documents 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/export-control/engineering-example-list.doc" target="_top" title="engineering-example-list.doc"> Engineering Example List of Export Controlled Items </a> </li> 
+          <li class=""> <a href="docs/export-control/Export-Restricted-Biological-Items.pdf" target="_top" title="Export-Restricted-Biological-Items.pdf"> Export Restricted Biological Items </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Signs, Flyers and Other Printable Media 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/export-control/shipping-documentation-terms.pdf" target="_top" title="shipping-documentation-terms.pdf"> Shipping Documentation Terms and Notes </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>Human Research Protections</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Applications 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="https://uci.kuali.co/protocols/" target="_blank" title="nhsr-module"> Access the Non-Human Subjects Research (NHSR) Determination Module in Kuali Research </a> </li> 
+          <li class=""> <a href="docs/irb-forms/admin-review-for-non-uci-investigators.doc" target="_top" title="admin-review-for-non-uci-investigators.doc"> Administrative Review Form for non-UCI Investigators </a> </li> 
+          <li class=""> <a href="http://apps.research.uci.edu/irbdocs" target="_blank" title="doc-depot"> Document Depot </a> </li> 
+          <li class=""> <a href="docs/irb-forms/dod-supplement-form.doc" target="_top" title="dod-supplement-form.doc"> UCI IRB DoD Supplement Form_Huron </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Checklists 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-checklists/checklist-continuing-review-long-cpa.doc" target="_top" title="checklist-continuing-review-long-cpa.doc"> Checklist - Continuing Review (Long CPA) </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-continuing-review-short-cpa.doc" target="_top" title="checklist-continuing-review-short-cpa.doc"> Checklist - Continuing Review (Short CPA) </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-emergency-use.doc" target="_top" title="checklist-emergency-use.doc"> Checklist - Emergency Use of a Test Article </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-exempt-research.doc" target="_top" title="checklist-exempt-research.doc"> Checklist - Exempt Research </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-informed-consent.docx" target="_top" title="checklist-informed-consent.docx"> Checklist - Informed Consent </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-modification.doc" target="_top" title="checklist-modification.doc"> Checklist - Modification </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-new-expedited-full-committee-research.doc" target="_top" title="checklist-new-expedited-full-committee-research.doc"> Checklist - New Expedited or Full Committee Research </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-nih-gds-consent.doc" target="_top" title="checklist-nih-gds-consent.doc"> Checklist - NIH Genomic Data Sharing (GDS) Policy Consent Checklist </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-for-nih-sirb-lead-pi.pdf" target="_top" title="checklist-for-nih-sirb-lead-pi.pdf"> Checklist - NIH sIRB: Lead PI Guidance &amp; Responsibilities </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/site-submission-checklist.docx" target="_top" title="site-submission-checklist.docx"> Checklist - Quorum IRB Reliance: Site Submission Checklist </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-transition-2018-common-rule.doc" target="_top" title="checklist-transition-2018-common-rule.doc"> Checklist - Transition to 2018 Common Rule </a> </li> 
+          <li class=""> <a href="docs/irb-checklists/checklist-cirb.docx" target="_top" title="checklist-cirb.docx"> Checklist - UCI Required Additions to the NCI Consent Form </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Consent Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-consent-forms/assent-form-addendum.doc" target="_top" title="assent-form-addendum.doc"> Assent Addendum: Pregnancy Testing for Children </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/assent-form.doc" target="_top" title="assent-form.doc"> Assent Template: Children </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-gdpr.docx" target="_top" title="informed-consent-gdpr.docx"> Consent Addendum: Language for European Union General Data Protection Regulation (EU GDPR) </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-template-language-for-gds.docx" target="_top" title="informed-consent-template-language-for-gds.docx"> Consent Addendum: Language for Genomic Data Sharing (GDS) </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-advarra.docx" target="_top" title="informed-consent-advarra.docx"> Consent Addendum: Language for UCI-Advarra Reliance </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/uci-specific-nci-cirb-consent.docx" target="_top" title="uci-specific-nci-cirb-consent.docx"> Consent Addendum: Language for UCI-NCI CIRB Reliance </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-wirb.doc" target="_top" title="informed-consent-wirb.doc"> Consent Addendum: Language for UCI-WCG IRB Reliance </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/exempt-consent-script-and-talking-points.doc" target="_top" title="exempt-consent-script-and-talking-points.doc"> Consent Guidance: Exempt Script and Talking Points </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-biomedical.doc" target="_top" title="informed-consent-biomedical.doc"> Consent Template: Biomedical </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-embryo-gamete.doc" target="_top" title="informed-consent-embryo-gamete.doc"> Consent Template: Donation of Embryo(s) and Gametes </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-somatic-cell.doc" target="_top" title="informed-consent-somatic-cell.doc"> Consent Template: Donation of Somatic Cells </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/expanded-access-consent.doc" target="_top" title="expanded-access-consent.doc"> Consent Template: Expanded Access </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-humanitarian-use-device.doc" target="_top" title="informed-consent-humanitarian-use-device.doc"> Consent Template: Humanitarian Use Device </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/right-to-try-attestation-and-consent.doc" target="_top" title="right-to-try-attestation-and-consent.doc"> Consent Template: Right to Try Attestation </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/informed-consent-social-behavioral-educational.doc" target="_top" title="informed-consent-social-behavioral-educational.doc"> Consent Template: Social/Behavioral/Educational </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/debriefing-statement-template.docx" target="_top" title="debriefing-statement-template.docx"> Debriefing Template: Debriefing Statement for Research Involving Deception </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/experimental-subjects-b-o-r.doc" target="_top" title="experimental-subjects-b-o-r.doc"> Experimental Subject's Bill of Rights </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/Investigator Certification of Surrogate Decision Makers for Potential Subject Participation in University of California Research Form" target="_top" title="Investigator Certification of Surrogate Decision Makers for Potential Subject Participation in University of California Research Form"> Investigator-Certification-Surrogate.doc </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/re-consent-cover-memo.doc" target="_top" title="re-consent-cover-memo.doc"> Re-Consent Cover Memo </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/exempt-study-info-sheet-focus-group.docx" target="_top" title="exempt-study-info-sheet-focus-group.docx"> Study Info Sheet: Exempt Focus Group </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/exempt-study-info-sheet-interview.docx" target="_top" title="exempt-study-info-sheet-interview.docx"> Study Info Sheet: Exempt Interview </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/exempt-study-info-sheet-online-survey.doc" target="_top" title="exempt-study-info-sheet-online-survey.doc"> Study Info Sheet: Exempt Online Survey </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/study-information-sheet.doc" target="_top" title="study-information-sheet.doc"> Study Info Sheet: Expedited </a> </li> 
+          <li class=""> <a href="docs/irb-consent-forms/decision-making-capacity.doc" target="_top" title="decision-making-capacity.doc"> Surrogate Consent Guidance: Decision-Making Capacity Assessment Tool </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Documentation for Sponsors 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-forms/fwa.pdf" target="_top" title="fwa.pdf"> Current version of UCI's Federalwide Assurance (FWA) </a> </li> 
+          <li class=""> <a href="docs/irb-forms/sponsor-letter-commonquestions.pdf" target="_top" title="sponsor-letter-commonquestions.pdf"> Letter to Sponsor: One Letter Addressing All of the Most Commonly Requested Information </a> </li> 
+          <li class=""> <a href="docs/irb-forms/sponsors-letter-injury-compensation.pdf" target="_top" title="sponsors-letter-injury-compensation.pdf"> Letter to Sponsors: UC Compensation for Injury Policy </a> </li> 
+          <li class=""> <a href="docs/irb-forms/confirmation-of-exempt-reference.pdf" target="_top" title="confirmation-of-exempt-reference.pdf"> The Exempt Self Determination Process </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Foreign Language Translations 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-bengali.doc" target="_top" title="short-form-consent-bengali.doc"> Consent Short Form - Bengali </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-bengali.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-cambodian.doc" target="_top" title="short-form-consent-cambodian.doc"> Consent Short Form - Cambodian </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-cambodian.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-english.doc" target="_top" title="short-form-consent-english.doc"> Consent Short Form - English (for reference) </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-farsi.doc" target="_top" title="short-form-consent-farsi.doc"> Consent Short Form - Farsi </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-farsi.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-korean.doc" target="_top" title="short-form-consent-korean.doc"> Consent Short Form - Korean </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-korean.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-russian.doc" target="_top" title="short-form-consent-russian.doc"> Consent Short Form - Russian </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-russian.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-simplified-chinese.pdf" target="_top" title="short-form-consent-simplified-chinese.pdf"> Consent Short Form - Simplified Chinese </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-simplified-chinese.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-spanish.doc" target="_top" title="short-form-consent-spanish.doc"> Consent Short Form - Spanish </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-spanish.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-tagalog.doc" target="_top" title="short-form-consent-tagalog.doc"> Consent Short Form - Tagalog </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-tagalog.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-traditional-chinese.doc" target="_top" title="short-form-consent-traditional-chinese.doc"> Consent Short Form - Traditional Chinese </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-traditional-chinese.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-urdu.docx" target="_top" title="short-form-consent-urdu.docx"> Consent Short Form - Urdu </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-urdu.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/short-form-consent-vietnamese.doc" target="_top" title="short-form-consent-vietnamese.doc"> Consent Short Form - Vietnamese </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certifcation-of-translation-short-form-vietnamese.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-cambodian.doc" target="_top" title="experimental-subjects-bill-of-rights-cambodian.doc"> Experimental Subjects Bill of Rights - Cambodian </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-cambodian.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-farsi.doc" target="_top" title="experimental-subjects-bill-of-rights-farsi.doc"> Experimental Subjects Bill of Rights - Farsi </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-farsi.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-korean.pdf" target="_top" title="experimental-subjects-bill-of-rights-korean.pdf"> Experimental Subjects Bill of Rights - Korean </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-korean.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-simplified-chinese.pdf" target="_top" title="experimental-subjects-bill-of-rights-simplified-chinese.pdf"> Experimental Subjects Bill of Rights - Simplified Chinese </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-traditional-chinese.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-spanish.pdf" target="_top" title="experimental-subjects-bill-of-rights-spanish.pdf"> Experimental Subjects Bill of Rights - Spanish </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-spanish.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-tagalog.pdf" target="_top" title="experimental-subjects-bill-of-rights-tagalog.pdf"> Experimental Subjects Bill of Rights - Tagalog </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-tagalog.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-traditional-chinese.pdf" target="_top" title="experimental-subjects-bill-of-rights-traditional-chinese.pdf"> Experimental Subjects Bill of Rights - Traditional Chinese </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-simplified-chinese.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-urdu.pdf" target="_top" title="experimental-subjects-bill-of-rights-urdu.pdf"> Experimental Subjects Bill of Rights - Urdu </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-urdu.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/experimental-subjects-bill-of-rights-vietnamese.pdf" target="_top" title="experimental-subjects-bill-of-rights-vietnamese.pdf"> Experimental Subjects Bill of Rights - Vietnamese </a> [<a href="https://research.uci.edu/forms/docs/irb-forms-foreign-language-translations/certificate-of-translation-experimental-subjects-bill-of-rights-vietnamese.pdf" id="cert_translate" title="Certification">Certification of Translation</a>] </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-arabic.pdf" target="_top" title="uci-hippa-document-arabic.pdf"> HIPPA Research Authorization Form - Arabic </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-cambodian.pdf" target="_top" title="uci-hippa-document-cambodian.pdf"> HIPPA Research Authorization Form - Cambodian </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-certification-letter.pdf" target="_top" title="uci-hippa-document-certification-letter.pdf"> HIPPA Research Authorization Form - Certification of Translation </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-chinese.pdf" target="_top" title="uci-hippa-document-chinese.pdf"> HIPPA Research Authorization Form - Chinese </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-farsi.pdf" target="_top" title="uci-hippa-document-farsi.pdf"> HIPPA Research Authorization Form - Farsi </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-korean.pdf" target="_top" title="uci-hippa-document-korean.pdf"> HIPPA Research Authorization Form - Korean </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-portuguese.pdf" target="_top" title="uci-hippa-document-portuguese.pdf"> HIPPA Research Authorization Form - Portuguese </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-spanish.pdf" target="_top" title="uci-hippa-document-spanish.pdf"> HIPPA Research Authorization Form - Spanish </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-tagalog.pdf" target="_top" title="uci-hippa-document-tagalog.pdf"> HIPPA Research Authorization Form - Tagalog </a> </li> 
+          <li class=""> <a href="docs/irb-forms-foreign-language-translations/uci-hippa-document-vietnamese.pdf" target="_top" title="uci-hippa-document-vietnamese.pdf"> HIPPA Research Authorization Form - Vietnamese </a> </li> 
+          <li class=""> <a href="docs/irb-forms/surrogate-certification-chinese.pdf" target="_top" title="surrogate-certification-chinese.pdf"> Self Certification of Surrogate Decision Makers for Research Studies - Chinese </a> </li> 
+          <li class=""> <a href="docs/irb-forms/surrogate-certification-farsi.pdf" target="_top" title="surrogate-certification-farsi.pdf"> Self Certification of Surrogate Decision Makers for Research Studies - Farsi </a> </li> 
+          <li class=""> <a href="docs/irb-forms/surrogate-certification-korean.pdf" target="_top" title="surrogate-certification-korean.pdf"> Self Certification of Surrogate Decision Makers for Research Studies - Korean </a> </li> 
+          <li class=""> <a href="docs/irb-forms/surrogate-certification-spanish.pdf" target="_top" title="surrogate-certification-spanish.pdf"> Self Certification of Surrogate Decision Makers for Research Studies - Spanish </a> </li> 
+          <li class=""> <a href="docs/irb-forms/surrogate-certification-vietnamese.pdf" target="_top" title="surrogate-certification-vietnamese.pdf"> Self Certification of Surrogate Decision Makers for Research Studies - Vietnamese </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Guidance Documents 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-forms/hrp-guidance-ethnographic-research.docx" target="_top" title="hrp-guidance-ethnographic-research.docx"> Ethnographic Research </a> </li> 
+          <li class=""> <a href="docs/irb-forms/gina-flyer.pdf" target="_top" title="gina-flyer.pdf"> Genetic Information Nondiscrimination Act (GINA) </a> </li> 
+          <li class=""> <a href="docs/irb-forms/doc-depot-surrogate-consent.pdf" target="_top" title="doc-depot-surrogate-consent.pdf"> Obtaining Surrogate Consent - The Basics </a> </li> 
+          <li class=""> <a href="docs/irb-forms/doc-depot-verbal-consent.pdf" target="_top" title="doc-depot-verbal-consent.pdf"> Obtaining Verbal Consent – The Basics </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Guidelines 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-checklists/checklist-for-nih-sirb-lead-pi.pdf" target="_top" title="checklist-for-nih-sirb-lead-pi.pdf"> Checklist - NIH sIRB: Lead PI Guidance &amp; Responsibilities </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          HIPAA Documents 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-forms/uci-hipaa-authorization-relying-04-08-21.docx" target="_top" title="uci-hipaa-authorization-relying-04-08-21.docx"> Relying Site HIPAA Research Authorization - Use when UCI is the HIPAA Board for a non-UCI site </a> </li> 
+          <li class=""> <a href="docs/irb-forms/HIPAAcancellation.PDF" target="_top" title="HIPAAcancellation.PDF"> UC HIPAA Research Authorization Cancellation Form </a> </li> 
+          <li class=""> <a href="docs/irb-forms/uci-hipaa-authorization.DOCX" target="_top" title="uci-hipaa-authorization.DOCX"> UCI HIPAA Research Authorization </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Other Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-forms/counseling-resource-sheet.doc" target="_top" title="counseling-resource-sheet.doc"> Counseling Resource Sheet </a> </li> 
+          <li class=""> <a href="docs/irb-forms/deviation-tracking-log.docx" target="_top" title="deviation-tracking-log.docx"> Deviation Tracking Log </a> </li> 
+          <li class=""> <a href="docs/irb-forms/notification-form-emergency-use-of-test-article.doc" target="_top" title="notification-form-emergency-use-of-test-article.doc"> Notification Form - Emergency Use of a Test Article </a> </li> 
+          <li class=""> <a href="docs/irb-forms/release-form-template.doc" target="_top" title="release-form-template.doc"> Release Form Template: A form researchers can use to receive permission to use information. </a> </li> 
+          <li class=""> <a href="docs/irb-forms/study-team-tracking-log.xlsx" target="_top" title="study-team-tracking-log.xlsx"> Study Team Tracking Log </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Recruitment Templates 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-forms/sample-recruitment-email-sbe.doc" target="_top" title="sample-recruitment-email-sbe.doc"> Sample Recruitment (Email) Social / Behavioral / Educational </a> </li> 
+          <li class=""> <a href="docs/irb-forms/sample-recruitment-flyer-sbe.doc" target="_top" title="sample-recruitment-flyer-sbe.doc"> Sample Recruitment (Flyer) Social / Behavioral / Educational </a> </li> 
+          <li class=""> <a href="docs/irb-forms/ucimc-clinical-trial-recruitment-advertisement.doc" target="_top" title="ucimc-clinical-trial-recruitment-advertisement.doc"> Standard UCIMC Research Recruitment Advertisement </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Single IRB (sIRB) 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/irb-forms/individual-investigator-agreement.doc" target="_top" title="individual-investigator-agreement.doc"> Individual Investigator Agreement (IIA) </a> </li> 
+          <li class=""> <a href="docs/irb-forms/institutional-authorization-agreement-irb-only.docx" target="_top" title="institutional-authorization-agreement-irb-only.docx"> Institutional Authorization Agreement (IAA) - (UCI is IRB of Record) </a> </li> 
+          <li class=""> <a href="docs/irb-forms/Institutional-Authorization-Agreement-irb-and-hipaa.docx" target="_top" title="Institutional-Authorization-Agreement-irb-and-hipaa.docx"> Institutional Authorization Agreement (IAA) - (UCI is IRB of Record &amp; HIPAA Board) </a> </li> 
+          <li class=""> <a href="docs/irb-forms/template-letter-of-acknowledgement.docx" target="_top" title="template-letter-of-acknowledgement.docx"> SMART IRB – Letter of Acknowledgement (UCI IRB Ceding Review) </a> </li> 
+          <li class=""> <a href="docs/irb-forms/template-letter-of-acknowledgment-ucirevirb.docx" target="_top" title="template-letter-of-acknowledgment-ucirevirb.docx"> SMART IRB – Letter of Acknowledgement (UCI is IRB of Record) </a> </li> 
+          <li class=""> <a href="docs/irb-forms/template-letter-of-acknowledgment-ucirevirb-hipaa 05-22-20.docx" target="_top" title="template-letter-of-acknowledgment-ucirevirb-hipaa 05-22-20.docx"> SMART IRB - Letter of Acknowledgement (UCI is IRB of Record &amp; HIPAA Board) </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>Human Stem Cell Research</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Applications 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/hscro/hscro-continuing-review-application.doc" target="_top" title="hscro-continuing-review-application.doc"> Continuing Application for hSCRO Review </a> </li> 
+          <li class=""> <a href="docs/hscro/hscro-application.doc" target="_top" title="hscro-application.doc"> New Application for hSCRO Review </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Checklists 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/hscro/acceptably-derived-cell-line-checklist.doc" target="_top" title="acceptably-derived-cell-line-checklist.doc"> Acceptably Derived Cell Line Checklist </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Guidance Documents 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/hscro/hscro-flow-chart-examples.pdf" target="_top" title="hscro-flow-chart-examples.pdf"> hSCRO Flow Chart - Examples of Studies </a> </li> 
+          <li class=""> <a href="docs/hscro/hscro-master-flow-chart.pdf" target="_top" title="hscro-master-flow-chart.pdf"> hSCRO Master Flow Chart </a> </li> 
+          <li class=""> <a href="docs/hscro/protocol-example-chart.docx" target="_top" title="protocol-example-chart.docx"> Protocol Decision Chart </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Modification Request Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/hscro/hscro-modification-form.doc" target="_top" title="hscro-modification-form.doc"> hSCRO Protocol Modification Request Form </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Other Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/hscro/hscro-cell-tracking-table.doc" target="_top" title="hscro-cell-tracking-table.doc"> hSCRO Cell Tracking Table </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Protocol Narratives 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/hscro/hscro-protocol-narrative.doc" target="_top" title="hscro-protocol-narrative.doc"> hSCRO Protocol Narrative </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>Sponsored Projects</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Agreements and MOUs 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/va-scire-research-mou-for-nih.doc" target="_top" title="va-scire-research-mou-for-nih.doc"> Memorandum of Understandng for Proposals to NIH </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Checklists 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/va-scire-research-proposal-review-checklist.doc" target="_top" title="va-scire-research-proposal-review-checklist.doc"> Southern California Instittue for Research &amp; Education and UCI Proposal Review Checklist </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/sbir-fa-rate-reduction-request.doc" target="_top" title="sbir-fa-rate-reduction-request.doc"> SBIR Phase 1 Request Form Template </a> </li> 
+          <li class=""> <a href="docs/sp/sttr-fa-rate-reduction-request.doc" target="_top" title="sttr-fa-rate-reduction-request.doc"> STTR Phase 1 Request Form Template </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Guidelines 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/srf-mod-to-existing-sub.docx" target="_top" title="srf-mod-to-existing-sub.docx"> Subaward Request Form (For Modification to Existing Subaward) </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Other Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/lpar.pdf" target="_top" title="lpar.pdf"> Late Proposal Approval Request </a> </li> 
+          <li class=""> <a href="docs/sp/request-for-approval-to-spend-funds.doc" target="_top" title="request-for-approval-to-spend-funds.doc"> Request for Approval to Spend Funds </a> </li> 
+          <li class=""> <a href="docs/sp/request-to-transfer-active-sponsored-project.docx" target="_top" title="request-to-transfer-active-sponsored-project.docx"> Request for Approval to Transfer Active Contracts/Grants and Equipment from UCI to New Location </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Questionnaires 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/pi_questionnaire.doc" target="_top" title="pi_questionnaire.doc"> Clinical Study PI Questionnaire </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Standard Operating Procedures (SOPs) 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/srf-mod-to-existing-sub.docx" target="_top" title="srf-mod-to-existing-sub.docx"> Subaward Request Form (For Modification to Existing Subaward) </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Subaward Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/mca-commitment.pdf" target="_top" title="mca-commitment.pdf"> MCA Commitment Form – for Subawards to other UC campuses </a> </li> 
+          <li class=""> <a href="docs/sp/mini-audit-questionnaire.pdf" target="_top" title="mini-audit-questionnaire.pdf"> Mini Audit Questionnaire </a> </li> 
+          <li class=""> <a href="docs/sp/sole-source-form.docx" target="_top" title="sole-source-form.docx"> Sole Source Justification </a> </li> 
+          <li class=""> <a href="docs/sp/subaward-proc-checklist.pdf" target="_top" title="subaward-proc-checklist.pdf"> Subaward Processing Checklist for Dept/PI </a> </li> 
+          <li class=""> <a href="docs/sp/srf-mod-to-existing-sub.docx" target="_top" title="srf-mod-to-existing-sub.docx"> Subaward Request Form (For Modification to Existing Subaward) </a> </li> 
+          <li class=""> <a href="docs/sp/subaward-request-form.docx" target="_top" title="subaward-request-form.docx"> Subaward Request Form (for New Subaward) </a> </li> 
+          <li class=""> <a href="docs/sp/subrecipient-collaborative-intent.docx" target="_top" title="subrecipient-collaborative-intent.docx"> Subrecipient Statement of Collaborative Intent </a> </li> 
+          <li class=""> <a href="docs/sp/subrecipient-v-contractor-determination.docx" target="_top" title="subrecipient-v-contractor-determination.docx"> Subrecipient vs. Contractor Determination </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Templates 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="docs/sp/sbir-fa-rate-reduction-request.doc" target="_top" title="sbir-fa-rate-reduction-request.doc"> SBIR Phase 1 Request Form Template </a> </li> 
+          <li class=""> <a href="docs/sp/sttr-fa-rate-reduction-request.doc" target="_top" title="sttr-fa-rate-reduction-request.doc"> STTR Phase 1 Request Form Template </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <h2>University Laboratory Animal Resources</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="/facilities-services/ular/ular-forms/index.php" target="_blank" title="ular-forms-redirect"> Ular Applications &amp; Forms </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+      </div> 
+      <script type="text/javascript">
+        var Acc1 = new Spry.Widget.Accordion("Accordion1" , { defaultPanel: -1 } );
+    </script> 
+     </article> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav">
+     <h2><a class="folder" href="index.html" target="_top">Applications &amp; Forms</a></h2>
+     <ul id="subnav"></ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall"> 
+     </ul> <a class="viewmore" href="http://news.research.uci.edu/">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html><!--https://research.uci.edu/sponsored-projects/applications-forms/index.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>Applications &amp; Forms </title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../../assets/js/glossary.js" type="text/javascript"></script> 
+  <script src="../../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../../about/contact-us.html">Contact Us</a> <a>|</a> <a href="../../forms/index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../../about/index.html">About the Office</a></li>
+          <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../../facilities-services/index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../../research-development/index.html">Research Development</a></li>
+          <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="../index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../../index.html"><img alt="UCI Irvine" src="../../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a href="../index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../../research-development/index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a href="../../era/index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a href="../../centers-institutes/index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../../facilities-services/index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../../about/index.html">About the Office</a></li>
+      <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+      <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+      <li><a class="" href="../../facilities-services/index.html">Facilities &amp; Services</a></li>
+      <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../../research-development/index.html">Research Development</a></li>
+      <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="../index.html">Sponsored Projects</a>
+       <ul class="mobile-sub-sub">
+        <li><a class="" href="../about/index.html">About</a></li>
+        <li><a class="active selected" href="index.html">Applications &amp; Forms</a></li>
+        <li><a class="" href="../clinical-trials/index.html">Clinical Trials</a></li>
+        <li><a class="" href="../closeout/index.html">Closeout</a></li>
+        <li><a class="" href="../contracts-grants-admin/index.html">Contracts &amp; Grants Administration</a></li>
+        <li><a class="" href="../gift-vs-grant/index.html">Gift vs. Grant</a></li>
+        <li><a href="../institutional-info.html">Institutional Information</a></li>
+        <li><a href="../policies.html">Policies &amp; Procedures</a></li>
+        <li><a class="" href="../rates-fees/index.html">Rates &amp; Fees</a></li>
+        <li><a class="" href="../education/index.html">Training &amp; Education</a></li>
+       </ul></li>
+      <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header2"> 
+      <div class="addthis_toolbox addthis_default_style "> <a class="addthis_button_email"> <img alt="Share" border="0" height="10" src="../../assets/images/icon-hdr-email.png" width="13"> </a> <a class="addthis_button_print"> <img alt="Share" border="0" height="11" src="../../assets/images/icon-hdr-print.png" width="11"> </a> 
+      </div> 
+      <script src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script> 
+      <div class="foot"></div> 
+      <h1>Applications &amp; Forms </h1> 
+     </div> 
+     <article id="content">
+       The below are all Applications &amp; Forms applicable to Sponsored Projects Administration, categorized by type. For forms from other Office of Research units, please visit our global <a href="../../forms/index.html" title="Applications &amp; Forms ">Applications &amp; Forms </a>page. 
+      <br> 
+      <div class="Accordion" id="Accordion1"> 
+       <h2>Sponsored Projects</h2> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Agreements and MOUs 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/va-scire-research-mou-for-nih.doc" target="_top" title="va-scire-research-mou-for-nih.doc"> Memorandum of Understandng for Proposals to NIH </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Checklists 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/va-scire-research-proposal-review-checklist.doc" target="_top" title="va-scire-research-proposal-review-checklist.doc"> Southern California Instittue for Research &amp; Education and UCI Proposal Review Checklist </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/sbir-fa-rate-reduction-request.doc" target="_top" title="sbir-fa-rate-reduction-request.doc"> SBIR Phase 1 Request Form Template </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/sttr-fa-rate-reduction-request.doc" target="_top" title="sttr-fa-rate-reduction-request.doc"> STTR Phase 1 Request Form Template </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Guidelines 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/srf-mod-to-existing-sub.docx" target="_top" title="srf-mod-to-existing-sub.docx"> Subaward Request Form (For Modification to Existing Subaward) </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Other Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/lpar.pdf" target="_top" title="lpar.pdf"> Late Proposal Approval Request </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/request-for-approval-to-spend-funds.doc" target="_top" title="request-for-approval-to-spend-funds.doc"> Request for Approval to Spend Funds </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/request-to-transfer-active-sponsored-project.docx" target="_top" title="request-to-transfer-active-sponsored-project.docx"> Request for Approval to Transfer Active Contracts/Grants and Equipment from UCI to New Location </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Questionnaires 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/pi_questionnaire.doc" target="_top" title="pi_questionnaire.doc"> Clinical Study PI Questionnaire </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Standard Operating Procedures (SOPs) 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/srf-mod-to-existing-sub.docx" target="_top" title="srf-mod-to-existing-sub.docx"> Subaward Request Form (For Modification to Existing Subaward) </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Subaward Forms 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/mca-commitment.pdf" target="_top" title="mca-commitment.pdf"> MCA Commitment Form – for Subawards to other UC campuses </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/mini-audit-questionnaire.pdf" target="_top" title="mini-audit-questionnaire.pdf"> Mini Audit Questionnaire </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/sole-source-form.docx" target="_top" title="sole-source-form.docx"> Sole Source Justification </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/subaward-proc-checklist.pdf" target="_top" title="subaward-proc-checklist.pdf"> Subaward Processing Checklist for Dept/PI </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/srf-mod-to-existing-sub.docx" target="_top" title="srf-mod-to-existing-sub.docx"> Subaward Request Form (For Modification to Existing Subaward) </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/subaward-request-form.docx" target="_top" title="subaward-request-form.docx"> Subaward Request Form (for New Subaward) </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/subrecipient-collaborative-intent.docx" target="_top" title="subrecipient-collaborative-intent.docx"> Subrecipient Statement of Collaborative Intent </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/subrecipient-v-contractor-determination.docx" target="_top" title="subrecipient-v-contractor-determination.docx"> Subrecipient vs. Contractor Determination </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="AccordionPanel"> 
+        <div class="AccordionPanelTab">
+          Templates 
+        </div> 
+        <div class="AccordionPanelContent"> 
+         <ul class="arrows searchSubtype"> 
+          <li class=""> <a href="../../forms/docs/sp/sbir-fa-rate-reduction-request.doc" target="_top" title="sbir-fa-rate-reduction-request.doc"> SBIR Phase 1 Request Form Template </a> </li> 
+          <li class=""> <a href="../../forms/docs/sp/sttr-fa-rate-reduction-request.doc" target="_top" title="sttr-fa-rate-reduction-request.doc"> STTR Phase 1 Request Form Template </a> </li> 
+         </ul> 
+        </div> 
+       </div> 
+      </div> 
+      <script type="text/javascript">
+        var Acc1 = new Spry.Widget.Accordion("Accordion1" , { defaultPanel: -1 } );
+    </script> 
+     </article> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav subnavSmallH1 subnavSmallH1Two">
+     <h2><a class="folder" href="../index.html" target="_top">Sponsored Projects</a></h2>
+     <ul id="subnav">
+      <li class=""><a class="" href="../about/index.html" target="_top">About</a></li>
+      <li class=""><a class="" href="../contracts-grants-admin/index.html" target="_top">Contracts &amp; Grants Administration</a></li>
+      <li class=""><a class="" href="../clinical-trials/index.html" target="_top">Clinical Trials</a></li>
+      <li class=""><a class="" href="../rates-fees/index.html" target="_top">Rates &amp; Fees</a></li>
+      <li class="active"><a class="active" href="index.html" target="_top">Applications &amp; Forms</a></li>
+      <li class=""><a class=" viewMore" href="../policies.html" target="_top">Policies &amp; Procedures</a></li>
+      <li class=""><a class=" viewMore" href="../institutional-info.html" target="_top">Institutional Information</a></li>
+      <li class=""><a class="" href="../closeout/index.html" target="_top">Closeout</a></li>
+      <li class=""><a class="" href="../education/index.html" target="_top">Training &amp; Education</a></li>
+      <li class=" last"><a class=" last" href="../gift-vs-grant/index.html" target="_top">Gift vs. Grant</a></li>
+     </ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall"> 
+     </ul> <a class="viewmore" href="http://news.research.uci.edu/">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html>

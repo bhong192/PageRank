@@ -1,0 +1,435 @@
+<!--https://research.uci.edu/facilities-services/tmf/index.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>Transgenic Mouse Facility</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../../assets/js/glossary.js" type="text/javascript"></script> 
+  <script src="../../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../../about/contact-us.html">Contact Us</a> <a>|</a> <a href="../../forms/index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../../about/index.html">About the Office</a></li>
+          <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../../research-development/index.html">Research Development</a></li>
+          <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="../../sponsored-projects/index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../../index.html"><img alt="UCI Irvine" src="../../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a href="../../sponsored-projects/index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../../research-development/index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a href="../../era/index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a href="../../centers-institutes/index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../../about/index.html">About the Office</a></li>
+      <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+      <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+      <li><a class="" href="../index.html">Facilities &amp; Services</a>
+       <ul class="mobile-sub-sub">
+        <li><a class="" href="../shared-facilities/index.html">Shared Facilities</a></li>
+        <li><a href="#" onclick="return showSubMenu( this );" style="float: right; padding-right: 15px; font-weight: bold; font-size: 14px;"> + </a><a class="active selected" href="index.html">Transgenic Mouse Facility</a>
+         <ul class="mobile-sub-sub" style="
+                        display: none;
+                    ">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faq.html">Frequently Asked Questions</a></li>
+          <li><a href="tmf-news.html">News</a></li>
+          <li><a href="online-resources.html">Online Resources</a></li>
+          <li><a href="summary.html">Prices - effective Oct 1, 2020</a></li>
+          <li><a class="" href="services/index.html">Services</a>
+           <ul class="mobile-sub-sub">
+            <li><a href="services/breeding.html">Breeding</a></li>
+            <li><a href="services/CRISPR_Cas9.html">CRISPR / Cas9 Mediated Genome Engineering Services</a></li>
+            <li><a href="services/dna-micro.html">DNA Microinjection Services</a></li>
+            <li><a href="services/freeze.html">Embryo &amp; Sperm Cryopreservation and Revival Services</a></li>
+            <li><a href="services/es-cell.html">ES Cell Injection Services</a></li>
+            <li><a href="services/gene-targeting.html">Gene Targeting</a></li>
+            <li><a href="services/genotyping.html">Genotyping</a></li>
+            <li><a href="services/other-services.html">Other Services</a></li>
+            <li><a href="services/targeted-transgenesis.html">Targeted Transgenesis</a></li>
+           </ul></li>
+          <li><a class="" href="technical-advice/index.html">Technical Advice</a>
+           <ul class="mobile-sub-sub">
+            <li><a href="technical-advice/construct-design.html">Construct Design</a></li>
+            <li><a href="technical-advice/dna-prep.html">DNA Preparation Techniques</a></li>
+            <li><a href="technical-advice/tutorials.html">TMF Tutorials</a></li>
+           </ul></li>
+         </ul></li>
+        <li><a class="" href="../ular/index.html">ULAR</a></li>
+       </ul></li>
+      <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../../research-development/index.html">Research Development</a></li>
+      <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="../../sponsored-projects/index.html">Sponsored Projects</a></li>
+      <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header1">
+      <h1>Transgenic Mouse Facility - a Mouse Genome Engineering Facility (MGEF)</h1>
+      <div class="addthis_toolbox addthis_default_style ">
+       <a class="addthis_button_print"><img alt="Share" border="0" height="11" src="../../assets/images/icon-hdr-print.png" width="11"></a>
+      </div>
+      <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script>
+      <div class="foot"></div>
+     </div>
+     <article id="content-right-left">
+      <p style="text-align: center;"><strong>To ackowledge the TMF in your publications, copy and paste the language below</strong></p> 
+      <p style="text-align: center;"><em><strong>The authors acknowledge the support of the Chao Family Comprehensive Cancer Center Transgenic Mouse Facility Shared Resource, supported by the National Cancer Institute of the National Institutes of Health under award number P30CA062203. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</strong></em></p> 
+      <p>The UC Irvine Transgenic Mouse Facility (TMF) is a core facility that provides services on a recharge basis for making, breeding, genotyping, importing, and preserving genetically-modified mice and embryonic stem cells. In addition to academic clients at UCI, we also service academic investigators at several other sister UC-campuses and numerous other universities throughout the USA as well as providing these services to commercial clients. The <a href="contact.html" target="_blank">TMF's research associates</a> have a <strong>combined 130 years of experience</strong> in generation of genetically engineered mice. <strong>Our experience can be <em>your</em> advantage</strong>.</p> 
+      <h2>How can we assist you ?</h2> 
+      <ul> 
+       <li><a href="technical-advice/tutorials.html">Finding and importing mice</a></li> 
+       <li>Need to import or export mice?&nbsp; Use&nbsp;<a href="http://mustrac.com">Mustrac</a>&nbsp;- an on-line tool developed at UCI</li> 
+       <li>Making mutant mice 
+        <ul> 
+         <li><a href="services/CRISPR_Cas9.html">Cas9/gRNA-mediated genome engineering</a></li> 
+         <li><a href="services/CRISPR_Cas9.html"></a><a href="services/gene-targeting.html">Targeted mutations&nbsp;via homologous recombination in ES-cells</a></li> 
+         <li><a href="services/gene-targeting.html"></a><a href="services/targeted-transgenesis.html">Inserting transgenes into the ROSA26 &nbsp;and H11 loci</a></li> 
+        </ul> </li> 
+      </ul> 
+      <ul> 
+       <li><a href="technical-advice/construct-design.html">Designing a targeting vector</a></li> 
+       <li><a href="services/breeding.html">Breeding</a></li> 
+       <li><a href="services/other-services.html">Genotyping</a></li> 
+       <li><a href="presentations/Mouse_ES_CellLine.pdf" title="Mouse_ES_CellLine.pdf">What strain of mice did this ES cell line come from? (PDF)</a></li> 
+       <li></li> 
+      </ul> 
+      <h2>Got a question? <a href="mailto:jneumann@uci.edu">Email the TMF</a> - <em>we're here to help!</em></h2> 
+      <h2 class="text">New - Effective Aug 30, 2021, the TMF will transition to use of iLab to provide estimates and billing of services</h2> 
+      <ul> 
+       <li>Inquiries regarding services and projects can still be submitted using the 'Email the TMF' link above.</li> 
+       <li>Register with iLab <a href="https://uci.ilab.agilent.com/service_center/show_external/5747/transgenic_mouse_facility_tmf" target="_blank">here</a>. For questions about registration, please e-mail <a href="mailto:jsahussa@hs.uci.edu">Joyce Sahussanun</a>.</li> 
+       <li>Download an <a href="presentations/iLab_TMF_User_Guide_rev 082621.pdf" target="_blank">iLab user guide for the TMF</a>.</li> 
+      </ul> 
+      <h2>Of interest to TMF and Cancer Center users</h2> 
+      <p class="citation__title"><a href="https://www.sciencedirect.com/science/article/pii/S0959437X20301696?" target="_blank">The use of CRISPR/Cas9-based gene editing strategies to explore cancer gene function in mice</a>. (2021) Current Opinion in Genes &amp; Development 66:57-62.</p> 
+      <p class="citation__title"><a href="https://advances.sciencemag.org/content/6/47/eabc9450?utm_campaign=toc_advances_2020-11-20&amp;et_rid=35138489&amp;et_cid=3567234" target="_blank">CRISPR-Cas9 genome editing using targeted lipid nanoparticles for cancer therapy.</a> (2020) Science Advances <strong>6</strong>, doi: 10.1126/sciadv.abc9450</p> 
+      <p class="citation__title"><a href="https://elifesciences.org/digests/45801/lighting-up-cancer-cells-in-a-mouse?utm_source=content_alert&amp;utm_medium=email&amp;utm_content=fulltext&amp;utm_campaign=4-November-19-elife-alert" target="_blank">Near-Infrared dual bioluminescence imaging in mouse models of cancer using infraluciferin</a> (2019) <em>eLife</em> https://doi.org/10/7554/eLife.45801.001</p> 
+      <p><a href="https://www.sciencedirect.com/science/article/pii/S2211124719300336" target="_blank">Is your gRNA not mediating cutting ? Maybe inclusion of a 'TT' or 'GCC' sequence in the seed domain is the reason ?</a> (2019) <em>Cell Reports</em> <strong>26</strong>, p1098</p> 
+      <p><a href="http://www.pnas.org/content/115/38/9351?etoc=" target="_blank">Nucleosomes inhibit target cleavage by CRISPR-CAS9 <em>in vivo</em></a> - a possible reason why targeting efficiency varies from locus to locus. (2018) <em>PNAS</em> <strong>38</strong>, p9351.</p> 
+      <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6062593/" target="_blank">Transgenic Mouse Models in Cancer Research</a> - a review of methods to generate mouse models of human cancer and examples of their use. (2018)&nbsp;<em>Frontiers in Oncology</em> <strong>8</strong>:268</p> 
+      <p><a href="https://www.nature.com/articles/d41586-018-05890-8" target="_blank">The Mice that Grow Human Tumours &nbsp;- a brief news feature on utility of PDX mouse models (2018) Nature <strong>560</strong>, p156</a></p> 
+      <p><a href="technical-advice/NCG-Mouse-Scientific-Sheet.pdf" target="_blank">NCG - NOD CRISPR prkdc Il2r Gamma triple immunodeficient Mouse Model - A new mouse model for engraftment of human normal and tumor tissues.</a></p> 
+      <p><a href="https://www.ncbi.nlm.nih.gov/pubmed/28028012" target="_blank">Genetically engineered mouse models in oncology research and cancer medicine. (2017) EMBO Molecular Medicine <strong>9</strong>, p137.</a></p> 
+      <p style="text-align: center; font-size: .9em;"><br><a href="http://www.healthaffairs.uci.edu/cancer"><img alt="Chao Family Comprehensive Cancer Center" border="0" height="81" hspace="NaN" src="images/cfccc_uci_blk_tag.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 15px; border: 0;" width="357"></a></p>
+     </article>
+     <div id="content-right-right">
+      <h2>UCI Resources</h2> 
+      <ul> 
+       <li><a href="http://www.research.uci.edu/compliance/animalcare-use/index.html" target="_blank">Animal Care &amp; Use Program</a></li> 
+       <li><a href="http://www.uci.edu/campusmap/" target="_blank">Campus Map</a></li> 
+       <li><a href="http://www.cancer.uci.edu/" target="_blank">Chao Family Comprehensive Cancer Center</a></li> 
+       <li><a href="http://www.research.uci.edu/compliance/animalcare-use/iacuc-forms.html" target="_blank">IACUC Forms &amp; Applications</a></li> 
+       <li><a href="https://www.ehs.uci.edu/research-safety/biosafety/ibc/index.php" target="_blank">Institutional Biosafety Committee</a></li> 
+       <li><a href="http://mustrac.com/people/login" target="_blank">Mustrac Mouse Shipping Database</a></li> 
+      </ul> 
+      <h2>Online Resources</h2> 
+      <p><a href="online-resources.html">(click here for a comprehensive list organized by category)</a></p> 
+      <ul> 
+       <li><a href="http://csbio.unc.edu/CCstatus/index.py" target="_blank">Collaborative Cross (CC) Mice</a></li> 
+       <li><a href="http://www.informatics.jax.org/home/recombinase" target="_blank" title="MGI Cre Database">Cre Database</a></li> 
+       <li><a href="http://www.findmice.org/" target="_blank">Find Mutant Mice ! International Mouse Strain Resource (IMSR)</a></li> 
+       <li><a href="http://www.mousephenotype.org/" target="_blank">International Mouse Phenotyping Consortium (IMPC)</a></li> 
+       <li><a href="http://www.transtechsociety.org/" target="_blank">International Society for Transgenic Technologies (ISTT)</a></li> 
+       <li><a href="http://www.informatics.jax.org/" target="_blank">Mouse Genome Infomatics (MGI)</a></li> 
+       <li><a href="http://tumor.informatics.jax.org/mtbwi/index.do" target="_blank">Mouse Tumor Database (MTB)</a></li> 
+       <li><a href="http://www.criver.com/en-US/Pages/home.aspx" target="_blank">Charles River</a></li> 
+       <li><a href="http://www.envigo.com" target="_blank">Envigo</a>&nbsp;(previously&nbsp;Harlan)</li> 
+       <li><a href="http://www.jax.org/" target="_blank">Jax</a></li> 
+       <li><a href="http://www.taconic.com/" target="_blank">Taconic</a></li> 
+      </ul>
+     </div> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav">
+     <h2><a class="folder" href="../index.html" target="_top">Facilities &amp; Services</a></h2>
+     <ul id="subnav">
+      <li class=""><a class="" href="../ular/index.html" target="_top">ULAR</a></li>
+      <li class="active"><a class="active" href="index.html" target="_top">Transgenic Mouse Facility</a>
+       <ul class="level2 subnavArrows">
+        <li class=""><a class=" viewMore" href="summary.html" target="_top">Prices - effective Oct 1, 2020</a></li>
+        <li class=""><a class=" viewMore" href="tmf-news.html" target="_top">News</a></li>
+        <li class=""><a class=" viewMore" href="faq.html" target="_top">Frequently Asked Questions</a></li>
+        <li class=""><a class=" viewMore" href="online-resources.html" target="_top">Online Resources</a></li>
+        <li class=""><a class="" href="services/index.html" target="_top">Services</a></li>
+        <li class=""><a class="" href="technical-advice/index.html" target="_top">Technical Advice</a></li>
+        <li class=""><a class=" viewMore" href="contact.html" target="_top">Contact Us</a></li>
+       </ul></li>
+      <li class=" last"><a class=" last" href="../shared-facilities/index.html" target="_top">Shared Facilities</a></li>
+     </ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall"> 
+     </ul> <a class="viewmore" href="http://news.research.uci.edu/">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html>

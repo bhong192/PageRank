@@ -1,0 +1,363 @@
+<!--https://research.uci.edu/sponsored-projects/closeout/index.html-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"> 
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+  <title>Closeout</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport"> 
+  <link href="../../assets/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/jquery.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/jquery-ui.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryCollapsiblePanel.js" type="text/javascript"></script> 
+  <script src="../../assets/js/listSearch.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryUtils.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/SpryAccordion.js" type="text/javascript"></script> 
+  <script src="../../assets/js/global.js" type="text/javascript"></script> <!--[if lt IE 9]>
+<script src="/assets/js/lib/html5shiv.js"></script>
+<![endif]--> 
+  <link href="../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/accordion.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/global.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/content.css" rel="stylesheet" type="text/css"> 
+  <link href="../../assets/css/formatted.css" rel="stylesheet" type="text/css"> 
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/json2.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/underscore.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/backbone.js" type="text/javascript"></script> 
+  <script src="../../assets/js/lib/dateFormat.js" type="text/javascript"></script> 
+  <script src="../../assets/js/glossary.js" type="text/javascript"></script> 
+  <script src="../../assets/js/newsDisplay.js" type="text/javascript"></script> 
+  <script type="text/javascript">var GLOBAL_NEWS_LIST_PAGE_SIZE  = 6; var GLOBAL_NEWS_SMALL_LIST_PAGE_SIZE=2;</script> 
+  <link href="../../assets/css/news.css" rel="stylesheet" type="text/css"> 
+  <script src="../../assets/js/lib/respond.min.js" type="text/javascript"></script> 
+ </head> 
+ <body> 
+  <div id="wrapper"> 
+   <div id="header"> <!-- #header-right --> 
+    <div id="header-right"> <!-- #header-links --> 
+     <div id="header-links">
+      <p><a href="http://news.research.uci.edu">News &amp; Announcements</a><a>|</a> <a href="../../about/contact-us.html">Contact Us</a> <a>|</a> <a href="../../forms/index.html">Applications &amp; Forms</a></p>
+     </div> <!-- #header-right-bottom-right --> 
+     <div id="header-right-bottom"> 
+      <div id="header-search"> 
+       <div id="search-container" style="margin-top: 0;">
+        <form action="https://search.uci.edu/" id="cse-search-box" method="get" name="cse-search-box" role="search" style="font-size: .8em;">
+         <input class="search" name="q" onchange="document.cse-search-box.submit();" onclick="if( $(this).css( 'width' ) == '0px' ) { $( '#search-container' ).hide(); $( '#search-full-container' ).show(); document.getElementById( 'search-full-textbox' ).focus(); }" type="text"> 
+         <input name="collection" type="hidden" value="research">
+        </form>
+       </div> 
+      </div> 
+      <div id="header-mobile-toolbox"> <a class="handlex toolboxTab ScreenSizeMedium" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-grey.png"> </a> <a class="handlex toolboxTab ScreenSizeSmall" href="http://research.uci.edu/" onclick="$('#uci-toolbox').slideToggle(); return false;"> <img alt="toolbox" src="../../assets/images/tool-white.png"> </a> 
+      </div> <!--
+                    --> 
+      <div id="header-tablet-menu"> 
+       <div id="main-navigation-tablet">
+        <div class="styled-select" onclick="$('#topMenuTabletContainer').slideToggle();">
+          Menu 
+        </div>
+        <div class="styled-select" id="topMenuTabletContainer" style="position: absolute; height: auto; display: none; background-image: none;">
+         <ul>
+          <li><a class="" href="../../about/index.html">About the Office</a></li>
+          <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+          <li><a href="../../gettingstarted.html">Conducting Research at UCI: Getting Started</a></li>
+          <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+          <li><a class="" href="../../facilities-services/index.html">Facilities &amp; Services</a></li>
+          <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+          <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+          <li><a class="" href="../../research-development/index.html">Research Development</a></li>
+          <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+          <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+          <li><a class="" href="../index.html">Sponsored Projects</a></li>
+          <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+          <li><a href="../../index_old.html">UC Irvine Office of Research</a></li>
+         </ul>
+        </div>
+       </div>
+       <script type="text/javascript">
+            var lastSliderSubMenu = null;
+            function showSubMenu( ele ) {
+                if( lastSliderSubMenu != null ) {
+                    if( ele != lastSliderSubMenu ) {
+                        $( lastSliderSubMenu ).siblings( 'ul' ).slideToggle();
+                        $( lastSliderSubMenu ).html( "+" );
+                    }
+                }
+                
+                $( ele ).html( ( lastSliderSubMenu == ele ? "+" : "&#8212;" ) );
+                $( ele ).siblings( 'ul' ).slideToggle();
+                lastSliderSubMenu = ele != lastSliderSubMenu ? ele : null;
+                return false;
+            }
+        </script> 
+      </div> 
+     </div> <!-- #header-search --> 
+    </div> <!-- #header-right --> <!-- #header-left --> 
+    <div id="header-left">
+     <a href="../../index.html"><img alt="UCI Irvine" src="../../assets/images/logo.png"></a>
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+    <div id="search-full-container"> 
+     <form action="https://search.uci.edu/" method="get" role="search">
+      <input class="search-full" id="search-full-textbox" name="q" onblur="$( '#search-full-container' ).hide(); $( '#search-container' ).show();" onchange="document.cse-search-box2.submit();" type="text"> 
+      <input name="site" type="hidden" value="research"> 
+      <input name="collection" type="hidden" value="research">
+     </form> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div> <!-- #header --> 
+   <div id="main-navigation">
+    <ul>
+     <li><a href="../../about/index.html" target="_top" title="About the Office">About the Office</a></li>
+     <li><a href="../index.html" target="_top" title="Sponsored Projects">Sponsored Projects</a></li>
+     <li><a href="../../compliance/index.html" target="_top" title="Research Protections">Research Protections</a></li>
+     <li><a href="../../research-development/index.html" target="_top" title="Research Development">Research Development</a></li>
+     <li><a href="../../era/index.html" target="_top" title="Electronic Research Administration (ERA)">Electronic Research Administration (ERA)</a></li>
+     <li><a href="../../ref/index.html" target="_top" title="Research Engagement &amp; Facilitation">Research Engagement &amp; Facilitation</a></li>
+     <li><a href="../../centers-institutes/index.html" target="_top" title="Centers &amp; Institutes">Centers &amp; Institutes</a></li>
+     <li><a href="../../facilities-services/index.html" target="_top" title="Facilities &amp; Services">Facilities &amp; Services</a></li>
+     <li><a href="../../integrity-research/index.html" target="_top" title="Integrity in Research">Integrity in Research</a></li>
+     <li><a href="../../training-education/index.html" target="_top" title="Training &amp; Education">Training &amp; Education</a></li>
+     <li><a href="../../policy-library/index.html" target="_top" title="Policy Library">Policy Library</a></li>
+    </ul>
+   </div>
+   <div id="main-navigation-left-spacer">
+     &nbsp; 
+   </div>
+   <div id="main-navigation-mobile">
+    <div class="styled-select" onclick="$('#topMenuMobileContainer').slideToggle();">
+      Menu 
+    </div>
+    <div class="styled-select" id="topMenuMobileContainer" style="height: auto; display: none; background-image: none;">
+     <ul>
+      <li><a class="" href="../../about/index.html">About the Office</a></li>
+      <li><a class="" href="../../centers-institutes/index.html">Centers &amp; Institutes</a></li>
+      <li><a class="" href="../../era/index.html">Electronic Research Administration (ERA)</a></li>
+      <li><a class="" href="../../facilities-services/index.html">Facilities &amp; Services</a></li>
+      <li><a class="" href="../../integrity-research/index.html">Integrity in Research</a></li>
+      <li><a class="" href="../../policy-library/index.html">Policy Library</a></li>
+      <li><a class="" href="../../research-development/index.html">Research Development</a></li>
+      <li><a class="" href="../../ref/index.html">Research Engagement &amp; Facilitation</a></li>
+      <li><a class="" href="../../compliance/index.html">Research Protections</a></li>
+      <li><a class="" href="../index.html">Sponsored Projects</a>
+       <ul class="mobile-sub-sub">
+        <li><a class="" href="../about/index.html">About</a></li>
+        <li><a class="" href="../applications-forms/index.html">Applications &amp; Forms</a></li>
+        <li><a class="" href="../clinical-trials/index.html">Clinical Trials</a></li>
+        <li><a class="active selected" href="index.html">Closeout</a>
+         <ul class="mobile-sub-sub">
+          <li><a href="closing-an-award.html">Closing An Award</a></li>
+          <li><a href="closeout-reports.html">Standard Reports Required for Closeout</a></li>
+          <li><a href="timeliness.html">Timeliness Is Important</a></li>
+         </ul></li>
+        <li><a class="" href="../contracts-grants-admin/index.html">Contracts &amp; Grants Administration</a></li>
+        <li><a class="" href="../gift-vs-grant/index.html">Gift vs. Grant</a></li>
+        <li><a href="../institutional-info.html">Institutional Information</a></li>
+        <li><a href="../policies.html">Policies &amp; Procedures</a></li>
+        <li><a class="" href="../rates-fees/index.html">Rates &amp; Fees</a></li>
+        <li><a class="" href="../education/index.html">Training &amp; Education</a></li>
+       </ul></li>
+      <li><a class="" href="../../training-education/index.html">Training &amp; Education</a></li>
+     </ul>
+    </div>
+   </div> 
+   <br style="clear: both;"> 
+   <div id="content-right"> <!--
+            <system-region name="H1" />
+            --> 
+    <div class="inner"> 
+     <div id="page-header1">
+      <h1>Closeout</h1>
+      <div class="addthis_toolbox addthis_default_style ">
+       <a class="addthis_button_print"><img alt="Share" border="0" height="11" src="../../assets/images/icon-hdr-print.png" width="11"></a>
+      </div>
+      <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51ec92501f8ebf65" type="text/javascript"></script>
+      <div class="foot"></div>
+     </div>
+     <article id="content">
+      <img alt="" src="docs/closeout-narrow.svg" width="100%">
+      <p>Closeout is the process in which the awarding agency determines that all applicable administrative actions and all required work with the award have been completed by the recipient.</p> 
+      <p>Closeout is required after an award is completed. Awards are considered completed when all work is finished or on the date on which the award expires or terminates. If, at the end of the project period, the Principal Investigator has not secured a renewal, supplement or no-cost extension, closeout must be conducted.</p> 
+      <p><b><i>Federal sponsors</i></b> have a requirement that closeout documents be submitted to the awarding agency within 90 days after the end of the period of performance; therefore, all expenses must post within 90 days of the budget period award end date.</p> 
+      <p>Some sponsors require that the closeout is completed much sooner, so it is important to review the terms of the award. For example, most<b><i> Federal flow-through</i></b> awards require a closeout to be completed within 60 days of the award end date to allow for the prime recipient to complete a timely closeout of the entire project within 90 days.</p> For financial requirements for closeout, <a href="https://www.accounting.uci.edu/cg/post-award/closeout.html" target="_blank" title="C&amp;G Accounting Award Closeout">please refer to the<i> CGA website.</i></a>
+     </article> 
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-right --> 
+   <div id="content-left"> 
+    <div class="subnav">
+     <h2><a class="folder" href="../index.html" target="_top">Sponsored Projects</a></h2>
+     <ul id="subnav">
+      <li class=""><a class="" href="../about/index.html" target="_top">About</a></li>
+      <li class=""><a class="" href="../contracts-grants-admin/index.html" target="_top">Contracts &amp; Grants Administration</a></li>
+      <li class=""><a class="" href="../clinical-trials/index.html" target="_top">Clinical Trials</a></li>
+      <li class=""><a class="" href="../rates-fees/index.html" target="_top">Rates &amp; Fees</a></li>
+      <li class=""><a class="" href="../applications-forms/index.html" target="_top">Applications &amp; Forms</a></li>
+      <li class=""><a class=" viewMore" href="../policies.html" target="_top">Policies &amp; Procedures</a></li>
+      <li class=""><a class=" viewMore" href="../institutional-info.html" target="_top">Institutional Information</a></li>
+      <li class="active"><a class="active" href="index.html" target="_top">Closeout</a>
+       <ul class="level2 subnavArrows">
+        <li class=""><a class=" viewMore" href="closing-an-award.html" target="_top">Closing An Award</a></li>
+        <li class=""><a class=" viewMore" href="timeliness.html" target="_top">Timeliness Is Important</a></li>
+        <li class=""><a class=" viewMore" href="closeout-reports.html" target="_top">Standard Reports Required for Closeout</a></li>
+       </ul></li>
+      <li class=""><a class="" href="../education/index.html" target="_top">Training &amp; Education</a></li>
+      <li class=" last"><a class=" last" href="../gift-vs-grant/index.html" target="_top">Gift vs. Grant</a></li>
+     </ul>
+    </div> 
+    <div class="green-box"> 
+     <h2>News &amp; Announcements</h2> 
+     <ul class="newsListSmall"> 
+     </ul> <a class="viewmore" href="http://news.research.uci.edu/">View More</a> <!-- .green-box -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #content-left --> 
+   <div class="cf"></div><!-- .clearfix --> 
+   <div id="footer-mob"> 
+    <div id="footer-mob"> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-top-left">
+       <img alt="Visit" height="16" src="../../assets/images/icon-pointer.png" width="11"> <b>Visit </b> <a href="../directions.html">Directions <br> </a>
+       <br> 
+       <img alt="Email" height="12" src="../../assets/images/icon-email.png" width="16"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a> 
+       <br> 
+       <br> 
+       <img alt="Call" height="16" src="../../assets/images/icon-phone.png" width="11"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+      </div> 
+      <div id="mobile-foot-top-right">
+       <img alt="Wordpress" height="14" src="../../assets/images/icon-wordpress.png" width="17"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a> 
+       <br> 
+       <br> 
+       <img alt="RSS Feed" height="16" src="../../assets/images/YouTube-icon-full_color.png" width="22"> <b>Watch</b> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="YouTube">YouTube</a>
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div style="margin: 0; color: #8f97a0; font-weight: bold;">
+       University of California, Irvine
+       <br> Office of Research
+       <br>160 Aldrich Hall
+       <br>Irvine, CA 92697
+      </div> 
+     </div> 
+     <div class="box" style="width: 100%;"> 
+      <div id="mobile-foot-bott-left">
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/OROPS/Home">Staff Intranet</a> 
+       <br> 
+       <br> 
+       <img alt="Confluence" height="16" src="../../assets/images/confluence-icon.png" width="18"><b> Login:</b> <a class="purple" href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Admin Wiki">Research Admin Wiki</a> 
+       <br> 
+       <br> 
+       <br> <a href="../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice<br></a>
+      </div> 
+     </div> 
+     <div class="cf">
+      <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" width="82"></a>
+     </div> <!-- .clearfix --> 
+     <div class="box" style="width: 100%;">
+      <!-- .clearfix --><!-- .clearfix --> 
+      <div style="margin: 5px 0 0 0;">
+       © 2021 The Regents of the University of California
+      </div> 
+     </div> 
+     <div class="cf"></div> <!-- .clearfix -->
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-mob --> 
+   <div id="footer-tab"> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="20"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="20" src="../../assets/images/YouTube-icon-full_color.png" width="28"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">YouTube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="20"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Email" src="../../assets/images/icon-email.png" width="20"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+    </div> 
+    <div class="box" style="width: 280px;"> 
+     <div>
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="20"><b> Contact Us: </b><a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="20"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> 
+    <div class="box"> 
+     <div style="margin: 10px 0 0 0; color: #8f97a0; font-weight: bold; line-height: 130%;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div> <!-- .clearfix --> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer-tab --> 
+   <div id="footer-dsk"> <!--Left Outside Box--> 
+    <div class="box" style="width: 180px;"> 
+     <div>
+      <img alt="Wordpress" src="../../assets/images/icon-wordpress.png" width="30"> <b>Read</b> <a href="http://news.research.uci.edu" target="_blank" title="Office of Research News ">News</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="RSS Feed" height="25" src="../../assets/images/YouTube-icon-full_color.png" width="35"> <b>Watch </b><a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w" target="_blank" title="RSS Feed">Youtube</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Visit" src="../../assets/images/icon-pointer.png" width="30"> <b>Visit </b> <a href="../../directions.html">Directions</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      &nbsp;
+     </div> 
+    </div> <!--Left Inside Box--> 
+    <div class="box" style="width: 240px;"> 
+     <div>
+      <img alt="Email" src="../../assets/images/icon-email.png" width="30"><b> Email </b> <a href="mailto:or-web-support@uci.edu" target="_blank" title="Office of Research Web Support">Web Support</a>
+     </div> 
+     <div style="margin: 10px 0;"></div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Call" src="../../assets/images/icon-phone.png" width="30"><b> Contact Us:</b> <a href="../../about/contact-us.html" title="Staff Directory">OR Staff Directory</a>
+     </div> 
+    </div> <!--Right Inside Box--> 
+    <div class="box" style="width: 200px; margin-top: 0px;"> 
+     <div>
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/OROPS/Home" target="_blank" title="Office of Research Staff Intranet ">OR Staff Intranet</a>
+     </div> 
+     <div style="margin: 20px 0 0 0;">
+      <img alt="Confluence" src="../../assets/images/confluence-icon.png" width="30"><b> Login:</b> <a href="https://wiki.oit.uci.edu/display/ORA/Research+Administration+Home" target="_blank" title="Research Administration Wiki">Research Admin Wiki</a>
+     </div> 
+    </div> <!--Right Outside Box --> 
+    <div class="box" style="width: 180px; line-height: 140%;"> 
+     <div style="font-weight: bold; font-size: 12px;">
+      University of California, Irvine
+      <br> Office of Research
+      <br>160 Aldrich Hall
+      <br>Irvine, CA 92697
+     </div> <a href="http://www.uci.edu/" target="_blank" title="UCI Homepage"><img alt="UCI Seal" height="82" src="../../assets/images/uci-seal.png" style="margin: 10px 0 0 20px;" width="82"></a>
+    </div> <!--Bottom Box--> 
+    <div class="box" style="width: 100%;">
+     <span style="margin: 30px 0 0 0; color: #8f97a0;">© 2021 The Regents of the University of California</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../../privacy-policy.html" target="_blank" title="Privacy Policy">Privacy &amp; Legal Notice</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </div> 
+    <div class="cf"></div><!-- .clearfix --> 
+   </div><!-- #footer --> 
+  </div><!-- #wrapper --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12590427-3', 'uci.edu');
+  ga('send', 'pageview');
+
+</script>  
+ </body>
+</html>

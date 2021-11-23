@@ -1,0 +1,414 @@
+<!--https://apps.cpp.edu/bronco411/search/-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="full-height fontawesome-i2svg-active fontawesome-i2svg-complete"> 
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>Bronco411 | Cal Poly Pomona</title> 
+  <link href="../css/print.css" media="print" type="text/css" rel="stylesheet"> 
+  <link href="../css/app_forms.css" rel="Stylesheet" type="text/css"> 
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  <script src="https://www.cpp.edu/common/2018/assets/js/cpp.js"></script> <!--[if lt IE 7]>
+	<style media="screen" type="text/css">
+	#container {
+		height:100%;
+	}
+	</style>
+	<![endif]--> <!--[if IE 6]>
+<style type="text/css">
+#constituentnav li {padding-left: 7px;}
+#constituentnav ul {padding-left: 7px;}
+#search input#q {background: #FFFFFF;}
+</style>
+<![endif]--> <!--[if IE 7]>
+<style type="text/css">
+#search input#q {background: url(/img/searchbg_light.gif) no-repeat;}
+</style>
+<![endif]--> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"> 
+  <style>
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+    footer p {
+        line-height: 1.8em !important;
+    }
+    main h3{
+        margin-top: 20px;
+    }
+    main .row{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    p {
+        line-height: 1.5em !important;
+    }
+    p, label {
+        font-size: 15px;
+    }
+    input {
+        padding: 3px;
+    }
+    .tablealtstyle {
+        background-color: #F4F4F4;
+        border-color: #ece9d8;
+        border-style: solid;
+        border-width: 1px;
+        padding: .2rem !important;
+    }
+    .tablerowstyle {
+        padding: .2rem !important;
+    }
+    .gridViewMargin th {
+        background-color: #D1EBF4;
+    }
+    .noBorder {
+        border-right-color: transparent !important;
+    }
+    fieldset ol {
+        list-style-type: none;
+    }
+	@media 
+	only screen and (max-width: 596px),
+	(min-device-width: 596px) and (max-device-width: 596px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			position: relative;
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- 
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	*/
+	/* iPads (portrait and landscape) ----------- 
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}
+	*/
+	</style> 
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" rel="stylesheet"> 
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" type="text/javascript"></script> 
+  <link href="https://www.cpp.edu/common/2018/assets/css/cpp-base-styles.css" rel="stylesheet"> 
+  <link href="https://www.cpp.edu/common/2018/assets/css/cpp-extended-styles.css" rel="stylesheet"> 
+  <link href="application.css" rel="stylesheet"> 
+ </head> 
+ <body class="full-height"> 
+  <header class="fixed-top" title="Cal Poly Pomona Search"> 
+   <nav class="navbar navbar-expand transparent cpp-logobar-min" id="cpp-logobar"> 
+    <div class="navbar-nav mr-auto">
+     <a class="logo align-middle" href="https://www.cpp.edu/index.shtml" id="cpp-header-logo-link"> <img alt="Cal Poly Pomona" id="cpp-logo-octo" src="https://www.cpp.edu/common/2018/assets/img/cpp-octo-web.svg"> <!--	<img alt="Cal Poly Pomona" id="cpp-logo-octo" src="/common/2018/assets/img/calpoly-3-color-adjusted.png" />--> </a> <a class="sr-only" href="#main" id="skip-to-nav">Skip To Main Content</a>
+    </div> 
+    <form action="https://gsa.cpp.edu/search" autocomplete="off" class="center-search row justify-content-center" id="searchcpp" method="get" role="search">
+     <label class="sr-only" for="searchbar">SEARCH Box</label> 
+     <input class="search-query_new" id="searchbar" maxlength="256" name="q" placeholder="What can we help you find?" title="search" type="text"> <button alt="SEARCH" class="button" id="searchbutton" title="SEARCH" type="submit" value="submit"> <i class="fas fa-search"></i> <span class="sr-only">Submit Search</span> </button> 
+     <input name="site" type="hidden" value="default_collection"> 
+     <input name="client" type="hidden" value="cpp-fe"> 
+     <input name="output" type="hidden" value="xml_no_dtd"> 
+     <input name="proxystylesheet" type="hidden" value="cpp-fe"> 
+     <input name="markup" type="hidden" value="html5"> 
+     <div aria-expanded="false" class="show dropdown-toggle" data-toggle="dropdown" id="shcontainer"> 
+      <div aria-labelledby="suggestedh2" class="dropdown-menu dropdown-menu-right" id="searchhelp"> 
+       <h2 id="suggestedh2">Popular Searches</h2> 
+       <ul id="autocomplete-results"> 
+        <li><a href="#" onclick="usePopularSearch('http://my.spectate.com/mycpp-searchbox-link', event)" role="button">MyCPP (Online Services)</a></li> 
+        <li><a href="#" onclick="usePopularSearch('http://my.spectate.com/blackboard-searchbox-link', event)" role="button">Blackboard</a></li> 
+        <li><a href="#" onclick="usePopularSearch('http://my.spectate.com/broncodirect-searchbox-link', event)" role="button">Broncodirect</a></li> 
+        <li><a href="#" onclick="usePopularSearch('http://my.spectate.com/bronco-advising-center-link', event)" role="button">Bronco Advising Center</a></li> 
+        <li><a href="#" onclick="usePopularSearch('http://my.spectate.com/email-searchbox-link', event)" role="button">Email</a></li> 
+        <li><a href="#" onclick="usePopularSearch(http://my.spectate.com/admissions-searchbox-link', event)" role="button">Admissions</a></li> 
+        <li><a href="#" onclick="usePopularSearch('http://my.spectate.com/parking-link', event)" role="button">Parking</a></li> 
+        <li><a href="#" onclick="usePopularSearch('http://my.spectate.com/financial-aid-link', event)" role="button">Financial Aid</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </form> 
+   </nav> 
+  </header> 
+  <main class="container-fluid flex-grow"> 
+   <div id="main"> 
+    <div class="row"> 
+     <div class="col-md-12" style="padding-left: 0; padding-right: 0"> 
+      <div style="float:right;"> <a id="ctl00_HL_Login" title="Log In" class="btn btn-primary mt-3" href="login.aspx">Log In</a> 
+      </div> 
+     </div> 
+     <div class="col-md-9" style="padding-left: 0; padding-right: 0"> 
+      <form name="aspnetForm" method="post" action="./" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" style="padding-bottom:0px;"> 
+       <div> 
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""> 
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""> 
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="LbLXg6auVXRv/pkg9yvZKt7KSkZtNJH5kH/OJdm7vFpxplP+DYdocfPHP40RL74YKZcMCy+sOk2k+VaQ8YJlt8p/Uyl6UhIpn4f56+QjZ60y3l7Xw8saIqPiSWG8mftExBuLoZBiiC5Df/oA9Ql1HbQ5oFN5WKYT0n1KsKQb3X/LUgyaID0cwB/RmMLUl7yyP5BoRNET6AcdS56Iy3hrPaoGW8EeKdeSpW95gHs+gXngcYB+En+6LMaf7FZSn3wQRVtRljZRT7Y5c13Va+C+iJTBztCFVLc63VlQ6GSmrWpaGLG1Zl6R8oDNUoYVVEhitRKQz2rUBy6WhlmmuoN/Ph+SKDi4lupyE3H6f2uEu/daqRKaxH/3S4gWlZ+t+gyjCP0WDi5R7zam+T8d4iD973eaC5R6l+A8bvDQM7BM/E/766idL8l4VcAbEPTxb23S5lwENqfRi2par7IOjwgScKZnypCLHuy2yskYaS99LDOUIlz9hX0e8Se0MujUZCnp4lCM7+13r1SkkdwPCP5YLPArusIrBF2tUowN4p7AcYsrXOg+Ao6Q7cIH1IhnoswJzWAtT246uuKw4EjeuP7Ng/SioREQ8kVyZJYy20GTvWKxQ4rHUYUQAyqVvAoVtLjVltRDl1ZfVnTbX2QalYLIT+P2jMF61wMbAARxhryxsL8cSw8EnrH9klx0uip+2PC3UVLCXxK1rInOx0SoM8MEtDV+RWJA+CSug0uqyEAZ7REAINtKpfq6z4A2J5s++GRLMFQqU3bdBd6wUWUreHNR+5G5yrthGoF1x6b0vv7cC5fmDWHKWv+AQRX6bCVjU1qLWo6Y+NswJnbs5CWkjHIyzhPJySzafO1cJ4BFtv/fdl6DS8jF6VufnSvrI+9W2CGa1tmZf5zz/yKGPEbJ6Jibt0Ibav1Xz4lK+DenMzCmNQaWWM7t0aTSEZhfqj9f9PsYQoLNSeIZdiIOM2BnuqCQZxvTDtSIxnKhfP5DWJbt1xUJt0Mvsy/FRfOBLZIdzzGOoyZzzm7dSKfFe/L/qN3NnzxDd9jShf7IsyjMj9AF3KJrmhmidam9NylWtYMIFrCIfFjTwxfThLRclw/DUfoKez2+9ZClomtOtqpRAXKUUPYh2LMpoi61CcU7AvU2kM0It1MWXnArTIAfCPzHk3pXS3CpHUi9PLfNcZGMnbZTlY7D87NNk3+69xn6009Xscmk6AB4pNvjApsUpehwoROllEVy6Jr+++Ti/5J1iF1Rm/EaFIcQ"> 
+       </div> 
+       <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script> 
+       <script src="/bronco411/search/WebResource.axd?d=4IT9u4OW8fvuxxzUZMD9Nz9IEb8kLkcgQvLsRsb0RcTsI5TS27Ib0EPT7f7eWTkXA4ForozplH2Ahajf8Gqr_SAc0Ms1&amp;t=637453780754849868" type="text/javascript"></script> 
+       <script src="/bronco411/search/WebResource.axd?d=w5TzWGaEekn8YmcUTGdGCg1JLoIRPKDRpP0Cl0QYCK6nTV9MPNhI-EbaBCYZ9Fqlhvh4T-kYwIU2sQve0dIsnlCav2g1&amp;t=637453780754849868" type="text/javascript"></script> 
+       <script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script> 
+       <div> 
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FF64F358"> 
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="UEefAisqPVz5UywNeNFoacnWqFu86Ku+vLYPTyBKVYxbAaT0EIxhdHgZXE5KxOd0RDMjoKRsinzvSvoxE9xbm2GpAoGXp2C2faSw/Um3ebSTa+WpEtFFz4J6Fg5fG6lrBWao8Gh0zEx/ch8iktixb3e2LpyYz0YI9rpoaiWYauEjMvxImluf6HPDFBgYrHzALQFVw5c8vms1bLmjZM0JaG0qdiDo1gR/rVjXIpeU3ppiYSRCfijL/8fcop++X/CsoJwmmxCt0myQiRkK6ynZSpkIXltEY8iJ5+hGHmacbZimH0TrzngrE26NZ6d+hlLkkF92sWXzwuTF4U1DAVU74vAXXU/zHzuEMN4mf9jiEHmBt2rrqcya4LkoKsv4L2ryaXY14zWcOitlXYPO3yHYG8Q3AWHwqn9QsQLU4aUiDeUEvyweIuhYgFbabpRYGAKaW3KfcAzVmfonl/A9uTzJ9bpyti1bGqmU/dPcgSmBkdFFWrllivjjjrzX6RHRivJOySdTBAhR9mfRNi8DlTF4UzpNUkybcf+z6KiQAuVtIBft9cE7L4BfeXzKaIgGv2MYghJLJz8xFn1ovQPlbhKkmop14/rp/qIF+6EefMzMEF2sdx4I6BSWnZy2X8jSUUedBlPwog6yqligCF33MLdvw4bzCdz8GZaP0jSGXUVVD5Yi1pWsh59RPwwZ9txuqppsab2KDw=="> 
+       </div> 
+       <script type="text/javascript">
+      function showWaitMessage() {
+          document.getElementById("WaitMessage").style.visibility = 'visible';
+      }
+      function hideWaitMessage() {
+          document.getElementById("WaitMessage").style.visibility = 'hidden';
+      }
+    </script> 
+       <script type="text/javascript">
+    <!--
+    var gDivaFAQ = "none^false|^Q_06-1_open.gif^A_none.gif|helptext^Open All^Close All";
+    var gDivaPath2LocalRoot = "";
+    //-->
+    </script> 
+       <script type="text/javascript" src="diva/divaCommon.js"></script> 
+       <script type="text/javascript" src="diva/divaFAQ/divaFAQ.js"></script> 
+       <h1 class="sr-only">Find People and Organizations</h1> 
+       <h2>Find People and Organizations</h2> 
+       <p> <strong>Important Information</strong> </p> 
+       <p> Effective April 1, 2020 - Student searches are limited to CPP authenticated users. To search for students, please log in.<br> Effective November 1, 2018 – To provide increased security, email addresses will only be available to CPP authenticated users. </p> 
+       <noscript> 
+        <p class="info">You have Javascript turned off. Bronco411 Search will work correctly, but after you perform a search, you will need to scroll beneath the instructions to see the results. </p> 
+       </noscript> <!--  HelpText  --> <!--            --> 
+       <p><b>Please provide at least one item of information before beginning a search.</b></p> 
+       <h3>Search Criteria</h3> 
+       <div class="searchBox" style="padding-left: 15px; background-color: #DEF0FC;"> 
+        <br> 
+        <div class="row"> 
+         <div class="col-md-5" valign="middle"> <label for="ctl00_ContentPlaceHolder1_prsn_name" id="ctl00_ContentPlaceHolder1_Label7" style="font-weight:bold;">Person Name</label> 
+          <input name="ctl00$ContentPlaceHolder1$prsn_name" type="text" maxlength="200" size="45" id="ctl00_ContentPlaceHolder1_prsn_name" class="form-control" style="width:12.5em;display:inline;"> <span id="ctl00_ContentPlaceHolder1_FindPersonCustom" style="color:#DC3545;display:none;"></span> 
+         </div> 
+         <div class="col-md-5"> <label for="ctl00_ContentPlaceHolder1_org_name" id="ctl00_ContentPlaceHolder1_Label1" class="backlabel" style="font-weight:bold;">Organization Name</label> 
+          <input name="ctl00$ContentPlaceHolder1$org_name" type="text" maxlength="80" size="45" id="ctl00_ContentPlaceHolder1_org_name" class="form-control" style="width:12.5em;display:inline;"> 
+         </div> 
+        </div> 
+        <div class="row"> 
+         <div class="col-md-12"> <label for="ctl00_ContentPlaceHolder1_CB_FuzzyName" id="ctl00_ContentPlaceHolder1_Label2" aria-label="Fuzzy Search Check here if you don't know how the name is spelled (might not retrieve desired name)" style="font-weight:bold;">Fuzzy</label> 
+          <input id="ctl00_ContentPlaceHolder1_CB_FuzzyName" type="checkbox" name="ctl00$ContentPlaceHolder1$CB_FuzzyName"> Check here if you don't know how the name is spelled (might not retrieve desired name) 
+         </div> 
+        </div> 
+        <div class="row"> 
+         <div class="col-md-5"> <label for="ctl00_ContentPlaceHolder1_prsn_title" id="ctl00_ContentPlaceHolder1_Label3" style="font-weight:bold;">Person Title</label> 
+          <input name="ctl00$ContentPlaceHolder1$prsn_title" type="text" maxlength="60" size="45" id="ctl00_ContentPlaceHolder1_prsn_title" class="form-control" style="width:12.5em;display:inline;"> 
+         </div> 
+         <div class="col-md-5"> <label for="ctl00_ContentPlaceHolder1_org_type" id="ctl00_ContentPlaceHolder1_Label4" class="backlabel" style="font-weight:bold;">Organization Type</label> <select name="ctl00$ContentPlaceHolder1$org_type" id="ctl00_ContentPlaceHolder1_org_type" class="form-control" style="width:12.9em;display:inline;"> <option value="0">Select Org. Type</option> <option value="DEPT">Academic Department</option> <option value="CTR">Center</option> <option value="COLL">College</option> <option value="CORP">Corporation</option> <option value="DIV">Division</option> <option value="FOOD SVCS">Food Services</option> <option value="FUNC">Functions</option> <option value="HS">High School</option> <option value="INST">Institute</option> <option value="OTHR">Other</option> <option value="PROG">Program</option> <option value="RESHALL">Residence Hall</option> </select> 
+         </div> 
+        </div> 
+        <div class="row"> 
+         <div class="col-md-3"> <label for="ctl00_ContentPlaceHolder1_PH_CITOC_ID_3" id="ctl00_ContentPlaceHolder1_Label5">Phone</label> 
+          <input name="ctl00$ContentPlaceHolder1$PH_CITOC_ID_3" type="text" maxlength="75" size="20" id="ctl00_ContentPlaceHolder1_PH_CITOC_ID_3" title="Phone number or partial" class="form-control" style="width:10em;"> 
+         </div> 
+         <div class="col-md-3"> <label for="ctl00_ContentPlaceHolder1_LOC_CITOC_ID" id="ctl00_ContentPlaceHolder1_Label6">Location</label> 
+          <input name="ctl00$ContentPlaceHolder1$LOC_CITOC_ID" type="text" maxlength="75" size="10" id="ctl00_ContentPlaceHolder1_LOC_CITOC_ID" title="Location" class="form-control" style="width:10em;"> 
+         </div> 
+         <div class="col-md-3"> <label for="ctl00_ContentPlaceHolder1_FAX_CITOC_ID_3" id="ctl00_ContentPlaceHolder1_Label8">Fax</label> 
+          <input name="ctl00$ContentPlaceHolder1$FAX_CITOC_ID_3" type="text" maxlength="75" size="20" id="ctl00_ContentPlaceHolder1_FAX_CITOC_ID_3" title="Fax number or partial" class="form-control" style="width:10em;"> <span id="ctl00_ContentPlaceHolder1_InputStringValidator" style="color:#DC3545;display:none;"></span> 
+         </div> 
+        </div> 
+        <br> 
+       </div> 
+       <div> <span id="ctl00_ContentPlaceHolder1_ShowOnlyLbl" style="font-weight:bold;">Show Only:</span> 
+        <br> 
+        <p>NOTE: Student searches are only available to logged in users. </p> 
+        <table> 
+         <tbody>
+          <tr> 
+           <td style="padding: 0em 1em 0em 1em"> 
+            <div> 
+             <div style="display: inline-block;">
+              <span title="Check to see Faculty only"><input id="ctl00_ContentPlaceHolder1_CK_FACULTY" type="checkbox" name="ctl00$ContentPlaceHolder1$CK_FACULTY" checked></span> 
+             </div> 
+             <div style="display: inline-block;"> <label for="ctl00_ContentPlaceHolder1_CK_FACULTY" id="ctl00_ContentPlaceHolder1_Label9" style="font-size:Small;">Faculty</label> 
+             </div> 
+            </div> </td> 
+           <td style="padding: 0em 1em 0em 1em"> 
+            <div> 
+             <div style="display: inline-block;"> <span title="Check to see Staff only"><input id="ctl00_ContentPlaceHolder1_CK_STAFF" type="checkbox" name="ctl00$ContentPlaceHolder1$CK_STAFF" checked></span>
+             </div> 
+             <div style="display: inline-block;">
+              <label for="ctl00_ContentPlaceHolder1_CK_STAFF" id="ctl00_ContentPlaceHolder1_Label10" style="font-size:Small;">Staff</label> 
+             </div> 
+            </div> </td> 
+           <td style="padding: 0em 1em 0em 1em"> 
+            <div> 
+             <div style="display: inline-block;"> <span disabled title="Check to see Students only"><input id="ctl00_ContentPlaceHolder1_CK_STUDENTS" type="checkbox" name="ctl00$ContentPlaceHolder1$CK_STUDENTS" disabled></span>
+             </div> 
+             <div style="display: inline-block;">
+              <label for="ctl00_ContentPlaceHolder1_CK_STUDENTS" id="ctl00_ContentPlaceHolder1_Label11" style="font-size:Small;">Students</label> 
+             </div> 
+            </div> </td> 
+           <td style="padding: 0em 1em 0em 1em"> 
+            <div> 
+             <div style="display: inline-block;"> <span title="Check to see Others"><input id="ctl00_ContentPlaceHolder1_CK_OTHERS" type="checkbox" name="ctl00$ContentPlaceHolder1$CK_OTHERS" checked></span> 
+              <div style="display: inline-block;">
+               <label for="ctl00_ContentPlaceHolder1_CK_OTHERS" id="ctl00_ContentPlaceHolder1_Label12" style="font-size:Small;">Others (Not faculty, staff or students)</label>
+              </div> 
+             </div> 
+            </div></td> 
+          </tr> 
+         </tbody>
+        </table> 
+       </div> 
+       <div> 
+        <br> 
+        <div> 
+         <input type="submit" name="ctl00$ContentPlaceHolder1$PublicSearchButton" value="Search" onclick="showWaitMessage();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$PublicSearchButton&quot;, &quot;&quot;, true, &quot;FIND&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_PublicSearchButton" accesskey="P" title="Search" class="btn btn-primary"> 
+         <input type="submit" name="ctl00$ContentPlaceHolder1$ResetButton" value="Erase and Start Over" id="ctl00_ContentPlaceHolder1_ResetButton" accesskey="R" title="Erase amd Start Over" class="btn btn-primary"> 
+         <input type="submit" name="ctl00$ContentPlaceHolder1$AuthSearchButton" value="Login and Search" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$AuthSearchButton&quot;, &quot;&quot;, true, &quot;FIND&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_AuthSearchButton" accesskey="A" title="Log in to view email addresses" class="btn btn-primary"> 
+        </div> 
+        <div id="WaitMessage" style="margin-left:5px; visibility:hidden;"> <span id="ctl00_ContentPlaceHolder1_lbl_waitMsg" style="color:Maroon;font-weight:bold;font-style:italic;">Loading... Your search might take up to 15 seconds</span> 
+        </div> 
+        <div id="ctl00_ContentPlaceHolder1_ResultsPanel" style="padding-left:11px; border: hidden;" class="gridViewMargin table table-sm table-bordered"> 
+        </div> 
+        <div style="clear:both"> <!-- IE fix -->
+        </div> 
+        <h2>Ownership and use</h2> 
+        <p> The contents of this Directory are copyrighted by <a href="http://www.cpp.edu/">California State Polytechnic University, Pomona</a>. By using the Directory, you agree that you will not reproduce, sell, transfer, or modify any of the information presented in response to your search requests or use any such information for commercial purposes, without the prior express written permission and license of California State Polytechnic University, Pomona. </p> 
+        <script type="text/javascript">
+        $("#instBtn").click(function () {
+            $("#instructions").toggle();
+            $('#instBtn').attr('aria-expanded', $(this).attr('aria-expanded') === 'true' ? 'false' : 'true');
+        });
+    </script> 
+       </div> 
+       <script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_ContentPlaceHolder1_FindPersonCustom"), document.getElementById("ctl00_ContentPlaceHolder1_InputStringValidator"));
+//]]>
+</script> 
+       <script type="text/javascript">
+//<![CDATA[
+var ctl00_ContentPlaceHolder1_FindPersonCustom = document.all ? document.all["ctl00_ContentPlaceHolder1_FindPersonCustom"] : document.getElementById("ctl00_ContentPlaceHolder1_FindPersonCustom");
+ctl00_ContentPlaceHolder1_FindPersonCustom.errormessage = "<div role=\'alert\'>Error: Please fill in at least one form field before performing a search.</div>";
+ctl00_ContentPlaceHolder1_FindPersonCustom.display = "None";
+ctl00_ContentPlaceHolder1_FindPersonCustom.validationGroup = "FIND";
+ctl00_ContentPlaceHolder1_FindPersonCustom.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var ctl00_ContentPlaceHolder1_InputStringValidator = document.all ? document.all["ctl00_ContentPlaceHolder1_InputStringValidator"] : document.getElementById("ctl00_ContentPlaceHolder1_InputStringValidator");
+ctl00_ContentPlaceHolder1_InputStringValidator.errormessage = "<div role=\'alert\'>Invalid characters in your search.  Please try again.</div>";
+ctl00_ContentPlaceHolder1_InputStringValidator.display = "None";
+ctl00_ContentPlaceHolder1_InputStringValidator.validationGroup = "FIND";
+ctl00_ContentPlaceHolder1_InputStringValidator.evaluationfunction = "CustomValidatorEvaluateIsValid";
+//]]>
+</script> 
+       <script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script> 
+      </form> 
+     </div> 
+     <div class="col-md-3" style="padding-left: 0; padding-right: 0"> 
+      <h3>Related Links</h3> 
+      <div> 
+       <ul> 
+        <li><a href="search.aspx">Bronco411 Search</a></li> 
+        <li><a href="https://apps.cpp.edu/idm/User_Directory.aspx">Update My Information</a></li> 
+        <li><a href="https://cpp.service-now.com/ehelp?id=sc_cat_item&amp;sys_id=7439d2b4db383740df9b72ec0f96195d">Update Another Person's Information</a></li> 
+        <li><a href="https://cpp.service-now.com/ehelp?id=sc_cat_item&amp;sys_id=46bf7ef0dbb83740df9b72ec0f961985">Update Organization/Department Information</a></li> 
+        <li><a href="http://www.cpp.edu/~bronco411/about.shtml">About Bronco411</a></li> 
+        <li><a href="http://www.cpp.edu/~bronco411/faq.shtml">FAQ</a></li> 
+        <li><a href="http://www.cpp.edu/alpha-index/index.shtml">A-Z Index</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div>  
+    <footer class="container-fluid" id="main-footer"> 
+     <div class="row"> 
+      <div class="col-lg col-md col-sm-6 address text-left">
+       <img alt="cal poly pomona" class="footer-logo" src="https://www.cpp.edu/common/2018/assets/img/cpp-white.png"> 
+       <p>3801 West Temple Avenue,Pomona, CA 91768</p> 
+       <div class="copyright"> 
+        <p class="copyright-text">© <span id="ctl00_lbYear">2021</span> California State Polytechnic University, Pomona<span class="sid"><span id="ctl00_lbServerName">[01]</span></span></p> 
+        <p class="copyright-text">All Rights Reserved</p> 
+       </div> 
+      </div> 
+      <div class="col-lg col-md-7 col-sm-6 footer-links">
+       <a href="/~aboutcpp/index.shtml" title="Cpp About">About Cal Poly Pomona</a> <a aria-label="Cpp Feedback" href="https://www.cpp.edu/website-feedback.shtml" title="Cpp Feedback">Feedback</a> <a aria-label="Cpp Privacy" href="http://www.cpp.edu/privacy.shtml" title="footer - Privacy">Privacy</a> <a href="http://www.cpp.edu/accessibility.shtml">Accessibility</a> <a href="https://www.cpp.edu/file-viewers.shtml">Document Readers</a>
+      </div> 
+     </div> 
+     <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4659236-2', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+    </footer>  
+   </div>
+  </main>
+ </body>
+</html>

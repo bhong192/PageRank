@@ -1,0 +1,973 @@
+<!--https://fundopp.uci.edu/-->
+<!doctype html>
+<html lang="en-US"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=10"> 
+  <link rel="profile" href="http://gmpg.org/xfn/11"> 
+  <link rel="pingback" href="https://fundopp.uci.edu/xmlrpc.php"> 
+  <title>fundopp.uci.edu</title> 
+  <meta name="robots" content="max-image-preview:large"> 
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"> 
+  <link rel="dns-prefetch" href="//code.jquery.com"> 
+  <link rel="dns-prefetch" href="//s.w.org"> 
+  <link rel="alternate" type="application/rss+xml" title="fundopp.uci.edu » Feed" href="https://fundopp.uci.edu/feed/"> 
+  <link rel="alternate" type="application/rss+xml" title="fundopp.uci.edu » Comments Feed" href="https://fundopp.uci.edu/comments/feed/"> <!-- This site uses the Google Analytics by MonsterInsights plugin v8.1.0 - Using Analytics tracking - https://www.monsterinsights.com/ --> 
+  <script src="//www.googletagmanager.com/gtag/js?id=UA-196729440-1" type="text/javascript" data-cfasync="false" async></script> 
+  <script type="text/javascript" data-cfasync="false">
+				var mi_version = '8.1.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-196729440-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						if ( document.cookie.indexOf( disableStrs[ index ] + '=true' ) > -1 ) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						document.cookie = disableStrs[ index ] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if ( mi_track_user ) {
+					function __gtagDataLayer() {
+						dataLayer.push( arguments );
+					}
+
+					function __gtagTracker( type, name, parameters ) {
+						if ( type === 'event' ) {
+							
+															parameters.send_to = monsterinsights_frontend.ua;
+								__gtagDataLayer.apply( null, arguments );
+													} else {
+							__gtagDataLayer.apply( null, arguments );
+						}
+					}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dZGIzZG' : true,
+											} );
+															__gtagTracker( 'config', 'UA-196729440-1', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+																				if ( ! ( ! args.hasOwnProperty(arg) || ! gaMap.hasOwnProperty(arg) ) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script> <!-- / Google Analytics by MonsterInsights --> 
+  <script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/fundopp.uci.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script> 
+  <style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style> 
+  <link rel="stylesheet" id="vantage-parent-style-css" href="https://fundopp.uci.edu/wp-content/themes/vantage/style.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="wp-block-library-css" href="https://fundopp.uci.edu/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="siteorigin-panels-front-css" href="https://fundopp.uci.edu/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.15.0" type="text/css" media="all"> 
+  <link rel="stylesheet" id="iw-defaults-css" href="https://fundopp.uci.edu/wp-content/plugins/widgets-for-siteorigin/inc/../css/defaults.css?ver=1.4.7" type="text/css" media="all"> 
+  <link rel="stylesheet" id="wp-job-manager-job-listings-css" href="https://fundopp.uci.edu/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css?ver=d866e43503c5e047c6b0be0a9557cf8e" type="text/css" media="all"> 
+  <link rel="stylesheet" id="jquery-ui-css" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css?ver=1.12.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="jm-application-deadline-css" href="https://fundopp.uci.edu/wp-content/plugins/wp-job-manager-application-deadline/assets/dist/css/frontend.css?ver=1.2.5" type="text/css" media=""> 
+  <link rel="stylesheet" id="vantage-style-css" href="https://fundopp.uci.edu/wp-content/themes/vantage-child/style.css?ver=1.19.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="font-awesome-css" href="https://fundopp.uci.edu/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="siteorigin-mobilenav-css" href="https://fundopp.uci.edu/wp-content/themes/vantage/inc/mobilenav/css/mobilenav.css?ver=1.19.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="tablepress-default-css" href="https://fundopp.uci.edu/wp-content/plugins/tablepress/css/default.min.css?ver=1.14" type="text/css" media="all"> 
+  <link rel="stylesheet" id="tablepress-responsive-tables-css" href="https://fundopp.uci.edu/wp-content/plugins/tablepress-responsive-tables/css/tablepress-responsive.min.css?ver=1.8" type="text/css" media="all"> 
+  <link rel="stylesheet" id="fancybox-css" href="https://fundopp.uci.edu/wp-content/plugins/easy-fancybox/css/jquery.fancybox.min.css?ver=1.3.24" type="text/css" media="screen"> 
+  <script type="text/javascript" id="monsterinsights-frontend-script-js-extra">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/fundopp.uci.edu","hash_tracking":"false","ua":"UA-196729440-1","v4_id":""};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.1.0" id="monsterinsights-frontend-script-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de" id="wp-hooks-js"></script> 
+  <script type="text/javascript" id="say-what-js-js-extra">
+/* <![CDATA[ */
+var say_what_data = {"replacements":{"wp-job-manager|Apply for job|":"Submit an Application","wp-job-manager|Search Jobs|":"Search Opportunities"}};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/say-what/assets/build/frontend.js?ver=658db854f48fb86c32bd0f1d219c2d63" id="say-what-js-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/themes/vantage/js/jquery.flexslider.min.js?ver=2.1" id="jquery-flexslider-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/themes/vantage/js/jquery.touchSwipe.min.js?ver=1.6.6" id="jquery-touchswipe-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/themes/vantage/js/jquery.theme-main.min.js?ver=1.19.1" id="vantage-main-js"></script> <!--[if lt IE 9]>
+<script type='text/javascript' src='https://fundopp.uci.edu/wp-content/themes/vantage/js/html5.min.js?ver=3.7.3' id='vantage-html5-js'></script>
+<![endif]--> <!--[if (gte IE 6)&(lte IE 8)]>
+<script type='text/javascript' src='https://fundopp.uci.edu/wp-content/themes/vantage/js/selectivizr.min.js?ver=1.0.3b' id='vantage-selectivizr-js'></script>
+<![endif]--> 
+  <script type="text/javascript" id="siteorigin-mobilenav-js-extra">
+/* <![CDATA[ */
+var mobileNav = {"search":{"url":"https:\/\/fundopp.uci.edu","placeholder":"Search"},"text":{"navigate":"Menu","back":"Back","close":"Close"},"nextIconUrl":"https:\/\/fundopp.uci.edu\/wp-content\/themes\/vantage\/inc\/mobilenav\/images\/next.png","mobileMenuClose":"<i class=\"fa fa-times\"><\/i>"};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/themes/vantage/inc/mobilenav/js/mobilenav.min.js?ver=1.19.1" id="siteorigin-mobilenav-js"></script> 
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js?ver=5.8.2" id="jquery-easing-js"></script> 
+  <link rel="https://api.w.org/" href="https://fundopp.uci.edu/wp-json/">
+  <link rel="alternate" type="application/json" href="https://fundopp.uci.edu/wp-json/wp/v2/pages/4">
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fundopp.uci.edu/xmlrpc.php?rsd"> 
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://fundopp.uci.edu/wp-includes/wlwmanifest.xml"> 
+  <meta name="generator" content="WordPress 5.8.2"> 
+  <link rel="canonical" href="https://fundopp.uci.edu/"> 
+  <link rel="shortlink" href="https://fundopp.uci.edu/"> 
+  <link rel="alternate" type="application/json+oembed" href="https://fundopp.uci.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffundopp.uci.edu%2F"> 
+  <link rel="alternate" type="text/xml+oembed" href="https://fundopp.uci.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffundopp.uci.edu%2F&amp;format=xml"> 
+  <script type="text/javascript">
+            (function () {
+                window.lsow_fs = {can_use_premium_code: false};
+            })();
+        </script> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style type="text/css">
+			.so-mobilenav-mobile + * { display: none; }
+			@media screen and (max-width: 1100px) { .so-mobilenav-mobile + * { display: block; } .so-mobilenav-standard + * { display: none; } .site-navigation #search-icon { display: none; } }
+		</style> 
+  <style type="text/css" media="screen">
+		#footer-widgets .widget { width: 100%; }
+		#masthead-widgets .widget { width: 100%; }
+	</style> 
+  <style type="text/css" media="all" id="siteorigin-panels-layouts-head">/* Layout 4 */ #pgc-4-0-0 , #pgc-4-1-0 , #pgc-4-2-0 , #pgc-4-5-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pg-4-0 , #pg-4-1 , #pg-4-2 , #pg-4-3 , #pg-4-4 , #pl-4 .so-panel { margin-bottom:35px } #pgc-4-3-0 , #pgc-4-4-0 , #pgc-4-4-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pgc-4-3-1 { width:30.9%;width:calc(30.9% - ( 0.691 * 30px ) ) } #pgc-4-3-2 { width:19.1%;width:calc(19.1% - ( 0.809 * 30px ) ) } #pl-4 .so-panel:last-of-type { margin-bottom:0px } #pg-4-0.panel-has-style > .panel-row-style, #pg-4-0.panel-no-style , #pg-4-1.panel-has-style > .panel-row-style, #pg-4-1.panel-no-style , #pg-4-2.panel-has-style > .panel-row-style, #pg-4-2.panel-no-style , #pg-4-3.panel-has-style > .panel-row-style, #pg-4-3.panel-no-style , #pg-4-4.panel-has-style > .panel-row-style, #pg-4-4.panel-no-style , #pg-4-5.panel-has-style > .panel-row-style, #pg-4-5.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } #pg-4-1> .panel-row-style { background-image:url(https://fundopp.uci.edu/wp-content/uploads/2018/06/key-to-future-small.jpg);background-repeat:repeat;padding:200px 0px 20px 0px } #pgc-4-1-0 , #pgc-4-2-0 , #pgc-4-3-0 , #pgc-4-3-1 , #pgc-4-3-2 , #pgc-4-4-0 , #pgc-4-4-1 { align-self:auto } #panel-4-1-0-0> .panel-widget-style { padding:0px 0px 150px 0px;width:600px;margin:0 auto;line-height:100% } #pg-4-2> .panel-row-style { background-color:#f7f7f7;padding:5% 5% 5% 5% } #panel-4-2-0-1> .panel-widget-style { padding:2px 2px 2px 2px } #panel-4-2-0-2> .panel-widget-style { padding:0px 2px 15px 2px } #pg-4-3> .panel-row-style { padding:12% 5% 12% 5% } #panel-4-3-0-1> .panel-widget-style , #panel-4-4-0-1> .panel-widget-style { font-size:16px;line-height:1.75em } #pg-4-4> .panel-row-style { background-color:#efefef } #panel-4-4-0-2> .panel-widget-style { padding:15px 0px 15px 0px } #pg-4-5> .panel-row-style { padding:20px 0px 20px 0px } @media (max-width:780px){ #pg-4-0.panel-no-style, #pg-4-0.panel-has-style > .panel-row-style, #pg-4-0 , #pg-4-1.panel-no-style, #pg-4-1.panel-has-style > .panel-row-style, #pg-4-1 , #pg-4-2.panel-no-style, #pg-4-2.panel-has-style > .panel-row-style, #pg-4-2 , #pg-4-3.panel-no-style, #pg-4-3.panel-has-style > .panel-row-style, #pg-4-3 , #pg-4-4.panel-no-style, #pg-4-4.panel-has-style > .panel-row-style, #pg-4-4 , #pg-4-5.panel-no-style, #pg-4-5.panel-has-style > .panel-row-style, #pg-4-5 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-4-0 > .panel-grid-cell , #pg-4-0 > .panel-row-style > .panel-grid-cell , #pg-4-1 > .panel-grid-cell , #pg-4-1 > .panel-row-style > .panel-grid-cell , #pg-4-2 > .panel-grid-cell , #pg-4-2 > .panel-row-style > .panel-grid-cell , #pg-4-3 > .panel-grid-cell , #pg-4-3 > .panel-row-style > .panel-grid-cell , #pg-4-4 > .panel-grid-cell , #pg-4-4 > .panel-row-style > .panel-grid-cell , #pg-4-5 > .panel-grid-cell , #pg-4-5 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pg-4-0 , #pg-4-1 , #pg-4-2 , #pg-4-3 , #pg-4-4 , #pg-4-5 { margin-bottom:px } #pgc-4-3-0 , #pgc-4-3-1 , #pgc-4-4-0 { margin-bottom:35px } #pl-4 .panel-grid-cell { padding:0 } #pl-4 .panel-grid .panel-grid-cell-empty { display:none } #pl-4 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style>
+  <style type="text/css" id="vantage-footer-widgets">#footer-widgets aside { width : 100%; }</style> 
+  <style type="text/css" id="customizer-css">@import url(//fonts.googleapis.com/css?family=Open+Sans:400|Open+Sans:300&display=block); body,button,input,select,textarea { font-family: "Open Sans"; font-weight: 400 } #masthead.site-header .hgroup .site-title { font-family: "Open Sans"; font-weight: 300 } #page-wrapper h1,#page-wrapper h2,#page-wrapper h3,#page-wrapper h4,#page-wrapper h5,#page-wrapper h6 { font-family: "Open Sans"; font-weight: 300 } .main-navigation, .mobile-nav-frame, .mobile-nav-frame .title h3 { font-family: "Open Sans"; font-weight: 300 } #masthead.site-header .hgroup .site-title, #masthead.site-header.masthead-logo-in-menu .logo > .site-title { font-size: 21.6px } div[class^="menu-"][class$="-container"] { margin-left: auto } .main-navigation { background-color: #ffffff } .main-navigation a { color: #888888 } .main-navigation ul ul { background-color: #ffffff } .main-navigation ul ul a { color: #888888 } .main-navigation ul li:hover > a, .main-navigation ul li:focus > a, #search-icon #search-icon-icon:hover, #search-icon #search-icon-icon:focus { background-color: #ffffff } .main-navigation ul li:hover > a, .main-navigation ul li:focus > a, .main-navigation ul li:hover > a [class^="fa fa-"] { color: #020202 } .main-navigation ul ul li:hover > a { background-color: #ffffff; color: #020202 } .main-navigation [class^="fa fa-"], .main-navigation .mobile-nav-icon { color: #888888 } .main-navigation ul li:hover > a [class^="fa fa-"], .main-navigation ul li:hover > a .mobile-nav-icon { color: #000000 } #search-icon #search-icon-icon { background-color: #ffffff } #search-icon #search-icon-icon .vantage-icon-search { color: #888888 } #search-icon #search-icon-icon:hover .vantage-icon-search, #search-icon #search-icon-icon:focus .vantage-icon-search { color: #000000 } #search-icon .searchform { background-color: #ffffff } #search-icon .searchform input[name=s] { color: #888888 } .main-navigation ul li a { padding-top: 10px; padding-bottom: 10px } .main-navigation ul li a, #masthead.masthead-logo-in-menu .logo { padding-left: 25px; padding-right: 25px } .main-navigation ul li { font-size: 14px } a.button, button, html input[type="button"], input[type="reset"], input[type="submit"], .post-navigation a, #image-navigation a, article.post .more-link, article.page .more-link, .paging-navigation a, .woocommerce #page-wrapper .button, .woocommerce a.button, .woocommerce .checkout-button, .woocommerce input.button, #infinite-handle span button { text-shadow: none } a.button, button, html input[type="button"], input[type="reset"], input[type="submit"], .post-navigation a, #image-navigation a, article.post .more-link, article.page .more-link, .paging-navigation a, .woocommerce #page-wrapper .button, .woocommerce a.button, .woocommerce .checkout-button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, #infinite-handle span { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none } </style> 
+  <style type="text/css" id="wp-custom-css">
+			div#panel-1284-3-0-0 .sow-features-feature p.sow-more-text a:hover {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f47e3c;
+}
+
+
+
+		</style> 
+ </head> 
+ <body class="home page-template page-template-home-panels page-template-home-panels-php page page-id-4 siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home responsive layout-full no-js no-sidebar page-layout-no-sidebar page-layout-no-masthead-margin not-default-page mobilenav vantage-child"> 
+  <div id="page-wrapper"> <a class="skip-link screen-reader-text" href="#content">Skip to content</a> 
+   <header id="masthead" class="site-header masthead-logo-in-menu " role="banner"> 
+    <nav role="navigation" class="site-navigation main-navigation primary use-sticky-menu mobile-navigation"> 
+     <div class="full-container"> 
+      <div class="logo-in-menu-wrapper"> <a href="https://fundopp.uci.edu/" title="fundopp.uci.edu" rel="home" class="logo"><img src="https://fundopp.uci.edu/wp-content/uploads/2018/05/uci-stacked-wordmark-blue.png" class="logo-height-constrain" width="400" height="62" alt="fundopp.uci.edu Logo" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/05/uci-stacked-wordmark-blue-retina.png 2x"><h1 class="site-title logo-title">fundopp.uci.edu</h1></a> 
+      </div> 
+      <div id="so-mobilenav-standard-1" data-id="1" class="so-mobilenav-standard"></div>
+      <div class="menu-menu-container">
+       <ul id="menu-menu" class="menu">
+        <li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-item-199"><a href="https://fundopp.uci.edu/" aria-current="page">Home Page</a></li> 
+        <li id="menu-item-3679" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3679"><a href="#"><span class="icon"></span>Funding Opportunities</a> 
+         <ul class="sub-menu"> 
+          <li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="https://fundopp.uci.edu/opps/">Current Opportunities</a></li> 
+          <li id="menu-item-4573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4573"><a href="https://fundopp.uci.edu/opps/covid-19-funding-opportunities/">COVID-19 Funding</a></li> 
+          <li id="menu-item-4376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4376"><a href="https://fundopp.uci.edu/expired-opportunities/">Expired Opportunities</a></li> 
+          <li id="menu-item-3678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3678"><a href="https://fundopp.uci.edu/look-ahead-funding-calendar-2/">Look Ahead Calendar</a></li> 
+          <li id="menu-item-2183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2183"><a href="https://fundopp.uci.edu/search-tools/">Funding Search Tools</a></li> 
+         </ul> </li> 
+        <li id="menu-item-4336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4336"><a href="https://fundopp.uci.edu/directory/">Directory</a></li> 
+        <li id="menu-item-2058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2058"><a href="#"><span class="icon"></span>Helpful Resources</a> 
+         <ul class="sub-menu"> 
+          <li id="menu-item-2060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2060"><a href="https://fundopp.uci.edu/grant-writing/">Grant Writing</a></li> 
+          <li id="menu-item-2061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2061"><a href="https://fundopp.uci.edu/project-lifecycle/">Project Lifecycle</a></li> 
+         </ul> </li> 
+       </ul>
+      </div>
+      <div id="so-mobilenav-mobile-1" data-id="1" class="so-mobilenav-mobile"></div>
+      <div class="menu-mobilenav-container">
+       <ul id="mobile-nav-item-wrap-1" class="menu">
+        <li><a href="#" class="mobilenav-main-link" data-id="1"><span class="mobile-nav-icon"></span>Menu</a></li>
+       </ul>
+      </div> 
+     </div> 
+    </nav><!-- .site-navigation .main-navigation --> 
+   </header><!-- #masthead .site-header --> 
+   <div id="main" class="site-main"> 
+    <div class="full-container"> 
+     <div id="primary" class="content-area"> 
+      <div id="content" class="site-content" role="main"> 
+       <div class="entry-content"> 
+        <div id="pl-4" class="panel-layout">
+         <div id="pg-4-0" class="panel-grid panel-has-style">
+          <div class="siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-4-0" data-stretch-type="full-stretched">
+           <div id="pgc-4-0-0" class="panel-grid-cell panel-grid-cell-empty"></div>
+          </div>
+         </div>
+         <div id="pg-4-1" class="panel-grid panel-has-style">
+          <div class="siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-4-1" data-stretch-type="full-stretched">
+           <div id="pgc-4-1-0" class="panel-grid-cell">
+            <div id="panel-4-1-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="0">
+             <div class="panel-widget-style panel-widget-style-for-4-1-0-0">
+              <div class="textwidget">
+               <form method="GET" action="https://fundopp.uci.edu/opps/"> 
+                <input type="text" id="search_keywords" name="search_keywords" style="opacity:0.6; display:inline; float:left; width:500px; min-height:67px; padding-left:8px;" placeholder="Search Internal Opportunities">
+                <br> <button style="width:60px; min-height:67px; margin: -13px 0 23px 0; padding:0; background:tan; color:white; font-size:20px; border:none;"><i class="fa fa-search"></i></button>
+                <br> 
+               </form> 
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="pg-4-2" class="panel-grid panel-has-style">
+          <div class="siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-4-2" style="background-color: #f7f7f7; " data-stretch-type="full">
+           <div id="pgc-4-2-0" class="panel-grid-cell">
+            <div id="panel-4-2-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child" data-index="1">
+             <div class="textwidget"></div>
+            </div>
+            <div id="panel-4-2-0-1" class="so-panel widget widget_sow-headline" data-index="2">
+             <div class="panel-widget-style panel-widget-style-for-4-2-0-1">
+              <div class="so-widget-sow-headline so-widget-sow-headline-default-c7df4116ff94-4 so-widget-fittext-wrapper" data-fit-text-compressor="0.85">
+               <div class="sow-headline-container "> 
+                <h1 class="sow-headline"><strong>What is this site about?</strong></h1>
+                <h3 class="sow-sub-headline"> fundopp.uci.edu features:</h3>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div id="panel-4-2-0-2" class="so-panel widget widget_sow-features" data-index="3">
+             <div class="panel-widget-style panel-widget-style-for-4-2-0-2">
+              <div class="so-widget-sow-features so-widget-sow-features-default-5bb6878b8a6e-4"> 
+               <div class="sow-features-list sow-features-responsive"> 
+                <div class="sow-features-feature sow-icon-container-position-top " style="width: 33.333%"> 
+                 <div class="sow-icon-container sow-container-none" style="color: #528cbf; "> 
+                  <div class="sow-icon-image" style="background-image: url(https://fundopp.uci.edu/wp-content/uploads/2018/03/key2.png); font-size: 100px"></div> 
+                 </div> 
+                 <div class="textwidget"> 
+                  <h5> Limited Funding Opportunities </h5> Limited Funding Opportunities&nbsp; or "Limiteds" are externally sponsored grants that require an internal selection process ... 
+                  <br>
+                  <br> <a href="#fancyboxID-1" class="fancybox-inline" style="text-decoration:none">Learn More...</a> 
+                 </div> 
+                </div> 
+                <div class="sow-features-feature sow-icon-container-position-top " style="width: 33.333%"> 
+                 <div class="sow-icon-container sow-container-none" style="color: #6aa2b8; "> 
+                  <div class="sow-icon-image" style="background-image: url(https://fundopp.uci.edu/wp-content/uploads/2018/03/money-bag.png); font-size: 100px"></div> 
+                 </div> 
+                 <div class="textwidget"> 
+                  <h5> Internal Funding Opportunities </h5> Internal Funding Opportunities are, as the name implies, grants internal to UCI, offered by a UCI unit to UCI personnel... 
+                  <br>
+                  <br> <a href="#fancyboxID-2" class="fancybox-inline" style="text-decoration:none">Learn More...</a> 
+                 </div> 
+                </div> 
+                <div class="sow-features-feature sow-icon-container-position-top " style="width: 33.333%"> 
+                 <div class="sow-icon-container sow-container-none" style="color: #404040; "> 
+                  <div class="sow-icon-image" style="background-image: url(https://fundopp.uci.edu/wp-content/uploads/2018/03/magnifying-glass.png); font-size: 100px"></div> 
+                 </div> 
+                 <div class="textwidget"> 
+                  <h5> Funding Search Tools </h5> Can't get funding if you can't find funding! Learn about funding search tools available to UCI Faculty, Staff and Students... 
+                  <p class="sow-more-text"> <a href="https://fundopp.uci.edu/search-tools/"> Go there now... </a> </p> 
+                 </div> 
+                </div> 
+                <div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%"> 
+                 <div class="sow-icon-container sow-container-none" style="color: #404040; "> 
+                  <div class="sow-icon-image" style="background-image: url(https://fundopp.uci.edu/wp-content/uploads/2018/09/pencil.png); font-size: 100px"></div> 
+                 </div> 
+                 <div class="textwidget"> 
+                  <h5> Grant Writing Tips </h5> 
+                  <p>K<span data-dobid="hdw">nowing how to navigate the grant writing process is critical to success, so we've put together some resources to help.<br> </span></p> 
+                  <p class="sow-more-text"> <a href="https://fundopp.uci.edu/grant-writing/"> Go there now... </a> </p> 
+                 </div> 
+                </div> 
+                <div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%"> 
+                 <div class="sow-icon-container sow-container-none" style="color: #404040; "> 
+                  <div class="sow-icon-image" style="background-image: url(https://fundopp.uci.edu/wp-content/uploads/2018/03/three-gears.png); font-size: 100px"></div> 
+                 </div> 
+                 <div class="textwidget"> 
+                  <h5> Proposal Submission Resources </h5> 
+                  <p>OK, so you found a funding opportunity?&nbsp; Now what?&nbsp; Explore the lifecycle of a research project at UCI.</p> 
+                  <p class="sow-more-text"> <a href="https://fundopp.uci.edu/project-lifecycle/"> Go there now... </a> </p> 
+                 </div> 
+                </div> 
+                <div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%"> 
+                 <div class="sow-icon-container sow-container-none" style="color: #404040; "> 
+                  <div class="sow-icon-image" style="background-image: url(https://fundopp.uci.edu/wp-content/uploads/2018/03/contact.png); font-size: 100px"></div> 
+                 </div> 
+                 <div class="textwidget"> 
+                  <h5> Directory </h5> 
+                  <p>This site features a directory of UCI Research Development and related professionals. Find out who they are and how they can help!</p> 
+                  <p class="sow-more-text"> <a href=""> Go there now... </a> </p> 
+                 </div> 
+                </div> 
+               </div> 
+              </div>
+             </div>
+            </div>
+            <div id="panel-4-2-0-3" class="widget_text so-panel widget widget_custom_html" data-index="4">
+             <div class="textwidget custom-html-widget">
+              <div class="fancybox-hidden" style="display: none;"> 
+               <div id="fancyboxID-1" class="hentry"> 
+                <img src="https://fundopp.uci.edu/wp-content/uploads/2018/04/pick-someone.svg" alt="decorative image"> 
+                <p id="limiteds">Limited Funding Opportunities (“Limiteds”) are externally sponsored grants that require an internal selection process because the sponsor limits the number of applications that can be submitted by UCI. Interested Applicants submit a pre-proposal to the Office of Research (unless otherwise indicated), and a review committee of faculty peers and knowledgeable staff reviews the proposals and makes a recommendation to the Vice Chancellor for Research about which proposal should go forward from UCI.</p> 
+                <p>Visit our <a href="/opps/">Current Opportunities page</a> now for a list of open limited opportunities. Check out our <a href="/look-ahead-funding-calendar/">Look Ahead Calendar</a> for upcoming limited opportunities.</p> 
+               </div> 
+              </div>
+             </div>
+            </div>
+            <div id="panel-4-2-0-4" class="widget_text so-panel widget widget_custom_html" data-index="5">
+             <div class="textwidget custom-html-widget">
+              <div class="fancybox-hidden" style="display: none;"> 
+               <div id="fancyboxID-2" class="hentry"> 
+                <img src="https://fundopp.uci.edu/wp-content/uploads/2018/06/money-for-ideas.svg"> 
+                <p id="internal">Internal Funding Opportunities are, as the name implies, grants internal to UCI because they are offered by a UCI unit to UCI personnel. The selection process may vary depending on which UCI entity is offering the funding and managing the competition, but typically this is a one-stage process where selected applicants are awarded funding directly from the entity holding the competition (e.g., the UCI Research Seed Funding Program, UCI ADRC Pilot Grants, ICTS Campus Incubator Program).</p> 
+                <p>Visit our <a href="/opps/">Current Opportunities page</a> now for a list of open internal opportunities. Check out our <a href="/look-ahead-funding-calendar/">Look Ahead Calendar</a> for upcoming internal opportunities.</p> 
+               </div> 
+              </div>
+             </div>
+            </div>
+            <div id="panel-4-2-0-5" class="widget_text so-panel widget widget_custom_html panel-last-child" data-index="6">
+             <div class="textwidget custom-html-widget">
+              <div class="fancybox-hidden" style="display: none;"> 
+               <div id="fancyboxID-3" class="hentry"> 
+                <img src="https://fundopp.uci.edu/wp-content/uploads/2018/06/featured-external-opps-square.svg"> 
+                <p id="internal">Featured External Opportunities—shown on the fundopp homepage—are externally sponsored grants or other funding prospects that are high-value, high-prestige, potentially obscure or that UCI leadership otherwise wants to promote to the UCI research community. A few examples include the the MacArthur Foundation’s 100&amp;Change initiative, Burroughs Wellcome Fund Career Awards for Medical Sciences, the NIH Shared Instrumentation Grant (SIG) Program, and many others.</p> 
+                <p>Featured External Opportunities do not require an internal review process.</p> 
+               </div> 
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="pg-4-3" class="panel-grid panel-has-style">
+          <div class="so-parallax siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-4-3" data-stretch-type="full">
+           <img width="1900" height="1267" src="https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree.jpg" class="attachment-full size-full" alt="" loading="eager" data-siteorigin-parallax="true" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree.jpg 1900w, https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree-300x200.jpg 300w, https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree-1024x683.jpg 1024w, https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree-768x512.jpg 768w, https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree-600x400.jpg 600w, https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree-1536x1024.jpg 1536w, https://fundopp.uci.edu/wp-content/uploads/2018/06/money-tree-272x182.jpg 272w" sizes="(max-width: 1900px) 100vw, 1900px">
+           <div id="pgc-4-3-0" class="panel-grid-cell">
+            <div id="panel-4-3-0-0" class="so-panel widget widget_sow-image panel-first-child" data-index="7">
+             <div class="so-widget-sow-image so-widget-sow-image-default-d6014b76747a-4"> 
+              <div class="sow-image-container"> 
+               <img src="https://fundopp.uci.edu/wp-content/uploads/2018/02/pivot-logo-300x97.png" width="300" height="97" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/02/pivot-logo-300x97.png 300w, https://fundopp.uci.edu/wp-content/uploads/2018/02/pivot-logo-1024x331.png 1024w, https://fundopp.uci.edu/wp-content/uploads/2018/02/pivot-logo-768x248.png 768w, https://fundopp.uci.edu/wp-content/uploads/2018/02/pivot-logo.png 1200w" sizes="(max-width: 300px) 100vw, 300px" alt="Pivot" loading="lazy" class="so-widget-image"> 
+              </div> 
+             </div>
+            </div>
+            <div id="panel-4-3-0-1" class="so-panel widget widget_text panel-last-child" data-index="8">
+             <div class="panel-widget-style panel-widget-style-for-4-3-0-1"> 
+              <div class="textwidget">
+               <p>Pivot provides a comprehensive database of funding opportunities worldwide and across all disciplines, as well as a flexible portfolio of tools to support research collaborations. Individual users can perform funding searches, create their own weekly email funding alert, save lists of funding opportunities, search for potential research colleagues on- or off-campus and match profiles to funding opportunities.</p> 
+              </div> 
+             </div>
+            </div>
+           </div>
+           <div id="pgc-4-3-1" class="panel-grid-cell">
+            <div id="panel-4-3-1-0" class="so-panel widget widget_circleicon-widget panel-first-child" data-index="9"> 
+             <div class="circle-icon-box circle-icon-position-top circle-icon-hide-box circle-icon-size-medium "> 
+              <div class="circle-icon-wrapper"> 
+               <div class="circle-icon"> 
+                <div class="fa fa-external-link"></div> 
+               </div> 
+              </div> 
+             </div> 
+            </div>
+            <div id="panel-4-3-1-1" class="so-panel widget widget_sow-button panel-last-child" data-index="10">
+             <div class="so-widget-sow-button so-widget-sow-button-atom-3eed3b146478-4">
+              <div class="ow-button-base ow-button-align-center"> <a href="https://pivot.proquest.com/" class="ow-icon-placement-left ow-button-hover"> <span> Check Out Pivot Now </span> </a> 
+              </div> 
+             </div>
+            </div>
+           </div>
+           <div id="pgc-4-3-2" class="panel-grid-cell">
+            <div id="panel-4-3-2-0" class="so-panel widget widget_circleicon-widget panel-first-child" data-index="11"> 
+             <div class="circle-icon-box circle-icon-position-top circle-icon-hide-box circle-icon-size-medium "> 
+              <div class="circle-icon-wrapper"> 
+               <div class="circle-icon"> 
+                <div class="fa fa-book"></div> 
+               </div> 
+              </div> 
+             </div> 
+            </div>
+            <div id="panel-4-3-2-1" class="so-panel widget widget_sow-button panel-last-child" data-index="12">
+             <div class="so-widget-sow-button so-widget-sow-button-atom-075076d26e4f-4">
+              <div class="ow-button-base ow-button-align-center"> <a href="/funding/search-tools/#pivot-anchor" class="ow-icon-placement-left ow-button-hover"> <span> Learn More </span> </a> 
+              </div> 
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="pg-4-4" class="panel-grid panel-has-style">
+          <div class="siteorigin-panels-stretch panel-row-style-full-width panel-row-style panel-row-style-for-4-4" style="background-color: #efefef; " data-stretch-type="full">
+           <div id="pgc-4-4-0" class="panel-grid-cell">
+            <div id="panel-4-4-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="13">
+             <div class="so-widget-sow-headline so-widget-sow-headline-default-94d741c23369-4">
+              <div class="sow-headline-container "> 
+               <h1 class="sow-headline"><strong>Minority Serving Institutions</strong></h1> 
+               <div class="decoration"> 
+                <div class="decoration-inside"></div> 
+               </div> 
+              </div>
+             </div>
+            </div>
+            <div id="panel-4-4-0-1" class="so-panel widget widget_text" data-index="14">
+             <div class="panel-widget-style panel-widget-style-for-4-4-0-1"> 
+              <div class="textwidget">
+               <p>UCI is considered a Minority-Serving Institution having the specific designation as a Hispanic-Serving Institution (HSI) and Asian American and Native American Pacific Islander-Serving Institution (AANAPISI) as defined by the U.S. Department of Education. Based on these designations, UCI faculty, staff and students are eligible to apply for HSI, AANAPISI, and Minority-Serving Institution (MSI) grants, internships and partnerships.</p> 
+              </div> 
+             </div>
+            </div>
+            <div id="panel-4-4-0-2" class="so-panel widget widget_sow-button" data-index="15">
+             <div class="panel-widget-style panel-widget-style-for-4-4-0-2">
+              <div class="so-widget-sow-button so-widget-sow-button-atom-b4f6b6b19f96-4">
+               <div class="ow-button-base ow-button-align-center"> <a href="http://inclusion.uci.edu/select-minority-serving-institution-funding-opportunities-agency/" class="ow-icon-placement-left ow-button-hover"> <span> Explore MSI Opportunities </span> </a> 
+               </div> 
+              </div>
+             </div>
+            </div>
+            <div id="panel-4-4-0-3" class="so-panel widget widget_text panel-last-child" data-index="16"> 
+             <div class="textwidget">
+              <p>For more information please contact Joseph Morales at (949) 824-7455 or <a href="mailto:joseph.morales@uci.edu">joseph.morales@uci.edu.</a></p> 
+             </div> 
+            </div>
+           </div>
+           <div id="pgc-4-4-1" class="panel-grid-cell">
+            <div id="panel-4-4-1-0" class="so-panel widget widget_media_image panel-first-child panel-last-child" data-index="17">
+             <img width="670" height="398" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/graduating_students.jpg" class="image wp-image-3726  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/graduating_students.jpg 670w, https://fundopp.uci.edu/wp-content/uploads/2018/09/graduating_students-300x178.jpg 300w" sizes="(max-width: 670px) 100vw, 670px">
+            </div>
+           </div>
+          </div>
+         </div>
+         <div id="pg-4-5" class="panel-grid panel-has-style">
+          <div class="panel-row-style panel-row-style-for-4-5">
+           <div id="pgc-4-5-0" class="panel-grid-cell">
+            <div id="panel-4-5-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="18">
+             <div class="so-widget-sow-headline so-widget-sow-headline-default-2d7770dd4466-4">
+              <div class="sow-headline-container "> 
+               <h1 class="sow-headline"><strong>Funding Professionals</strong></h1> 
+               <div class="decoration"> 
+                <div class="decoration-inside"></div> 
+               </div> 
+              </div>
+             </div>
+            </div>
+            <div id="panel-4-5-0-1" class="so-panel widget widget_lsow-posts-carousel panel-last-child" data-index="19">
+             <div id="people-carousel" class="panel-widget-style panel-widget-style-for-4-5-0-1">
+              <div class="so-widget-lsow-posts-carousel so-widget-lsow-posts-carousel-default-3dd089290af6-4">
+               <div id="lsow-posts-carousel-619c858c2cef8" class="lsow-posts-carousel lsow-container" data-settings="{&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;autoplay_speed&quot;:3000,&quot;animation_speed&quot;:600,&quot;pause_on_hover&quot;:true,&quot;display_columns&quot;:3,&quot;scroll_columns&quot;:1,&quot;gutter&quot;:10,&quot;so_field_container_state&quot;:&quot;open&quot;,&quot;dots&quot;:false,&quot;tablet_width&quot;:800,&quot;tablet_display_columns&quot;:2,&quot;tablet_scroll_columns&quot;:2,&quot;mobile_width&quot;:480,&quot;mobile_display_columns&quot;:1,&quot;mobile_scroll_columns&quot;:1}">
+                <div data-id="id-3536" class="lsow-posts-carousel-item">
+                 <article id="post-3536" class="post-3536 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/marianne-smith/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/marianne-smith.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/marianne-smith.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/marianne-smith-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/marianne-smith/" title="<span style='color:#248cc8;'>Marianne Smith</span> <br> <span style='color:#333; font-size:.8em;'>Director of Foundation &amp; Corporate Relations<br/>University Advancement</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Marianne Smith</span> <br> <span style="color:#333; font-size:.8em;">Director of Foundation &amp; Corporate Relations<br>University Advancement</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/marianne-smith/" title="<span style='color:#248cc8;'>Marianne Smith</span> <br> <span style='color:#333; font-size:.8em;'>Director of Foundation &amp; Corporate Relations<br/>University Advancement</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Marianne Smith</span> <br> <span style="color:#333; font-size:.8em;">Director of Foundation &amp; Corporate Relations<br>University Advancement</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-3028" class="lsow-posts-carousel-item">
+                 <article id="post-3028" class="post-3028 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/michael-gallo/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/michael-gallo.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/michael-gallo.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/michael-gallo-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/michael-gallo/" title="<span style='color:#248cc8;'>Michael A. Gallo</span> <br> <span style='color:#333; font-size:.8em;'>Director of Research Development<br/>Office of Research</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Michael A. Gallo</span> <br> <span style="color:#333; font-size:.8em;">Director of Research Development<br>Office of Research</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/michael-gallo/" title="<span style='color:#248cc8;'>Michael A. Gallo</span> <br> <span style='color:#333; font-size:.8em;'>Director of Research Development<br/>Office of Research</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Michael A. Gallo</span> <br> <span style="color:#333; font-size:.8em;">Director of Research Development<br>Office of Research</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-3519" class="lsow-posts-carousel-item">
+                 <article id="post-3519" class="post-3519 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/roxanne-ford/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/roxanne-ford.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/roxanne-ford.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/roxanne-ford-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/roxanne-ford/" title="<span style='color:#248cc8;'>Roxanne Ford</span> <br> <span style='color:#333; font-size:.8em;'>Executive Director of Foundation &amp; Corporate Relations<br/>University Advancement</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Roxanne Ford</span> <br> <span style="color:#333; font-size:.8em;">Executive Director of Foundation &amp; Corporate Relations<br>University Advancement</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/roxanne-ford/" title="<span style='color:#248cc8;'>Roxanne Ford</span> <br> <span style='color:#333; font-size:.8em;'>Executive Director of Foundation &amp; Corporate Relations<br/>University Advancement</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Roxanne Ford</span> <br> <span style="color:#333; font-size:.8em;">Executive Director of Foundation &amp; Corporate Relations<br>University Advancement</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-3987" class="lsow-posts-carousel-item">
+                 <article id="post-3987" class="post-3987 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/holly-hapke/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/12/holly-hapke.png" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/12/holly-hapke.png 426w, https://fundopp.uci.edu/wp-content/uploads/2018/12/holly-hapke-300x225.png 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/holly-hapke/" title="<span style='color:#248cc8;'>Holly Hapke</span> <br> <span style='color:#333; font-size:.8em;'>Director of Research Development<br/>School of Social Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Holly Hapke</span> <br> <span style="color:#333; font-size:.8em;">Director of Research Development<br>School of Social Sciences</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/holly-hapke/" title="<span style='color:#248cc8;'>Holly Hapke</span> <br> <span style='color:#333; font-size:.8em;'>Director of Research Development<br/>School of Social Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Holly Hapke</span> <br> <span style="color:#333; font-size:.8em;">Director of Research Development<br>School of Social Sciences</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-4506" class="lsow-posts-carousel-item">
+                 <article id="post-4506" class="post-4506 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/justin-sarkis/" target="_self"><img width="720" height="541" src="https://fundopp.uci.edu/wp-content/uploads/2020/04/jsarkis420.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2020/04/jsarkis420.jpg 896w, https://fundopp.uci.edu/wp-content/uploads/2020/04/jsarkis420-300x225.jpg 300w, https://fundopp.uci.edu/wp-content/uploads/2020/04/jsarkis420-768x577.jpg 768w" sizes="(max-width: 720px) 100vw, 720px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/justin-sarkis/" title="<span style='color:#248cc8;'>Justin Sarkis</span> <br> <span style='color:#333; font-size:.8em;'>Research Development Coordinator<br />School of Biological Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Justin Sarkis</span> <br> <span style="color:#333; font-size:.8em;">Research Development Coordinator<br>School of Biological Sciences</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/justin-sarkis/" title="<span style='color:#248cc8;'>Justin Sarkis</span> <br> <span style='color:#333; font-size:.8em;'>Research Development Coordinator<br />School of Biological Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Justin Sarkis</span> <br> <span style="color:#333; font-size:.8em;">Research Development Coordinator<br>School of Biological Sciences</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-4357" class="lsow-posts-carousel-item">
+                 <article id="post-4357" class="post-4357 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/helen-chen/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2020/02/helen-chen-photo.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2020/02/helen-chen-photo.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2020/02/helen-chen-photo-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/helen-chen/" title="<span style='color:#248cc8;'>Helen Chen</span> <br> <span style='color:#333; font-size:.8em;'>Director of Research Development<br />School of Physical Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Helen Chen</span> <br> <span style="color:#333; font-size:.8em;">Director of Research Development<br>School of Physical Sciences</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/helen-chen/" title="<span style='color:#248cc8;'>Helen Chen</span> <br> <span style='color:#333; font-size:.8em;'>Director of Research Development<br />School of Physical Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Helen Chen</span> <br> <span style="color:#333; font-size:.8em;">Director of Research Development<br>School of Physical Sciences</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-3072" class="lsow-posts-carousel-item">
+                 <article id="post-3072" class="post-3072 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/ronnie-hanecak/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/ronnie-hanecak.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/ronnie-hanecak.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/ronnie-hanecak-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/ronnie-hanecak/" title="<span style='color:#248cc8;'>Ronnie Hanecak</span> <br> <span style='color:#333; font-size:.8em;'>Senior Director of Licensing<br/>Applied Innovation</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Ronnie Hanecak</span> <br> <span style="color:#333; font-size:.8em;">Senior Director of Licensing<br>Applied Innovation</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/ronnie-hanecak/" title="<span style='color:#248cc8;'>Ronnie Hanecak</span> <br> <span style='color:#333; font-size:.8em;'>Senior Director of Licensing<br/>Applied Innovation</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Ronnie Hanecak</span> <br> <span style="color:#333; font-size:.8em;">Senior Director of Licensing<br>Applied Innovation</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-1677" class="lsow-posts-carousel-item">
+                 <article id="post-1677" class="post-1677 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/melinda-gormley/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/melinda-gormley.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/melinda-gormley.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/melinda-gormley-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/melinda-gormley/" title="<span style='color:#248cc8;'>Melinda Gormley</span> <br> <span style='color:#333; font-size:.8em;'>Research Development Officer<br>School of Biological Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Melinda Gormley</span> <br> <span style="color:#333; font-size:.8em;">Research Development Officer<br>School of Biological Sciences</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/melinda-gormley/" title="<span style='color:#248cc8;'>Melinda Gormley</span> <br> <span style='color:#333; font-size:.8em;'>Research Development Officer<br>School of Biological Sciences</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Melinda Gormley</span> <br> <span style="color:#333; font-size:.8em;">Research Development Officer<br>School of Biological Sciences</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-1711" class="lsow-posts-carousel-item">
+                 <article id="post-1711" class="post-1711 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/lori-greene/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/lori-greene.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/lori-greene.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/lori-greene-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/lori-greene/" title="<span style='color:#248cc8;'>Lori Greene</span> <br> <span style='color:#333; font-size:.8em;'>Assistant Dean for Engineering Research Management<br/>Henry Samueli School of Engineering</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Lori Greene</span> <br> <span style="color:#333; font-size:.8em;">Assistant Dean for Engineering Research Management<br>Henry Samueli School of Engineering</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/lori-greene/" title="<span style='color:#248cc8;'>Lori Greene</span> <br> <span style='color:#333; font-size:.8em;'>Assistant Dean for Engineering Research Management<br/>Henry Samueli School of Engineering</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Lori Greene</span> <br> <span style="color:#333; font-size:.8em;">Assistant Dean for Engineering Research Management<br>Henry Samueli School of Engineering</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-3532" class="lsow-posts-carousel-item">
+                 <article id="post-3532" class="post-3532 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/marge-brannon/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/marge-brannon.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/marge-brannon.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/marge-brannon-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/marge-brannon/" title="<span style='color:#248cc8;'>Marge Brannon</span> <br> <span style='color:#333; font-size:.8em;'>Executive Director of Corporate &amp; Foundation Relations<br/>University Advancement</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Marge Brannon</span> <br> <span style="color:#333; font-size:.8em;">Executive Director of Corporate &amp; Foundation Relations<br>University Advancement</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/marge-brannon/" title="<span style='color:#248cc8;'>Marge Brannon</span> <br> <span style='color:#333; font-size:.8em;'>Executive Director of Corporate &amp; Foundation Relations<br/>University Advancement</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Marge Brannon</span> <br> <span style="color:#333; font-size:.8em;">Executive Director of Corporate &amp; Foundation Relations<br>University Advancement</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-1730" class="lsow-posts-carousel-item">
+                 <article id="post-1730" class="post-1730 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/amanda-swain/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/amanda-swain.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2018/09/amanda-swain.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2018/09/amanda-swain-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/amanda-swain/" title="<span style='color:#248cc8;'>Amanda Jeanne Swain</span> <br> <span style='color:#333; font-size:.8em;'>Executive Director, Humanities Center<br/>School of Humanities</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Amanda Jeanne Swain</span> <br> <span style="color:#333; font-size:.8em;">Executive Director, Humanities Center<br>School of Humanities</span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/amanda-swain/" title="<span style='color:#248cc8;'>Amanda Jeanne Swain</span> <br> <span style='color:#333; font-size:.8em;'>Executive Director, Humanities Center<br/>School of Humanities</span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Amanda Jeanne Swain</span> <br> <span style="color:#333; font-size:.8em;">Executive Director, Humanities Center<br>School of Humanities</span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+                <div data-id="id-4858" class="lsow-posts-carousel-item">
+                 <article id="post-4858" class="post-4858 page type-page status-publish has-post-thumbnail category-people post">
+                  <div class="lsow-project-image">
+                   <a href="https://fundopp.uci.edu/directory/mary-frances-ypma-wong/" target="_self"><img width="426" height="320" src="https://fundopp.uci.edu/wp-content/uploads/2021/11/mary-frances-420x.jpg" class="attachment-large size-large wp-post-image" alt="" loading="lazy" srcset="https://fundopp.uci.edu/wp-content/uploads/2021/11/mary-frances-420x.jpg 426w, https://fundopp.uci.edu/wp-content/uploads/2021/11/mary-frances-420x-300x225.jpg 300w" sizes="(max-width: 426px) 100vw, 426px"></a>
+                   <div class="lsow-image-info">
+                    <div class="lsow-entry-info">
+                     <h3 class="lsow-post-title"><a href="https://fundopp.uci.edu/directory/mary-frances-ypma-wong/" title="<span style='color:#248cc8;'>Mary Frances Ypma-Wong</span> <br> <span style='color:#333; font-size:.8em;'>Manager, Research Development<br>School of Medicine </span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Mary Frances Ypma-Wong</span> <br> <span style="color:#333; font-size:.8em;">Manager, Research Development<br>School of Medicine </span></a></h3>
+                    </div>
+                   </div><!-- .lsow-image-info -->
+                  </div>
+                  <div class="lsow-entry-text-wrap ">
+                   <h3 class="entry-title"><a href="https://fundopp.uci.edu/directory/mary-frances-ypma-wong/" title="<span style='color:#248cc8;'>Mary Frances Ypma-Wong</span> <br> <span style='color:#333; font-size:.8em;'>Manager, Research Development<br>School of Medicine </span>" target="_self" rel="bookmark"><span style="color:#248cc8;">Mary Frances Ypma-Wong</span> <br> <span style="color:#333; font-size:.8em;">Manager, Research Development<br>School of Medicine </span></a></h3>
+                  </div>
+                 </article><!-- .hentry -->
+                </div><!-- .lsow-posts-carousel-item -->
+               </div><!-- .lsow-posts-carousel -->
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div> 
+       </div> 
+      </div><!-- #content .site-content --> 
+     </div><!-- #primary .content-area --> 
+    </div><!-- .full-container --> 
+   </div><!-- #main .site-main --> 
+   <footer id="colophon" class="site-footer" role="contentinfo"> 
+    <div id="footer-widgets" class="full-container"> 
+     <aside id="siteorigin-panels-builder-3" class="widget widget_siteorigin-panels-builder">
+      <div id="pl-w5ba34e44d12b3" class="panel-layout">
+       <div id="pg-w5ba34e44d12b3-0" class="panel-grid panel-no-style">
+        <div id="pgc-w5ba34e44d12b3-0-0" class="panel-grid-cell">
+         <div id="panel-w5ba34e44d12b3-0-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="0">
+          <div class="foot panel-widget-style panel-widget-style-for-w5ba34e44d12b3-0-0-0" id="foot-left">
+           <div class="so-widget-sow-editor so-widget-sow-editor-base"> 
+            <div class="siteorigin-widget-tinymce textwidget"> 
+             <h3>Additional Resources</h3> 
+             <div>
+              <img src="https://fundopp.uci.edu/wp-content/uploads/2018/09/icon-www.png" alt="Website" width="30"> <a href="https://www.research.uci.edu"><b>Office of Research Website</b></a>
+             </div> 
+             <div>
+              <img src="https://fundopp.uci.edu/wp-content/uploads/2018/09/icon-wordpress.png" alt="Wordpress" width="30"> <a href="http://news.research.uci.edu/"><b>Office of Research News</b></a>
+             </div> 
+             <div>
+              <img src="https://fundopp.uci.edu/wp-content/uploads/2018/09/icon-youtube.png" alt="YouTube" width="30"> <a href="https://www.youtube.com/channel/UCgLNHs7QkW2BPBCbzHQu84w"><b>Office of Research YouTube</b></a>
+             </div> 
+             <div>
+              <img src="https://fundopp.uci.edu/wp-content/uploads/2018/09/icon-libraries.png" alt="UCI Libraries" width="30"> <a href="https://guides.lib.uci.edu/c.php?g=333527&amp;p=2249520"><b>UCI Libraries Research Resources</b></a> 
+             </div> 
+             <div>
+              <img src="https://fundopp.uci.edu/wp-content/uploads/2018/09/icon-foundations.png" alt="UCI Foundation Relations" width="30"> <a href="http://grants.give.uci.edu/"><b>UCI Foundation Relations</b></a> 
+             </div> 
+            </div> 
+           </div>
+          </div>
+         </div>
+        </div>
+        <div id="pgc-w5ba34e44d12b3-0-1" class="panel-grid-cell">
+         <div id="panel-w5ba34e44d12b3-0-1-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="1">
+          <div class="foot panel-widget-style panel-widget-style-for-w5ba34e44d12b3-0-1-0" id="foot-midleft">
+           <div class="so-widget-sow-editor so-widget-sow-editor-base"> 
+            <div class="siteorigin-widget-tinymce textwidget"> 
+             <div>
+              <img src="https://fundopp.uci.edu/wp-content/uploads/2018/09/icon-email.png" alt="Email" width="30"><b>&nbsp; <a href="mailto:OR-Web-Support@uci.edu">Email Tech Support</a> </b>
+             </div> 
+            </div> 
+           </div>
+          </div>
+         </div>
+        </div>
+        <div id="pgc-w5ba34e44d12b3-0-2" class="panel-grid-cell">
+         <div id="panel-w5ba34e44d12b3-0-2-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="2">
+          <div class="foot panel-widget-style panel-widget-style-for-w5ba34e44d12b3-0-2-0" id="foot-midright">
+           <div class="so-widget-sow-editor so-widget-sow-editor-base"> 
+            <div class="siteorigin-widget-tinymce textwidget"> 
+             <div>
+              <a href="https://uci.edu/privacy/index.php">Privacy Policy</a>
+             </div> 
+            </div> 
+           </div>
+          </div>
+         </div>
+        </div>
+        <div id="pgc-w5ba34e44d12b3-0-3" class="panel-grid-cell">
+         <div id="panel-w5ba34e44d12b3-0-3-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="3">
+          <div class="foot panel-widget-style panel-widget-style-for-w5ba34e44d12b3-0-3-0" id="foot-right">
+           <div class="so-widget-sow-editor so-widget-sow-editor-base"> 
+            <div class="siteorigin-widget-tinymce textwidget"> 
+             <div>
+              <em>This site is supported by:</em>
+              <br> UCI Office of Research
+              <br> 141 Innovation Drive, Suite 250
+              <br> Irvine, CA 92697
+             </div> 
+             <div> <a title="UCI Homepage" href="http://www.uci.edu/" target="_blank"><img loading="lazy" src="https://fundopp.uci.edu/wp-content/uploads/2018/09/uci-seal-white.png" alt="UCI Seal" width="82" height="82"></a>
+             </div> 
+            </div> 
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div id="pg-w5ba34e44d12b3-1" class="panel-grid panel-no-style">
+        <div id="pgc-w5ba34e44d12b3-1-0" class="panel-grid-cell panel-grid-cell-empty"></div>
+        <div id="pgc-w5ba34e44d12b3-1-1" class="panel-grid-cell panel-grid-cell-empty"></div>
+        <div id="pgc-w5ba34e44d12b3-1-2" class="panel-grid-cell panel-grid-cell-empty"></div>
+        <div id="pgc-w5ba34e44d12b3-1-3" class="panel-grid-cell">
+         <div id="panel-w5ba34e44d12b3-1-3-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="4">
+          <div class="foot panel-widget-style panel-widget-style-for-w5ba34e44d12b3-1-3-0">
+           <div class="so-widget-sow-editor so-widget-sow-editor-base"> 
+            <div class="siteorigin-widget-tinymce textwidget"> 
+             <p><a href="https://uci.edu/copyright/">© 2018 UC Regents</a></p> 
+            </div> 
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </aside> 
+    </div><!-- #footer-widgets --> 
+    <div id="theme-attribution">
+     A <a href="https://siteorigin.com">SiteOrigin</a> Theme
+    </div> 
+   </footer><!-- #colophon .site-footer --> 
+  </div><!-- #page-wrapper --> <a href="#" id="scroll-to-top" class="scroll-to-top" title="Back To Top"><span class="vantage-icon-arrow-up"></span></a> 
+  <style type="text/css" media="all" id="siteorigin-panels-layouts-footer">/* Layout w5ba34e44d12b3 */ #pgc-w5ba34e44d12b3-0-0 , #pgc-w5ba34e44d12b3-0-1 , #pgc-w5ba34e44d12b3-0-2 , #pgc-w5ba34e44d12b3-0-3 , #pgc-w5ba34e44d12b3-1-0 , #pgc-w5ba34e44d12b3-1-1 , #pgc-w5ba34e44d12b3-1-2 , #pgc-w5ba34e44d12b3-1-3 { width:25%;width:calc(25% - ( 0.75 * 30px ) ) } #pg-w5ba34e44d12b3-0 , #pl-w5ba34e44d12b3 .so-panel { margin-bottom:35px } #pl-w5ba34e44d12b3 .so-panel:last-of-type { margin-bottom:0px } #pg-w5ba34e44d12b3-0.panel-has-style > .panel-row-style, #pg-w5ba34e44d12b3-0.panel-no-style , #pg-w5ba34e44d12b3-1.panel-has-style > .panel-row-style, #pg-w5ba34e44d12b3-1.panel-no-style { -webkit-align-items:flex-start;align-items:flex-start } #pgc-w5ba34e44d12b3-0-3 , #pgc-w5ba34e44d12b3-1-3 { align-self:auto } @media (max-width:780px){ #pg-w5ba34e44d12b3-0.panel-no-style, #pg-w5ba34e44d12b3-0.panel-has-style > .panel-row-style, #pg-w5ba34e44d12b3-0 , #pg-w5ba34e44d12b3-1.panel-no-style, #pg-w5ba34e44d12b3-1.panel-has-style > .panel-row-style, #pg-w5ba34e44d12b3-1 { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-w5ba34e44d12b3-0 > .panel-grid-cell , #pg-w5ba34e44d12b3-0 > .panel-row-style > .panel-grid-cell , #pg-w5ba34e44d12b3-1 > .panel-grid-cell , #pg-w5ba34e44d12b3-1 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-w5ba34e44d12b3-0-0 , #pgc-w5ba34e44d12b3-0-1 , #pgc-w5ba34e44d12b3-0-2 , #pgc-w5ba34e44d12b3-1-0 , #pgc-w5ba34e44d12b3-1-1 , #pgc-w5ba34e44d12b3-1-2 { margin-bottom:35px } #pg-w5ba34e44d12b3-0 , #pg-w5ba34e44d12b3-1 { margin-bottom:px } #pl-w5ba34e44d12b3 .panel-grid-cell { padding:0 } #pl-w5ba34e44d12b3 .panel-grid .panel-grid-cell-empty { display:none } #pl-w5ba34e44d12b3 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style>
+  <link rel="stylesheet" id="so-css-vantage-css" href="https://fundopp.uci.edu/wp-content/uploads/so-css/so-css-vantage.css?ver=1612547707" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-headline-default-c7df4116ff94-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-headline-default-c7df4116ff94-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-google-font-open sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A600&amp;display=swap&amp;ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-features-default-5bb6878b8a6e-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-features-default-5bb6878b8a6e-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="siteorigin-widgets-css" href="https://fundopp.uci.edu/wp-content/plugins/so-widgets-bundle/widgets/features/css/style.css?ver=1.25.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-image-default-d6014b76747a-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-image-default-d6014b76747a-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-button-atom-3eed3b146478-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-button-atom-3eed3b146478-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-button-base-css" href="https://fundopp.uci.edu/wp-content/plugins/so-widgets-bundle/widgets/button/css/style.css?ver=1.25.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-button-atom-075076d26e4f-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-button-atom-075076d26e4f-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-headline-default-94d741c23369-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-headline-default-94d741c23369-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-button-atom-b4f6b6b19f96-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-button-atom-b4f6b6b19f96-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="sow-headline-default-2d7770dd4466-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/sow-headline-default-2d7770dd4466-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="lsow-posts-carousel-default-3dd089290af6-4-css" href="https://fundopp.uci.edu/wp-content/uploads/siteorigin-widgets/lsow-posts-carousel-default-3dd089290af6-4.css?ver=5.8.2" type="text/css" media="all"> 
+  <link rel="stylesheet" id="lsow-icomoon-css" href="https://fundopp.uci.edu/wp-content/plugins/livemesh-siteorigin-widgets/assets/css/icomoon.css?ver=2.8.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="lsow-slick-css" href="https://fundopp.uci.edu/wp-content/plugins/livemesh-siteorigin-widgets/assets/css/slick.css?ver=2.8.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="lsow-frontend-css" href="https://fundopp.uci.edu/wp-content/plugins/livemesh-siteorigin-widgets/assets/css/lsow-frontend.css?ver=2.8.1" type="text/css" media="all"> 
+  <link rel="stylesheet" id="lsow-posts-carousel-css" href="https://fundopp.uci.edu/wp-content/plugins/livemesh-siteorigin-widgets/includes/widgets/lsow-posts-carousel-widget/css/style.css?ver=1.25.1" type="text/css" media="all"> 
+  <script type="text/javascript" id="lsow-frontend-scripts-js-extra">
+/* <![CDATA[ */
+var lsow_settings = {"mobile_width":"780","custom_css":""};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/livemesh-siteorigin-widgets/assets/js/lsow-frontend.min.js?ver=2.8.1" id="lsow-frontend-scripts-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/easy-fancybox/js/jquery.fancybox.min.js?ver=1.3.24" id="jquery-fancybox-js"></script> 
+  <script type="text/javascript" id="jquery-fancybox-js-after">
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'padding':20,'margin':20,'centerOnScroll':false,'enableEscapeButton':true,'autoScale':true,'speedIn':100,'speedOut':100 };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* IMG */
+var fb_IMG_select='a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpg"]:not(.nolightbox),a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpeg"]:not(.nolightbox),a[href*=".png"]:not(.nolightbox,li.nolightbox>a),area[href*=".png"]:not(.nolightbox),a[href*=".webp"]:not(.nolightbox,li.nolightbox>a),area[href*=".webp"]:not(.nolightbox)';
+jQuery(fb_IMG_select).addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,li.fancybox a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false}))});
+/* Inline */
+jQuery('a.fancybox-inline,area.fancybox-inline,li.fancybox-inline a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'type':'inline','autoDimensions':true,'scrolling':'no','easingIn':'easeOutBack','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':false}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+jQuery(easy_fancybox_auto);
+</script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13" id="jquery-mousewheel-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script> 
+  <script type="text/javascript" id="siteorigin-panels-front-styles-js-extra">
+/* <![CDATA[ */
+var panelsStyles = {"fullContainer":"#main","stretchRows":"1"};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/siteorigin-panels/js/styling.min.js?ver=2.15.0" id="siteorigin-panels-front-styles-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/so-widgets-bundle/js/sow.jquery.fittext.min.js?ver=1.2" id="sowb-fittext-js"></script> 
+  <script type="text/javascript" id="simpleParallax-js-extra">
+/* <![CDATA[ */
+var parallaxStyles = {"mobile-breakpoint":"780px","disable-parallax-mobile":"","delay":"0.4","scale":"1.2"};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/siteorigin-panels/js/lib/simpleparallax.min.js?ver=5.5.1" id="simpleParallax-js"></script> 
+  <script type="text/javascript" src="https://fundopp.uci.edu/wp-content/plugins/livemesh-siteorigin-widgets/assets/js/slick.min.js?ver=2.8.1" id="lsow-slick-carousel-js"></script> 
+  <script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js","");</script> 
+  <script type="text/javascript">
+					jQuery.noConflict();
+					(
+						function ( $ ) {
+							$( function () {
+								$( "area[href*=\\#],a[href*=\\#]:not([href=\\#]):not([href^='\\#tab']):not([href^='\\#quicktab']):not([href^='\\#pane']):not([href^='#fancybox'])" ).click( function () {
+									if ( location.pathname.replace( /^\//, '' ) == this.pathname.replace( /^\//, '' ) && location.hostname == this.hostname ) {
+										var target = $( this.hash );
+										target = target.length ? target : $( '[name=' + this.hash.slice( 1 ) + ']' );
+										if ( target.length ) {
+											$( 'html,body' ).animate( {
+												scrollTop: target.offset().top - 120											},900 , 'easeInSine' );
+											return false;
+										}
+									}
+								} );
+							} );
+						}
+					)( jQuery );
+				</script>  
+ </body>
+</html>

@@ -1,0 +1,814 @@
+<!--https://spaces.lib.uci.edu/appointments/dss-->
+<!doctype html>
+<html lang="en"> 
+ <head> <!-- iid: 3012 --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet"> 
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="/css870/LibCal_public.min.css" rel="stylesheet"> 
+  <link href="/css870/print.min.css" rel="stylesheet" media="print"> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script>
+        window.jQuery || document.write('<script src="/js870/jquery.min.js">\x3C/script>');
+    </script> 
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+  <script>
+        jQuery.ui || document.write('<script src="/js870/jquery-ui.min.js">\x3C/script>');
+    </script> 
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script>
+        (typeof $().modal == 'function') || document.write('<script src="/js870/bootstrap.min.js">\x3C/script>');
+    </script> 
+  <script src="/js870/LibCal_public.min.js"></script> 
+  <script>
+    springSpace.dateFormat = "dddd, MMMM D, YYYY";
+    springSpace.dateShortFormat = "dddd, MMMM D, YYYY";
+    springSpace.timeFormat = "h:mma";
+    springSpace.timezone = 'America/Los_Angeles';
+    springSpace.currency = "USD";
+    springSpace.currencySymbol = "$";
+
+    springSpace.language = 'en'; // en
+    springSpace.locale = 'en-US'; // en-US
+
+    springSpace.phpTimeFormat = 'g:ia';
+
+    springSpace.bootstrapAsset = '/css870/bootstrap.min.css';
+    springSpace.publicCssAsset = '/css870/LibCal_public.min.css';
+    springSpace.adminCssAsset = '/css870/LibCal_admin.min.css';
+</script> 
+  <script>
+         var springLang  = { eq_GoToNextAvailable: "Next Available", eq_js_add_cart_btn: "Add to Cart", eq_js_add_cc_btn: "Add to Cart & Checkout", eq_js_add_eq_btn: "Add Equipment", eq_js_add_start: "All additional items must have a starting time of", eq_js_add_to_cart: "Add Item to Cart", eq_js_booking_summary_title: "Thank you!", eq_js_cart_tt: "Create a shopping cart with these space bookings, and go to equipment booking page to add more items to the cart.", eq_js_close: "Close", eq_js_date: "Change Return Date", eq_js_det_return: "Determining return time", eq_js_from: "From:", eq_js_from_det: "from", eq_js_go_to_date: "Go To Date", eq_js_isRequired: "is required!", eq_js_rem_pending: "Remove Pending Booking", eq_js_spacew_forb_multi: "Forbidden from booking same resource multiple times in a single booking.<br><br>Please only select sequential checkboxes.", eq_js_spacew_forb_single: "Forbidden from booking different resources in a single booking.", eq_js_to: "To:", eq_js_until_det: "until...", eq_start_over: "Make Another Booking", eq_unavail: "Unavailable/Padding", eq_your_book: "Your Booking" };
+    </script> 
+  <meta name="robots" content="noindex, nofollow, noarchive"> 
+  <title>
+                                Make an Appointment - 
+        Digital Scholarship Services (DSS)
+     -
+                Library Reservations -
+        University of California Irvine
+    </title> 
+  <style>
+        .ui-datepicker {
+            border: 1px solid #e7e7e7;
+        }
+
+        .ui-datepicker-calendar {
+            background-color: #f8f8f8;
+        }
+
+        .ui-datepicker .ui-datepicker-header {
+            background: none !important;
+            background-color: #EBEBEB !important;
+            border-radius: 0px;
+            border: 1px solid #D8D8D8 !important;
+        }
+
+        .ui-state-default {
+            background: none !important;
+            background-color: #fff !important;
+        }
+
+        .s-lc-app-timeb-loc, .s-lc-app-timeb-et {
+            display: none;
+        }
+
+        #s-lc-app-asub {
+            margin: 10px 0px 150px 0px;
+        }
+
+        #s-lc-app-slist .panel-body {
+            padding: 5px 10px;
+        }
+
+        #s-lc-app-slist .panel {
+            margin-bottom: 10px;
+        }
+
+        .panel-heading {
+            cursor: pointer;
+        }
+
+        @media (min-width: 992px) {
+            .s-lc-app-s3-alignment {
+                margin-right: 75px;
+            }
+        }
+
+        .s-lc-appointment-success-intro {
+            font-size: 120%!important;
+            margin-bottom: 30px;
+        }
+    </style> 
+  <style type="text/css">
+a, a:hover, a:focus {
+	outline: 0 !important;
+}
+body { 	
+	font-size:14px; 
+} 
+/* BANNER STYLES */#main-nav-banner {   	background-color: #1966A2;}#utility-nav {    	background-color:#002949;    	text-transform:uppercase;   	font-weight:500;    	font-size:12px;    	line-height:1.428457;    }#utility-nav ul {    	list-style-type: none;	padding:0;	margin:0;}#utility-nav ul li {    	float:left;    	color:white;padding:6px 16px 6px 0;    	margin:0;}#utility-nav ul li a {    	color:white;}#utility-nav-left {    	padding-left:14px;float:left;}#utility-nav-right {    	float:right;    	padding-right:24px;}#utility-nav-left ul#utility-nav-left-locations {    	display:none;    	background-color:#ffffff;    	border:1px solid #e7e7e7;    	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);    	position:absolute;    	z-index:1000;    	text-transform: uppercase;    	padding:10px;    	margin:0;}#utility-nav-left ul#utility-nav-left-locations li a {    	color:#000000;}#utility-nav-left ul#utility-nav-left-locations li {    	float:none;}#utility-nav-left-location-toggle {    	cursor: pointer;}#banner {    	float: left;    	max-width: 40%;    	padding: 0 0 0 15px;    	border: none;} #utility-nav ul li a { 	margin:0;	padding:0;} #locations_dropdown_menu a:hover,#locations_dropdown_menu a:focus {    	outline: 1px dotted black;} #utility-nav-left li ul.dropdown-menu {     	border:1px #e7e7e7 solid;}#utility-nav-left li ul.dropdown-menu li {     	font-size: 12px;    	padding: 6px 16px 6px 10px;     	line-height:20px;}#utility-nav-left li.open a {    	color: #000000;}.nav > li > a:hover, .nav > li > a:focus {     	background-color: transparent !important;	text-decoration:none !important;}#locations_dropdown, #locations_dropdown:focus, #locations_dropdown:active, #locations_dropdown:hover {    	background-color: #002949 !important;    	color: white !important;} #navbar-mobile-menu button {    margin: 16px auto 0;    padding: 0;}#utility-main-nav-collapse {    background-color: #1a66a1;    border: medium none;    border-radius: 0;    color: white;}#menu-row-mobile a { 	text-decoration: none;}#menu-row-mobile ul { 	padding:0px; 	margin:0px;}#menu-row-mobile ul li{	list-style-type: none;}#menu-row-mobile li:hover {	cursor:pointer;}#main-nav-mobile {	background-color:#1966A2;}.main-nav-mobile-heading {	color:white;	margin:0px;	padding:0px;	padding-left:32px;	font-size:24px;	width:100%;	text-align: left;}.main-nav-mobile-heading:hover {	color:white;}#main-nav-mobile li {	line-height:72px;}.main-nav-mobile-submenu {	background-color:white;	line-height:40px;}.main-nav-mobile-submenu li {	border-left:white solid 5px;}.main-nav-mobile-submenu li a {	padding:0px;	margin:0px;}.main-nav-mobile-submenu li:hover {	border-left:#fcd02f solid 5px;	color:#0D5186;	background-color: white !important;}.main-nav-mobile-submenu li {	padding-left:32px;}#main-nav-mobile li ul li a {	color:#011A2E;}.mobile-main-nav-angle {	float:right;	padding-right:60px;}.mobile-utility-nav-angle {	float:right;	padding-right:30px;}#utility-nav-mobile {	background-color:#002949;	text-transform: uppercase;}#utility-nav-mobile-locations {	width:100%; 	font-size:16px;}#utility-nav-mobile a {	color:white;}#utility-nav-mobile .btn {	color:white;	text-align: left;	padding:0px;	margin:0px;}#utility-nav-mobile li {	line-height:50px;	padding-left:32px;}#utility-nav-mobile-submenu-locations ul li {	color:white;}/* end for mobile utility and main menu *//* arrow toggles */#mobile-angle-down-find {	display:inline-block;}#mobile-angle-left-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-find {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-find {	display:inline-block;}#mobile-angle-down-services {	display:inline-block;}#mobile-angle-left-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-services {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-services {	display:inline-block;}#mobile-angle-down-about {	display:inline-block;}#mobile-angle-left-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-about {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-about {	display:inline-block;}#mobile-angle-down-help {	display:inline-block;}#mobile-angle-left-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-down-help {	display:none;}#main-nav-mobile .collapsed #mobile-angle-left-help {	display:inline-block;}#mobile-angle-down-locations {	display:inline-block;}#mobile-angle-left-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-down-locations {	display:none;}#utility-nav-mobile .collapsed #mobile-angle-left-locations {	display:inline-block;}.center-block {    margin-top: 16px;}#s-lc-public-footer {		background-color:#002949;		color:#cae1f5;margin-left:-15px;margin-right:-15px;}#s-lc-public-footer a, #s-lc-public-footer a:visited {		color:white;}#s-lc-public-footer .s-lc-text-greyout {		color:#f5f5f5;}/* Small Devices, Tablets */@media only screen and (max-width : 768px) {	     #navbar-mobile {          height:60px;          background-color:#1A66A1;          border-bottom:1px solid #ffffff;     }     #navbar-mobile-banner {          height:60px;          border-left:1px white solid;          border-right:1px white solid;     }     #navbar-mobile div {          padding:0px;          margin:0px;     } }/* Extra Small Devices, Phones */ @media only screen and (max-width : 480px) {	#utility-nav {			display:none;	}	#navbar-mobile {		display:none;	}} #cal-form .form-group:nth-child(4) { display:none; } /* hide the accessible and power icons */
+.fa-wheelchair-alt, .fa-plug { display: none; }
+
+/* hide the accessible and power filters */
+#s-lc-accessible_container, #s-lc-powered_container { display: none; }
+
+/* hide the accessible and power info on a space page */
+.s-lc-section-description p:last-child { display: none; } </style> 
+ </head> 
+ <body id="app" class="s-lc-public s-lc-public-page-5"> <a id="s-lc-public-skiplink" class="s-lc-skiplink alert-info" href="#s-lc-public-pt">Skip to Main Content</a> 
+  <div id="s-lc-public-cust-header" role="banner">
+   <!-- BEGIN MOBILE MENUS -->
+   <div class="navbar-header row visible-xs" id="navbar-mobile">
+    <div id="navbar-mobile-menu" class="col-xs-2">
+     <button class="center-block" data-target="#menu-row-mobile" data-toggle="collapse" id="utility-main-nav-collapse" type="button">MENU</button>
+    </div>
+    <div id="navbar-mobile-banner" class="text-center col-xs-8">
+     <a href="https://www.lib.uci.edu"><img alt="UCI Libraries Mobile Site" class="center-block" id="banner-mobile" src="https://www.lib.uci.edu/sites/all/images/uci-lib-banner-libapps.jpg"></a>
+    </div>
+   </div>
+   <div class="row hidden-lg hidden-md collapse" id="menu-row-mobile">
+    <ul id="utility-nav-mobile"> 
+     <li> 
+      <div class="btn collapsed" data-target="#utility-nav-mobile-submenu-locations" data-toggle="collapse" id="utility-nav-mobile-locations">
+       Locations
+      </div> 
+      <div class="collapse" id="utility-nav-mobile-submenu-locations"> 
+       <ul> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+       </ul> 
+      </div> </li> 
+     <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     <li><a href="//www.lib.uci.edu/hours">Hours</a></li> 
+     <li><a href="//www.lib.uci.edu/accessibility">Accessibility</a></li> 
+     <li><a href="//www.lib.uci.edu/accounts">Accounts</a></li> 
+     <li><a href="https://partners.lib.uci.edu">Giving</a></li>
+    </ul>
+   </div><!-- END MOBILE MENUS --><!-- BEGIN INCLUDE THIS: UTILITY BAR AND BANNER -->
+   <div id="utility-nav" class="container hidden-xs"> 
+    <div id="utility-nav-left"> 
+     <ul class="nav navbar-nav" id="utility-nav-left"> 
+      <li class="dropdown"><a id="locations_dropdown" aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Locations <span class="caret"></span></a> 
+       <ul class="dropdown-menu" id="locations_dropdown_menu"> 
+        <li><a href="//www.lib.uci.edu/langson">Langson Library</a></li> 
+        <li><a href="//www.lib.uci.edu/ayala">Ayala Science Library</a></li> 
+        <li><a href="//grunigen.lib.uci.edu">Grunigen Medical Library</a></li> 
+        <li><a href="https://www.law.uci.edu/library/">Law Library</a></li> 
+        <li><a href="//www.lib.uci.edu/gateway-study-center">Gateway Study Center</a></li> 
+       </ul> </li> 
+      <li><a href="//www.lib.uci.edu/connect-campus">Connect From Off-Campus</a></li> 
+     </ul> 
+    </div> 
+    <div id="utility-nav-right"> 
+     <ul class="nav navbar-nav"> 
+      <li><a href="https://www.lib.uci.edu/hours"><i class="fa fa-clock-o"></i> Hours</a></li> 
+      <li><a href="//www.lib.uci.edu/accessibility"><i class="fa fa-wheelchair"></i> Accessibility</a></li> 
+      <li><a href="https://www.lib.uci.edu/accounts"><i class="fa fa-user"></i> Accounts</a></li> 
+      <li><a href="https://partners.lib.uci.edu"><i class="fa fa-gift"></i> Giving</a></li> 
+     </ul> 
+    </div>
+   </div>
+   <div id="main-nav-banner" class="container hidden-xs"> 
+    <div id="banner"> <map id="banner_map" name="banner_map"> <area title="UCI Home Page" alt="UCI Home Page" coords="0,0,120,78" shape="rect" href="https://www.uci.edu"> <area title="UCI Libraries Home Page" alt="UCI Libraries Home Page" coords="121,0,400,78" shape="rect" href="https://www.lib.uci.edu"> </map> 
+     <img class="logoLink img-responsive" src="//www.lib.uci.edu/sites/all/images/uci-lib-logo_3.jpg" usemap="#banner_map" alt="Libaries home page" id="banner-image"> 
+    </div>
+   </div><!-- END INCLUDE THIS: UTILITY BAR AND BANNER -->
+  </div> 
+  <div class="container"> 
+   <div id="s-lc-public-bc" class="row"> 
+    <div class="col-md-12"> 
+     <nav aria-label="Breadcrumb"> 
+      <ol class="breadcrumb"> 
+       <li> <a href="http://www.lib.uci.edu/"> University of California Irvine </a> </li> 
+       <li class="s-lc-desktop-only"> <a href="https://spaces.lib.uci.edu"> Library Reservations </a> </li> 
+       <li> <a href="/appointments"> Appointments </a> </li> 
+      </ol> 
+     </nav> 
+    </div> 
+   </div> 
+   <noscript> 
+    <div class="alert alert-danger" id="noscript">
+     Your browser has javascript disabled. Without javascript some functions will not work.
+    </div> 
+   </noscript> 
+   <div id="s-lc-public-title" class="row"> 
+    <div class="col-md-12"> 
+     <h1 id="s-lc-public-pt" class="s-lc-app-booking-header"> 
+      <div class="pull-left s-lc-app-booking-title">
+       Make an Appointment - 
+      </div> 
+      <div class="pull-left s-lc-app-location-select"> <select class="form-control selectpicker" name="s-lc-app-location" id="s-lc-app-location" data-width="170px" title="Select Location"> <option value="/appointments/dss" selected> Digital Scholarship Services (DSS) </option> <option value="/appointments/in-person"> IN-PERSON </option> <option value="/appointments/virtual"> VIRTUAL (Zoom) </option> </select> 
+      </div> </h1> <span class="sr-only"> Make an appointment in 3 steps. Step 1: Select a staff member. Step 2: Select an available date. Step 3: Select an available timeslot. </span> 
+    </div> 
+   </div> 
+   <div id="s-lc-public-pd" class="row"> 
+    <div class="col-md-12 margin-top-med" tabindex="0"> 
+     <p>UCI Libraries' Digital Scholarship Services support digital scholarship work performed by the UCI community, including e-Research, data curation, digital humanities, digital preservation, and Geographical Information Systems (GIS). We offer a variety of services and tools to assist throughout the research lifecycle, from planning and implementing a research project to publishing, preserving, and increasing the visibility and impact of research outcome. Interested in a particular service or tool, or have a question and don't know where to start?</p> 
+     <p><strong>Appointments will be via zoom.&nbsp; Once you set an appointment a zoom link will be sent to you via email.&nbsp; </strong></p> 
+    </div> 
+   </div> 
+   <main> 
+    <div id="s-lc-public-main" class="s-lc-public-main"> 
+     <div id="s-lc-public-page-content" class="row"> 
+      <div id="col1" class="col-md-12 center"> 
+       <div class="row"> 
+        <div id="s-lc-app-s1" class="col-md-4" aria-live="polite" style="display:none;"></div> 
+        <div aria-live="polite"> 
+         <div id="select-date-sr-message"></div> 
+        </div> 
+        <div id="s-lc-app-s2" class="col-md-4" aria-live="polite" style="display:none;"></div> 
+        <div id="s-lc-app-s3" class="col-md-4" aria-live="polite" style="display:none;"></div> 
+       </div> 
+       <div id="s-lc-app-form-aria-live" aria-live="assertive"> 
+        <div id="s-lc-app-s4" style="display:none;"> 
+        </div> 
+       </div> 
+       <div id="s-lc-app-results" style="display:none;"> 
+        <div class="row"> 
+         <div class="col-md-12"> 
+          <div id="alert-register-success-msg" role="region" aria-live="polite" aria-labelledby="s-lc-app-success-intro"> 
+           <div id="s-lc-app-success-intro" class="alert alert-success s-lc-appointment-success-intro" role="status" tabindex="0"> <strong>Success!</strong> You are all set. A confirmation email with relevant appointment details was sent to <span id="s-lc-app-success-user-email"></span>. Check your spam folder if you don't see the email in your inbox. 
+           </div> 
+           <p> <strong>Appointment with:</strong> <span id="s-lc-app-success-name"></span> </p> 
+           <p> <strong>Date:</strong> <span id="s-lc-app-success-date"></span> </p> 
+           <p> <strong>Start Time:</strong> <span id="s-lc-app-success-time"></span> </p> 
+           <p class="s-lc-timezone-container"> <strong>Time Zone:</strong> <span id="s-lc-app-success-timezone"></span> </p> 
+           <div id="s-lc-appointment-category" style="display:none;"> 
+            <p> <strong>Type:</strong> <span id="s-lc-app-success-category"></span> </p> 
+           </div> 
+           <p> <strong>Location:</strong> <span id="s-lc-app-success-location"></span> </p> 
+           <div id="s-lc-appointment-online-meeting" style="display:none;"> 
+            <p> <strong>Online Meeting URL:</strong> <span id="s-lc-app-success-online-url"> </span> </p> 
+           </div> 
+           <p> <strong>Directions:</strong> <span id="s-lc-app-success-directions"></span> </p> 
+          </div> 
+          <p> <button class="btn btn-default margin-top-xlg" id="s-lc-ms-sobtn" onclick="return startOver();"> Start Over </button> </p> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </main> 
+   <footer id="s-lc-public-footer" class="s-lc-public-footer row"> 
+    <div id="s-lc-public-footer-brand"> <span title="libcal-us-1">Powered by</span> <a href="https://www.springshare.com">Springshare</a>. 
+    </div> 
+    <div id="s-lc-public-footer-rights">
+      All rights reserved. 
+    </div> 
+    <div id="s-lc-footer-support-link"> <a href="mailto:kferry@uci.edu">Report a tech support issue.</a> 
+    </div> 
+    <div id="s-lc-public-footer-admin-links" role="navigation"> <a id="s-lc-sign-in" href="https://uci.libapps.com/libapps/login.php?site_id=4298&amp;target=">Login to LibApps</a> 
+    </div> 
+    <div class="s-lc-public-footer-actions"> 
+     <div id="s-lc-language"> <select id="s-lc-language-selector" aria-label="Language Selector"> <option value="cy">Cymraeg</option> <option value="en" selected>English</option> <option value="es">español</option> <option value="fr">français</option> <option value="ga">Irish</option> <option value="sl">slovenski jezik</option> <option value="vi">Ti?ng Vi?t</option> <option value="zh">?? Zh?ngwén</option> </select> 
+     </div> 
+    </div> 
+   </footer> 
+   <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-65077063-1', 'auto');  ga('send', 'pageview');</script> 
+  </div> 
+  <script src="/js870/direct/public/appointments/success.min.js"></script> 
+  <script>
+    var dateEnabledOnCalendar = [true, "", "Available"];
+    var dateDisabledOnCalendar = [false, "", "Not Available"];
+
+    var availableDates = [];
+
+    var springyPage = {
+        fadeInDuration: 200,
+        loadingDisplay: "<p class='text-center'><br/><br/><br/><br/><i class='fa fa-spinner fa-spin fa-2x' aria-hidden='true'></i></p>",
+        publicTimezone: 'America/Los_Angeles',
+        publicTimezoneDisplay: 'Pacific Time - US &amp; Canada',
+                lang: {
+            timezone: "Time\u0020Zone",
+            changeTimezone: "change",
+            continueButtonText: "Continue",
+            mapLinkLabel: 'Map',
+            mapLinkTooltip: 'Open\u0020map\u0020for\u0020\u0025name\u0025',
+            datepickerPrevMonth: "Previous Month",
+            datepickerNextMonth: "Next Month",
+            datepickerSelectMonth: "Select a Month",
+        },
+            };
+
+    function categoryGetVisibleId(element) {
+        var value = element.data("value");
+        if (value !== undefined) {
+            return value;
+        }
+
+        return parseInt(element.val(), 10);
+    }
+
+    function categoryGetVisibleName(element) {
+        var value = element.data("value");
+        if (value !== undefined) {
+            return element.text();
+        }
+
+        return element.find("option:selected").text();
+    }
+
+    function getSelectedCategoryId() {
+        return categoryGetVisibleId(jQuery("#cat_" + selectedGroupId));
+    }
+
+    function getSelectedCategoryName() {
+        return categoryGetVisibleName(jQuery("#cat_" + selectedGroupId));
+    }
+
+    function datePickerEvaluateDate(date) {
+        var dateString = moment(date).format(springSpace.phpDateFormat);
+
+        if (jQuery.inArray(dateString, availableDates) != -1) {
+            return dateEnabledOnCalendar;
+        } else {
+            return dateDisabledOnCalendar;
+        }
+    }
+
+    function handleKeypressEnterAsClick(event) {
+        if (event.which == 13) {
+            jQuery(this).trigger('click');
+            jQuery(event.data.thisButtonClass).focus();
+        }
+    }
+
+    function onPanelHeadingKeypress(event) {
+        // treat enter as a click
+        if (event.which == 13) {
+            jQuery(this).trigger("click");
+        }
+    }
+
+    // support next/prev month buttons via keyboard
+    function setupDatepickerAccessibility() {
+        jQuery('.ui-datepicker-prev')
+            .attr('tabindex', 0)
+            .attr('aria-label', springyPage.lang.datepickerPrevMonth)
+            .on('keypress', {thisButtonClass: '.ui-datepicker-prev'}, handleKeypressEnterAsClick)
+            .on('click', setupDatepickerAccessibility);
+
+        jQuery('.ui-datepicker-next')
+            .attr('tabindex', 0)
+            .attr('aria-label', springyPage.lang.datepickerNextMonth)
+            .on('keypress', {thisButtonClass: '.ui-datepicker-next'}, handleKeypressEnterAsClick)
+            .on('click', setupDatepickerAccessibility);
+
+        jQuery('.ui-datepicker-month') // ensure that the month dropdown box is accessible
+            .prop('title', springyPage.lang.datepickerSelectMonth)
+            .on('change', setupDatepickerAccessibilityAndFocusMonth);
+    }
+
+    function setupDatepickerAccessibilityAndFocusMonth() {
+        setupDatepickerAccessibility();
+        jQuery('.ui-datepicker-month').focus();
+    }
+
+    function formatTimeslotHtml(timeslot, date) {
+        var start = moment(timeslot.startDisplay);
+        var end = moment(timeslot.endDisplay);
+
+        var html = '<button class="btn btn-default btn-sm s-lc-app-timeslot s-lc-app-timeb" aria-pressed="false" data-uid="' + timeslot.userId + '" data-st="' + timeslot.start + '" data-date="' + date + '" data-crc="' + timeslot.crc + '">';
+        html += start.format(springSpace.timeFormat);
+        html += '<span class="s-lc-app-timeb-et"> - <span class="sr-only s-lc-app-timeb-et">until </span>';
+        html += end.format(springSpace.timeFormat);
+        html += '</span>';
+        html += '<span class="s-lc-app-timeb-date sr-only">' + end.format(springSpace.dateFormat) + '</span>';
+
+        if (typeof timeslot.directions !== 'undefined') {
+            html += '<span class="s-lc-app-timeb-loc">' + timeslot.directions + '</span>';
+        }
+
+        html += '</button><span class="sr-only">, </span>';
+
+        return html;
+    }
+
+    function createTimeslotContinueButton() {
+        return '<div class="text-center"><button type="button" id="s-lc-app-continue" class="btn btn-primary margin-top-med s-lc-app-s3-alignment" disabled="disabled">' + springyPage.lang.continueButtonText + '</button></div>';
+    }
+
+    function hideAll() {
+        jQuery("#s-lc-app-s1, #s-lc-app-s2, #s-lc-app-s2-content, #s-lc-app-s3, #s-lc-app-s4, #s-lc-app-results").hide();
+    }
+
+    function startOver() {
+        window.location.reload(false);
+        return false;
+    }
+
+    function onBookingCreateSuccess(data) {
+        hideAll();
+        populateBookingSuccessValues(data);
+        jQuery("#s-lc-app-results").fadeIn(springyPage.fadeInDuration);
+    }
+
+    function showStaffMemberInfo(id) {
+        jQuery("#s-lc-staff-member-info-" + id).modal("show");
+
+        return false;
+    }
+
+    function groupPanelsSetupArrows() {
+        jQuery('.collapse').on('show.bs.collapse', function () {
+            jQuery(this).siblings().find('.s-lc-public-panel-indicator').addClass('fa-chevron-down').removeClass('fa-chevron-right');
+        });
+
+        jQuery('.collapse').on('hide.bs.collapse', function () {
+            jQuery(this).siblings().find('.s-lc-public-panel-indicator').addClass('fa-chevron-right').removeClass('fa-chevron-down');
+        });
+    }
+</script> 
+  <script>
+        var dateTimeRequestInProgress = false;
+
+        function getStaffList() {
+            hideAll();
+            jQuery("#s-lc-app-s1").html(springyPage.loadingDisplay).fadeIn(springyPage.fadeInDuration);
+
+            jQuery.ajax({
+                type: "get",
+                url: "/widget/appointments/staff",
+                data: {
+                    iid: 3012,
+                    lid: 2558,
+                    uid: 0,
+                    gid: 0,
+                },
+                dataType: "json",
+                success: function (data) {
+                    var html = data.html ? data.html : '<div class="alert alert-danger" tabindex="0">Sorry,\u0020there\u0020are\u0020no\u0020times\u0020available.</div>';
+                    jQuery("#s-lc-app-s1").html(html).fadeIn(springyPage.fadeInDuration);
+
+                    showSpecificGroup();
+
+                    var staffRadioButtonElements = jQuery('.s-lc-app-sl');
+                    staffRadioButtonElements.on('click', onStaffMemberClicked);
+
+                    // Move focus on datepicker when enter or space is pressed on staff member radio button
+                    springyCommon.bindAccessibleKeyPress(staffRadioButtonElements, moveFocusOnDatepicker);
+
+                    catGroupListen();
+                    groupPanelsSetupArrows();
+                    accessibleIcons();
+                    jQuery(".panel-heading").on("click", onPanelHeadingClick).on("keypress", onPanelHeadingKeypress);
+                    catListen();
+
+                    if (!data.fetchDates) {
+                        return;
+                    }
+
+                    getDatesAndTimes();
+                },
+            });
+
+            return false;
+        }
+
+        function moveFocusOnDatepicker() {
+            jQuery('#s-lc-app-dp').find('.ui-state-default.ui-state-active').trigger('focus');
+        }
+
+        function onPanelHeadingClick() {
+            // this function makes a group active
+            var section = jQuery(this).attr("aria-controls");
+
+            // select the first user (or no preference) in this group by default
+            var firstUser = jQuery("#" + section).find("input[type=radio]").first();
+            firstUser.prop("checked", true);
+
+            var cid = categoryGetVisibleId(jQuery("#" + section + " .groupcat_filtering"));
+            if (cid > 0) {
+                jQuery("#cid").val(cid);
+            }
+
+            getDatesAndTimes();
+
+            return true;
+        }
+
+        function showSpecificGroup() {
+            var groupId = 0;
+            if (groupId < 1) {
+                return true;
+            }
+
+            jQuery(".group_panel").hide();
+            jQuery("#collapse" + groupId).addClass("in");
+
+            jQuery(".group_" + groupId + " input[name=staff]").first().trigger("click");
+
+            jQuery(".group_" + groupId).show();
+            jQuery(".groupnt_" + groupId).show();
+
+            if (jQuery(".groupnt_" + groupId).is(":visible")) {
+                jQuery("#s-lc-app-s1date, #s-lc-app-s1time").remove();
+            }
+
+            return true;
+        }
+
+        function onStaffMemberClicked(event) {
+            // this prevents people clicking a staff member and then clicking a different one
+            // quickly before the datetime request completes
+            if (dateTimeRequestInProgress) {
+                event.preventDefault();
+                return false;
+            }
+
+            dateTimeRequestInProgress = true;
+            getDatesAndTimes();
+
+            return true;
+        }
+
+        function getSelectedUserElement() {
+            return jQuery("input[name=staff]:checked", "#s-lc-app-slist");
+        }
+
+        function getDatesAndTimes() {
+            jQuery("#s-lc-app-s2, #s-lc-app-s3").hide().html(springyPage.loadingDisplay).fadeIn(springyPage.fadeInDuration);
+
+            var selectedUser = getSelectedUserElement();
+            var uid = selectedUser.data("uid");
+            var gid = selectedUser.data("gid");
+            var cid = jQuery("#cid").val();
+
+            jQuery.ajax({
+                type: "get",
+                url: "/widget/appointments/datetime",
+                data: {
+                    iid: 3012,
+                    lid: 2558,
+                    uid: uid,
+                    gid: gid,
+                    cid: cid,
+                    timezone: springyPage.publicTimezone,
+                },
+                dataType: "json",
+                success: function (data) {
+                    availableDates = data.dates;
+
+                    jQuery("#s-lc-app-s2").html('<h2 class="s-lc-app-s1h3" tabindex=0 aria-label="Step 2. Select\u0026\u0023x20\u003BDate\u0026\u0023x3A\u003B">2. Select\u0020Date\u003A</h2><div id="s-lc-app-dp"></div>').fadeIn(springyPage.fadeInDuration);
+
+                    if (data.times) {
+                        var timeslots = data.times;
+                        var date = data.date;
+                        var html = '<h2 class="s-lc-app-s1h3" aria-label="Step 3: Select\u0026\u0023x20\u003BTime\u0026\u0023x3A\u003B">3. Select\u0020Time\u003A</h2>';
+
+                        html += '<h3 id="s-lc-app-timeh">' + moment(date).format(springSpace.dateFormat) + '</h3>';
+                        html += getTimezoneDisplay();
+
+                        for (var i=0; i < timeslots.length; i++) {
+                            html += formatTimeslotHtml(timeslots[i], date);
+                        }
+
+                        html += createTimeslotContinueButton();
+
+                        jQuery("#s-lc-app-s3").hide().html(html).fadeIn(springyPage.fadeInDuration);
+                        jQuery(".s-lc-app-timeb").on("click", onTimeslotClicked);
+                        jQuery('#s-lc-app-continue').on('click', progressToBookingForm);
+                        bindTimezoneModal();
+                    } else {
+                        jQuery("#s-lc-app-s3").hide();
+                    }
+
+                    var viewDate = (data.dates && data.dates.length > 0) ? data.dates[0] : "";
+                    setupDatepicker(viewDate);
+
+                    dateTimeRequestInProgress = false;
+                },
+            });
+
+            return false;
+        }
+
+        function getTimezoneDisplay() {
+            return '<div class="s-lc-timezone-container s-lc-app-change-tz-cont pad-top-med pad-bottom-med">'
+                + springyPage.lang.timezone + ': ' + springyPage.publicTimezoneDisplay
+                + ' (<a href="#" class="s-lc-app-change-tz-modal">' + springyPage.lang.changeTimezone + '</a>)'
+                + '</div>';
+        }
+
+        function bindTimezoneModal() {
+            jQuery('.s-lc-app-change-tz-modal').off('click').on('click', springyPublic.showTimezoneModal);
+        }
+
+        function setupDatepicker(dateDefault) {
+            jQuery("#s-lc-app-dp").datepicker({
+                dateFormat: "yy-mm-dd",
+                changeMonth: true,
+                defaultDate: dateDefault,
+                onSelect: function (date) {
+                    datePickerSelectDate()
+                },
+                beforeShowDay: datePickerEvaluateDate,
+                onChangeMonthYear: calChangeMonthYear
+            });
+
+            setupDatepickerAccessibility();
+        }
+
+        function calChangeMonthYear(year, month, inst) {
+            jQuery("#select-date-sr-message").html("<h2 class=\"sr-only\">Step 2. Showing calendar for month " + month + " " + year + "</h2>");
+        }
+
+        function datePickerSelectDate() {
+            var date = jQuery("#s-lc-app-dp").val();
+            var selectedUser = getSelectedUserElement();
+            var uid = selectedUser.data("uid");
+            var gid = selectedUser.data("gid");
+            var cid = jQuery("#cid").val();
+
+            jQuery("#s-lc-app-s3").html(springyPage.loadingDisplay).fadeIn(springyPage.fadeInDuration);
+
+            jQuery.ajax({
+                type: "get",
+                url: "/widget/appointments/times",
+                data: {
+                    iid: 3012,
+                    lid: 2558,
+                    uid: uid,
+                    gid: gid,
+                    cid: cid,
+                    date: date,
+                    timezone: springyPage.publicTimezone,
+                },
+                dataType: "json",
+                success: function (data) {
+                    var html = '<h2 class="s-lc-app-s1h3" aria-label="Step 3. Select\u0026\u0023x20\u003BTime\u0026\u0023x3A\u003B">3. Select\u0020Time\u003A</h2>';
+                    var timeslots = data.times;
+
+                    if (!timeslots || (timeslots.length === 0)) {
+                        html += '<div class="alert alert-danger">Sorry,\u0020there\u0020are\u0020no\u0020times\u0020available.</div>';
+                    } else {
+                        html += '<h3 id="s-lc-app-timeh">' + moment(date).format(springSpace.dateFormat) + '</h3>';
+                        html += getTimezoneDisplay();
+
+                        for (var i=0; i < timeslots.length; i++) {
+                            html += formatTimeslotHtml(timeslots[i], date);
+                        }
+
+                        html += createTimeslotContinueButton();
+                    }
+
+                    jQuery("#s-lc-app-s3").hide().html(html).fadeIn(springyPage.fadeInDuration).focus();
+
+                    var timeSlotElements = jQuery('.s-lc-app-timeb');
+                    timeSlotElements.on('click', onTimeslotClicked);
+                    timeSlotElements.first().trigger('focus');
+                    jQuery('#s-lc-app-continue').on('click', progressToBookingForm);
+                    bindTimezoneModal();
+                },
+            });
+
+            return false;
+        }
+
+        function onTimeslotClicked() {
+            jQuery('#s-lc-app-continue').prop('disabled', false).focus();
+            jQuery('.s-lc-app-timeslot').removeClass('active').attr('aria-pressed', false);
+            jQuery(this).addClass('active').attr('aria-pressed', true);
+
+            return false;
+        }
+
+        function redirectToLibAuthLogin(clickedSlot, userId, groupId, categoryId) {
+            window.location = '/appointments-auth/prepare?' + jQuery.param({
+                iid: 3012,
+                lid: 2558,
+                uid: userId,
+                gid: groupId,
+                cid: categoryId,
+                startTime: clickedSlot.data('st'),
+                checksum: clickedSlot.data('crc'),
+                method: 21,
+            });
+
+            return false;
+        }
+
+        function isUserLibAuthEnabled(selectedStaffElement, userId) {
+            // if the selected staff member is an actual user
+            // then we can use the libauth attribute from that element
+            var selectedStaffId = selectedStaffElement.data('uid');
+            if (selectedStaffId === userId) {
+                return selectedStaffElement.data('libauth');
+            }
+
+            // otherwise it means that the selected staff option is either 'no preference' or a group nickname
+            // try to get the selected users libauth setting by looking up their id
+            var userElement = jQuery('input[name=staff][data-uid=' + userId + ']', '#s-lc-app-slist');
+            if (userElement.length > 0) {
+                return userElement.data('libauth');
+            }
+
+            // if we couldn't look them up it means the group is using group nicknames
+            // in this case we return false here and the booking form step
+            // will determine the libauth settings of the user
+            return false;
+        }
+
+        function progressToBookingForm() {
+            var clickedSlot = jQuery('.s-lc-app-timeslot.active');
+            var userId = clickedSlot.data("uid");
+
+            var selectedUser = getSelectedUserElement();
+            var groupId = selectedUser.data("gid");
+            var isLibAuth = isUserLibAuthEnabled(selectedUser, userId);
+            var categoryId = jQuery("#cid").val();
+
+            if (isLibAuth) {
+                return redirectToLibAuthLogin(clickedSlot, userId, groupId, categoryId);
+            }
+
+            hideAll();
+
+            /* Hide page title on mobile view on the final step */
+            jQuery('#s-lc-public-title').addClass('s-lc-desktop-only');
+
+            jQuery("#s-lc-app-s4").html(springyPage.loadingDisplay).fadeIn(springyPage.fadeInDuration);
+
+            jQuery.ajax({
+                type: "get",
+                url: "/widget/appointments/form",
+                data: {
+                    iid: 3012,
+                    lid: 2558,
+                    uid: userId,
+                    gid: groupId,
+                    cid: categoryId,
+                    startTime: clickedSlot.data('st'),
+                    checksum: clickedSlot.data('crc'),
+                    timezone: springyPage.publicTimezone,
+                    nocache: true,
+                    method: 21,
+                },
+                dataType: "html",
+                success: function (html) {
+                    jQuery("#s-lc-app-s4").html(html).fadeIn(springyPage.fadeInDuration);
+                    accessibleIcons();
+                    jQuery('#s-lc-public-pd').hide();
+                    jQuery('#s-lc-app-back-to-step1').on('click', backToStep1);
+                },
+            });
+
+            return false;
+        }
+
+        function catListen() {
+            jQuery("#cid").on("change", getDatesAndTimes);
+        }
+
+        function catGroupListen() {
+            var cid = categoryGetVisibleId(jQuery("#s-lc-app-slist").find(".groupcat_filtering").filter(":visible").first());
+            if (cid > 0) {
+                jQuery("#cid").val(cid);
+            }
+
+            jQuery(".groupcat_filtering").change(function () {
+                var cid = parseInt(jQuery(this).val(), 10);
+                jQuery("#cid").val(cid);
+                getDatesAndTimes();
+            });
+        }
+
+        function backToStep1() {
+            hideAll();
+
+            /* Unhide page title on mobile view */
+            jQuery('#s-lc-public-title').removeClass('s-lc-desktop-only');
+
+            jQuery("#s-lc-app-s1").fadeIn(springyPage.fadeInDuration);
+            jQuery('#s-lc-public-pd').show();
+
+            jQuery('#s-lc-app-s2').show();
+            var date = jQuery(this).data('date');
+            jQuery('#s-lc-app-dp').val(date);
+            datePickerSelectDate(date);
+
+            return false;
+        }
+
+        function goToLocationPage() {
+            var url = jQuery(this).val();
+            window.location = url;
+
+            return false;
+        }
+
+        jQuery(function() {
+            jQuery('#s-lc-app-location').on('change', goToLocationPage);
+
+            getStaffList();
+        });
+    </script>  
+ </body>
+</html>
